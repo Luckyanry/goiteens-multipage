@@ -1,0 +1,20 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import './utils/variables.scss';
+@import './utils/mixins.scss';
+@import './utils/fonts.scss';
+
+@import './base/common.scss';
+@import './base/container.scss';
+
+@import './components/modal-btn.scss';
+@import './components/title.scss';
+@import './components/accent-text.scss';
+@import './components/awards.scss';
+
+@import './layout/header.scss';
+@import './pages/main/hero.scss';
+@import './pages/main/advantages.scss';
+@import './pages/main/achievments.scss';

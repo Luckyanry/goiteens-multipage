@@ -1,0 +1,38 @@
+.modal-btn {
+  width: 100%;
+  max-width: 328px;
+  @include font(16px, 700);
+  color: #fff;
+  background-color: $accent-color;
+  border: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  cursor: pointer;
+  border-radius: 6px;
+
+  .hero & {
+    margin-bottom: 50px;
+  }
+
+  .advantages & {
+    display: block;
+    margin: 0 auto;
+    margin-top: 52px;
+  }
+}
+
+@include mq('desktop') {
+  .modal-btn {
+    max-width: 294px;
+    font-size: 18px;
+
+    .hero & {
+      margin-bottom: 62px;
+    }
+
+    .advantages & {
+      max-width: 428px;
+      margin-top: 78px;
+    }
+  }
+}

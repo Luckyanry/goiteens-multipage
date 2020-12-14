@@ -1,0 +1,22 @@
+.title {
+  @include font(36px, 700);
+
+  .advantages & {
+    margin-bottom: 66px;
+  }
+
+  .achievments & {
+    margin-bottom: 40px;
+  }
+}
+
+@include mq('desktop') {
+  .title {
+    font-size: 48px;
+
+    .advantages & {
+      width: 850px;
+      margin-bottom: 60px;
+    }
+  }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Goiteens</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header class="header">
+      <div class="container">
+          <a href="/" class="logo link" aria-label="логотип">
+              <img src="./images/header/logo.png" alt="логотип" class="logo__img">
+              <span class="logo__text">мережа ІТ-академій <br> для дітей 8-15 років</span>
+          </a>
+          <button type="button" class="menu-btn" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
+              <svg width="25" height="25" class="menu-btn__icons">
+                  <use href="./images/sprite.svg#burger" class="menu-btn__icon_burger"></use>
+                  <use href="./images/sprite.svg#close" class="menu-btn__icon_close"></use>
+              </svg>
+          </button>
+          <div class="mobile-menu" data-menu>
+              <nav class="navigation">
+                  <ul class="navigation__list list">
+                      <li class="navigation__list-item">
+                          <a href="" class="navigation__list-link link">Програми</a>
+                      </li>
+                      <li class="navigation__list-item">
+                          <a href="" class="navigation__list-link link">Про нас</a>
+                      </li>
+                      <li class="navigation__list-item">
+                          <a href="" class="navigation__list-link link">Результати учнів</a>
+                      </li>
+                      <li class="navigation__list-item">
+                          <a href="" class="navigation__list-link link">Контакт</a>
+                      </li>
+                  </ul>
+              </nav>
+              <p class="location">
+                  <svg width="24" height="22" class="location__icon">
+                      <use href="./images/sprite.svg#location-icon"></use>
+                  </svg>
+                  <span>київ</span>
+              </p>
+              <a href="tel:+380933432127" class="contact-tel link">+38 093 343 21 27</a>
+          </div>
+      </div>
+  </header>
+  <main>
+    <section class="hero">
+        <div class="container">
+            <p class="hero__text hero__text_top">Допомагаємо дітям з усієї України</p>
+            <h1 class="hero__title">Опанувати <br> IT спеціальність</h1>
+            <p class="hero__text hero__text_bottom">та запустити перший технологічний стартап ще до вступу в університет</p>
+            <button type="button" class="modal-btn">Підібрати план навчання</button>
+            <div class="location-banner">
+                <h2 class="location-banner__title">Мережа IT-академій для позашкільного навчання дітей від 8 до 15 років
+                </h2>
+                <ul class="location-banner__list list">
+                    <li class="location-banner__list-item">
+                        <svg class="location-banner__list-item-icon">
+                            <use href="./images/sprite.svg#pin"></use>
+                        </svg> Київ
+                    </li>
+                    <li class="location-banner__list-item">
+                        <svg class="location-banner__list-item-icon">
+                            <use href="./images/sprite.svg#pin"></use>
+                        </svg> Львів
+                    </li>
+                    <li class="location-banner__list-item">
+                        <svg class="location-banner__list-item-icon">
+                            <use href="./images/sprite.svg#pin"></use>
+                        </svg> Дніпро
+                    </li>
+                    <li class="location-banner__list-item">
+                        <svg class="location-banner__list-item-icon">
+                            <use href="./images/sprite.svg#pin"></use>
+                        </svg> Харків
+                    </li>
+                    <li class="location-banner__list-item">
+                        <svg class="location-banner__list-item-icon">
+                            <use href="./images/sprite.svg#pin"></use>
+                        </svg> Вінниця
+                    </li>
+                    <li class="location-banner__list-item">
+                        <svg class="location-banner__list-item-icon">
+                            <use href="./images/sprite.svg#pin"></use>
+                        </svg> Online
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <h2 class="title">Як ми <span class="accent-text">готуємо
+                    дітей</span> до
+                лідерства
+                в майбутньому
+                цифровому світі</h2>
+    
+            <ul class="advantages-list list">
+                <li class="advantages-list__item advantages-list__item_icon-brain">
+                    <h3 class="advantages-list__title">Розвиток <span class="accent-text">технологічного</span> та <span
+                            class="accent-text">інноваційного</span> мислення</h3>
+                    <p class="advantages-list__text">Дитина здобуває знання та навички, які будуть у попиті в цифровому
+                        світі, розвиває гнучкість мислення та вчиться креативного пошуку рішень.</p>
+                </li>
+                <li class="advantages-list__item advantages-list__item_icon-head">
+                    <h3 class="advantages-list__title">Менторство</h3>
+                    <p class="advantages-list__text">Кожна дитина постійно отримує підтримку та фідбек від викладачів. Таким
+                        чином діти мають змогу поступово перетворювати свої сильні сторони на професійну конкурентну
+                        перевагу.</p>
+                </li>
+                <li class="advantages-list__item advantages-list__item_icon-robot">
+                    <h3 class="advantages-list__title">Оточення <span class="accent-text">мотивованих</span> та <span
+                            class="accent-text">ініціативних</span> дітей</h3>
+                    <p class="advantages-list__text">Дитина занурюється в атмосферу, де великі цілі, здорові амбіції,
+                        орієнтація на результат, відкрита комунікація та взаємодопомога — це норма.</p>
+                </li>
+                <li class="advantages-list__item advantages-list__item_icon-ai">
+                    <h3 class="advantages-list__title"><span class="accent-text">Реалізовані проєкти</span> як результат
+                        навчання</h3>
+                    <p class="advantages-list__text">Результат кожного курсу — це реалізований на практиці проєкт, який
+                        наочно демонструє здобуті навички. Такий підхід мотивує дитину до навчання, самовираження, ініціює
+                        дух змагання.</p>
+                </li>
+            </ul>
+            <button type="button" class="modal-btn">Більше про наш підхід до навчання</button>
+        </div>
+    </section>
+    <section class="achievments">
+        <div class="achievments__banner">
+            <div class="container">
+                <div class="achievments__banner-left-side">
+                    <figure class="achievments__banner-figure">
+                        <picture class="achievments__banner-picture">
+                            <source srcset="./images/main/achievments/anton-chorniy-desktop.jpg"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/main/achievments/anton-chorniy.jpg" media="(min-width: 320px)">
+                            <img src="./images/main/achievments/anton-chorniy.jpg" alt="Антон Черный"
+                                class="achievments__banner-img">
+                        </picture>
+                        <figcaption class="achievments__banner-caption">
+                            <h3 class="achievments__banner-picture-title">Антон Чорний</h3>
+                            <p class="achievments__banner-picture-text">CEO мережі IT-шкіл GoIT та GoITeens</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="achievments__banner-right-side">
+                    <h2 class="title">Формуємо разом <span class="accent-text">технологічне майбутнє</span> України</h2>
+                    <p class="achievments__banner-description">Вже зовсім скоро світ розділиться на тих, хто створює роботів
+                        та розробляє системи автоматизації праці та тих, кого ці роботи та системи замінять на робочих
+                        місцях. Монополія на успіх та створення доданої вартості безповоротно відійде до перших.</p>
+                    <p class="achievments__banner-description">Ми прагнемо, щоб Україна була серед тих, хто створює
+                        технології та експортує у світ високотехнологічні проєкти. Саме тому ми вкладаємося в якісне
+                        навчання для дітей, яким перепало будувати власноруч це майбутнє.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="awards-list list">
+                <li class="awards-list__item">
+                    <picture class="awards-list__picture">
+                        <source srcset="./images/awards/award-01-desktop.png" media="(min-width: 1200px)">
+                        <source srcset="./images/awards/award-01.png" media="(min-width: 320px)">
+                        <img src="./images/awards/award-01.png" alt="" class="awards-list__img">
+                    </picture>
+                    <div class="awards-list__content">
+                        <h3 class="awards-list__title">Українська Народна Премія 2018</h3>
+                        <p class="awards-list__text">за перемогу в номінації IT-освіта 2018 за підсумками голосування
+                            серед споживачів </p>
+    
+                    </div>
+                </li>
+                <li class="awards-list__item awards-list__item_order-1">
+                    <picture class="awards-list__picture">
+                        <source srcset="./images/awards/award-02.png" media="(min-width: 320px)">
+                        <img src="./images/awards/award-02.png" alt="" class="awards-list__img">
+                    </picture>
+                    <div class="awards-list__content">
+                        <h3 class="awards-list__title">Best IT <br> Education 2015</h3>
+                        <p class="awards-list__text">за внесок у підготовку сильних Junior-фахівців </p>
+                    </div>
+                </li>
+                <li class="awards-list__item">
+                    <picture class="awards-list__picture">
+                        <source srcset="./images/awards/award-03.png" media="(min-width: 320px)">
+                        <img src="./images/awards/award-03.png" alt="" class="awards-list__img">
+                    </picture>
+                    <div class="awards-list__content">
+                        <h3 class="awards-list__title">Ukrainian IT <br> Awards 2016</h3>
+                        <p class="awards-list__text">за видатний внесок у IT-навчання українських Junior-розробників
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+  </main>
+
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>

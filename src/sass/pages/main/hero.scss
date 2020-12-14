@@ -1,0 +1,123 @@
+.hero {
+  background-color: #ffce3e;
+  overflow: hidden;
+
+  &__text {
+    @include font(24px, 400, 1.2);
+
+    &_top {
+      max-width: 250px;
+    }
+
+    &_bottom {
+      max-width: 360px;
+      margin-bottom: 42px;
+    }
+  }
+
+  &__title {
+    @include font(36px, 700, 1.2);
+    margin-top: 34px;
+    margin-bottom: 40px;
+  }
+}
+
+.location-banner {
+  &__title {
+    @include font(18px, 700);
+    margin-bottom: 28px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 380px;
+    margin: -10px 0;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    @include font(18px, 400);
+
+    margin: 10px 0;
+
+    &-icon {
+      width: 26px;
+      height: 26px;
+      margin-right: 6px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+@include mq('tablet') {
+  .location-banner {
+    display: flex;
+    align-items: center;
+    padding: 24px 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+
+    &__title {
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+
+    &__list {
+      max-width: 320px;
+    }
+  }
+}
+
+@include mq('desktop') {
+  .hero {
+    &__text {
+      font-size: 32px;
+
+      &_top {
+        max-width: unset;
+      }
+
+      &_bottom {
+        max-width: 600px;
+        margin-bottom: 28px;
+      }
+    }
+
+    &__title {
+      font-size: 80px;
+      margin-top: 10px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .location-banner {
+    width: 1028px;
+    border-radius: 6px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &__title {
+      width: 500px;
+      font-size: 24px;
+      margin-right: 22px;
+    }
+
+    &__list {
+      max-width: 424px;
+    }
+
+    &__list-item {
+      min-width: 112px;
+      font-weight: 700;
+    }
+
+    &__list-item-icon {
+      width: 26px;
+      height: 26px;
+      margin-right: 14px;
+    }
+  }
+}

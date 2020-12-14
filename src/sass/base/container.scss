@@ -1,0 +1,66 @@
+.container {
+  padding: 0 26px;
+
+  .header & {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero & {
+    position: relative;
+    z-index: 0;
+    padding-top: 96px;
+    padding-bottom: 60px;
+
+    &::before {
+      position: absolute;
+      top: 20px;
+      right: -202px;
+      z-index: -1;
+      width: 380px;
+      height: 480px;
+      content: '';
+      background-image: url('../images/main/hero/bg-mob.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include mq('tablet') {
+        bottom: 0px;
+        top: unset;
+        right: -80px;
+        width: 542px;
+        height: 730px;
+        background-image: url('../images/main/hero/bg-desktop.png');
+      }
+    }
+  }
+
+  .achievments > & {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include mq('phone') {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  @include mq('tablet') {
+    max-width: 768px;
+    padding: 0 15px;
+  }
+
+  @include mq('desktop') {
+    max-width: 1196px;
+
+    .hero & {
+      padding-top: 72px;
+      padding-left: 86px;
+      padding-bottom: 64px;
+
+      &::before {
+        right: -40px;
+      }
+    }
+  }
+}
