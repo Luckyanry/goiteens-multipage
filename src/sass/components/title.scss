@@ -8,6 +8,31 @@
   .achievments & {
     margin-bottom: 40px;
   }
+
+  .courses & {
+    margin-bottom: 40px;
+  }
+
+  .format & {
+    letter-spacing: -0.6px;
+    margin-bottom: 10px;
+  }
+
+  .dignity & {
+    margin-bottom: 30px;
+  }
+
+  .projects & {
+    margin-bottom: 42px;
+  }
+
+  .appeal & {
+    margin-bottom: 56px;
+  }
+
+  .testimonials & {
+    margin-bottom: 30px;
+  }
 }
 
 @include mq('desktop') {
@@ -17,6 +42,23 @@
     .advantages & {
       width: 850px;
       margin-bottom: 60px;
+    }
+
+    .courses & {
+      max-width: 900px;
+      margin-bottom: 34px;
+    }
+
+    .format & {
+      margin-bottom: 24px;
+    }
+
+    .dignity & {
+      margin-bottom: 104px;
+    }
+
+    .projects & {
+      margin-bottom: 55px;
     }
   }
 }

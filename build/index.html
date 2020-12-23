@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
     crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -203,8 +207,399 @@
             </ul>
         </div>
     </section>
+    <section class="courses">
+        <div class="container">
+            <h2 class="title">Формуємо <span class="accent-text">інноваційне мислення</span> та допомагаємо опанувати
+                техногії</h2>
+            <p class="courses__description">Відповідно до віку учнів ми пропонуємо програми різної складності та занурення у
+                технології. Усе реалізовується на конкретних навчальних проєктах, що дозволяє найкраще реалізувати вроджені
+                таланти та потенціал</p>
+            <div class="courses__zoom-card">
+                <a class="courses__img-link" href="./images/courses/courses.jpg">
+                    <img src="./images/courses/courses.jpg" alt="описание курсов" class="courses__img">
+                    <div class="courses__overlay">
+                        <svg class="courses__overlay-icon-zoom">
+                            <use href="./images/sprite.svg#zoom"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <button class="modal-btn">Підібрати план навчання</button>
+        </div>
+    </section>
+    <section class="format">
+        <div class="container">
+            <h2 class="title">Формат навчання</h2>
+            <p class="format__description">Онлайн або офлайн</p>
+            <div class="format__content-wrapper">
+                <picture class="format__picture">
+                    <source srcset="./images/main/format/format-img-desktop.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/main/format/format-img.jpg" media="(min-width: 320px)">
+                    <img src="./images/main/format/format-img.jpg" alt="студенты за партами" class="format__img">
+                </picture>
+                <ul class="format__list list">
+                    <li class="format__list-item">
+                        <div class="format__list-icon-wrapper">
+                            <svg class="format__list-icon" width="39" height="36">
+                                <use href="./images/sprite.svg#calendar"></use>
+                            </svg>
+                        </div>
+                        <div class="format__list-text-wrapper">
+                            <h3 class="format__list-title">9 місяців</h3>
+                            <p class="format__list-text">усі програми тривають
+                                з вересня по червень</p>
+                        </div>
+                    </li>
+                    <li class="format__list-item order-2">
+                        <div class="format__list-icon-wrapper">
+                            <img src="./images/main/format/day-icon.png" alt="иконка" class="format__list-icon">
+                        </div>
+                        <div class="format__list-text-wrapper">
+                            <h3 class="format__list-title">Кожні вихідні</h3>
+                            <p class="format__list-text">субота чи неділя відповідно до розкладу</p>
+                        </div>
+                    </li>
+                    <li class="format__list-item order-1">
+                        <div class="format__list-icon-wrapper">
+                            <svg class="format__list-icon" width="40" height="40">
+                                <use href="./images/sprite.svg#time"></use>
+                            </svg>
+                        </div>
+                        <div class="format__list-text-wrapper">
+                            <h3 class="format__list-title">з 10:00 до 14:00</h3>
+                            <p class="format__list-text">4 години з перервами на відпочинок та смаколики</p>
+                        </div>
+                    </li>
+                    <li class="format__list-item order-3">
+                        <div class="format__list-icon-wrapper">
+                            <svg class="format__list-icon" width="39" height="37">
+                                <use href="./images/sprite.svg#money"></use>
+                            </svg>
+                        </div>
+                        <div class="format__list-text-wrapper">
+                            <h3 class="format__list-title">від 600 грн на місяць</h3>
+                            <p class="format__list-text">вартість навчання залежить від міста, формату та конкретної
+                                програми</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="dignity">
+        <div class="container">
+            <h2 class="title">Чому нам <span class="accent-text">довіряють</span></h2>
+            <ul class="dignity__list list">
+                <li class="dignity__list-item">
+                    <div class="dignity__list-content">
+                        <h3 class="dignity__list-title">Розвиваємо власну мережу
+                            і контролюємо якість</h3>
+                        <picture class="dignity__picture">
+                            <source srcset="./images/main/dignity/dignity-img-1-desktop.jpg" media="(min-width: 1200px)">
+                            <source srcset="./images/main/dignity/dignity-img-1.jpg" media="(min-width: 320px)">
+                            <img src="./images/main/dignity/dignity-img-1.jpg" alt="" class="dignity__list-img">
+                        </picture>
+                        <p class="dignity__list-text">Школи у всіх містах працюють за єдиними стандартами якості та
+                            управляються однією командою.</p>
+                    </div>
+                </li>
+                <li class="dignity__list-item order-2">
+                    <div class="dignity__list-content">
+                        <h3 class="dignity__list-title">Показуємо зрозумілий
+                            результат навчання</h3>
+                        <picture class="dignity__picture">
+                            <source srcset="./images/main/dignity/dignity-img-2-desktop.jpg" media="(min-width: 1200px)">
+                            <source srcset="./images/main/dignity/dignity-img-2.jpg" media="(min-width: 320px)">
+                            <img src="./images/main/dignity/dignity-img-2.jpg" alt="" class="dignity__list-img">
+                        </picture>
+                        <p class="dignity__list-text">Протягом навчання учні реалізовують проєкти: від простих концептів до
+                            реальних стартапів.</p>
+                    </div>
+                </li>
+                <li class="dignity__list-item order-1">
+                    <div class="dignity__list-content">
+                        <h3 class="dignity__list-title">Відкрито спілкуємось
+                            з дітьми та батьками</h3>
+                        <picture class="dignity__picture">
+                            <source srcset="./images/main/dignity/dignity-img-3-desktop.jpg" media="(min-width: 1200px)">
+                            <source srcset="./images/main/dignity/dignity-img-3.jpg" media="(min-width: 320px)">
+                            <img src="./images/main/dignity/dignity-img-3.jpg" alt="" class="dignity__list-img">
+                        </picture>
+                        <p class="dignity__list-text">Щомісяця батьки отримують від нас звітність та зворотний зв'язок про
+                            успіхи дітей у навчанні.</p>
+                    </div>
+                </li>
+                <li class="dignity__list-item order-3">
+                    <div class="dignity__list-content">
+                        <h3 class="dignity__list-title">Відповідаємо за безпеку</h3>
+                        <picture class="dignity__picture">
+                            <source srcset="./images/main/dignity/dignity-img-4-desktop.jpg" media="(min-width: 1200px)">
+                            <source srcset="./images/main/dignity/dignity-img-4.jpg" media="(min-width: 320px)">
+                            <img src="./images/main/dignity/dignity-img-4.jpg" alt="" class="dignity__list-img">
+                        </picture>
+                        <p class="dignity__list-text">Уважно ставимося до безпеки, контролюємо присутність та тримаємо
+                            зв'язок з батьками.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="title">Що <span class="accent-text">говорять</span> наші учні</h2>
+            <div class="testimonials__slider">
+                <div class="testimonials__slide">
+                    <div class="testimonials__slide-content">
+                        <div class="testimonials__slide-left-side">
+                            <p class="testimonials__slide-text">«Тут я можу дійсно робити круті та корисні речі, а ще
+                                спілкуватися з тими, хто також прагне досягти більшого
+                                в своєму житті»</p>
+                        </div>
+                        <div class="testimonials__slide-right-side">
+                            <picture class="testimonials__slide-picture">
+                                <source srcset="./images/main/testimonials/vasya-tablet.png" media="(min-width: 768px)">
+                                <source srcset="./images/main/testimonials/vasya.png" media="(min-width: 320px)">
+                                <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__slide-img">
+                            </picture>
+                            <div class="testimonials__slide-img-description">
+                                <h3 class="testimonials__slide-title">Василь Пупкін</h3>
+                                <p class="testimonials__slide-age">8 років</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <div class="testimonials__slide-content">
+                        <div class="testimonials__slide-left-side">
+                            <p class="testimonials__slide-text">«Тут я можу дійсно робити круті та корисні речі, а ще
+                                спілкуватися з тими, хто також прагне досягти більшого
+                                в своєму житті»</p>
+                        </div>
+                        <div class="testimonials__slide-right-side">
+                            <picture class="testimonials__slide-picture">
+                                <source srcset="./images/main/testimonials/vasya-tablet.png" media="(min-width: 768px)">
+                                <source srcset="./images/main/testimonials/vasya.png" media="(min-width: 320px)">
+                                <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__slide-img">
+                            </picture>
+                            <div class="testimonials__slide-img-description">
+                                <h3 class="testimonials__slide-title">Василь Пупкін</h3>
+                                <p class="testimonials__slide-age">8 років</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <div class="testimonials__slide-content">
+                        <div class="testimonials__slide-left-side">
+                            <p class="testimonials__slide-text">«Тут я можу дійсно робити круті та корисні речі, а ще
+                                спілкуватися з тими, хто також прагне досягти більшого
+                                в своєму житті»</p>
+                        </div>
+                        <div class="testimonials__slide-right-side">
+                            <picture class="testimonials__slide-picture">
+                                <source srcset="./images/main/testimonials/vasya-tablet.png" media="(min-width: 768px)">
+                                <source srcset="./images/main/testimonials/vasya.png" media="(min-width: 320px)">
+                                <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__slide-img">
+                            </picture>
+                            <div class="testimonials__slide-img-description">
+                                <h3 class="testimonials__slide-title">Василь Пупкін</h3>
+                                <p class="testimonials__slide-age">8 років</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <div class="testimonials__slide-content">
+                        <div class="testimonials__slide-left-side">
+                            <p class="testimonials__slide-text">«Тут я можу дійсно робити круті та корисні речі, а ще
+                                спілкуватися з тими, хто також прагне досягти більшого
+                                в своєму житті»</p>
+                        </div>
+                        <div class="testimonials__slide-right-side">
+                            <picture class="testimonials__slide-picture">
+                                <source srcset="./images/main/testimonials/vasya-tablet.png" media="(min-width: 768px)">
+                                <source srcset="./images/main/testimonials/vasya.png" media="(min-width: 320px)">
+                                <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__slide-img">
+                            </picture>
+                            <div class="testimonials__slide-img-description">
+                                <h3 class="testimonials__slide-title">Василь Пупкін</h3>
+                                <p class="testimonials__slide-age">8 років</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <div class="testimonials__slide-content">
+                        <div class="testimonials__slide-left-side">
+                            <p class="testimonials__slide-text">«Тут я можу дійсно робити круті та корисні речі, а ще
+                                спілкуватися з тими, хто також прагне досягти більшого
+                                в своєму житті»</p>
+                        </div>
+                        <div class="testimonials__slide-right-side">
+                            <picture class="testimonials__slide-picture">
+                                <source srcset="./images/main/testimonials/vasya-tablet.png" media="(min-width: 768px)">
+                                <source srcset="./images/main/testimonials/vasya.png" media="(min-width: 320px)">
+                                <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__slide-img">
+                            </picture>
+                            <div class="testimonials__slide-img-description">
+                                <h3 class="testimonials__slide-title">Василь Пупкін</h3>
+                                <p class="testimonials__slide-age">8 років</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <div class="testimonials__slide-content">
+                        <div class="testimonials__slide-left-side">
+                            <p class="testimonials__slide-text">«Тут я можу дійсно робити круті та корисні речі, а ще
+                                спілкуватися з тими, хто також прагне досягти більшого
+                                в своєму житті»</p>
+                        </div>
+                        <div class="testimonials__slide-right-side">
+                            <picture class="testimonials__slide-picture">
+                                <source srcset="./images/main/testimonials/vasya-tablet.png" media="(min-width: 768px)">
+                                <source srcset="./images/main/testimonials/vasya.png" media="(min-width: 320px)">
+                                <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__slide-img">
+                            </picture>
+                            <div class="testimonials__slide-img-description">
+                                <h3 class="testimonials__slide-title">Василь Пупкін</h3>
+                                <p class="testimonials__slide-age">8 років</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__slide">
+                    <div class="testimonials__slide-content">
+                        <div class="testimonials__slide-left-side">
+                            <p class="testimonials__slide-text">«Тут я можу дійсно робити круті та корисні речі, а ще
+                                спілкуватися з тими, хто також прагне досягти більшого
+                                в своєму житті»</p>
+                        </div>
+                        <div class="testimonials__slide-right-side">
+                            <picture class="testimonials__slide-picture">
+                                <source srcset="./images/main/testimonials/vasya-tablet.png" media="(min-width: 768px)">
+                                <source srcset="./images/main/testimonials/vasya.png" media="(min-width: 320px)">
+                                <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__slide-img">
+                            </picture>
+                            <div class="testimonials__slide-img-description">
+                                <h3 class="testimonials__slide-title">Василь Пупкін</h3>
+                                <p class="testimonials__slide-age">8 років</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__nav-slider">
+                <div class="testimonials__nav-slide">
+                    <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__nav-img" width="61"
+                        height="61">
+                </div>
+                <div class="testimonials__nav-slide">
+                    <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__nav-img" width="61"
+                        height="61">
+                </div>
+                <div class="testimonials__nav-slide">
+                    <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__nav-img" width="61"
+                        height="61">
+                </div>
+                <div class="testimonials__nav-slide">
+                    <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__nav-img" width="61"
+                        height="61">
+                </div>
+                <div class="testimonials__nav-slide">
+                    <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__nav-img" width="61"
+                        height="61">
+                </div>
+                <div class="testimonials__nav-slide">
+                    <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__nav-img" width="61"
+                        height="61">
+                </div>
+                <div class="testimonials__nav-slide">
+                    <img src="./images/main/testimonials/vasya.png" alt="" class="testimonials__nav-img" width="61"
+                        height="61">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <h2 class="title">Останні реалізовані учнями <span class="accent-text">проєкти</span></h2>
+            <ul class="projects__list list">
+                <li class="projects__list-item">
+                    <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-1">
+                        <picture class="projects__list-picture">
+                            <source srcset="./images/projects/project-01-desktop.png" media="(min-width: 1200px)">
+                            <source srcset="./images/projects/project-01.png" media="(min-width: 320px)">
+                            <img src="./images/projects/project-01.png" alt="" class="projects__list-img">
+                        </picture>
+                    </div>
+                    <h3 class="projects__list-title">Проєкт 1</h3>
+                    <p class="projects__list-description">«Тут я можу дійсно робити круті та корисні речі, а ще спілкуватися
+                        з тими, хто також прагне досягти більшого в своєму житті»</p>
+                </li>
+                <li class="projects__list-item">
+                    <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-2">
+                        <picture class="projects__list-picture">
+                            <source srcset="./images/projects/project-02-desktop.png" media="(min-width: 1200px)">
+                            <source srcset="./images/projects/project-02.png" media="(min-width: 320px)">
+                            <img src="./images/projects/project-02.png" alt="" class="projects__list-img">
+                        </picture>
+                    </div>
+                    <h3 class="projects__list-title">Проєкт 2</h3>
+                    <p class="projects__list-description">«Тут я можу дійсно робити круті та корисні речі, а ще спілкуватися
+                        з тими, хто також прагне досягти більшого в своєму житті»</p>
+                </li>
+                <li class="projects__list-item">
+                    <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-1">
+                        <picture class="projects__list-picture">
+                            <source srcset="./images/projects/project-03-desktop.png" media="(min-width: 1200px)">
+                            <source srcset="./images/projects/project-03.png" media="(min-width: 320px)">
+                            <img src="./images/projects/project-03.png" alt="" class="projects__list-img">
+                        </picture>
+                    </div>
+                    <h3 class="projects__list-title">Проєкт 3</h3>
+                    <p class="projects__list-description">«Тут я можу дійсно робити круті та корисні речі, а ще спілкуватися
+                        з тими, хто також прагне досягти більшого в своєму житті»</p>
+                </li>
+            </ul>
+            <button type="button" class="modal-btn">Більше про результати наших учнів</button>
+        </div>
+    </section>
+    <section class="appeal">
+        <div class="container">
+            <h2 class="title">Допоможіть <br> своїй дитині <br> стати <span class="accent-text">лідером</span> <br>
+                майбутнього</h2>
+            <p class="appeal__text">Кожен місяць правильно обраного зараз для дитини навчання обертається роками
+                конкурентної переваги в майбутньому дорослому житті</p>
+            <button type="button" class="modal-btn">Підібрати план навчання</button>
+        </div>
+    </section>
   </main>
-
+  <footer class="footer">
+      <div class="container">
+          <a href="/" class="footer__logo">
+              <img src="./images/footer/logo.png" alt="логотип" class="footer__logo-img">
+          </a>
+          <ul class="terms-list list">
+              <li class="terms-list__item">
+                  <a href="" class="terms-list__link link">Отказ от ответственности</a>
+              </li>
+              <li class="terms-list__item">
+                  <a href="" class="terms-list__link link">Политика конфиденциальности</a>
+              </li>
+          </ul>
+          <a href="tel:+380933432127" class="footer__tel link">+38 093 343 21 27</a>
+      </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+    integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"></script>
   <script src="./js/scripts.js"></script>
 </body>
 

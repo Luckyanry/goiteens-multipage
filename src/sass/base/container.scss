@@ -40,6 +40,10 @@
     padding-right: 10px;
   }
 
+  .format & {
+    position: relative;
+  }
+
   @include mq('phone') {
     max-width: 480px;
     margin: 0 auto;

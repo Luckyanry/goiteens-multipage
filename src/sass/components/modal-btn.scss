@@ -1,4 +1,5 @@
 .modal-btn {
+  display: block;
   width: 100%;
   max-width: 328px;
   @include font(16px, 700);
@@ -19,6 +20,31 @@
     margin: 0 auto;
     margin-top: 52px;
   }
+
+  .courses & {
+    max-width: unset;
+  }
+
+  .appeal & {
+    max-width: unset;
+  }
+}
+
+@include mq('tablet') {
+  .modal-btn {
+    .courses & {
+      max-width: 328px;
+      margin: 0 auto;
+    }
+
+    .projects & {
+      margin: 0 auto;
+    }
+
+    .appeal & {
+      max-width: 292px;
+    }
+  }
 }
 
 @include mq('desktop') {
@@ -33,6 +59,12 @@
     .advantages & {
       max-width: 428px;
       margin-top: 78px;
+    }
+
+    .projects & {
+      max-width: unset;
+      min-width: 428px;
+      width: unset;
     }
   }
 }
