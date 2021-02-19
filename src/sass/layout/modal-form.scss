@@ -8,6 +8,7 @@
   transform: translate(-50%, -50%) scale(1);
   width: 95%;
   height: 95%;
+  max-height: 340px;
   background-color: #ffffff;
   padding: 60px 40px;
   border-radius: 6px;
@@ -119,6 +120,6 @@
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    height: 400px;
+    max-height: 400px;
   }
 }
