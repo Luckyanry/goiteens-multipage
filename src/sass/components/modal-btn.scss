@@ -1,4 +1,5 @@
-.modal-btn {
+.modal-btn,
+.ref-to-page {
   display: block;
   width: 100%;
   max-width: 328px;
@@ -10,10 +11,7 @@
   padding-bottom: 30px;
   cursor: pointer;
   border-radius: 6px;
-
-  .hero & {
-    margin-bottom: 50px;
-  }
+  text-align: center;
 
   .advantages & {
     display: block;
@@ -31,13 +29,10 @@
 }
 
 @include mq('tablet') {
-  .modal-btn {
+  .modal-btn,
+  .ref-to-page {
     .courses & {
       max-width: 328px;
-      margin: 0 auto;
-    }
-
-    .projects & {
       margin: 0 auto;
     }
 
@@ -48,13 +43,10 @@
 }
 
 @include mq('desktop') {
-  .modal-btn {
+  .modal-btn,
+  .ref-to-page {
     max-width: 294px;
     font-size: 18px;
-
-    .hero & {
-      margin-bottom: 62px;
-    }
 
     .advantages & {
       max-width: 428px;

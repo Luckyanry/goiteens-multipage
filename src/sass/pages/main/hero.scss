@@ -2,6 +2,39 @@
   background-color: #ffce3e;
   overflow: hidden;
 
+  .modal-btn {
+    margin-bottom: 50px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 0;
+    padding-top: 96px;
+    padding-bottom: 60px;
+
+    &::before {
+      position: absolute;
+      top: 20px;
+      right: -202px;
+      z-index: -1;
+      width: 380px;
+      height: 480px;
+      content: '';
+      background-image: url('../images/main/hero/bg-mob.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include mq('tablet') {
+        bottom: 0px;
+        top: unset;
+        right: -80px;
+        width: 542px;
+        height: 730px;
+        background-image: url('../images/main/hero/bg-desktop.png');
+      }
+    }
+  }
+
   &__text {
     @include font(24px, 400, 1.2);
 
@@ -73,6 +106,20 @@
 
 @include mq('desktop') {
   .hero {
+    .modal-btn {
+      margin-bottom: 62px;
+    }
+
+    .container {
+      padding-top: 72px;
+      padding-left: 86px;
+      padding-bottom: 64px;
+
+      &::before {
+        right: -40px;
+      }
+    }
+
     &__text {
       font-size: 32px;
 

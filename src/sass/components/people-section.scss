@@ -1,0 +1,29 @@
+.people-section {
+  padding-top: 54px;
+  padding-bottom: 44px;
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #282828;
+    margin-bottom: 34px;
+  }
+}
+
+@include mq('desktop') {
+  .people-section {
+    padding-top: 110px;
+    padding-bottom: 80px;
+
+    &__description {
+      font-size: 21px;
+      max-width: 710px;
+      margin-bottom: 60px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.terms-modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 80%;
+  max-height: 90%;
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  overflow: scroll;
+  transition: transform 250ms linear 250ms;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  &__content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.backdrop_terms {
+  transition: all 250ms linear 0ms;
+}
+
+.backdrop_terms.is-terms-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 250ms linear 250ms;
+}
+
+.backdrop_terms.is-terms-hidden .terms-modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 250ms linear 0ms;
+}

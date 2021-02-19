@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Goiteens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/testimonials-page.css">
+</head>
+
+<body>
+    //= "./html/pages/testimonials/header.html"
+    <main>
+        //= "./html/pages/testimonials/hero.html"
+        //= "./html/pages/testimonials/projects.html"
+        //= "./html/pages/testimonials/winners-project.html"
+        //= "./html/pages/testimonials/students-testimonials.html"
+        //= "./html/pages/testimonials/parents-testimonials.html"
+    </main>
+    //= "./html/pages/testimonials/footer.html"
+
+    <div class="backdrop backdrop_form is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal__close-btn" data-modal-close>
+                <svg width="18" height="18" class="modal__close-icon">
+                    <use href="./images/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+            <form action="#" class="modal-form">
+                <label class="modal-form__label">
+                    <input type="text" class="modal-form__input" required>
+                    <svg width="18" height="18" class="modal-form__icon">
+                        <use href="./images/sprite.svg#name-icon"></use>
+                    </svg>
+                    <span class="modal-form__input-hint">Имя*</span>
+                </label>
+                <label class="modal-form__label">
+                    <input type="tel" class="modal-form__input" required>
+                    <svg width="18" height="18" class="modal-form__icon">
+                        <use href="./images/sprite.svg#phone-icon"></use>
+                    </svg>
+                    <span class="modal-form__input-hint">Телефон*</span>
+                </label>
+                <button type="submit" class="modal-form__btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="backdrop backdrop_terms is-terms-hidden" data-termsModal="policy">
+        <div class="terms-modal">
+            <button type="button" class="modal__close-btn" data-terms-close>
+                <svg width="18" height="18" class="modal__close-icon">
+                    <use href="./images/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+            <div class="terms-modal__content">
+                <h2 class="terms-modal__title">ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ</h2>
+
+                <div class="terms-modal__content">
+                    <p>
+                        Ваша конфіденційність дуже важлива для нас. Ми хочемо, щоб
+                        Ваша робота в Інтернет по можливості була максимально
+                        приємною і корисною, і Ви абсолютно спокійно
+                        використовували найширший спектр інформації, інструментів
+                        і можливостей, які пропонує Інтернет.
+                    </p>
+                    <p>
+                        Особиста інформація Членів, зібрана при реєстрації (або в
+                        будь-який інший час) переважно використовується для
+                        підготовки Продуктів або Послуг відповідно до Ваших
+                        потреб. Ваша інформація не буде передана або продана
+                        третім сторонам. Однак ми можемо частково розкривати
+                        особисту інформацію в особливих випадках, описаних в
+                        «Згоду з розсилкою»
+                    </p>
+                    <p><strong>Які дані збираються на сайті</strong></p>
+                    <p>
+                        При добровільній реєстрації на отримання розсилки ви
+                        відправляєте своє Ім'я та E-mail через форму реєстрації.
+                    </p>
+                    <p><strong>З якою метою збираються ці дані</strong></p>
+                    <p>
+                        Ім'я використовується для звернення особисто до вас, а ваш
+                        e-mail для відправки вам листів розсилок, новин, корисних
+                        матеріалів, комерційних пропозицій.
+                    </p>
+                    <p>
+                        Ваші ім'я та e-mail не передаються третім особам, ні за
+                        яких умов крім випадків, пов'язаних з виконанням вимог
+                        законодавства.
+                    </p>
+                    <p>
+                        Ви можете відмовитися від отримання листів розсилки і
+                        видалити з бази даних свої контактні дані в будь-який
+                        момент, клікнувши на посилання для відписки, присутню в
+                        кожному листі.
+                    </p>
+                    <p><strong>Як ці дані використовуються</strong></p>
+                    <p>
+                        За допомогою цих даних збирається інформація про дії
+                        відвідувачів на сайті з метою поліпшення його змісту,
+                        поліпшення функціональних можливостей сайту і, як
+                        наслідок, створення якісного контенту і сервісів для
+                        відвідувачів.
+                    </p>
+                    <p>
+                        Ви можете в будь-який момент змінити налаштування свого
+                        браузера так, щоб браузер блокував всі файли або оповіщає
+                        про відправку цих файлів. Врахуйте при цьому, що деякі
+                        функції і сервіси не зможуть працювати належним чином.
+                    </p>
+                    <p><strong>Як ці дані захищаються</strong></p>
+                    <p>
+                        Для захисту Вашої особистої інформації ми використовуємо
+                        різноманітні адміністративні, управлінські та технічні
+                        заходи безпеки. Наша Компанія дотримується різних
+                        міжнародних стандартів контролю, спрямованих на операції з
+                        особистою інформацією, які включають певні заходи контролю
+                        щодо захисту інформації, зібраної в Інтернет.
+                    </p>
+                    <p>
+                        Наших співробітників навчають розуміти і виконувати ці
+                        заходи контролю, вони ознайомлені з нашим Повідомленням
+                        про конфіденційність, норм та інструкцій.
+                    </p>
+                    <p>
+                        Проте, не дивлячись на те, що ми прагнемо убезпечити Вашу
+                        особисту інформацію, Ви теж повинні вживати заходів, щоб
+                        захистити її.
+                    </p>
+                    <p>
+                        Ми настійно рекомендуємо Вам вживати всіх можливих заходів
+                        обережності під час перебування в Інтернеті. Організовані
+                        нами послуги і веб-сайти передбачають заходи щодо захисту
+                        від витоку, несанкціонованого використання і зміни
+                        інформації, яку ми контролюємо. Незважаючи на те, що ми
+                        робимо все можливе, щоб забезпечити цілісність і безпеку
+                        своєї мережі і систем, ми не можемо гарантувати, що наші
+                        заходи безпеки допоможуть запобігти незаконний доступ до
+                        цієї інформації хакерів сторонніх організацій.
+                    </p>
+                    <p>
+                        У разі зміни цієї політики конфіденційності ви зможете
+                        прочитати про ці зміни на цій сторінці або, в особливих
+                        випадках, отримати повідомлення на свій e-mail.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop backdrop_terms is-terms-hidden" data-termsModal="responsibility">
+        <div class="terms-modal">
+            <button type="button" class="modal__close-btn" data-terms-close>
+                <svg width="18" height="18" class="modal__close-icon">
+                    <use href="./images/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+            <h2 class="terms-modal__title">ВІДМОВА ВІД ВІДПОВІДАЛЬНОСТІ</h2>
+            <div class="terms-modal__content">
+                <p>
+                    <strong>Відповідно до чинного законодавства</strong>,
+                    Адміністрація відмовляється від будь-яких запевнень і
+                    гарантій, надання яких може іншим чином матися на увазі, і
+                    відмовляється від відповідальності щодо Сайту, Вмісту та
+                    їх використання.
+                </p>
+                <p>
+                    Ні за яких обставин Адміністрація Сайту не буде нести
+                    відповідальності ні перед якою стороною за будь-якої
+                    прямої, непрямої, особливий або інший непрямий збиток в
+                    результаті будь-якого використання інформації на цьому
+                    Сайті або на будь-якому іншому сайті, на який є посилання
+                    з нашого сайту, виникнення залежності, зниження
+                    продуктивності, звільнення або переривання трудової
+                    активності, а також і відрахування з навчальних закладів,
+                    за будь-яку упущену вигоду, припинення господарської
+                    діяльності, втрату програм або даних у ашіх інформаційних
+                    системах чи іншим чином, що виникли в зв'язку з доступом,
+                    використанням або неможливістю використання Сайту, Вмісту
+                    або будь-якого пов'язаного інтернет-сайту, або
+                    непрацездатністю, помилкою, недоглядом, перебоєм,
+                    дефектом, простоєм в роботі або затримкою в передачі,
+                    комп'ютерним вірусом або системним збоєм, навіть якщо
+                    адміністрація буде явно повідомлено про можливість такого
+                    збитку.
+                </p>
+                <p>
+                    Користувач погоджується з тим, що всі можливі суперечки
+                    будуть вирішуватися за нормами права.
+                </p>
+                <p>
+                    Користувач погоджується з тим, що норми і закони про
+                    захист прав споживачів не можуть бути застосовні до
+                    використання їм Сайту, оскільки він не робить відплатних
+                    послуг.
+                </p>
+                <p>
+                    Використовуючи даний Сайт, Ви погоджуєтесь з «Відмовою від
+                    відповідальності» і встановленими Правилами і приймаєте
+                    всю відповідальність, яка може бути на Вас покладена.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

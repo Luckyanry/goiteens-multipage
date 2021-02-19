@@ -1,0 +1,86 @@
+.hero-footer {
+  padding-top: 172px;
+  padding-bottom: 78px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../images/about/hero-footer/bg-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    @include font(36px, 700, 1.2);
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: -0.4px;
+  }
+
+  &__accent-text {
+    color: #fecd4d;
+  }
+
+  &__description {
+    @include font(24px, 400, 1.2);
+    color: #ffffff;
+    margin-bottom: 42px;
+  }
+}
+
+@include mq('tablet') {
+  .hero-footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('../images/about/hero-footer/bg-desktop.jpg');
+    text-align: center;
+
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__description {
+      max-width: 490px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .modal-btn {
+      font-weight: 400;
+      margin: 0 auto;
+      max-width: 294px;
+    }
+  }
+}
+
+@include mq('desktop') {
+  .hero-footer {
+    padding-top: 264px;
+    padding-bottom: 206px;
+
+    &__title {
+      font-size: 60px;
+      margin-bottom: 26px;
+    }
+
+    &__description {
+      font-size: 24px;
+      margin-bottom: 48px;
+    }
+  }
+
+  .footer_about-page {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+    .terms-list__link {
+      color: #ffffff;
+    }
+
+    .footer__tel {
+      color: #ffffff;
+    }
+
+    .footer__logo-text {
+      color: #ffffff;
+    }
+  }
+}

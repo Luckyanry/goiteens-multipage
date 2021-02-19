@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Goiteens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/about-page.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo link" aria-label="логотип">
+                <img src="./images/header/logo.png" alt="логотип" class="logo__img">
+                <span class="logo__text">мережа ІТ-академій <br> для дітей 8-15 років</span>
+            </a>
+            <button type="button" class="menu-btn" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="36" class="menu-btn__icons">
+                    <use href="./images/sprite.svg#burger" class="menu-btn__icon_burger"></use>
+                    <use href="./images/sprite.svg#close" class="menu-btn__icon_close"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <nav class="navigation">
+                    <ul class="navigation__list list">
+                        <li class="navigation__list-item">
+                            <a href="./programs.html" class="navigation__list-link link">Програми</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="./about.html" class="navigation__list-link link">Про нас</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="./testimonials.html" class="navigation__list-link link">Результати учнів</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a href="./contact-page.html" class="navigation__list-link link">Контакт</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="location">
+                    <svg width="24" height="22" class="location__icon">
+                        <use href="./images/sprite.svg#location-icon"></use>
+                    </svg>
+                    <span>київ</span>
+                </p>
+                <a href="tel:+380933432127" class="contact-tel link">+38 093 343 21 27</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Місія GoITeens — створення української sturtup нації</h1>
+                <p class="hero__description">
+                    Ми хочемо, щоб через 5-10 років в Україні народжувалось
+                    все більше і більше інноваційних проєктів та технологічних продуктових компаній. <span
+                        class="hero__description-br">Це інвестиції в людський
+                        потенціал України, інтелектуальну власність та майбутнє нашої економіки.</span>
+                </p>
+                <p class="hero__description">
+                    Увесь наш підхід до навчання, філософія, формування ком'юніті та KPI наших проєктів — наслідки з цього
+                    прагнення.
+                </p>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="container">
+                <h2 class="partners__title title">Про нас <span class="accent-text">пишуть</span>:</h2>
+                <ul class="partners__list list">
+                    <li class="partners__list-item">
+                        <img src="./images/about/partners/suhari.png" alt="" class="partners__list-logo">
+                    </li>
+                    <li class="partners__list-item">
+                        <img src="./images/about/partners/diya.png" alt="" class="partners__list-logo">
+                    </li>
+                    <li class="partners__list-item">
+                        <img src="./images/about/partners/facts.png" alt="" class="partners__list-logo">
+                    </li>
+                    <li class="partners__list-item">
+                        <img src="./images/about/partners/nv.png" alt="" class="partners__list-logo">
+                    </li>
+                    <li class="partners__list-item">
+                        <img src="./images/about/partners/womo.png" alt="" class="partners__list-logo">
+                    </li>
+                    <li class="partners__list-item">
+                        <img src="./images/about/partners/znua.png" alt="" class="partners__list-logo">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="courses">
+            <div class="container">
+                <h2 class="title">Формуємо <span class="accent-text">інноваційне мислення</span> та допомагаємо опанувати
+                    техногії</h2>
+                <p class="courses__description">Відповідно до віку учнів ми пропонуємо програми різної складності та занурення у
+                    технології. Усе реалізовується на конкретних навчальних проєктах, що дозволяє найкраще реалізувати вроджені
+                    таланти та потенціал</p>
+                <div class="courses__zoom-card">
+                    <a class="courses__img-link" href="./images/courses/courses.jpg">
+                        <img src="./images/courses/courses.jpg" alt="описание курсов" class="courses__img">
+                        <div class="courses__overlay">
+                            <svg class="courses__overlay-icon-zoom">
+                                <use href="./images/sprite.svg#zoom"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <button class="modal-btn" data-modal-open>Підібрати план навчання</button>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="container">
+                <h2 class="title skills__title"><span class="skills__title-span accent-text">8</span> соціальних навичок, які
+                    засвоюють усі
+                    наші учні</h2>
+                <p class="skills__description">Кожен учень з часом знаходить свій хист в певних навичках і таким чином
+                    віднаходить свою ідеальну роль в команді.</p>
+                <ul class="skills__list list">
+                    <li class="skills__list-item">
+                        <div class="skills__icon-wrapper">
+                            <svg class="skills__list-icon" width="40" height="40">
+                                <use href="./images/sprite.svg#brain"></use>
+                            </svg>
+                        </div>
+                        <h3 class="skills__list-title">Емоційний інтелект</h3>
+                        <p class="skills__list-text">Вміння розуміти власні емоції, контролювати свій емоційний стан та легко
+                            розуміти, що відчувають інші.</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <div class="skills__icon-wrapper">
+                            <svg class="skills__list-icon" width="40" height="40">
+                                <use href="./images/sprite.svg#protest"></use>
+                            </svg>
+                        </div>
+                        <h3 class="skills__list-title">Самостійність</h3>
+                        <p class="skills__list-text">Вміння брати на себе відповідальність, проявляти ініціативу та втілювати в
+                            життя власне бачення, без зовнішніх вказівок.</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <div class="skills__icon-wrapper">
+                            <svg class="skills__list-icon" width="40" height="40">
+                                <use href="./images/sprite.svg#color-palette"></use>
+                            </svg>
+                        </div>
+                        <h3 class="skills__list-title">Креативність</h3>
+                        <p class="skills__list-text">Вміння знаходити нестандартні рішення задач, виходити за рамки відомих
+                            алгоритмів та правил, створювати нові концепти.</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <div class="skills__icon-wrapper">
+                            <svg class="skills__list-icon" width="40" height="40">
+                                <use href="./images/sprite.svg#profile"></use>
+                            </svg>
+                        </div>
+                        <h3 class="skills__list-title">Гнучкість та управління проєктами</h3>
+                        <p class="skills__list-text">Вміння фокусуватися на результаті та швидко знаходити варіанти рішень, які
+                            влаштовують усі сторони процесу та ведуть до спільної мети.</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <div class="skills__icon-wrapper">
+                            <svg class="skills__list-icon" width="40" height="40">
+                                <use href="./images/sprite.svg#leader-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="skills__list-title">Лідерство</h3>
+                        <p class="skills__list-text">Вміння вести за собою команду, надихати своїми ідеями та об'єднувати людей
+                            навколо свої цілей та переконань.</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <div class="skills__icon-wrapper">
+                            <svg class="skills__list-icon" width="40" height="40">
+                                <use href="./images/sprite.svg#leader"></use>
+                            </svg>
+                        </div>
+                        <h3 class="skills__list-title">Нетворкінг та особистий бренд</h3>
+                        <p class="skills__list-text">Уважно ставимося до безпеки, контролюємо присутність та тримаємо зв'язок з
+                            батьками.</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <div class="skills__icon-wrapper">
+                            <svg class="skills__list-icon" width="40" height="40">
+                                <use href="./images/sprite.svg#calculator"></use>
+                            </svg>
+                        </div>
+                        <h3 class="skills__list-title">Управління фінансами</h3>
+                        <p class="skills__list-text">Розуміння суті фінансових потоків в проєктах та підприємствах. Вміння
+                            ефективно управляти та балансувати їх.</p>
+                    </li>
+                    <li class="skills__list-item">
+                        <div class="skills__icon-wrapper">
+                            <svg class="skills__list-icon" width="40" height="40">
+                                <use href="./images/sprite.svg#microphone"></use>
+                            </svg>
+                        </div>
+                        <h3 class="skills__list-title">Публічні виступи та комунікації</h3>
+                        <p class="skills__list-text">Вміння доносити свої ідеї та захоплювати увагу великої аудиторії своїми
+                            промовами та презентаціями.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="format">
+            <div class="container">
+                <h2 class="title">Формат навчання</h2>
+                <p class="format__description">Онлайн або офлайн</p>
+                <div class="format__content-wrapper">
+                    <picture class="format__picture">
+                        <source srcset="./images/main/format/format-img-desktop.jpg" media="(min-width: 1200px)">
+                        <source srcset="./images/main/format/format-img.jpg" media="(min-width: 320px)">
+                        <img src="./images/main/format/format-img.jpg" alt="студенты за партами" class="format__img">
+                    </picture>
+                    <ul class="format__list list">
+                        <li class="format__list-item">
+                            <div class="format__list-icon-wrapper">
+                                <svg class="format__list-icon" width="39" height="36">
+                                    <use href="./images/sprite.svg#calendar"></use>
+                                </svg>
+                            </div>
+                            <div class="format__list-text-wrapper">
+                                <h3 class="format__list-title">9 місяців</h3>
+                                <p class="format__list-text">усі програми тривають
+                                    з вересня по червень</p>
+                            </div>
+                        </li>
+                        <li class="format__list-item order-2">
+                            <div class="format__list-icon-wrapper">
+                                <img src="./images/main/format/day-icon.png" alt="иконка" class="format__list-icon">
+                            </div>
+                            <div class="format__list-text-wrapper">
+                                <h3 class="format__list-title">Кожні вихідні</h3>
+                                <p class="format__list-text">субота чи неділя відповідно до розкладу</p>
+                            </div>
+                        </li>
+                        <li class="format__list-item order-1">
+                            <div class="format__list-icon-wrapper">
+                                <svg class="format__list-icon" width="40" height="40">
+                                    <use href="./images/sprite.svg#time"></use>
+                                </svg>
+                            </div>
+                            <div class="format__list-text-wrapper">
+                                <h3 class="format__list-title">з 10:00 до 14:00</h3>
+                                <p class="format__list-text">4 години з перервами на відпочинок та смаколики</p>
+                            </div>
+                        </li>
+                        <li class="format__list-item order-3">
+                            <div class="format__list-icon-wrapper">
+                                <svg class="format__list-icon" width="39" height="37">
+                                    <use href="./images/sprite.svg#money"></use>
+                                </svg>
+                            </div>
+                            <div class="format__list-text-wrapper">
+                                <h3 class="format__list-title">від 600 грн на місяць</h3>
+                                <p class="format__list-text">вартість навчання залежить від міста, формату та конкретної
+                                    програми</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="proff-skills">
+            <div class="container">
+                <h2 class="title proff-skills__title">Комплексний <span class="accent-text">підхід</span> до розвитку
+                    професійної
+                    ідентичності</h2>
+                <p class="proff-skills__description">В рамках кожного курсу школи учні отримують збалансований мікс з технічний
+                    та
+                    соціальних навичок, а також розмовної англійскої мови</p>
+                <ul class="proff-skills__list list">
+                    <li class="proff-skills__list-item">
+                        <div class="proff-skills__list-img-wrapper proff-skills__list-img-wrapper_border-theme-1">
+                            <picture class="proff-skills__list-picture">
+                                <source srcset="./images/projects/project-01-desktop.png" media="(min-width: 1200px)">
+                                <source srcset="./images/projects/project-01.png" media="(min-width: 320px)">
+                                <img src="./images/projects/project-01.png" alt="" class="proff-skills__list-img">
+                            </picture>
+                        </div>
+                        <h3 class="proff-skills__list-title">Технічні навички (hardskills)</h3>
+                        <p class="proff-skills__list-description">Дисципліни, які лежать в основі кваліфікації IT-спеціаліста.
+                            Від
+                            мов програмування до побудови IT-систем та менеджменту проєктів</p>
+                    </li>
+                    <li class="proff-skills__list-item">
+                        <div class="proff-skills__list-img-wrapper proff-skills__list-img-wrapper_border-theme-2">
+                            <picture class="proff-skills__list-picture">
+                                <source srcset="./images/projects/project-02-desktop.png" media="(min-width: 1200px)">
+                                <source srcset="./images/projects/project-02.png" media="(min-width: 320px)">
+                                <img src="./images/projects/project-02.png" alt="" class="proff-skills__list-img">
+                            </picture>
+                        </div>
+                        <h3 class="proff-skills__list-title">Соціальні навички (softskills)</h3>
+                        <p class="proff-skills__list-description">Без них неможливо успішно працювати в команді, запускати
+                            проєкти
+                            та робити кар'єру в будь-якій індустрії.</p>
+                    </li>
+                    <li class="proff-skills__list-item">
+                        <div class="proff-skills__list-img-wrapper proff-skills__list-img-wrapper_border-theme-1">
+                            <picture class="proff-skills__list-picture">
+                                <source srcset="./images/projects/project-01-desktop.png" media="(min-width: 1200px)">
+                                <source srcset="./images/projects/project-03.png" media="(min-width: 320px)">
+                                <img src="./images/projects/project-03.png" alt="" class="proff-skills__list-img">
+                            </picture>
+                        </div>
+                        <h3 class="proff-skills__list-title">Розмовна англійська мова</h3>
+                        <p class="proff-skills__list-description">IT-ринок в першу чергу англомовний. Тому ми окремо приділяємо
+                            увагу регулярній практиці розмовної англійської, щоб стерти мовний бар'єр в свідомості учнів.</p>
+                    </li>
+                </ul>
+                <ul class="proff-skills__bottom-list list">
+                    <li class="proff-skills__bottom-list-item">
+                        <picture class="proff-skills__bottom-list-picture">
+                            <source srcset="./images/about/proff-skills/list-img-1-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/proff-skills/list-img-1.png" alt="" class="proff-skills__bottom-list-img">
+                        </picture>
+                        <div class="proff-skills__bottom-list-content-wrapper">
+                            <h3 class="proff-skills__bottom-list-content-title">Проєктний підхід до навчання</h3>
+                            <p class="proff-skills__bottom-list-content-text">В процесі навчання учні реалізовують реальні
+                                проєкти: від програмування роботів та створення інфраструктури для розумного будинку до розробки
+                                сайтів для реальних компаній, комп'ютерних ігор та запуску стартапів з отриманням перших
+                                інвестицій на розвиток.</p>
+                            <p class="proff-skills__bottom-list-content-text">Саме такий практичний підхід дозволяє надати
+                                навчанню конкретного змісту та перетворити
+                                опанування професії на захопливу пригоду з реальними викликами, перепонами та задачами, які
+                                потребують креативного підходу.</p>
+                        </div>
+                    </li>
+                    <li class="proff-skills__bottom-list-item">
+                        <picture class="proff-skills__bottom-list-picture">
+                            <source srcset="./images/about/proff-skills/list-img-2-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/proff-skills/list-img-2.png" alt="" class="proff-skills__bottom-list-img">
+                        </picture>
+                        <div class="proff-skills__bottom-list-content-wrapper">
+                            <h3 class="proff-skills__bottom-list-content-title">Робота в групах та командах</h3>
+                            <p class="proff-skills__bottom-list-content-text">Наші учні постійно комунікують між собою заради
+                                вирішення практичних завдань. Вони вчаться швидко та легко знаходити спільну мову, ефективно
+                                обмінюватись думками заради спільного результату.</p>
+                            <p class="proff-skills__bottom-list-content-text">Розвиток соціальних навичок — один з важливих
+                                акцентів процесу навчання в GoITeens.</p>
+                        </div>
+                    </li>
+                    <li class="proff-skills__bottom-list-item">
+                        <picture class="proff-skills__bottom-list-picture">
+                            <source srcset="./images/about/proff-skills/list-img-3-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/proff-skills/list-img-3.png" alt="" class="proff-skills__bottom-list-img">
+                        </picture>
+                        <div class="proff-skills__bottom-list-content-wrapper">
+                            <h3 class="proff-skills__bottom-list-content-title">Менторство та індивідуальний підхід</h3>
+                            <p class="proff-skills__bottom-list-content-text">Робота з реальними задачами дає кожному учню
+                                простір для самовираження та тренування практичних навичок. </p>
+                            <p class="proff-skills__bottom-list-content-text">Кожен учень постійно отримує зворотній зв'язок від
+                                викладачів та інших учнів, постійно вдосконалюючи не тільки професійні, але й соціальні навички.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="people-section teacher">
+            <div class="container">
+                <h2 class="title people-section__title">Наші постійні <span class="accent-text">викладачі</span></h2>
+                <p class="people-section__description">В кожному місті ми знаходимо викладачів, які не тільки знаються
+                    на своєму предметі, але й круто комунікують з дітьми</p>
+                <div class="people-slider people-slider_desktop teacher__slider_desktop">
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/kevhayan-desktop.png" media="(min-width: 768px)">
+                            <img src="./images/about/teachers/kevhayan.png" alt="" class="people-slider__img">
+                        </picture>
+                        <h3 class="people-slider-content__title">Єлізавета Кевхаян</h3>
+                        <p class="people-slider-content__text"> Поділиться практичним досвідом про те, як
+                            створити конкурентне графічне портфоліо. <br><br> <i>Digital Designer</i></p>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/lyubomyr-desktop.png" media="(min-width: 768px)">
+                            <img src="./images/about/teachers/lyubomyr.png" alt="" class="people-slider__img">
+                        </picture>
+                        <h3 class="people-slider-content__title">Любомир Горбатюк</h3>
+                        <p class="people-slider-content__text">Навчає розробці веб-сайтів не тільки підлітків, але й дорослих.
+                            Працює в команді розробників в компанії SoftServe. <br><br> <i>Front-end Developer</i></p>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/maksymets-desktop.png" media="(min-width: 768px)">
+                            <img src="./images/about/teachers/maksymets.png" alt="" class="people-slider__img">
+                        </picture>
+                        <h3 class="people-slider-content__title">Юлія Максимець</h3>
+                        <p class="people-slider-content__text">Експерт у блочному програмуванню для дітей з 11-річним досвідом
+                            викладання. <br><br> <i>Minecraft Education</i></p>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/pichurin-desktop.png" media="(min-width: 768px)">
+                            <img src="./images/about/teachers/pichurin.png" alt="" class="people-slider__img">
+                        </picture>
+                        <h3 class="people-slider-content__title">Вадим Пічурін</h3>
+                        <p class="people-slider-content__text">Front-end розробник в компанії SafeSwiss Company, а в минулому
+                            інженер з 10-річним досвідом. Його студенти - фіналісти конкурсу GameOfTeens <br><br> <i>Front-end
+                                Developer</i>
+                        </p>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/prykhodko-desktop.png" media="(min-width: 768px)">
+                            <img src="./images/about/teachers/prykhodko.png" alt="" class="people-slider__img">
+                        </picture>
+                        <h3 class="people-slider-content__title">Юлия Приходько</h3>
+                        <p class="people-slider-content__text">Допоможе прокачати навички комунікації, розібратись з
+                            тайм-менеджментом і скласти особистий план розвитку. <br><br> <i>Soft Skills Trainer</i></p>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/svidersky-desktop.png" media="(min-width: 768px)">
+                            <img src="./images/about/teachers/svidersky.png" alt="" class="people-slider__img">
+                        </picture>
+                        <h3 class="people-slider-content__title">Кирилл Свидерский</h3>
+                        <p class="people-slider-content__text">Розробник ігор у Dragon's Lake Entertainment і володар 30 призів
+                            всеукраїнських олімпіад. Його студенти вже отримують пропозиції стажувань у реальних компаніях
+                            <br><br>
+                            <i>Gаme Developer</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-slider">
+                <div class="people-slider people-slider_mobile teacher__slider">
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/kevhayan-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/teachers/kevhayan.png" alt="" class="people-slider__img">
+                        </picture>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/lyubomyr-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/teachers/lyubomyr.png" alt="" class="people-slider__img">
+                        </picture>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/maksymets-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/teachers/maksymets.png" alt="" class="people-slider__img">
+                        </picture>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/pichurin-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/teachers/pichurin.png" alt="" class="people-slider__img">
+                        </picture>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/prykhodko-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/teachers/prykhodko.png" alt="" class="people-slider__img">
+                        </picture>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/svidersky-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/teachers/svidersky.png" alt="" class="people-slider__img">
+                        </picture>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="people-slider-content people-slider-content_mobile teacher__slider-content">
+                        <div class="people-slider-content-item">
+                            <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                            <p class="people-slider-content__text">викладає <br> Назва Предмету <br> в Києві</p>
+                        </div>
+                        <div class="people-slider-content-item">
+                            <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                            <p class="people-slider-content__text">викладає <br> Назва Предмету <br> в Києві</p>
+                        </div>
+                        <div class="people-slider-content-item">
+                            <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                            <p class="people-slider-content__text">викладає <br> Назва Предмету <br> в Києві</p>
+                        </div>
+                        <div class="people-slider-content-item">
+                            <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                            <p class="people-slider-content__text">викладає <br> Назва Предмету <br> в Києві</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="people-section speakers">
+            <div class="container">
+                <h2 class="title people-section__title">Запрошені <span class="accent-text">спікери</span></h2>
+                <p class="people-section__description">Періодично ми запрошуємо визнаних експертів-практиків провести для дітей
+                    семінари за своїм фахом</p>
+                <div class="people-slider people-slider_desktop speakers__slider_desktop">
+                    <div class="people-slider__item">
+                        <img src="./images/about/teachers/pupkin-desktop.png" alt="" class="people-slider__img">
+                        <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                        <p class="people-slider-content__text">з якої компанії</p>
+                    </div>
+                    <div class="people-slider__item">
+                        <img src="./images/about/teachers/pupkin-desktop.png" alt="" class="people-slider__img">
+                        <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                        <p class="people-slider-content__text">з якої компанії</p>
+                    </div>
+                    <div class="people-slider__item">
+                        <img src="./images/about/teachers/pupkin-desktop.png" alt="" class="people-slider__img">
+                        <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                        <p class="people-slider-content__text">з якої компанії</p>
+                    </div>
+                    <div class="people-slider__item">
+                        <img src="./images/about/teachers/pupkin-desktop.png" alt="" class="people-slider__img">
+                        <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                        <p class="people-slider-content__text">з якої компанії</p>
+                    </div>
+                    <div class="people-slider__item">
+                        <img src="./images/about/teachers/pupkin-desktop.png" alt="" class="people-slider__img">
+                        <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                        <p class="people-slider-content__text">з якої компанії</p>
+                    </div>
+                    <div class="people-slider__item">
+                        <img src="./images/about/teachers/pupkin-desktop.png" alt="" class="people-slider__img">
+                        <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                        <p class="people-slider-content__text">з якої компанії</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-slider">
+                <div class="people-slider people-slider_mobile speakers__slider">
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/pupkin-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/teachers/pupkin.png" alt="" class="people-slider__img">
+                        </picture>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/pupkin-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/teachers/pupkin.png" alt="" class="people-slider__img">
+                        </picture>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/pupkin-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/teachers/pupkin.png" alt="" class="people-slider__img">
+                        </picture>
+                    </div>
+                    <div class="people-slider__item">
+                        <picture class="people-slider__picture">
+                            <source srcset="./images/about/teachers/pupkin-desktop.png" media="(min-width: 1200px)">
+                            <img src="./images/about/teachers/pupkin.png" alt="" class="people-slider__img">
+                        </picture>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="people-slider-content people-slider-content_mobile speakers__slider-content">
+                        <div class="people-slider-content-item">
+                            <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                            <p class="people-slider-content__text">з якої компанії</p>
+                        </div>
+                        <div class="people-slider-content-item">
+                            <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                            <p class="people-slider-content__text">з якої компанії</p>
+                        </div>
+                        <div class="people-slider-content-item">
+                            <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                            <p class="people-slider-content__text">з якої компанії</p>
+                        </div>
+                        <div class="people-slider-content-item">
+                            <h3 class="people-slider-content__title">Василь Пупкін</h3>
+                            <p class="people-slider-content__text">з якої компанії</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="teens-game">
+            <div class="container">
+                <h2 class="title">Щорічна всеукраїнська битва проєктів <span class="accent-text">Game of Teens</span></h2>
+                <div class="teens-game__content">
+                    <iframe class="teens-game__video" src="https://www.youtube.com/embed/ppGpsoegMGQ" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="teens-game__content-text-wrapper">
+                        <p class="teens-game__content-text">Щорічно в кінці навчального року серед учнів усіх наших шкіл ми
+                            організовуємо конкурс проєктів.</p>
+                        <p class="teens-game__content-text">
+                            Конкурсні проєкти створюються протягом року в рамках навчання на відповідних курсах і є наочним
+                            результатом учнівського прогресу.
+                        </p>
+                        <p class="teens-game__content-text">У 2019 році на участь у битві було подано понад 60 проєктів.</p>
+                        <p class="teens-game__content-text">Деякі проєкти за результатами конкурсу мають нагоду отримати перші
+                            інвестиції та перетворитися на
+                            повноцінні самостійні стартапи.</p>
+                    </div>
+                </div>
+                <ul class="teens-game__list list">
+                    <li class="teens-game__list-item">
+                        <img src="./images/about/teens-game/teens-game-img-1.png" alt="" class="teens-game__img">
+                    </li>
+                    <li class="teens-game__list-item">
+                        <img src="./images/about/teens-game/teens-game-img-2.png" alt="" class="teens-game__img">
+                    </li>
+                    <li class="teens-game__list-item">
+                        <img src="./images/about/teens-game/teens-game-img-3.png" alt="" class="teens-game__img">
+                    </li>
+                    <li class="teens-game__list-item">
+                        <img src="./images/about/teens-game/teens-game-img-4.png" alt="" class="teens-game__img">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container">
+                <h2 class="title">Останні реалізовані учнями <span class="accent-text">проєкти</span></h2>
+                <ul class="projects__list list">
+                    <li class="projects__list-item">
+                        <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-1">
+                            <picture class="projects__list-picture">
+                                <source srcset="./images/projects/caraoke-desktop.png" media="(min-width: 1200px)">
+                                <source srcset="./images/projects/caraoke.png" media="(min-width: 320px)">
+                                <img src="./images/projects/caraoke.png" alt="" class="projects__list-img">
+                            </picture>
+                        </div>
+                        <h3 class="projects__list-title">Сайт караоке-бару Smile Art Bar</h3>
+                        <p class="projects__list-description">Власниця закладу Наталія Ковальчук виступила у якості реального
+                            замовника для груп Front-end #3 і Front-end #5. Наші студенти впродовж 3-х тижнів працювали над
+                            розробкою одночасно привабливого і функціонального сайту, і вже сьогодні готові запускати його в
+                            продакшн.»</p>
+                    </li>
+                    <li class="projects__list-item">
+                        <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-2">
+                            <picture class="projects__list-picture">
+                                <source srcset="./images/projects/cook-desktop.png" media="(min-width: 1200px)">
+                                <source srcset="./images/projects/cook.png" media="(min-width: 320px)">
+                                <img src="./images/projects/cook.png" alt="" class="projects__list-img">
+                            </picture>
+                        </div>
+                        <h3 class="projects__list-title">Сайт кулінарної майстерні Oleg Cook</h3>
+                        <p class="projects__list-description">«Студенти з Вінниці створили односторінковий сайт на замолвення
+                            одного з батьків. Тепер бізнес Олега, а саме приготування їжі на замовлення, розвиватиметься ще з
+                            більшими темпами.»</p>
+                    </li>
+                    <li class="projects__list-item">
+                        <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-1">
+                            <picture class="projects__list-picture">
+                                <source srcset="./images/projects/furniture-desktop.png" media="(min-width: 1200px)">
+                                <source srcset="./images/projects/furniture.png" media="(min-width: 320px)">
+                                <img src="./images/projects/furniture.png" alt="" class="projects__list-img">
+                            </picture>
+                        </div>
+                        <h3 class="projects__list-title">Меблі РЕМСЕРВІС</h3>
+                        <p class="projects__list-description">«Сайт компанії з ремонту та реставрації меблів. На сайті
+                            представлений увесь спектр послуг компанії, приклади реалізованих робіт, конкурентні переваги та
+                            контакти для оформлення замовлення.»</p>
+                    </li>
+                </ul>
+                <a href="./testimonials.html" class="ref-to-page link">Більше про результати наших учнів</a>
+            </div>
+        </section>
+        <section class="hero-footer">
+            <div class="container">
+                <h2 class="hero-footer__title">Допоможіть своїй дитині
+                    <span class="hero-footer__accent-text">стати лідером</span> майбутнього
+                </h2>
+                <p class="hero-footer__description">Кожен місяць правильно обраного зараз для дитини
+                    навчання обертається роками конкурентної переваги
+                    в майбутньому дорослому житті</p>
+                <button type="button" class="modal-btn" data-modal-open>Підібрати план навчання</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer footer_about-page">
+        <div class="container">
+            <a href="/" class="footer__logo link">
+                <picture>
+                    <source srcset="./images/footer/logo-white.png" media="(min-width: 1200px)">
+                    <img src="./images/footer/logo.png" alt="логотип" class="footer__logo-img footer__logo-img_light">
+                </picture>
+                <span class="footer__logo-text">мережа ІТ-академій <br> для дітей 8-15 років</span>
+            </a>
+            <ul class="terms-list list">
+                <li class="terms-list__item">
+                    <button type="button" class="terms-list__link link" data-terms="responsibility">Отказ от
+                        ответственности</button>
+                </li>
+                <li class="terms-list__item">
+                    <button type="button" class="terms-list__link link" data-terms="policy">Политика
+                        конфиденциальности</button>
+                </li>
+            </ul>
+            <a href="tel:+380933432127" class="footer__tel link">+38 093 343 21 27</a>
+        </div>
+    </footer>
+
+    <div class="backdrop backdrop_form is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal__close-btn" data-modal-close>
+                <svg width="18" height="18" class="modal__close-icon">
+                    <use href="./images/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+            <form action="#" class="modal-form">
+                <label class="modal-form__label">
+                    <input type="text" class="modal-form__input" required>
+                    <svg width="18" height="18" class="modal-form__icon">
+                        <use href="./images/sprite.svg#name-icon"></use>
+                    </svg>
+                    <span class="modal-form__input-hint">Имя*</span>
+                </label>
+                <label class="modal-form__label">
+                    <input type="tel" class="modal-form__input" required>
+                    <svg width="18" height="18" class="modal-form__icon">
+                        <use href="./images/sprite.svg#phone-icon"></use>
+                    </svg>
+                    <span class="modal-form__input-hint">Телефон*</span>
+                </label>
+                <button type="submit" class="modal-form__btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="backdrop backdrop_terms is-terms-hidden" data-termsModal="policy">
+        <div class="terms-modal">
+            <button type="button" class="modal__close-btn" data-terms-close>
+                <svg width="18" height="18" class="modal__close-icon">
+                    <use href="./images/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+            <div class="terms-modal__content">
+                <h2 class="terms-modal__title">ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ</h2>
+
+                <div class="terms-modal__content">
+                    <p>
+                        Ваша конфіденційність дуже важлива для нас. Ми хочемо, щоб
+                        Ваша робота в Інтернет по можливості була максимально
+                        приємною і корисною, і Ви абсолютно спокійно
+                        використовували найширший спектр інформації, інструментів
+                        і можливостей, які пропонує Інтернет.
+                    </p>
+                    <p>
+                        Особиста інформація Членів, зібрана при реєстрації (або в
+                        будь-який інший час) переважно використовується для
+                        підготовки Продуктів або Послуг відповідно до Ваших
+                        потреб. Ваша інформація не буде передана або продана
+                        третім сторонам. Однак ми можемо частково розкривати
+                        особисту інформацію в особливих випадках, описаних в
+                        «Згоду з розсилкою»
+                    </p>
+                    <p><strong>Які дані збираються на сайті</strong></p>
+                    <p>
+                        При добровільній реєстрації на отримання розсилки ви
+                        відправляєте своє Ім'я та E-mail через форму реєстрації.
+                    </p>
+                    <p><strong>З якою метою збираються ці дані</strong></p>
+                    <p>
+                        Ім'я використовується для звернення особисто до вас, а ваш
+                        e-mail для відправки вам листів розсилок, новин, корисних
+                        матеріалів, комерційних пропозицій.
+                    </p>
+                    <p>
+                        Ваші ім'я та e-mail не передаються третім особам, ні за
+                        яких умов крім випадків, пов'язаних з виконанням вимог
+                        законодавства.
+                    </p>
+                    <p>
+                        Ви можете відмовитися від отримання листів розсилки і
+                        видалити з бази даних свої контактні дані в будь-який
+                        момент, клікнувши на посилання для відписки, присутню в
+                        кожному листі.
+                    </p>
+                    <p><strong>Як ці дані використовуються</strong></p>
+                    <p>
+                        За допомогою цих даних збирається інформація про дії
+                        відвідувачів на сайті з метою поліпшення його змісту,
+                        поліпшення функціональних можливостей сайту і, як
+                        наслідок, створення якісного контенту і сервісів для
+                        відвідувачів.
+                    </p>
+                    <p>
+                        Ви можете в будь-який момент змінити налаштування свого
+                        браузера так, щоб браузер блокував всі файли або оповіщає
+                        про відправку цих файлів. Врахуйте при цьому, що деякі
+                        функції і сервіси не зможуть працювати належним чином.
+                    </p>
+                    <p><strong>Як ці дані захищаються</strong></p>
+                    <p>
+                        Для захисту Вашої особистої інформації ми використовуємо
+                        різноманітні адміністративні, управлінські та технічні
+                        заходи безпеки. Наша Компанія дотримується різних
+                        міжнародних стандартів контролю, спрямованих на операції з
+                        особистою інформацією, які включають певні заходи контролю
+                        щодо захисту інформації, зібраної в Інтернет.
+                    </p>
+                    <p>
+                        Наших співробітників навчають розуміти і виконувати ці
+                        заходи контролю, вони ознайомлені з нашим Повідомленням
+                        про конфіденційність, норм та інструкцій.
+                    </p>
+                    <p>
+                        Проте, не дивлячись на те, що ми прагнемо убезпечити Вашу
+                        особисту інформацію, Ви теж повинні вживати заходів, щоб
+                        захистити її.
+                    </p>
+                    <p>
+                        Ми настійно рекомендуємо Вам вживати всіх можливих заходів
+                        обережності під час перебування в Інтернеті. Організовані
+                        нами послуги і веб-сайти передбачають заходи щодо захисту
+                        від витоку, несанкціонованого використання і зміни
+                        інформації, яку ми контролюємо. Незважаючи на те, що ми
+                        робимо все можливе, щоб забезпечити цілісність і безпеку
+                        своєї мережі і систем, ми не можемо гарантувати, що наші
+                        заходи безпеки допоможуть запобігти незаконний доступ до
+                        цієї інформації хакерів сторонніх організацій.
+                    </p>
+                    <p>
+                        У разі зміни цієї політики конфіденційності ви зможете
+                        прочитати про ці зміни на цій сторінці або, в особливих
+                        випадках, отримати повідомлення на свій e-mail.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop backdrop_terms is-terms-hidden" data-termsModal="responsibility">
+        <div class="terms-modal">
+            <button type="button" class="modal__close-btn" data-terms-close>
+                <svg width="18" height="18" class="modal__close-icon">
+                    <use href="./images/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+            <h2 class="terms-modal__title">ВІДМОВА ВІД ВІДПОВІДАЛЬНОСТІ</h2>
+            <div class="terms-modal__content">
+                <p>
+                    <strong>Відповідно до чинного законодавства</strong>,
+                    Адміністрація відмовляється від будь-яких запевнень і
+                    гарантій, надання яких може іншим чином матися на увазі, і
+                    відмовляється від відповідальності щодо Сайту, Вмісту та
+                    їх використання.
+                </p>
+                <p>
+                    Ні за яких обставин Адміністрація Сайту не буде нести
+                    відповідальності ні перед якою стороною за будь-якої
+                    прямої, непрямої, особливий або інший непрямий збиток в
+                    результаті будь-якого використання інформації на цьому
+                    Сайті або на будь-якому іншому сайті, на який є посилання
+                    з нашого сайту, виникнення залежності, зниження
+                    продуктивності, звільнення або переривання трудової
+                    активності, а також і відрахування з навчальних закладів,
+                    за будь-яку упущену вигоду, припинення господарської
+                    діяльності, втрату програм або даних у ашіх інформаційних
+                    системах чи іншим чином, що виникли в зв'язку з доступом,
+                    використанням або неможливістю використання Сайту, Вмісту
+                    або будь-якого пов'язаного інтернет-сайту, або
+                    непрацездатністю, помилкою, недоглядом, перебоєм,
+                    дефектом, простоєм в роботі або затримкою в передачі,
+                    комп'ютерним вірусом або системним збоєм, навіть якщо
+                    адміністрація буде явно повідомлено про можливість такого
+                    збитку.
+                </p>
+                <p>
+                    Користувач погоджується з тим, що всі можливі суперечки
+                    будуть вирішуватися за нормами права.
+                </p>
+                <p>
+                    Користувач погоджується з тим, що норми і закони про
+                    захист прав споживачів не можуть бути застосовні до
+                    використання їм Сайту, оскільки він не робить відплатних
+                    послуг.
+                </p>
+                <p>
+                    Використовуючи даний Сайт, Ви погоджуєтесь з «Відмовою від
+                    відповідальності» і встановленими Правилами і приймаєте
+                    всю відповідальність, яка може бути на Вас покладена.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+.hero {
+  padding-top: 70px;
+  padding-bottom: 42px;
+  background-color: #ffce3e;
+  background-image: url('../images/programs/hero/bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center bottom;
+
+  .modal-btn {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    @include font(24px, 400, 1.2);
+
+    &_bottom {
+      max-width: 360px;
+      margin-bottom: 38px;
+    }
+  }
+
+  &__title {
+    @include font(36px, 700, 1.2);
+    margin-bottom: 24px;
+  }
+}
+
+.location-banner {
+  &__title {
+    @include font(18px, 700);
+    margin-bottom: 28px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 380px;
+    margin: -10px 0;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    @include font(18px, 400);
+
+    margin: 10px 0;
+
+    &-icon {
+      width: 26px;
+      height: 26px;
+      margin-right: 6px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+@include mq('tablet') {
+  .hero {
+    &__title {
+      max-width: 530px;
+    }
+  }
+
+  .location-banner {
+    display: flex;
+    align-items: center;
+    padding: 24px 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+
+    &__title {
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+
+    &__list {
+      max-width: 320px;
+    }
+  }
+}
+
+@include mq('desktop') {
+  .hero {
+    overflow: hidden;
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .modal-btn {
+      margin-bottom: 62px;
+    }
+
+    .container {
+      position: relative;
+      padding-top: 72px;
+      padding-left: 86px;
+      padding-bottom: 64px;
+
+      &::before {
+        position: absolute;
+        bottom: 0;
+        right: -400px;
+        width: 830px;
+        height: 370px;
+        content: '';
+        background-image: url('../images/programs/hero/bg-desktop.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__title {
+      max-width: 720px;
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .location-banner {
+    display: none;
+  }
+}

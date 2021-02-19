@@ -1,0 +1,138 @@
+.projects {
+  padding-top: 52px;
+  padding-bottom: 32px;
+
+  &__title {
+    margin-bottom: 38px;
+  }
+
+  &__content-wrapper {
+    margin-bottom: 70px;
+  }
+
+  &__content-picture {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  &__content-img {
+    margin: 0 auto;
+  }
+
+  &__content-text-wrapper {
+    color: #282828;
+  }
+
+  &__content-title {
+    @include font(24px, 700, 1.2);
+    margin-bottom: 42px;
+  }
+
+  &__content-name {
+    @include font(24px, 400, 1.2);
+    margin-bottom: 30px;
+  }
+
+  &__content-text-block {
+    &:not(:last-of-type) {
+      margin-bottom: 36px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__description-name {
+    @include font(24px, 400, 1.2);
+  }
+
+  &__description-text {
+    @include font(18px, 400, 1.2);
+  }
+
+  &__img-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+
+  &__img-list-item {
+    flex-basis: calc((100% - 40px) / 2);
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+@include mq('tablet') {
+  .projects {
+    &__content-wrapper {
+      display: flex;
+    }
+
+    &__content-picture {
+      flex-shrink: 0;
+    }
+
+    &__content-img {
+      margin: 0;
+    }
+
+    &__content-text-wrapper {
+      padding-left: 20px;
+    }
+
+    &__img-list-item {
+      flex-basis: calc((100% - 80px) / 4);
+    }
+  }
+}
+
+@include mq('desktop') {
+  .projects {
+    padding-bottom: 76px;
+
+    .modal-btn {
+      min-width: 276px;
+    }
+
+    &__content-wrapper {
+      margin-bottom: 138px;
+    }
+
+    &__title {
+      margin-bottom: 82px;
+    }
+
+    &__content-picture {
+      margin-bottom: 0;
+    }
+
+    &__content-title {
+      font-size: 30px;
+      margin-bottom: 36px;
+    }
+
+    &__content-text-wrapper {
+      padding-left: 100px;
+    }
+
+    &__content-text-block {
+      &:last-of-type {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__img-list {
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+
+    &__img-list-item {
+      flex-basis: calc((100% - 120px) / 4);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+}
