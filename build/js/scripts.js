@@ -99,7 +99,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       mobileFirst: true,
       centerMode: true,
       centerPadding: "90px",
-      asNavFor: '.teacher__slider-content',
+      asNavFor: '.speakers__slider-content',
       prevArrow: '<button type="button" class="slick-prev"></button>',
       nextArrow: '<button type="button" class="slick-next"></button>'
     });
