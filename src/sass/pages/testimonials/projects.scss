@@ -63,6 +63,86 @@
     margin-left: 20px;
     margin-top: 20px;
   }
+
+  &__list-img-wrapper {
+    position: relative;
+    z-index: 0;
+    background-color: #fecd4d;
+    background-clip: content-box;
+    margin-bottom: 22px;
+
+    &_border-theme-5 {
+      border-left: 4px solid #fecd4d;
+      border-bottom: 20px solid #fecd4d;
+      border-bottom-left-radius: 6px;
+      border-top-left-radius: 6px;
+      padding-top: 20px;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        content: '';
+        width: 28%;
+        height: 22px;
+        background-color: #fecd4d;
+        transform: translate(-4px, 0);
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+      }
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        content: '';
+        width: 4px;
+        height: 90%;
+        background-color: #fecd4d;
+        transform: translate(4px, 20px);
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+      }
+    }
+
+    &_border-theme-6 {
+      border-right: 4px solid #fecd4d;
+      border-top: 20px solid #fecd4d;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      padding-bottom: 20px;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        content: '';
+        width: 4px;
+        height: 90%;
+        background-color: #fecd4d;
+        transform: translate(-4px, -20px);
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        content: '';
+        width: 28%;
+        height: 22px;
+        background-color: #fecd4d;
+        transform: translate(4px, 0);
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+    }
+  }
 }
 
 @include mq('tablet') {
@@ -133,6 +213,48 @@
       flex-basis: calc((100% - 120px) / 4);
       margin-left: 30px;
       margin-top: 30px;
+    }
+
+    &__list-img-wrapper {
+      margin-bottom: 40px;
+
+      &_border-theme-5 {
+        border-left: 20px solid #fecd4d;
+        border-bottom: 20px solid #fecd4d;
+        padding-top: 20px;
+        padding-right: 20px;
+
+        &::before {
+          width: 28%;
+          height: 28px;
+          transform: translate(-20px, 0);
+        }
+
+        &::after {
+          width: 28px;
+          height: 90%;
+          transform: translate(0, 20px);
+        }
+      }
+
+      &_border-theme-6 {
+        border-right: 20px solid #fecd4d;
+        border-top: 20px solid #fecd4d;
+        padding-bottom: 20px;
+        padding-left: 20px;
+
+        &::before {
+          width: 20px;
+          height: 90%;
+          transform: translate(0, -20px);
+        }
+
+        &::after {
+          width: 28%;
+          height: 20px;
+          transform: translate(20px, 0);
+        }
+      }
     }
   }
 }
