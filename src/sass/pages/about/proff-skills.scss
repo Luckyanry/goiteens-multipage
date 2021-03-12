@@ -113,6 +113,17 @@
     }
   }
 
+  &__bottom-list-content-wrapper ul {
+    padding-left: 30px;
+    margin-bottom: 18px;
+  }
+
+  &__bottom-list-content-wrapper ul li {
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+  }
+
   &__bottom-list-picture {
     display: block;
     margin-bottom: 18px;
@@ -268,6 +279,10 @@
     &__bottom-list-content-wrapper {
       padding-left: 60px;
       padding-top: 20px;
+    }
+
+    &__bottom-list-content-wrapper ul {
+      max-width: 430px;
     }
 
     &__bottom-list-content-title {

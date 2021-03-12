@@ -90,7 +90,7 @@
 @include mq('tablet') {
   .hero {
     &__title {
-      max-width: unset;
+      max-width: 600px;
     }
   }
 
@@ -115,6 +115,10 @@
 @include mq('desktop') {
   .hero {
     background-color: #fecd4d;
+
+    &__title {
+      max-width: 910px;
+    }
 
     .modal-btn {
       margin-bottom: 62px;
