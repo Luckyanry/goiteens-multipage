@@ -91,6 +91,10 @@
     padding-top: 0;
     padding-bottom: 80px;
 
+    .title {
+      margin-bottom: 20px;
+    }
+
     &__banner {
       padding-top: 0;
       margin-bottom: 16px;
@@ -98,10 +102,10 @@
 
     &__banner-right-side {
       height: 680px;
-      padding-top: 60px;
+      padding-top: 30px;
       padding-right: 34px;
       padding-bottom: 30px;
-      overflow: scroll;
+      // overflow: scroll;
       background-color: rgb(254, 205, 77);
       background-image: linear-gradient(
           to top,
@@ -137,7 +141,7 @@
       line-height: 1.25;
 
       &:not(:last-child) {
-        margin-bottom: 62px;
+        margin-bottom: 10px;
       }
     }
   }
