@@ -52,6 +52,7 @@
     @include font(36px, 700, 1.2);
     margin-top: 34px;
     margin-bottom: 40px;
+    max-width: 310px;
   }
 }
 
@@ -86,6 +87,11 @@
 }
 
 @include mq('tablet') {
+  .hero {
+    &__title {
+      max-width: 400px;
+    }
+  }
   .location-banner {
     display: flex;
     align-items: center;
@@ -137,6 +143,7 @@
       font-size: 80px;
       margin-top: 10px;
       margin-bottom: 16px;
+      max-width: 700px;
     }
   }
 
