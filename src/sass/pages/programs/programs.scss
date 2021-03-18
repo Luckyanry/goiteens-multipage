@@ -113,12 +113,22 @@
     color: #282828;
     margin-bottom: 28px;
   }
+
+  &__list-content-link {
+    transition: transform 250ms linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(0.99);
+    }
+  }
 }
 
 .info-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #000000;
 
   &__item {
     display: flex;
