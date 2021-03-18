@@ -19,9 +19,24 @@
     color: rgb(13, 13, 13);
     transition: color 250ms linear;
 
-    &:hover,
-    &:focus {
+    &:hover:not(.navigation__list-link_current),
+    &:focus:not(.navigation__list-link_current) {
       color: $accent-color;
+    }
+
+    &_current {
+      position: relative;
+      color: $accent-color;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 6px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+      }
     }
   }
 }
