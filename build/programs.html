@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Goiteens</title>
+    <!-- OGP -->
+    <meta property="og:description"
+        content="Тут здобувають навички та професії майбутнього:  ▸програмування для дітей MineCraft та Scratch ▸створення сайтів та додатків (HTML, CSS, JavaScript) ▸програмування Phyton ▸розробка ігор на Unity та C# ▸3D-дизайна та Digital Art ▸робототехніка та Arduino" />
+
+    <meta property="og:image" content="images/Og.jpg" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="GoITeens — мережа IT-академій для дітей та підлітків." />
+    <meta property="og:url" content="" />
+    <!-- /OGP -->
     <!-- FAVICON IMG -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
     <!-- /FAVICON IMG -->
@@ -563,21 +576,32 @@
                 </svg>
             </button>
             <form action="#" class="modal-form">
+                <h2 class="modal-form__title">Залиште свої дані</h2>
+                <p class="modal-form__undertitle"> і ми зв'яжемося з вами найближчим часом!</p>
                 <label class="modal-form__label">
-                    <input type="text" class="modal-form__input" required>
+                    <input type="text" name="name" class="modal-form__input" placeholder=" " required>
                     <svg width="18" height="18" class="modal-form__icon">
                         <use href="./images/sprite.svg#name-icon"></use>
                     </svg>
                     <span class="modal-form__input-hint">Имя*</span>
                 </label>
                 <label class="modal-form__label">
-                    <input type="tel" class="modal-form__input" required>
+                    <input type="tel" name="phone" class="modal-form__input" placeholder=" " required>
                     <svg width="18" height="18" class="modal-form__icon">
                         <use href="./images/sprite.svg#phone-icon"></use>
                     </svg>
                     <span class="modal-form__input-hint">Телефон*</span>
                 </label>
+                <p class="modal-form__policy-text">Відправкою даної заявки я підтверджую, що я ознайомлений з Політикою
+                    конфіденційності і приймаю її
+                    умови, включаючи ті, що стосуються регламентації обробки моїх персональних даних, і згоден з нею.
+                </p>
                 <button type="submit" class="modal-form__btn">Отправить</button>
+                <input type="hidden" name="utm_source" value="">
+                <input type="hidden" name="utm_medium" value="">
+                <input type="hidden" name="utm_term" value="">
+                <input type="hidden" name="utm_campaign" value="">
+                <input type="hidden" name="utm_content" value="">
             </form>
         </div>
     </div>
@@ -741,7 +765,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
