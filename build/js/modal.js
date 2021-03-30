@@ -1,1 +1,95 @@
-"use strict";function _toConsumableArray(e){return _arrayWithoutHoles(e)||_iterableToArray(e)||_unsupportedIterableToArray(e)||_nonIterableSpread()}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _unsupportedIterableToArray(e,t){if(e){if("string"==typeof e)return _arrayLikeToArray(e,t);var r=Object.prototype.toString.call(e).slice(8,-1);return"Object"===r&&e.constructor&&(r=e.constructor.name),"Map"===r||"Set"===r?Array.from(e):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?_arrayLikeToArray(e,t):void 0}}function _iterableToArray(e){if("undefined"!=typeof Symbol&&Symbol.iterator in Object(e))return Array.from(e)}function _arrayWithoutHoles(e){if(Array.isArray(e))return _arrayLikeToArray(e)}function _arrayLikeToArray(e,t){(null==t||t>e.length)&&(t=e.length);for(var r=0,o=new Array(t);r<t;r++)o[r]=e[r];return o}!function(){var t={openModalBtn:_toConsumableArray(document.querySelectorAll("[data-modal-open]")),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function r(){t.modal.classList.toggle("is-hidden")}t.openModalBtn.forEach(function(e){e.addEventListener("click",r)}),t.closeModalBtn.addEventListener("click",r),window.addEventListener("keydown",function(e){t.modal.classList.contains("is-hidden")||27===e.keyCode&&t.modal.classList.toggle("is-hidden")}),window.addEventListener("click",function(e){t.modal.classList.contains("is-hidden")||e.target.classList.contains("backdrop")&&t.modal.classList.toggle("is-hidden")})}(),function(){var r={openTermsBtn:_toConsumableArray(document.querySelectorAll("[data-terms]")),closeTermsBtn:_toConsumableArray(document.querySelectorAll("[data-terms-close]")),termsModal:_toConsumableArray(document.querySelectorAll("[data-termsModal]"))};r.openTermsBtn.forEach(function(e){e.addEventListener("click",function(){var t;e.preventDefault,t=e.dataset.terms,r.termsModal.forEach(function(e){e.dataset.termsmodal==="".concat(t)&&e.classList.toggle("is-terms-hidden")})})}),r.closeTermsBtn.forEach(function(e){e.addEventListener("click",function(){e.closest(".backdrop").classList.toggle("is-terms-hidden")})})}();
+"use strict";
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+(function () {
+  var refs = {
+    openModalBtn: _toConsumableArray(document.querySelectorAll('[data-modal-open]')),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]')
+  };
+  refs.openModalBtn.forEach(function (e) {
+    e.addEventListener('click', toggleModal);
+  });
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  } // Закрытие модального окна по клику на esc
+
+
+  window.addEventListener('keydown', function (e) {
+    if (!refs.modal.classList.contains('is-hidden')) {
+      if (e.keyCode === 27) {
+        refs.modal.classList.toggle('is-hidden');
+      }
+    }
+
+    return;
+  }); // Закрытие модального окна по клику на backdrop
+
+  window.addEventListener('click', function (e) {
+    if (!refs.modal.classList.contains('is-hidden')) {
+      if (e.target.classList.contains('backdrop')) {
+        refs.modal.classList.toggle('is-hidden');
+      }
+    }
+
+    return;
+  });
+})();
+
+(function () {
+  var refs = {
+    openTermsBtn: _toConsumableArray(document.querySelectorAll('[data-terms]')),
+    closeTermsBtn: _toConsumableArray(document.querySelectorAll('[data-terms-close]')),
+    termsModal: _toConsumableArray(document.querySelectorAll('[data-termsModal]'))
+  };
+  refs.openTermsBtn.forEach(function (e) {
+    e.addEventListener("click", function () {
+      e.preventDefault;
+      toggleModal(e.dataset.terms);
+    });
+  });
+
+  function toggleModal(currentModal) {
+    refs.termsModal.forEach(function (e) {
+      if (e.dataset.termsmodal === "".concat(currentModal)) {
+        e.classList.toggle('is-terms-hidden');
+      }
+    });
+  }
+
+  refs.closeTermsBtn.forEach(function (e) {
+    e.addEventListener('click', function () {
+      e.closest('.backdrop').classList.toggle('is-terms-hidden');
+    });
+  }); // // Закрытие модального окна по клику на esc
+  // window.addEventListener('keydown', (e) => {
+  //   if (!refs.modal.classList.contains('is-hidden')) {
+  //     if(e.keyCode === 27) {
+  //       refs.modal.classList.toggle('is-hidden');
+  //     }
+  //   }
+  //   return;
+  // }); 
+  // // Закрытие модального окна по клику на backdrop
+  // window.addEventListener('click', (e) => {
+  //   if (!refs.modal.classList.contains('is-hidden')) {
+  //     if(e.target.classList.contains('backdrop')) {
+  //       refs.modal.classList.toggle('is-hidden');
+  //     }
+  //   }
+  //   return;
+  // }); 
+})();
