@@ -2,7 +2,8 @@
   padding-top: 172px;
   padding-bottom: 78px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../images/about/hero-footer/bg-mobile.jpg');
+    url('../images/about/hero-footer/bg-new-mobile.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -26,7 +27,8 @@
 @include mq('tablet') {
   .hero-footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url('../images/about/hero-footer/bg-desktop.jpg');
+      url('../images/about/hero-footer/bg-new-desktop1.jpg');
+    background-position: center;
     text-align: center;
 
     &__title {
