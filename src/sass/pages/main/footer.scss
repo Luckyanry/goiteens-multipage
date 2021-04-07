@@ -6,7 +6,7 @@
 .terms-list {
   &__link {
     @include font(12px, 400);
-    color: #595959;
+    color: rgb(223, 222, 222);
     transition: opacity 250ms linear;
     cursor: pointer;
     background-color: transparent;
@@ -14,7 +14,7 @@
 
     &:hover,
     &:focus {
-      opacity: 0.5;
+      opacity: 0.7;
     }
   }
 }

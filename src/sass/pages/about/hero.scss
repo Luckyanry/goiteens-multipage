@@ -1,10 +1,13 @@
 .hero {
   padding-top: 70px;
   padding-bottom: 42px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../images/about/hero/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include mq('tablet', max) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/about/hero/bg.jpg');
+  }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
