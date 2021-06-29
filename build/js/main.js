@@ -1,34 +1,34 @@
 "use strict";
 
 $(document).ready(function () {
-  var utm_source = getUrlParameter("utm_source");
-  var utm_medium = getUrlParameter("utm_medium");
-  var utm_term = getUrlParameter("utm_term");
-  var utm_campaign = getUrlParameter("utm_campaign");
-  var utm_content = getUrlParameter("utm_content");
-  $("input[name=utm_source]").val(utm_source);
-  $("input[name=utm_medium]").val(utm_medium);
-  $("input[name=utm_term]").val(utm_term);
-  $("input[name=utm_campaign]").val(utm_campaign);
-  $("input[name=utm_content]").val(utm_content); // $('input[type="tel"]').mask("+38(999)999-99-99");
+  var utm_source = getUrlParameter('utm_source');
+  var utm_medium = getUrlParameter('utm_medium');
+  var utm_term = getUrlParameter('utm_term');
+  var utm_campaign = getUrlParameter('utm_campaign');
+  var utm_content = getUrlParameter('utm_content');
+  $('input[name=utm_source]').val(utm_source);
+  $('input[name=utm_medium]').val(utm_medium);
+  $('input[name=utm_term]').val(utm_term);
+  $('input[name=utm_campaign]').val(utm_campaign);
+  $('input[name=utm_content]').val(utm_content); // $('input[type="tel"]').mask("+38(999)999-99-99");
   //$('input[type="tel"]').inputmask("+380(99)999-99-99"); //маска
 
-  $("form").on("submit", function (e) {
-    console.log("click");
+  $('form').on('submit', function (e) {
+    console.log('click');
     e.preventDefault();
 
     if ($(this).find('input[name="email"]' || $(this).find('input[name="phone"]').val())) {
-      $(".submit").prop("disabled", true);
+      $('.submit').prop('disabled', true);
       var $form = $(this);
       $.ajax({
-        type: "POST",
-        url: "crm/registration.php",
-        dataType: "json",
+        type: 'POST',
+        url: 'crm/registration.php',
+        dataType: 'json',
         data: $form.serialize(),
         success: function success(response) {
-          if (response.status == "success") {
+          if (response.status == 'success') {
             //window.location.href = "ok";
-            console.log("ok");
+            console.log('ok');
           }
         }
       });
@@ -39,12 +39,12 @@ $(document).ready(function () {
 
 function getUrlParameter(sParam) {
   var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-      sURLVariables = sPageURL.split("&"),
+      sURLVariables = sPageURL.split('&'),
       sParameterName,
       i;
 
   for (i = 0; i < sURLVariables.length; i++) {
-    sParameterName = sURLVariables[i].split("=");
+    sParameterName = sURLVariables[i].split('=');
 
     if (sParameterName[0] === sParam) {
       return sParameterName[1] === undefined ? true : sParameterName[1];
