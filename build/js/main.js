@@ -50,4 +50,34 @@ function getUrlParameter(sParam) {
       return sParameterName[1] === undefined ? true : sParameterName[1];
     }
   }
-}
+} //awards-slider
+
+
+$(document).ready(function () {
+  $('.awards__slider').slick({
+    arrows: false,
+    dots: true,
+    // adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 400,
+    infinite: false,
+    cssEase: 'linear',
+    mobileFirst: true,
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true
+      }
+    }, {
+      breakpoint: 1279,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false
+      }
+    }]
+  });
+});

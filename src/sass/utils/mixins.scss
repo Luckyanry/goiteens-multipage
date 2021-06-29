@@ -64,3 +64,20 @@ $breakpoints: (
     }
   }
 }
+
+/*DOTS COLORS*/
+@mixin dot-color($color) {
+  @if $color == --yellow-color {
+    color: var(--yellow-color);
+    --dots-color: var(--yellow-color);
+  } @else if $color == --accent-color {
+    color: var(--accent-color);
+    --dots-color: var(--accent-color);
+  }
+}
+
+/* ===== Usage
+.CLASS YOUR SLICK-SLIDER .slick-dots li button {
+  @include dot-color(--yellow-color);
+}
+===== */
