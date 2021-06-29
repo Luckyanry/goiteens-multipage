@@ -6,6 +6,24 @@
   // overflow-x: hidden;
   // overflow-y: visible;
 
+  padding-top: 106px;
+  padding-bottom: 60px;
+  background-color: $yellow-color;
+  background-image: url('../images/main/hero/ellipse_sm.svg');
+  background-size: 92px;
+  background-position: top right;
+  background-repeat: no-repeat;
+
+  @include mq(tablet) {
+    padding-top: 158px;
+    padding-bottom: 68px;
+
+    background-image: url('../images/main/hero/ellipse_sm.svg'),
+      url('../images/main/hero/triangle.svg');
+    background-size: 134px 150px, 180px 190px;
+    background-position: top right, bottom right;
+  }
+
   @include mq('desktop') {
     position: relative;
     padding-top: 71px;
@@ -26,13 +44,13 @@
   }
 
   &__title-desc {
-    @include mq('desktop') {
-      margin-bottom: 60px;
-      max-width: 200px;
-      @include font(13px, 700, 1.45);
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-    }
+    margin-bottom: 60px;
+    max-width: 200px;
+    @include font(13px, 700, 1.45);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    // @include mq('desktop') {
+    // }
 
     span {
       color: $white-text;
@@ -41,24 +59,32 @@
   }
 
   &__title {
-    @include mq('desktop') {
-      margin-bottom: 8px;
-      font-size: 40px;
-    }
+    margin-bottom: 8px;
+    font-size: 40px;
+    // @include mq('desktop') {
+    // }
   }
 
   &__text {
-    @include mq('desktop') {
-      @include font(20px, 400, 1.5);
-    }
+    @include font(20px, 400, 1.5);
+    // @include mq('desktop') {
+    // }
   }
 
   .location-banner {
     &__list {
-      @include mq('desktop') {
-        position: relative;
-        display: flex;
+      position: relative;
+      display: flex;
+      margin-top: -30px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      @include mq('tablet') {
+        // display: flex;
+        flex-direction: row;
         margin-left: -30px;
+      }
+      @include mq('desktop') {
         width: 1170px;
         height: 158px;
 
@@ -67,9 +93,11 @@
           position: absolute;
           width: 954px;
           height: 144px;
-          top: 50%;
-          left: 70px;
-          transform: translateY(-50%);
+          top: 38px;
+          left: 65px;
+          // top: 50%;
+          // left: 70px;
+          // transform: translateY(-50%);
           background-repeat: no-repeat;
           background-size: contain;
           background-position: center;
@@ -81,6 +109,11 @@
     &__list-item {
       display: flex;
       padding-bottom: 8px;
+      margin-top: 30px;
+
+      width: 268px;
+      height: 158px;
+
       align-items: flex-end;
       justify-content: center;
       font-size: 24px;
@@ -97,15 +130,20 @@
       box-shadow: 0px 1px 2px rgba(92, 46, 145, 0.08),
         10px 10px 40px rgba(92, 46, 145, 0.24);
       border-radius: 12px;
+
+      @include mq('tablet') {
+        width: calc(100% / 2 - 30px);
+        margin-left: 30px;
+      }
+
       @include mq('desktop') {
         width: calc(100% / 4 - 30px);
-        margin-left: 30px;
       }
     }
 
     @include mq('desktop') {
       position: absolute;
-      bottom: -109px;
+      bottom: -79px;
       left: 50%;
       transform: translateX(-50%);
     }

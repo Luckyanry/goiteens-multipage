@@ -1,14 +1,14 @@
-.section{
+.section {
+  padding-top: 36px;
+  padding-bottom: 36px;
   @include mq('desktop') {
     padding-top: 66px;
     padding-bottom: 66px;
   }
 }
 
-
 .section-title {
   @include mq('desktop') {
-    
     @include font(34px, 700, 1.3);
 
     text-transform: uppercase;
