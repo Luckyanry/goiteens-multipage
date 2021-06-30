@@ -8,8 +8,6 @@ $(document).ready(function () {
     speed: 400,
     infinite: false,
     cssEase: 'linear',
-    centerMode: true,
-    centerPadding: "0px",
     responsive: [
         {
             breakpoint: 767,
@@ -29,8 +27,7 @@ $(document).ready(function () {
   });
 });
 
-// import $ from 'jquery';
-// import { slick } from 'slick-carousel';
+
 
 $(document).ready(function () {
   $('.review-slider-js').slick({
