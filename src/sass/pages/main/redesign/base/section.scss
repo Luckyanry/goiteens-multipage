@@ -1,0 +1,13 @@
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include mq(tablet) {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+  @include mq(desktop) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
