@@ -1,11 +1,4 @@
 .hero {
-  padding-top: 96px;
-  padding-bottom: 60px;
-  background-color: #ffce3e;
-  background-repeat: no-repeat;
-  // overflow-x: hidden;
-  // overflow-y: visible;
-
   padding-top: 106px;
   padding-bottom: 60px;
 
@@ -31,13 +24,11 @@
     padding-top: 71px;
     padding-bottom: 145px;
     background-image: url('../images/main/hero/boy_lg1.png'),
-      url('../images/main/hero/ellipse_lg.svg'), linear-gradient(
-        to right,
-        #fec830 80%,
-        #ffffff 80%
-      );
+      url('../images/main/hero/ellipse_lg.svg'),
+      linear-gradient(to right, #fec830 80%, #ffffff 80%);
     background-size: 654px, contain, cover;
-    background-position: right calc((100vw - 1196px) / 2) bottom, right 150px center, center;
+    background-position: right calc((100vw - 1196px) / 2) bottom,
+      right 150px center, center;
   }
 
   &__wrapper {
@@ -54,9 +45,6 @@
     letter-spacing: 0.07em;
     text-transform: uppercase;
 
-    // @include mq('desktop') {
-    // }
-
     span {
       color: var(--white-text-cl);
       white-space: nowrap;
@@ -66,14 +54,15 @@
   &__title {
     margin-bottom: 8px;
     font-size: 40px;
-  
   }
 
   &__text {
-    @include font(20px, 400, 1.5);
-    // @include mq('desktop') {
-    // }
+    @include fonts(20px, 400, 1.5);
   }
 
- 
+  // .main-btn {
+  //   @include mq(mobile-only) {
+  //     margin: 0 auto;
+  //   }
+  // }
 }

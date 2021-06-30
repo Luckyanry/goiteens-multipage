@@ -2,32 +2,43 @@
   display: flex;
   width: 280px;
   height: 64px;
-  @include font(14px, 400, 0.9);
+  @include fonts(14px, 500, 1.07);
 
   font-family: inherit;
   text-transform: uppercase;
+  text-decoration: none;
 
   align-items: center;
   justify-content: center;
   text-align: center;
 
-  color: $white-text;
+  color: var(--white-text-cl);
 
   border: none;
-  border-radius: 12px;
+  border-radius: var(--border-radius);
 
   outline: none;
   cursor: pointer;
-  background-color: $accent-color;
-  box-shadow: 0px 1px 1px #8d3887, 4px 4px 16px rgba(131, 100, 14, 0.3);
+
+  transition: var(--fast-animation) linear;
+
+  box-shadow: var(--btn-violet-shadow);
+
+  background-color: var(--secondary-accent-cl);
+
+  // @include mq(mobile-only) {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
 
   @include mq(desktop) {
     width: 291px;
     font-size: 16px;
   }
 
-  //   &:hover,
-  //   &:focus {
-
-  //   }
+  &:hover,
+  &:focus {
+    background-color: var(--small-btn-bg);
+    box-shadow: var(--btn-violet-shadow);
+  }
 }

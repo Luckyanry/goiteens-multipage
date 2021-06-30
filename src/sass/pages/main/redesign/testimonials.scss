@@ -41,8 +41,8 @@
         padding-top: 125px;
         padding-bottom: 65px;
         border-radius: 12px;
-        background-image: url('../images/reviews/bck1.png'),
-          url('../images/reviews/bck2.png'), url('../images/reviews/bck3.png');
+        // background-image: url('../images/reviews/bck1.png'),
+        //   url('../images/reviews/bck2.png'), url('../images/reviews/bck3.png');
         background-repeat: no-repeat;
         background-position: left -20px bottom 0, left 0 bottom 0,
           right 0 bottom 0;
@@ -63,7 +63,7 @@
         display: inline-block;
         width: 52px;
         height: 52px;
-        background-image: url('../images/reviews/comma.svg');
+        // background-image: url('../images/reviews/comma.svg');
         background-repeat: no-repeat;
 
         @include mq(tablet) {
@@ -117,7 +117,7 @@
     line-height: 1.45;
     margin-bottom: 6px;
   }
-  
+
   &__course {
     font-size: 14px;
     line-height: 1.45;
@@ -147,7 +147,7 @@
       display: inline-block;
       width: 62px;
       height: 12px;
-      background-image: url('../images/reviews/arrow-left.svg');
+      // background-image: url('../images/reviews/arrow-left.svg');
       background-repeat: no-repeat;
     }
     @include mq(desktop) {
@@ -171,7 +171,7 @@
       display: inline-block;
       width: 62px;
       height: 12px;
-      background-image: url('../images/reviews/arrow-right.svg');
+      // background-image: url('../images/reviews/arrow-right.svg');
       background-repeat: no-repeat;
     }
     @include mq(desktop) {
@@ -186,7 +186,7 @@
     color: var(--title-cl);
 
     &::before {
-      background-image: url('../images/reviews/white-comma.svg');
+      // background-image: url('../images/reviews/white-comma.svg');
     }
   }
 }

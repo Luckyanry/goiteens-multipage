@@ -1,4 +1,4 @@
-.location-banner {
+.branches {
   padding-top: 34px;
   @include mq(tablet) {
     padding-top: 52px;
@@ -7,16 +7,13 @@
       to bottom,
       var(--white-bg) 40%,
       rgba(var(--grey-bg-rgb), 0.08) 40%,
-      rgba(var(--grey-bg-rgb), 0.08) 100%,
-    
+      rgba(var(--grey-bg-rgb), 0.08) 100%
     );
- 
   }
 
   @include mq('desktop') {
     background-image: none;
     margin-top: -110px;
-
   }
 
   &::before {
@@ -26,19 +23,14 @@
     height: 350px;
     margin: 0 auto;
 
-    background-image: url("../images/main/hero/boy_lg1.png");
+    background-image: url('../images/main/hero/boy_lg1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-   
 
     @include mq(tablet) {
       width: 468px;
       height: 380px;
-
-
-     
-    
     }
 
     @include mq(desktop) {
@@ -48,21 +40,26 @@
 
   &__list {
     position: relative;
-    display: flex;
+    // display: flex;
     margin-top: -60px;
 
-    flex-wrap: wrap;
+    // --grid-mr-top: 60px;
+
+    // flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    @include mq(tablet) {
 
+    @include mq(tablet) {
       flex-direction: row;
-      margin-left: -30px;
+      // margin-left: -30px;
+      --grid-item: 2;
     }
     @include mq(desktop) {
+      // --grid-mr-top: 30px;
       margin-top: -30px;
       width: 1170px;
       height: 158px;
+      --grid-item: 4;
 
       &::before {
         content: '';
@@ -71,7 +68,7 @@
         height: 144px;
         top: 38px;
         left: 65px;
-   
+
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -80,7 +77,7 @@
     }
   }
 
-  &__list-item {
+  &__item {
     display: flex;
     padding-bottom: 8px;
     margin-top: 30px;
@@ -106,18 +103,18 @@
     border-radius: 12px;
 
     @include mq('tablet') {
-      width: calc(100% / 2 - 30px);
-      margin-left: 30px;
+      // width: calc(100% / 2 - 30px);
+      // margin-left: 30px;
     }
 
     @include mq('desktop') {
-      width: calc(100% / 4 - 30px);
+      // width: calc(100% / 4 - 30px);
     }
   }
 
-  @each $location in online, ukraine, poland, turkey {
-    .#{$location} {
-      background-image: url('../images/main/location/#{$location}.svg');
+  @each $branches in online, ukraine, poland, turkey {
+    .#{$branches} {
+      background-image: url('../images/main/location/#{$branches}.svg');
     }
   }
 }
