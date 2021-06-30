@@ -2,22 +2,35 @@
  * Все паршалы импортировать в этот файл
  */
 
+@import './pages/main/redesign/utils/variables.scss';
+@import './pages/main/redesign/utils/mixins.scss';
 @import './utils/variables.scss';
 @import './utils/mixins.scss';
 @import './utils/fonts.scss';
 
-@import './base/common.scss';
-@import './base/container.scss';
+@import './pages/main/redesign/component/slick.scss';
+@import './pages/main/redesign/component/slick-theme.scss';
+
+@import './pages/main/redesign/base/common.scss';
+@import './pages/main/redesign/base/container.scss';
+@import './pages/main/redesign/base/grid.scss';
+@import './pages/main/redesign/base/section.scss';
+
+
+// @import './base/common.scss';
+// @import './base/container.scss';
 
 @import './components/modal-btn.scss';
 @import './components/title.scss';
 @import './components/accent-text.scss';
-@import './components/awards.scss';
+// @import './components/awards.scss';
 @import './components/backdrop.scss';
 @import './components/terms-modal.scss';
 
-@import './pages/main/redesign/component/section.scss';
+
 @import './pages/main/redesign/component/button.scss';
+
+@import './pages/main/redesign/component/awards.scss';
 
 @import './layout/header.scss';
 @import './pages/main/redesign/hero.scss';
@@ -26,8 +39,8 @@
 @import './pages/main/courses.scss';
 @import './pages/main/format.scss';
 @import './pages/main/dignity.scss';
-@import './pages/main/testimonials.scss';
-@import './pages/main/projects.scss';
+@import './pages/main/redesign/testimonials.scss';
+@import './pages/main/redesign/projects.scss';
 @import './pages/main/appeal.scss';
 @import './pages/main/footer.scss';
 @import './layout/modal-form.scss';

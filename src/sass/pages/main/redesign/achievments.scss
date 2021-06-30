@@ -1,41 +1,23 @@
 .achievments {
-  padding-top: 60px;
-
-  @include mq(tablet) {
-    padding-top: 68px;
-  }
-  @include mq(desktop) {
-    padding-top: 130px;
-  }
-
+  padding-bottom: 0;
   color: $white-text;
   @include mq(tablet, max) {
     background-image: url('../images/main/achievments/triangle_mobile_1.svg'),
       url('../images/main/achievments/triangle_mobile_2.svg'),
-      linear-gradient(
-        to bottom,
-        $white-bg,
-        $white-bg 14%,
-        $accent-color 14%,
-        $accent-color 100%
-      );
+      linear-gradient(to bottom, $accent-color, $accent-color 100%);
     background-repeat: no-repeat, no-repeat;
     background-position: top 14% right, top 50% right;
   }
 
-  &__title {
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 1.3;
-
-    text-transform: uppercase;
-    color: $yellow-color;
+  .container {
+    margin-bottom: 35px;
   }
 
   &__wrapper {
     @include mq('desktop') {
       display: flex;
-      justify-content: space-between;
+      margin-left: -30px;
+      // justify-content: space-between;
       align-items: flex-start;
     }
   }
@@ -47,37 +29,59 @@
 
     @include mq('desktop') {
       display: block;
+      margin-left: 30px;
     }
   }
 
   &__side {
-    padding-top: 32px;
-
     @include mq('tablet') {
       padding: 68px 75px 68px 100px;
       border-radius: 12px;
 
-      background-image: url('../images/main/achievments/triangle_tablet_1.svg'),
-        url('../images/main/achievments/triangle_tablet_2.svg'),
+      background-image: url('../images/main/achievments/triangle_lg.svg'),
         linear-gradient(to bottom, $accent-color, $accent-color 100%);
+      // background-image: url('../images/main/achievments/triangle_tablet_1.svg'),
+      //   url('../images/main/achievments/triangle_tablet_2.svg'),
+      //   linear-gradient(to bottom, $accent-color, $accent-color 100%);
       background-repeat: no-repeat, no-repeat;
       background-position: bottom right, bottom right;
     }
+
     @include mq(desktop) {
+      padding: 52px 100px 52px 70px;
+      margin-left: 30px;
       max-width: 670px;
     }
   }
 
-  &__text {
-    margin-bottom: 32px;
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: $yellow-color;
   }
 
-  &__btn {
-    padding-left: 40px;
-    padding-right: 40px;
+  &__content {
+    font-size: 17px;
+    line-height: 1.3;
 
-    @include mq(tablet) {
-      min-height: 64px;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
     }
   }
+
+  &__text {
+    text-align: right;
+    color: $yellow-color;
+
+    span {
+      display: block;
+    }
+  }
+  // ====================================================================
+ 
 }
