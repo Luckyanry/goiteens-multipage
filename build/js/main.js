@@ -81,31 +81,3 @@ $(document).ready(function () {
     }]
   });
 }); //projects-slider
-
-$(document).ready(function () {
-  $('.projects-slider-js').slick({
-    mobileFirst: true,
-    dots: true,
-    arrows: false,
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    speed: 400,
-    infinite: true,
-    cssEase: 'linear',
-    // centerMode: true,
-    // centerPadding: "0px",
-    responsive: [{
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    }, {
-      breakpoint: 1279,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    }]
-  });
-});

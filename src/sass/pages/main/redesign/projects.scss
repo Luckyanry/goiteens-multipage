@@ -81,14 +81,15 @@
     border-radius: 12px;
 
     counter-increment: item;
+    max-width: 280px;
 
     @include mq(tablet) {
-      // max-width: 314px;
+      max-width: 314px;
       box-shadow: 2px 8px 8px #5c2e9114, 2px 2px 4px #5c2e913d;
     }
 
     @include mq(desktop) {
-      // max-width: 370px;
+      max-width: 370px;
       margin-bottom: 0;
       padding: 40px;
       box-shadow: 0px 1px 2px #5c2e9114, 10px 10px 25px #5c2e913d;
