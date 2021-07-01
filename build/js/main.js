@@ -54,7 +54,7 @@ function getUrlParameter(sParam) {
 
 
 $(document).ready(function () {
-  $('.awards__slider').slick({
+  $('.awards-slider-js').slick({
     arrows: false,
     dots: true,
     // adaptiveHeight: true,
@@ -73,11 +73,12 @@ $(document).ready(function () {
       }
     }, {
       breakpoint: 1279,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: false
-      }
+      settings: 'unslick' // settings: {
+      //   slidesToShow: 3,
+      //   slidesToScroll: 1,
+      //   dots: false,
+      // },
+
     }]
   });
 }); //projects-slider
