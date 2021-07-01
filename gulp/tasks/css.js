@@ -7,13 +7,13 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const gcmq = require('gulp-group-css-media-queries');
 const size = require('gulp-size');
-// const usedcss = require('usedcss');
 const rename = require('gulp-rename');
 const mode = require('gulp-mode')();
-
+const testFolder = './src/projects/pages/';
 const paths = require('../paths');
+const fs = require('fs');
 
-const css = () => {
+const css = done => {
   return gulp
     .src(paths.src.css)
     .pipe(plumber())
@@ -26,19 +26,12 @@ const css = () => {
       }).on('error', sass.logError),
     )
     .pipe(mode.production(gcmq()))
-    .pipe(
-      mode.production(
-        postcss([
-          // usedcss({ html: ['src/index.html'] }),
-          autoprefixer(),
-          cssnano(),
-        ]),
-      ),
-    )
+    .pipe(mode.production(postcss([autoprefixer(), cssnano()])))
     .pipe(mode.development(sourcemaps.write()))
     .pipe(size({ showFiles: true }))
-    // .pipe(rename('styles.css'))
     .pipe(gulp.dest(paths.build.css));
+
+  done();
 };
 
 module.exports = css;

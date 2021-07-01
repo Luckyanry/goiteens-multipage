@@ -1,0 +1,24 @@
+{% set page = page %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+  <head>
+    {%include 'head.html' %}
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-564FF3"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="page">{% block content %} {% endblock %}</div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
