@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import { slick } from 'slick-carousel';
+
 $(document).ready(function () {
   $('.projects-slider-js').slick({
     mobileFirst: true,
