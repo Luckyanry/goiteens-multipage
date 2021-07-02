@@ -1,35 +1,38 @@
+
+
 $(document).ready(function () {
-  $('.projects-slider-js').slick({
-    mobileFirst: true,
-    dots: true,
+
+  $('.awards-slider-js').slick({
     arrows: false,
-    slidesToScroll: 1,
+    dots: true,
+    // adaptiveHeight: true,
     slidesToShow: 1,
+    slidesToScroll: 1,
     speed: 400,
     infinite: false,
     cssEase: 'linear',
+    mobileFirst: true,
     responsive: [
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
         },
-          {
-            breakpoint: 1279,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-            },
-          },
+      },
+      {
+        breakpoint: 1279,
+        settings: 'unslick',
+        // settings: {
+        //   slidesToShow: 3,
+        //   slidesToScroll: 1,
+        //   dots: false,
+        // },
+      },
     ],
   });
-});
 
-
-
-$(document).ready(function () {
   $('.review-slider-js').slick({
     mobileFirst: true,
     lazyLoad: 'ondemand',
@@ -77,5 +80,39 @@ $(document).ready(function () {
       },
     ],
   });
+
+
+  $('.projects-slider-js').slick({
+    mobileFirst: true,
+    dots: true,
+    arrows: false,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    speed: 400,
+    infinite: true,
+    cssEase: 'linear',
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+          {
+            breakpoint: 1279,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            },
+          },
+    ],
+  });
+
+ 
 });
+
+
+
+
 

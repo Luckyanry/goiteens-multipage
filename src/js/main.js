@@ -56,40 +56,5 @@ function getUrlParameter(sParam) {
   }
 }
 
-//awards-slider
 
-$(document).ready(function () {
-  $('.awards-slider-js').slick({
-    arrows: false,
-    dots: true,
-    // adaptiveHeight: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    speed: 400,
-    infinite: false,
-    cssEase: 'linear',
-    mobileFirst: true,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1279,
-        settings: 'unslick',
-        // settings: {
-        //   slidesToShow: 3,
-        //   slidesToScroll: 1,
-        //   dots: false,
-        // },
-      },
-    ],
-  });
-});
-
-//projects-slider
 
