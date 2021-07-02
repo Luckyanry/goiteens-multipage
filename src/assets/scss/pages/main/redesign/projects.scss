@@ -1,98 +1,87 @@
 .projects {
-  // counter-reset: item;
+  padding-bottom: 30px;
+  background: linear-gradient(
+    to bottom,
+    var(--white-bg) 0,
+    var(--white-bg) 32%,
+    var(--yellow-bg) 32%,
+    var(--yellow-bg) 100%
+  );
 
-  &__title {
-    margin-bottom: 24px;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 1.3;
-    text-transform: uppercase;
+  @include mq(tablet) {
+    padding-bottom: 34px;
+    background: url('../images/main/projects/bg-line_md.svg') center/contain no-repeat,
+      linear-gradient(
+        to bottom,
+        var(--white-bg) 0,
+        var(--white-bg) 25%,
+        var(--yellow-bg) 25%,
+        var(--yellow-bg) 100%
+      );
   }
 
-  &__description {
+  @include mq(desktop) {
+    padding-bottom: 45px;
+    background: url('../images/main/projects/bg-line_lg.svg') bottom 40% center/contain no-repeat,
+      linear-gradient(
+        to bottom,
+        var(--white-bg) 0,
+        var(--white-bg) 30%,
+        var(--yellow-bg) 30%,
+        var(--yellow-bg) 100%
+      );
+  }
+
+  .section__title {
+    margin-bottom: 24px;
+  }
+
+  .projects-description {
     margin-bottom: 52px;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.45;
-
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-
-    color: var(--grey-text-cl);
 
     span {
       display: block;
     }
   }
 
-  .projects-list {
-    padding-bottom: 32px;
-    background: linear-gradient(
-      to bottom,
-      var(--white-bg) 0,
-      var(--white-bg) 32%,
-      var(--yellow-bg) 32%,
-      var(--yellow-bg) 100%
-    );
+  &-list {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 280px;
+    text-align: center;
+    
+    --dots-color: var(--secondary-accent-cl);
+
+    counter-reset: item -3; /*if infinite: true in slider*/
+    // counter-reset: item; /*if infinite: false in slider*/
 
     @include mq(tablet) {
-      background: url('../images/main/projects/bg-line_md.svg') center/contain
-        no-repeat,
-        linear-gradient(
-          to bottom,
-          var(--white-bg) 0,
-          var(--white-bg) 175px,
-          var(--yellow-bg) 175px,
-          var(--yellow-bg) 100%
-        );
-    }
-
-    @include mq(desktop) {
-      // padding-bottom: 200px;
-      background: url('../images/main/projects/bg-line_lg.svg') bottom 40%
-        center/contain no-repeat,
-        linear-gradient(
-          to bottom,
-          var(--white-bg) 0,
-          var(--white-bg) 263px,
-          var(--yellow-bg) 263px,
-          var(--yellow-bg) 100%
-        );
-    }
-
-    &__wrapper {
-      counter-reset: item;
-      text-align: center;
-      margin-bottom: 52px;
-      @include mq(desktop) {
-        margin-bottom: 140px;
-      }
+      max-width: 100%;
     }
   }
 
-  .projects-item {
+  &-item {
     position: relative;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px;
     text-align: start;
-    color: var(--grey-text-cl);
+    // color: var(--grey-text-cl);
     background-color: var(--white-bg);
-    border-radius: 12px;
+    border-radius: var(--border-radius);
 
     counter-increment: item;
-    max-width: 280px;
 
     @include mq(tablet) {
-      max-width: 314px;
+      // max-width: 314px;
       box-shadow: 2px 8px 8px #5c2e9114, 2px 2px 4px #5c2e913d;
     }
 
     @include mq(desktop) {
-      max-width: 370px;
+      // max-width: 370px;
       margin-bottom: 0;
       padding: 40px;
-      box-shadow: 0px 1px 2px #5c2e9114, 10px 10px 25px #5c2e913d;
+      box-shadow: var(--block-shadow);
     }
 
     &::before {
@@ -112,35 +101,35 @@
     }
 
     &__image {
+      margin-bottom: 24px;
       width: 100%;
       border-radius: 12px 12px 0 0;
 
       @include mq(desktop) {
-        margin-bottom: 24px;
-        border-radius: 12px;
+        border-radius: var(--border-radius);
       }
     }
 
     &__wrapper {
       padding-left: 20px;
       padding-right: 20px;
-      padding-top: 24px;
+     
       padding-bottom: 32px;
-
+      min-height: 484px;
+      // min-height: 508px;
+      @include mq(tablet){
+        min-height: 413px;
+      }
       @include mq(desktop) {
         padding: 0;
-        min-height: 373px;
+        min-height: 348px;
       }
     }
 
     &__title {
       margin-bottom: 16px;
-      font-weight: 700;
-      font-size: 13px;
-      line-height: 1.45;
+      padding-right: 15px;
 
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
       @include mq(desktop) {
         margin-bottom: 8px;
       }
@@ -148,16 +137,6 @@
 
     &__description {
       margin-bottom: 20px;
-      min-height: 216px;
-      font-size: 17px;
-      line-height: 1.45;
-      @include mq(tablet) {
-        min-height: 175px;
-      }
-      @include mq(desktop) {
-        margin-bottom: 24px;
-        padding-right: 15px;
-      }
     }
   }
 
@@ -222,16 +201,15 @@
   .projects-slider-js {
     .slick-dots {
       @include mq(desktop) {
-        bottom: -72px;
+        bottom: -80px;
       }
-    }
-
-    .slick-dots li button {
-      @include dot-color(--accent-color);
     }
   }
 
-  // .projects-slider-lg-js.slick-dotted.slick-slider {
-  //   margin-bottom: 0;
-  // }
+  .slick-dotted.slick-slider {
+    margin-bottom: 60px;
+    @include mq(desktop) {
+      margin-bottom: 139px;
+    }
+  }
 }

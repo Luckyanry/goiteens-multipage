@@ -38,12 +38,10 @@
     }
   }
 
-  &__title-desc {
+  .text-label {
     margin-bottom: 60px;
     max-width: 200px;
-    @include fonts(13px, 700, 1.45);
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
+   
 
     span {
       color: var(--white-text-cl);

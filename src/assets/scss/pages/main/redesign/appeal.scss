@@ -1,0 +1,76 @@
+.appeal {
+  padding-top: 60px;
+  padding-bottom: 46px;
+
+  color: var(--title-cl);
+
+  overflow: hidden;
+  z-index: 0;
+
+  @include mq(tablet) {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+  @include mq(desktop) {
+    padding-top: 132px;
+    padding-bottom: 146px;
+  }
+
+  .container {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+
+      top: 68px;
+      right: -320px;
+      width: 668px;
+      height: 645px;
+      background-image: url('../images/main/appeal/bg-mob.png');
+      background-size: cover;
+      z-index: -1;
+
+      @include mq(tablet) {
+        top: -40px;
+        right: -140px;
+        width: 534px;
+        height: 516px;
+      }
+
+      @include mq(desktop) {
+        top: -102px;
+        right: 0;
+        width: 803px;
+        height: 774px;
+        background-size: contain;
+        background-image: url('../images/main/appeal/girl_lg.png');
+      }
+    }
+  }
+
+  .section__title {
+    margin-bottom: 56px;
+    font-size: 36px;
+    line-height: 1.2;
+
+    @include mq(desktop) {
+      margin-bottom: 16px;
+      font-size: 40px;
+      line-height: 1.3;
+    }
+  }
+
+  &__text {
+    @include fonts(24px, 400, 1.2);
+
+    margin-bottom: 40px;
+
+    @include mq(desktop) {
+      margin-bottom: 52px;
+      width: 470px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+}

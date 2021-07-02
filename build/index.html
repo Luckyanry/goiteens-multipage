@@ -57,13 +57,13 @@
     <div class="page"> <header class="header">
     <div class="container">
         <a href="/" class="logo link" aria-label="логотип">
-            <img src="./images/header/logo.png" alt="логотип" class="logo__img">
+            <img src="./assets/images/header/logo.png" alt="логотип" class="logo__img">
             <span class="logo__text">мережа ІТ-академій <br> для дітей 8-15 років</span>
         </a>
         <button type="button" class="menu-btn" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
             <svg width="40" height="36" class="menu-btn__icons">
-                <use href="./images/sprite.svg#burger" class="menu-btn__icon_burger"></use>
-                <use href="./images/sprite.svg#close" class="menu-btn__icon_close"></use>
+                <use href="assets/images/sprite.svg#burger" class="menu-btn__icon_burger"></use>
+                <use href="assets/images/sprite.svg#close" class="menu-btn__icon_close"></use>
             </svg>
         </button>
         <div class="mobile-menu" data-menu>
@@ -85,7 +85,7 @@
             </nav>
             <p class="location">
                 <svg width="18" height="18" class="location__icon">
-                    <use href="./images/sprite.svg#location"></use>
+                    <use href="assets/images/sprite.svg#location"></use>
                 </svg>
                 <span>Київ</span>
             </p>
@@ -97,7 +97,7 @@
   <section class="hero">
     <div class="container">
         <div class="hero__wrapper">
-            <p class="hero__title-desc">Мережа IT-академій для позашкільного навчання дітей
+            <p class="text-label">Мережа IT-академій для позашкільного навчання дітей
                 &lbrack;&nbsp;<span>від 8 до 15 років</span>&nbsp;&rbrack;</p>
             <h1 class="section__title hero__title">Онлайн IT-курси для&nbsp;дітей в GoITeens</h1>
             <p class="hero__text ">допомагаємо почати кар’єру розробника та заробляти ще до вступу в
@@ -105,849 +105,565 @@
         </div>
         <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
     </div>
-</section> <section class=" section branches">
+</section>
+   <section class=" section branches">
     <div class="container">
         <ul class="branches__list list grid">
-            <li class="branches__item online grid__item">
+            <li class="branches__item grid__item online ">
                 Online
             </li>
-            <li class="branches__item ukraine grid__item">
+            <li class="branches__item grid__item ukraine ">
                 Україна
             </li>
-            <li class="branches__item poland grid__item">
+            <li class="branches__item grid__item poland ">
                 Польща
             </li>
-            <li class="branches__item turkey grid__item">
+            <li class="branches__item grid__item turkey ">
                 Турція
             </li>
 
         </ul>
     </div>
-</section> <section class="section advantages">
-    <div class="container">
-        <h2 class="title advantages__title">Завдяки чому ваша дитина створить свій перший власний проект в
-            GoITeens?&#95;</h2>
-        <ul class="list advantages__list">
-            <li class="item advantages__item wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="160">
-                <svg class="advantages__icon" width="72" height="72">
-                    <use href="./images/sprite.svg#lamp"></use>
-                </svg>
-                <h3 class="text-bold">Розвиток <span class="text-accent">технологічного</span> та <span
-                        class="text-accent">інноваційного</span> мислення</h3>
-                <p>Ваша дитина набуває Soft Skills та різні типи мислення, що допомагає їй
-                    стати більш креативною, впевненою в собі людиною</p>
-            </li>
-            <li class="item advantages__item wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="160">
-                <svg class="advantages__icon" width="72" height="72">
-                    <use href="./images/sprite.svg#menthor"></use>
-                </svg>
-                <h3 class="text-bold">Менторство</h3>
-                <p>Наші вчителі мають індивідуальний підхід до кожної дитини. Вони завжди
-                    допомагають, але так, щоб дитина робила все власноруч.</p>
-            </li>
-            <li class="item advantages__item wow fadeInUp" data-wow-delay="0.6s" data-wow-offset="160">
-                <svg class="advantages__icon" width="72" height="72">
-                    <use href="./images/sprite.svg#children"></use>
-                </svg>
-                <h3 class="text-bold">Оточення <span class="text-accent">мотивованих</span> та <span
-                        class="text-accent">ініціативних</span> дітей</h3>
-                <p>Кожна дитина, що прийшла на курс зацікавлена майбутніми успіхами</p>
-            </li>
-            <li class="item advantages__item wow fadeInUp" data-wow-delay="0.8s" data-wow-offset="160">
-                <svg class="advantages__icon" width="72" height="72">
-                    <use href="./images/sprite.svg#folder"></use>
-                </svg>
-                <h3 class="text-bold"><span class="text-accent">Реалізовані проєкти</span> як результат
-                    навчання</h3>
-                <p>По закінченню навчання діти не тільки отримують сертифікати, а й мають
-                    вже готові проєкти в портфоліо</p>
-            </li>
-        </ul>
-        <a href="./about.html' %} class="main-btn">Більше про наш підхід до навчання</a>
-    </div>
-</section> <section class="section achievments ">
+</section> 
+   <section class="section advantages">
   <div class="container">
-    <div class="achievments__wrapper">
-      <picture>
-        <!-- <source srcset="
+    <h2 class="section__title">
+      Завдяки чому ваша дитина створить свій перший власний проект в
+      GoITeens?&#95;
+    </h2>
+    <ul class="list grid">
+      <li
+        class="item grid__item"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-anchor=".advantages"
+      >
+        <svg class="icon" width="72" height="72">
+          <use href="assets/images/sprite.svg#lamp"></use>
+        </svg>
+        <p class="text-bold">
+          Розвиток <span class="text-accent">технологічного</span> та
+          <span class="text-accent">інноваційного</span> мислення
+        </p>
+        <p>
+          Ваша дитина набуває Soft Skills та різні типи мислення, що допомагає
+          їй стати більш креативною, впевненою в собі людиною
+        </p>
+      </li>
+      <li
+        class="item grid__item"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-anchor=".advantages"
+      >
+        <svg class="icon" width="72" height="72">
+          <use href="assets/images/sprite.svg#menthor"></use>
+        </svg>
+        <p class="text-bold">Менторство</p>
+        <p>
+          Наші вчителі мають індивідуальний підхід до кожної дитини. Вони завжди
+          допомагають, але так, щоб дитина робила все власноруч.
+        </p>
+      </li>
+      <li
+        class="item grid__item"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-anchor=".advantages"
+      >
+        <svg class="icon" width="72" height="72">
+          <use href="assets/images/sprite.svg#children"></use>
+        </svg>
+        <p class="text-bold">
+          Оточення <span class="text-accent">мотивованих</span> та
+          <span class="text-accent">ініціативних</span> дітей
+        </p>
+        <p>Кожна дитина, що прийшла на курс зацікавлена майбутніми успіхами</p>
+      </li>
+      <li
+        class="item grid__item"
+        data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-anchor=".advantages"
+      >
+        <svg class="icon" width="72" height="72">
+          <use href="assets/images/sprite.svg#folder"></use>
+        </svg>
+        <p class="text-bold">
+          <span class="text-accent">Реалізовані проєкти</span> як результат
+          навчання
+        </p>
+        <p>
+          По закінченню навчання діти не тільки отримують сертифікати, а й мають
+          вже готові проєкти в портфоліо
+        </p>
+      </li>
+    </ul>
+    <a href="./about.html" class="main-btn"
+      >Більше про наш підхід до навчання</a
+    >
+  </div>
+</section>
+ 
+  <section class="section achievments">
+  <div class="achievments__cont">
+    <div class="container">
+      <div class="wrapper">
+        <picture>
+          <!-- <source srcset="
                 ./images/achievments/portrait.webp    470w,
                 ./images/achievments/portrait@2x.webp 940w
               " type="image/webp" sizes="470px" /> -->
-        <img
-          src="./images/main/achievments/vp_lg.jpg"
-          class="achievments__img"
-          alt="Фото Вячеслава Поліновського CEO GoITeens"
-          sizes="470px"
-          width="470"
-          height="580"
-        />
-      </picture>
-      <div class="achievments__side">
-        <h2 class="achievments__title">
-          Майбутнє - за програмуванням. І наші діти зіграють в цьому головну роль!
-        </h2>
-        <div class="achievments__content">
-          <p>
-            Програмування, за версією The World Economic Forum, це одна з ТОП-навичок, що буде
-            потрібна у майбутньому.
-          </p>
-          <p>
-            Тому якщо ви хочете знайти для своєї дитини актуальну та цікаву професію з високою
-            зарплатою, то програмування та веб-розробка - це саме те що потрібно.
-          </p>
-          <p>
-            Онлайн IT-курси для дітей - це не швидкий майстер-клас чи семінар від відомого фахівця.
-            Це цікава та насичена необхідними навичками система навчання, що сподобається підлітку
-            та його батькам. Вона підійде для тих, хто бажає перетворити любов дитини до
-            комп’ютерних ігор в корисний навчальний процес чи підкаже з чого почати вести свій блог.
-          </p>
-          <p class="achievments__text">
-            Вячеслав Поліновський
-            <span>
-              CEO GoITeens
-            </span>
-          </p>
+          <img
+            src="./assets/images/main/achievments/vp_lg.jpg"
+            class="img"
+            alt="Фото Вячеслава Поліновського CEO GoITeens"
+            sizes="470px"
+            width="470"
+            height="580"
+          />
+        </picture>
+        <div class="achievments__side">
+          <h2 class="section__title">
+            Майбутнє - за програмуванням. І наші діти зіграють в цьому головну
+            роль!
+          </h2>
+          <div class="achievments__content">
+            <p>
+              Програмування, за версією The World Economic Forum, це одна з
+              ТОП-навичок, що буде потрібна у майбутньому.
+            </p>
+            <p>
+              Тому якщо ви хочете знайти для своєї дитини актуальну та цікаву
+              професію з високою зарплатою, то програмування та веб-розробка -
+              це саме те що потрібно.
+            </p>
+            <p>
+              Онлайн IT-курси для дітей - це не швидкий майстер-клас чи семінар
+              від відомого фахівця. Це цікава та насичена необхідними навичками
+              система навчання, що сподобається підлітку та його батькам. Вона
+              підійде для тих, хто бажає перетворити любов дитини до
+              комп’ютерних ігор в корисний навчальний процес чи підкаже з чого
+              почати вести свій блог.
+            </p>
+            <p class="achievments__text">
+              Вячеслав Поліновський
+              <span> CEO GoITeens </span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- <div class="section awards">
+  <div class="awards">
+  <div class="awards__wrapper">
     <div class="container">
-        <h2 class="title section__title awards__title">нагороди GoITeens&#95;</h2>
-        <div class="list awards__list awards__slider">
-            <div class="awards__item">
-                <div class="awards__item-wrapper">
-                    <picture>
-                        <source media="(min-width:1260px)" srcset="
-            ./images/main/awards/award1_lg.webp    1x,
-            ./images/main/awards/award1_lg@2x.webp 2x
-          " type="image/webp" />
-
-                        <source srcset="
-            ./images/main/awards/award1_lg.webp    1x,
-            ./images/main/awards/award1_lg@2x.webp 2x
-          " type="image/webp" />
-                        <source media="(min-width:1260px)" srcset="
-            ./images/main/awards/award1_lg.jpg    1x,
-            ./images/main/awards/award1_lg@2x.jpg 2x
-          " />
-
-                        <source srcset="./images/main/awards/award1_lg@2x.jpg 2x" />
-                        <img class="awards__item-logo" src="./images/main/awards/award1_lg.jpg"
-                            alt="Нагорода Best IT Education 2015" width="120" height="190" />
-                    </picture>
-                </div>
-                <h3 class="title awards__item-title">Best IT Education 2015</h3>
-                <p>За внесок у підготовку сильних Junior-фахівців</p>
-            </div>
-            <div class="awards__item">
-                <div class="awards__item-wrapper">
-                    <picture>
-                        <source media="(min-width:1260px)" srcset="
-            ./images/main/awards/award2_lg.webp    1x,
-            ./images/main/awards/award2_lg@2x.webp 2x
-          " type="image/webp" />
-
-                        <source srcset="
-            ./images/main/awards/award2_lg.webp    1x,
-            ./images/main/awards/award2_lg@2x.webp 2x
-          " type="image/webp" />
-                        <source media="(min-width:1260px)" srcset="
-            ./images/main/awards/award2_lg.jpg    1x,
-            ./images/main/awards/award2_lg@2x.jpg 2x
-          " />
-
-                        <source srcset="./images/main/awards/award2_lg@2x.jpg 2x" />
-                        <img class="awards__item-logo" src="./images/main/awards/award2.jpg"
-                            alt="Нагорода Best IT Education 2015" width="146" height="185" />
-                    </picture>
-                </div>
-                <h3 class="title awards__item-title">Ukrainian IT Awards 2016</h3>
-                <p>За видатний внесок у IT-навчання українських Junior-розробників</p>
-            </div>
-            <div class="awards__item">
-                <div class="awards__item-wrapper">
-                    <picture>
-                        <source media="(min-width:1260px)" srcset="
-            ./images/main/awards/award3_lg.webp    1x,
-            ./images/main/awards/award3_lg@2x.webp 2x
-          " type="image/webp" />
-
-                        <source srcset="
-            ./images/main/awards/award3_lg.webp    1x,
-            ./images/main/awards/award3_lg@2x.webp 2x
-          " type="image/webp" />
-                        <source media="(min-width:1260px)" srcset="
-            ./images/main/awards/award3_lg.jpg    1x,
-            ./images/main/awards/award3_lg@2x.jpg 2x
-          " />
-
-                        <img class="awards__item-logo" src="./images/main/awards/award3_lg.jpg"
-                            alt="Нагорода Best IT Education 2015" width="243" height="192" />
-                    </picture>
-                </div>
-                <h3 class="title awards__item-title">Українська народна премія 2018-2020</h3>
-                <p>За перемогу в номінації IT-освіта. Голосування серед споживачів</p>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-  <div class="section awards">
-    <div class="container">
-      <h2 class="title section__title awards__title">нагороди GoITeens&#95;</h2>
-      <div class="list awards__list awards__slider">
+      <div class="list awards__list awards-slider-js">
         <div class="awards__item">
           <div class="awards__item-wrapper">
             <picture>
               <source
-                media="(min-width:1260px)"
                 srcset="
-                  ./images/main/awards/award1_lg.webp    1x,
-                  ./images/main/awards/award1_lg@2x.webp 2x
+                  ./assets/images/main/awards/award1_lg.webp    1x,
+                  ./assets/images/main/awards/award1_lg@2x.webp 2x
                 "
+                media="(min-width: 320px)"
                 type="image/webp"
               />
 
               <source
-                srcset="
-                  ./images/main/awards/award1_lg.webp    1x,
-                  ./images/main/awards/award1_lg@2x.webp 2x
-                "
-                type="image/webp"
-              />
-              <source
-                media="(min-width:1260px)"
-                srcset="
-                  ./images/main/awards/award1_lg.jpg    1x,
-                  ./images/main/awards/award1_lg@2x.jpg 2x
-                "
+                srcset="./assets/images/main/awards/award1_lg@2x.png 2x"
+                media="(min-width: 320px)"
+                type="image/png"
               />
 
-              <source srcset="./images/main/awards/award1_lg@2x.jpg 2x" />
               <img
-                class="awards__item-logo"
-                src="./images/main/awards/award1_lg.jpg"
-                alt="Нагорода Best IT Education 2015"
+                class="awards__img"
+                src="./assets/images/main/awards/award1_lg.png"
+                alt="Нагорода Best IT Education 2015 "
                 width="120"
                 height="190"
+                loading="lazy"
               />
             </picture>
           </div>
-          <h3 class="title awards__item-title">Best IT Education 2015</h3>
+          <h3 class="item-title">
+            Best IT Education <br />
+            2015
+          </h3>
           <p>За внесок у підготовку сильних Junior-фахівців</p>
         </div>
         <div class="awards__item">
           <div class="awards__item-wrapper">
             <picture>
               <source
-                media="(min-width:1260px)"
-                srcset="
-                  ./images/main/awards/award2_lg.webp    1x,
-                  ./images/main/awards/award2_lg@2x.webp 2x
-                "
-                type="image/webp"
-              />
+              srcset="
+                ./assets/images/main/awards/award2_lg.webp    1x,
+                ./assets/images/main/awards/award2_lg@2x.webp 2x
+              "
+              media="(min-width: 320px)"
+              type="image/webp"
+            />
 
-              <source
-                srcset="
-                  ./images/main/awards/award2_lg.webp    1x,
-                  ./images/main/awards/award2_lg@2x.webp 2x
-                "
-                type="image/webp"
-              />
-              <source
-                media="(min-width:1260px)"
-                srcset="
-                  ./images/main/awards/award2_lg.jpg    1x,
-                  ./images/main/awards/award2_lg@2x.jpg 2x
-                "
-              />
-
-              <source srcset="./images/main/awards/award2_lg@2x.jpg 2x" />
+            <source
+              srcset="./assets/images/main/awards/award2_lg@2x.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
               <img
-                class="awards__item-logo"
-                src="./images/main/awards/award2.jpg"
+                class="awards__img"
+                src="./assets/images/main/awards/award2_lg.png"
                 alt="Нагорода Best IT Education 2015"
                 width="146"
                 height="185"
               />
             </picture>
           </div>
-          <h3 class="title awards__item-title">Ukrainian IT Awards 2016</h3>
+          <h3 class="item-title">
+            Ukrainian IT Awards <br />
+            2016
+          </h3>
           <p>За видатний внесок у IT-навчання українських Junior-розробників</p>
         </div>
         <div class="awards__item">
           <div class="awards__item-wrapper">
             <picture>
               <source
-                media="(min-width:1260px)"
-                srcset="
-                  ./images/main/awards/award3_lg.webp    1x,
-                  ./images/main/awards/award3_lg@2x.webp 2x
-                "
-                type="image/webp"
-              />
+              srcset="
+                ./assets/images/main/awards/award3_lg.webp    1x,
+                ./assets/images/main/awards/award3_lg@2x.webp 2x
+              "
+              media="(min-width: 320px)"
+              type="image/webp"
+            />
 
-              <source
-                srcset="
-                  ./images/main/awards/award3_lg.webp    1x,
-                  ./images/main/awards/award3_lg@2x.webp 2x
-                "
-                type="image/webp"
-              />
-              <source
-                media="(min-width:1260px)"
-                srcset="
-                  ./images/main/awards/award3_lg.jpg    1x,
-                  ./images/main/awards/award3_lg@2x.jpg 2x
-                "
-              />
+            <source
+              srcset="./assets/images/main/awards/award3_lg@2x.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
 
               <img
-                class="awards__item-logo"
-                src="./images/main/awards/award3_lg.jpg"
+                class="awards__img"
+                src="./assets/images/main/awards/award3_lg.png"
                 alt="Нагорода Best IT Education 2015"
                 width="243"
                 height="192"
               />
             </picture>
           </div>
-          <h3 class="title awards__item-title">Українська народна премія 2018-2020</h3>
+          <h3 class="item-title">
+            Українська народна премія <br />
+            2018-2020
+          </h3>
           <p>За перемогу в номінації IT-освіта. Голосування серед споживачів</p>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+  
 </section>
 
-  <!-- <section class="courses">
+  <section class="dignity section">
   <div class="container">
-    <h2 class="title">
-      Формуємо <span class="accent-text">інноваційне мислення</span> та
-      допомагаємо опанувати техногії
+    <h2 class="section__title">
+      Чому нам <span class="text-accent">довіряють</span>&#95;
     </h2>
-    <p class="courses__description">
-      Відповідно до віку учнів ми пропонуємо програми різної складності та
-      занурення у технології. Усе реалізовується на конкретних навчальних
-      проєктах, що дозволяє найкраще реалізувати вроджені таланти та потенціал
-    </p>
+    <ul class="dignity__list list grid">
+      <li class="dignity__item grid__item">
+        <picture>
+          <source
+          srcset="
+            ./assets/images/main/dignity/dignity-1.webp    1x,
+            ./assets/images/main/dignity/dignity-1@2x.webp 2x
+          "
+          media="(min-width: 320px)"
+          type="image/webp"
+        />
 
-    <section class="courses-list">
-      <div class="grid-item courses-list__age"><span>7-8</span>років</div>
-      <div class="grid-item courses-list__wrapper callout">
-        <h3 class="courses-list__title">Програмування для дітей</h3>
-        <p class="courses-list__description">
-          Створення яскравих анімацій та простих ігор. Цікава математика зі
-          Scratch
-        </p>
-        <a
-          href="https://course.goiteens.ua/scratch"
-          target="_blank"
-          class="more-link"
-          >Дізнатися більше</a
-        >
-        <ul class="courses-mark">
-          <li class="courses-mark__about">Основні курси</li>
-        </ul>
-      </div>
-
-      <div class="grid-item courses-list__age"><span>9-11</span>років</div>
-      <div class="grid-item courses-list__wrapper">
-        <h3 class="courses-list__title">
-          Програмування для дітей в Minecraft Education
+        <source
+          srcset="./assets/images/main/dignity/dignity-1@2x.png 2x"
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+          <img
+            class="dignity__img"
+            src="./assets/images/main/dignity/dignity-1.png"
+            alt="діти на навчанні"
+            width="222"
+            height="130"
+          />
+        </picture>
+        <h3 class="text-bold">
+          Розвиваємо власну мережу і контролюємо якість
         </h3>
-        <p class="courses-list__description">
-          Введення в 3D-моделювання, вивчення фізики, математики та інших
-          навчальних предметів в ігровій формі
+        <p>
+          Школи у всіх містах працюють за єдиними стандартами якості та
+          управляються однією командою.
         </p>
-        <a
-          href="https://course.goiteens.ua/minecraft"
-          target="_blank"
-          class="more-link"
-          >Дізнатися більше</a
-        >
-        <ul class="courses-mark">
-          <li class="courses-mark__about">Основні курси</li>
-          <li class="courses-mark__about">FullStack</li>
-        </ul>
-      </div>
-      <div class="grid-item courses-list__wrapper callout down-large">
-        <h3 class="courses-list__title">
-          Старт в IT — формування універсальних навичок
+      </li>
+      <li class="dignity__item grid__item">
+        <picture>
+          <source
+          srcset="
+            ./assets/images/main/dignity/dignity-2.webp    1x,
+            ./assets/images/main/dignity/dignity-2@2x.webp 2x
+          "
+          media="(min-width: 320px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="./assets/images/main/dignity/dignity-2@2x.png 2x"
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+          <img
+            class="dignity__img"
+            src="./assets/images/main/dignity/dignity-2.png"
+            alt="діти на навчанні"
+            width="222"
+            height="130"
+          />
+        </picture>
+        <h3 class="text-bold">
+            Відкрито спілкуємось з дітьми та батьками
         </h3>
-        <p class="courses-list__description">
-          Це те, чому в школі не привертають багато уваги — командна робота,
-          навички публічного виступу та нестандартного розв’язування задач
+        <p>
+            Щомісяця батьки отримують від нас звітність та зворотний зв'язок про успіхи дітей у навчанні.
         </p>
-        <a
-          href="https://course.goiteens.ua/it-start"
-          target="_blank"
-          class="more-link"
-          >Дізнатися більше</a
-        >
-        <ul class="courses-mark">
-          <li class="courses-mark__about">Додаткові курси</li>
-        </ul>
-      </div>
+      </li>
+      <li class="dignity__item grid__item">
+        <picture>
+          <source
+          srcset="
+            ./assets/images/main/dignity/dignity-3.webp    1x,
+            ./assets/images/main/dignity/dignity-3@2x.webp 2x
+          "
+          media="(min-width: 320px)"
+          type="image/webp"
+        />
 
-      <div class="grid-item courses-list__age"><span>12-13</span>років</div>
-      <div class="grid-item courses-list__wrapper">
-        <h3 class="courses-list__title">
-          Створення інтернет-сайтів та Веб-додатків
+        <source
+          srcset="./assets/images/main/dignity/dignity-3@2x.png 2x"
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+          <img
+            class="dignity__img"
+            src="./assets/images/main/dignity/dignity-3.png"
+            alt="діти на навчанні"
+            width="222"
+            height="130"
+          />
+        </picture>
+        <h3 class="text-bold">
+            Показуємо зрозумілий результат навчання
         </h3>
-        <p class="courses-list__description">
-          Набуття навичок програмування найактуальнішою мовою програмування
-          JavaScript. Створення комерційних сайтів і додатків
+        <p>
+            Протягом навчання учні реалізовують проекти: від простих концептів до реальних стартапів.
         </p>
-        <a
-          href="https://course.goiteens.ua/frontend"
-          target="_blank"
-          class="more-link"
-          >Дізнатися більше</a
-        >
-        <ul class="courses-mark">
-          <li class="courses-mark__about">Основні курси</li>
-          <li class="courses-mark__about">FullStack</li>
-        </ul>
-      </div>
-      <div class="grid-item courses-list__wrapper">
-        <h3 class="courses-list__title">IT-дизайн</h3>
-        <p class="courses-list__description">
-          Вивчення основ дизайну та інструментів, за допомогою яких створюються
-          сайти, ігри та додатки
-        </p>
-        <a
-          href="https://course.goiteens.ua/design"
-          target="_blank"
-          class="more-link"
-          >Дізнатися більше</a
-        >
-        <ul class="courses-mark">
-          <li class="courses-mark__about">Додаткові курси</li>
-          <li class="courses-mark__about">IT Designer</li>
-        </ul>
-      </div>
-      <div class="grid-item courses-list__wrapper">
-        <h3 class="courses-list__title">Розробка ігор та Game Development</h3>
-        <p class="courses-list__description">
-          Створення повноцінних комп'ютерних ігор на Unity, а також основи
-          3D-моделювання та ігрового дизайну
-        </p>
-        <a
-          href=" https://course.goiteens.ua/gamedev"
-          target="_blank"
-          class="more-link"
-          >Дізнатися більше</a
-        >
-        <ul class="courses-mark">
-          <li class="courses-mark__about">Додаткові курси</li>
-          <li class="courses-mark__about">Game Developer</li>
-        </ul>
-      </div>
-
-      <div class="grid-item courses-list__age"><span>14-15</span>років</div>
-      <div class="grid-item courses-list__wrapper">
-        <h3 class="courses-list__title">
-          Програмування Python: BackEnd та DataScience
+      </li>
+      <li class="dignity__item grid__item">
+        <picture>
+      
+          <img
+            class="dignity__img"
+            src="./assets/images/main/dignity/dignity-4.png"
+            alt="діти на навчанні"
+            width="222"
+            height="130"
+          />
+        </picture>
+        <h3 class="text-bold">
+            Відповідаємо за безпеку
         </h3>
-        <p class="courses-list__description">
-          Діти зможуть познайомитись зі створенням систем штучного інтелекту та
-          баз даних
+        <p>
+            Уважно ставимося до безпеки, контролюємо присутність та тримаємо зв'язок з батьками.
         </p>
-        <a
-          href="https://course.goiteens.ua/python"
-          target="_blank"
-          class="more-link"
-          >Дізнатися більше</a
-        >
-        <ul class="courses-mark">
-          <li class="courses-mark__about">Основні курси</li>
-          <li class="courses-mark__about">FullStack</li>
-        </ul>
-      </div>
-      <div class="grid-item courses-list__wrapper">
-        <h3 class="courses-list__title">3D-дизайн</h3>
-        <p class="courses-list__description">
-          Створення 3D моделей, персонажів ігор за допомогою сучасних програм та
-          технологій
-        </p>
-        <a
-          href="https://course.goiteens.ua/3ddesign"
-          target="_blank"
-          class="more-link"
-          >Дізнатися більше</a
-        >
-        <ul class="courses-mark">
-          <li class="courses-mark__about">Додаткові курси</li>
-          <li class="courses-mark__about">IT Designer</li>
-        </ul>
-      </div>
-      <div class="grid-item courses-list__wrapper desktop-hidden">
-        <h3 class="courses-list__title">Розробка ігор та Game Development</h3>
-        <p class="courses-list__description">
-          Створення повноцінних комп'ютерних ігор на Unity, а також основи
-          3D-моделювання та ігрового дизайну
-        </p>
-        <a
-          href=" https://course.goiteens.ua/gamedev"
-          target="_blank"
-          class="more-link"
-          >Дізнатися більше</a
-        >
-        <ul class="courses-mark">
-          <li class="courses-mark__about">Додаткові курси</li>
-          <li class="courses-mark__about">Game Developer</li>
-        </ul>
-      </div>
-
-      <ul class="grid-item courses-name__list">
-        <li class="courses-name__item large">Full Stack</li>
-        <li class="courses-name__item">IT Designer</li>
-        <li class="courses-name__item">Game Developer</li>
-      </ul>
-
-      <div class="grid-item courses-list__age"><span>16-18</span>років</div>
-      <div class="grid-item courses-list__wrapper">
-        <h3 class="courses-list__title">IT-менеджмент та IT підприємництво</h3>
-        <p class="courses-list__description">
-          Ваша дитина вчиться керувати розробкою проєктів, розподілом обов’язків
-          всередині команди
-        </p>
-        <!-- <a href="#" class="more-link">Дізнатися більше</a> -->
-        <ul class="courses-mark">
-          <li class="courses-mark__about">Основні курси</li>
-        </ul>
-      </div>
-    </section>
-
-    <button class="modal-btn" data-modal-open>Підібрати план навчання</button>
+      </li>
+     
+      
+    </ul>
   </div>
 </section>
- -->
-  <!-- <section class="format">
-    <div class="container">
-        <h2 class="title">Формат навчання</h2>
-        <p class="format__description">Онлайн або офлайн</p>
-        <div class="format__content-wrapper">
-            <picture class="format__picture">
-                <source srcset="./images/main/format/format-img-desktop.jpg" media="(min-width: 1200px)">
-                <source srcset="./images/main/format/format-img.jpg" media="(min-width: 320px)">
-                <img src="./images/main/format/format-img.jpg" alt="студенты за партами" class="format__img">
-            </picture>
-            <ul class="format__list list">
-                <li class="format__list-item">
-                    <div class="format__list-icon-wrapper">
-                        <svg class="format__list-icon" width="39" height="36">
-                            <use href="./images/sprite.svg#calendar"></use>
-                        </svg>
-                    </div>
-                    <div class="format__list-text-wrapper">
-                        <h3 class="format__list-title">9 місяців</h3>
-                        <p class="format__list-text">усі програми тривають
-                            з вересня по червень</p>
-                    </div>
-                </li>
-                <li class="format__list-item order-2">
-                    <div class="format__list-icon-wrapper">
-                        <img src="./images/main/format/day-icon.png" alt="иконка" class="format__list-icon">
-                    </div>
-                    <div class="format__list-text-wrapper">
-                        <h3 class="format__list-title">Кожні вихідні</h3>
-                        <p class="format__list-text">субота чи неділя відповідно до розкладу</p>
-                    </div>
-                </li>
-                <li class="format__list-item order-1">
-                    <div class="format__list-icon-wrapper">
-                        <svg class="format__list-icon" width="40" height="40">
-                            <use href="./images/sprite.svg#time"></use>
-                        </svg>
-                    </div>
-                    <div class="format__list-text-wrapper">
-                        <h3 class="format__list-title">з 10:00 до 14:00</h3>
-                        <p class="format__list-text">4 години з перервами на відпочинок та смаколики</p>
-                    </div>
-                </li>
-                <li class="format__list-item order-3">
-                    <div class="format__list-icon-wrapper">
-                        <svg class="format__list-icon" width="39" height="37">
-                            <use href="./images/sprite.svg#money"></use>
-                        </svg>
-                    </div>
-                    <div class="format__list-text-wrapper">
-                        <h3 class="format__list-title">від 600 грн на місяць</h3>
-                        <p class="format__list-text">вартість навчання залежить від міста, формату та конкретної
-                            програми</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section> -->
-  <section class="dignity">
-    <div class="container">
-        <h2 class="title">Чому нам <span class="accent-text">довіряють</span></h2>
-        <ul class="dignity__list list">
-            <li class="dignity__list-item">
-                <div class="dignity__list-content">
-                    <h3 class="dignity__list-title">Розвиваємо власну мережу
-                        і контролюємо якість</h3>
-                    <picture class="dignity__picture">
-                        <source srcset="./images/main/dignity/dignity-img-1-desktop.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/main/dignity/dignity-img-1.jpg" media="(min-width: 320px)">
-                        <img src="./images/main/dignity/dignity-img-1.jpg" alt="" class="dignity__list-img">
-                    </picture>
-                    <p class="dignity__list-text">Школи у всіх містах працюють за єдиними стандартами якості та
-                        управляються однією командою.</p>
-                </div>
-            </li>
-            <li class="dignity__list-item order-2">
-                <div class="dignity__list-content">
-                    <h3 class="dignity__list-title">Показуємо зрозумілий
-                        результат навчання</h3>
-                    <picture class="dignity__picture">
-                        <source srcset="./images/main/dignity/dignity-img-2-desktop.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/main/dignity/dignity-img-2.jpg" media="(min-width: 320px)">
-                        <img src="./images/main/dignity/dignity-img-2.jpg" alt="" class="dignity__list-img">
-                    </picture>
-                    <p class="dignity__list-text">Протягом навчання учні реалізовують проєкти: від простих концептів до
-                        реальних стартапів.</p>
-                </div>
-            </li>
-            <li class="dignity__list-item order-1">
-                <div class="dignity__list-content">
-                    <h3 class="dignity__list-title">Відкрито спілкуємось
-                        з дітьми та батьками</h3>
-                    <picture class="dignity__picture">
-                        <source srcset="./images/main/dignity/dignity-img-3-desktop.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/main/dignity/dignity-img-3.jpg" media="(min-width: 320px)">
-                        <img src="./images/main/dignity/dignity-img-3.jpg" alt="" class="dignity__list-img">
-                    </picture>
-                    <p class="dignity__list-text">Щомісяця батьки отримують від нас звітність та зворотний зв'язок про
-                        успіхи дітей у навчанні.</p>
-                </div>
-            </li>
-            <li class="dignity__list-item order-3">
-                <div class="dignity__list-content">
-                    <h3 class="dignity__list-title">Відповідаємо за безпеку</h3>
-                    <picture class="dignity__picture">
-                        <source srcset="./images/main/dignity/dignity-img-4-desktop.jpg" media="(min-width: 1200px)">
-                        <source srcset="./images/main/dignity/dignity-img-4.jpg" media="(min-width: 320px)">
-                        <img src="./images/main/dignity/dignity-img-4.jpg" alt="" class="dignity__list-img">
-                    </picture>
-                    <p class="dignity__list-text">Уважно ставимося до безпеки, контролюємо присутність та тримаємо
-                        зв'язок з батьками.</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-</section> <section class="section slider-reviews">
-  <h2 class="">Відгуки наших учнів</h2>
+ 
+  <section class="section students-reviews">
+  <div class="container">
+  <h2 class="section__title">Відгуки учнів про нас&#95;</h2>
+  </div>
   <div class="review-slider-js review-list">
     <div class="review-list__item">
-      <div class="review-list__item--wrap">
-        <!-- <picture class="review-list__picture">
-            <source srcset="./assets/images/reviews/child1.webp" media="(min-width: 320px)" />
-            <img class="review-list__img" src="./assets/images/reviews/child1.jpeg" alt="Cтудент" width="90"
-              height="90" />
-          </picture> -->
-        <p class="review-list__description">
-          Мені дуже подобається навчатись у цій школі. Я кажу це не просто так,
-          тому що я навчалася і в інших школах програмування, але найкраще дають
-          інформацію саме у школі GoITeens. Подобається, що є можливість
-          навчання онлайн, так як я живу за містом. Дуже цікавим є момент, що
-          мої одногрупники знаходяться в різних містах та країнах.
-        </p>
-        <p class="review-list__title">Ольга Міщенко</p>
-        <p class="review-list__course">13 років</p>
-      </div>
-    </div>
-    <div class="review-list__item">
-      <div class="review-list__item--wrap">
-        <!-- <picture class="review-list__picture">
-            <source srcset="./assets/images/reviews/child2.webp" media="(min-width: 320px)" />
-            <img class="review-list__img" src="./assets/images/reviews/child2.jpeg" alt="Cтудент" width="90"
-              height="90" />
-          </picture> -->
-        <p class="review-list__description">
-          За цілий рік навчання в GoITeens я вже вивчив HTML мову розмітки, сила
-          якої в тегах та CSS - мова стилю сторінок, розробив власний проект та
-          переглянув не один вебінар. Ми вже почали освоювати JavaScript -
-          справжню мову програмування, яка може створити новий тег з контентом
-          та вставити його на сторінку.
-        </p>
-        <p class="review-list__title">Савка Дем’ян</p>
-        <p class="review-list__course">15 років</p>
-      </div>
-    </div>
-    <div class="review-list__item">
-      <div class="review-list__item--wrap">
-        <!-- <picture class="review-list__picture">
-            <source srcset="./assets/images/reviews/child3.webp" media="(min-width: 320px)" />
-            <img class="review-list__img" src="./assets/images/reviews/child3.jpeg" alt="Cтудент" width="90"
-              height="90" />
-          </picture> -->
+      <div class="review-list__wrap">
+        <picture >
+          <!-- <source srcset="./images/main/testimonials/makar.webp" media="(min-width: 320px)" /> -->
+          <img
+            class="review-list__img"
+            src="./assets/images/main/testimonials/makar.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+          />
+        </picture>
         <p class="review-list__description">
           Основна моя сфера, яку я вивчаю протягом навчального року Front-end!
-          Завдяки зрозумілому та сучасному методі викладання школи GoITeens,
-          зокрема і мого викладача Родіона Р. мені вдалося зайняти найкраще
-          місце на марафоні з програмування. Круто навчатися в школі GoITeens:
-          цікаве, сучасне викладання та легке сприйняття матеріалу.
+          Завдяки зрозумілому та сучасному методу викладання школи GoITeens,
+          зокрема і мого викладача Родіона Романова, мені вдалося зайняти
+          найкраще місце на марафоні з програмування. Круто навчатися в школі
+          GoITeens: цікаве, сучасне викладання та легке сприйняття матеріалу.»
         </p>
         <p class="review-list__title">Макар Луцький</p>
         <p class="review-list__course">16 років</p>
       </div>
     </div>
     <div class="review-list__item">
-      <div class="review-list__item--wrap">
-        <!-- <picture class="review-list__picture">
-            <source srcset="./assets/images/reviews/child4.webp" media="(min-width: 320px)" />
-            <img class="review-list__img" src="./assets/images/reviews/child4.jpeg" alt="Cтудент" width="90"
-              height="90" />
-          </picture> -->
+      <div class="review-list__wrap">
+        <picture >
+          <!-- <source srcset="./assets/images/main/testimonials/makar.webp" media="(min-width: 320px)" /> -->
+          <img
+            class="review-list__img"
+            src="./assets/images/main/testimonials/makar.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+          />
+        </picture>
         <p class="review-list__description">
-          Я задоволений навчанням, як і софтами так і хард скілами. Загалом
-          заняття проходять цікаво і вся інформація подається дуже доступно і
-          зрозуміло, цікаві методи навчання. Найбільше подобається бачити свій
-          прогрес, коли я дивився на сайти і думав "вау, це так класно виглядає"
-          і зараз дивлюсь на це і думаю " я можу набагато цікавіше".
+          Основна моя сфера, яку я вивчаю протягом навчального року Front-end!
+          Завдяки зрозумілому та сучасному методу викладання школи GoITeens,
+          зокрема і мого викладача Родіона Романова, мені вдалося зайняти
+          найкраще місце на марафоні з програмування. Круто навчатися в школі
+          GoITeens: цікаве, сучасне викладання та легке сприйняття матеріалу.»
         </p>
-        <p class="review-list__title">Юрій Підлиський</p>
-        <p class="review-list__course">15 років</p>
+        <p class="review-list__title">Макар Луцький</p>
+        <p class="review-list__course">16 років</p>
       </div>
     </div>
     <div class="review-list__item">
-      <div class="review-list__item--wrap">
-        <!-- <picture class="review-list__picture">
-            <source srcset="./assets/images/reviews/child5.webp" media="(min-width: 320px)" />
-            <img class="review-list__img" src="./assets/images/reviews/child5.jpeg" alt="Cтудент" width="90"
-              height="90" />
-          </picture> -->
+      <div class="review-list__wrap">
+        <picture >
+          <!-- <source srcset="./assets/images/main/testimonials/makar.webp" media="(min-width: 320px)" /> -->
+          <img
+            class="review-list__img"
+            src="./assets/images/main/testimonials/makar.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+          />
+        </picture>
         <p class="review-list__description">
-          За майже рік навчання у GoITeens я сильно змінився. Отримав безцінний
-          досвід, купу нових знань, чудових друзів та навіть почав дивитись на
-          світ під трошки іншим кутом 😅 Мені допомагали мої вчителі. Яким я
-          дуже вдячний за отриманий досвід та інформацію. Особливо дякую Віктору
-          Сташко за, мабуть, найкращі методи викладання. Дякую за чудовий рік ♥️
+          Основна моя сфера, яку я вивчаю протягом навчального року Front-end!
+          Завдяки зрозумілому та сучасному методу викладання школи GoITeens,
+          зокрема і мого викладача Родіона Романова, мені вдалося зайняти
+          найкраще місце на марафоні з програмування. Круто навчатися в школі
+          GoITeens: цікаве, сучасне викладання та легке сприйняття матеріалу.»
         </p>
-        <p class="review-list__title">Олексій Нізицький</p>
-        <p class="review-list__course">15 років</p>
+        <p class="review-list__title">Макар Луцький</p>
+        <p class="review-list__course">16 років</p>
       </div>
     </div>
     <div class="review-list__item">
-      <div class="review-list__item--wrap">
-        <!-- <picture class="review-list__picture">
-            <source srcset="./assets/images/reviews/child6.webp" media="(min-width: 320px)" />
-            <img class="review-list__img" src="./assets/images/reviews/child6.jpeg" alt="Cтудент" width="90"
-              height="90" />
-          </picture> -->
+      <div class="review-list__wrap">
+        <picture >
+          <!-- <source srcset="./assets/images/main/testimonials/makar.webp" media="(min-width: 320px)" /> -->
+          <img
+            class="review-list__img"
+            src="./assets/images/main/testimonials/makar.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+          />
+        </picture>
         <p class="review-list__description">
-          Всім привіт! Мене звати Святослав, Я вже майже 2 роки в GoITeens.!
-          Розповім про декілька фактів: 1.Чудова група, гарний викладач.
-          2.Відзивчивість на вищому рівні якщо тобі щось не зрозуміло тобі
-          моментально відповідають.И я дуже багато знаю з моменту вступу до
-          GoITeens! ВСІМ РЕКОМЕНДУЮ.
+          Основна моя сфера, яку я вивчаю протягом навчального року Front-end!
+          Завдяки зрозумілому та сучасному методу викладання школи GoITeens,
+          зокрема і мого викладача Родіона Романова, мені вдалося зайняти
+          найкраще місце на марафоні з програмування. Круто навчатися в школі
+          GoITeens: цікаве, сучасне викладання та легке сприйняття матеріалу.»
         </p>
-        <p class="review-list__title">Святослав Торопов</p>
-        <p class="review-list__course">13 років</p>
+        <p class="review-list__title">Макар Луцький</p>
+        <p class="review-list__course">16 років</p>
       </div>
     </div>
     <div class="review-list__item">
-      <div class="review-list__item--wrap">
-        <!-- <picture class="review-list__picture">
-            <source srcset="./assets/images/reviews/child7.webp" media="(min-width: 320px)" />
-            <img class="review-list__img" src="./assets/images/reviews/child7.jpeg" alt="Cтудент" width="90"
-              height="90" />
-          </picture> -->
+      <div class="review-list__wrap">
+        <picture >
+          <!-- <source srcset="./images/main/testimonials/makar.webp" media="(min-width: 320px)" /> -->
+          <img
+            class="review-list__img"
+            src="./images/main/testimonials/makar.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+          />
+        </picture>
         <p class="review-list__description">
-          Спочатку я вирішив для себе спробувати щось нове, але згодом це
-          переросло у зацікавленість, а зараз у захоплення улюбленою справою.
-          Викладачі завжди все докладно пояснюють та допомагають. Я дізнався
-          багато нового та відкрив для себе новий світ - світ інформаційних
-          технологій. І я дуже вдячний школі GoITeens за таку можливість.
+          Основна моя сфера, яку я вивчаю протягом навчального року Front-end!
+          Завдяки зрозумілому та сучасному методу викладання школи GoITeens,
+          зокрема і мого викладача Родіона Романова, мені вдалося зайняти
+          найкраще місце на марафоні з програмування. Круто навчатися в школі
+          GoITeens: цікаве, сучасне викладання та легке сприйняття матеріалу.»
+         
+          
         </p>
-        <p class="review-list__title">Владислав Шевчук</p>
-        <p class="review-list__course">15 років</p>
+        <p class="review-list__title">Макар Луцький</p>
+        <p class="review-list__course">16 років</p>
       </div>
     </div>
-    <div class="review-list__item">
-      <div class="review-list__item--wrap">
-        <!-- <picture class="review-list__picture">
-            <source srcset="./assets/images/reviews/child8.webp" media="(min-width: 320px)" />
-            <img class="review-list__img" src="./assets/images/reviews/child8.jpeg" alt="Cтудент" width="90"
-              height="90" />
-          </picture> -->
-        <p class="review-list__description">
-          Навчання улюбленій справі - справжнє задоволення, особливо коли
-          вчителі справді прагнуть передати увесь досвід, який в них є. Хочу
-          висловити особисту подяку за максимальну віддачу та готовність домогти
-          в разі потреби нашому викладачу Олександрі Х. Завдяки їй, я вважаю, що
-          знайшла те, чим збираюся займатися у майбутньому.
-        </p>
-        <p class="review-list__title">Світлана Денисенко</p>
-        <p class="review-list__course">13 років</p>
-      </div>
-    </div>
-    <div class="review-list__item">
-      <div class="review-list__item--wrap">
-        <!-- <picture class="review-list__picture">
-            <source srcset="./assets/images/reviews/child9.webp" media="(min-width: 320px)" />
-            <img class="review-list__img" src="./assets/images/reviews/child9.jpeg" alt="Cтудент" width="90"
-              height="90" />
-          </picture> -->
-        <p class="review-list__description">
-          Я вчив html, css та javascript в школі GoIteens, це був дуже цікавий
-          досвід, напочатку було важко, але далі я адаптувався. Навчання було
-          складним і в одночас цікавим. Один з найцікавіших моментів у навчанні
-          був проект на початку грудня 2020, ми верстали макет сайту-реклами гри
-          Brawl Stars, я робив секцію зі слайдером.
-        </p>
-        <p class="review-list__title">Максим Попсуй</p>
-        <p class="review-list__course">13 років</p>
-      </div>
-    </div>
+
+ 
+
+
   </div>
   <div class="review-btn-cont">
-    <button class="review-prev-btn prev-but-js" type="button" aria-label="Попередній слайд"></button>
-    <button class="review-next-btn next-but-js" type="button" aria-label="Наступний слайд"></button>
+    <button
+      class="review-prev-btn prev-but-js"
+      type="button"
+      aria-label="Попередній слайд"
+    ></button>
+    <button
+      class="review-next-btn next-but-js"
+      type="button"
+      aria-label="Наступний слайд"
+    ></button>
   </div>
-</section> <section class="section projects">
-  <div class="projects-list">
+</section>
+ 
+  <section class="section projects">
+ 
     <div class="container">
-      <h2 class="title projects__title">
-        Останні реалізовані учнями проекти_&#95;
+      <h2 class="section__title">
+        Останні реалізовані учнями проекти&#95;
       </h2>
 
-      <p class="projects__description">
+      <p class="text-label projects-description">
         Ні, це не скрін з App Store! <span> Це проєкти, які наші учні розробляють на
           курсі самостійно</span>
       </p>
 
-      <div class="projects-slider-js projects-list__wrapper">
+      <div class="projects-slider-js projects-list">
         <div class="projects-item">
           <picture>
-            <source srcset="
-                ./images/main/projects/project-1-sm.webp    280w,
-                ./images/main/projects/project-1-sm@2x.webp 560w,
-                ./images/main/projects/project-1-md.webp    314w,
-                ./images/main/projects/project-1-md@2x.webp 628w,
-                ./images/main/projects/project-1-lg.webp    290w,
-                ./images/main/projects/project-1-lg@2x.webp 580w
-              " sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" type="image/webp" />
+ 
+  
+            <source srcset="./assets/images/main/projects/project-1-lg.webp 1x, ./assets/images/main/projects/project-1-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-1-lg.jpg 1x, ./assets/images/main/projects/project-1-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-1-md.webp 1x, 
+            ./assets/images/main/projects/project-1-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-1-md.jpg 1x, 
+            ./assets/images/main/projects/project-1-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-1-sm.webp 1x, ./assets/images/main/projects/project-1-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-1-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
 
-            <img class="projects-item__image" srcset="
-                ./images/main/projects/project-1-sm.jpg    280w,
-                ./images/main/projects/project-1-sm@2x.jpg 560w,
-                ./images/main/projects/project-1-md.jpg    314w,
-                ./images/main/projects/project-1-md@2x.jpg 628w,
-                ./images/main/projects/project-1-lg.jpg    290w,
-                ./images/main/projects/project-1-lg@2x.jpg 580w
-              " src="./images/main/projects/project-1-md.jpg" alt="фото проєкту Therapy"
-              sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" width="314" height="200" />
+            <img class="projects-item__image"  src="./assets/images/main/projects/project-1-sm.jpg" alt="фото проєкту Therapy"
+              width="280" height="200" loading="lazy" />
           </picture>
           <div class="projects-item__wrapper">
-            <h3 class="projects-item__title">
+            <h3 class="text-label projects-item__title ">
               Сайт караоке-бару Smile Art Bar
             </h3>
 
@@ -966,28 +682,23 @@
 
         <div class="projects-item">
           <picture>
-            <source srcset="
-                ./images/main/projects/project-2-sm.webp    280w,
-                ./images/main/projects/project-2-sm@2x.webp 560w,
-                ./images/main/projects/project-2-md.webp    314w,
-                ./images/main/projects/project-2-md@2x.webp 628w,
-                ./images/main/projects/project-2-lg.webp    290w,
-                ./images/main/projects/project-2-lg@2x.webp 580w
-              " sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-2-lg.webp 1x, ./assets/images/main/projects/project-2-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-2-lg.jpg 1x, ./assets/images/main/projects/project-2-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-2-md.webp 1x, 
+            ./assets/images/main/projects/project-2-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-2-md.jpg 1x, 
+            ./assets/images/main/projects/project-2-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-2-sm.webp 1x, ./assets/images/main/projects/project-2-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-2-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
 
-            <img class="projects-item__image" srcset="
-                ./images/main/projects/project-2-sm.jpg    280w,
-                ./images/main/projects/project-2-sm@2x.jpg 560w,
-                ./images/main/projects/project-2-md.jpg    314w,
-                ./images/main/projects/project-2-md@2x.jpg 628w,
-                ./images/main/projects/project-2-lg.jpg    290w,
-                ./images/main/projects/project-2-lg@2x.jpg 580w
-              " src="./images/main/projects/project-2-md.jpg" alt="фото проєкту Culinary Workshop"
-              sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" width="314" height="200" />
+            <img class="projects-item__image" src="./assets/images/main/projects/project-2-sm.jpg" alt="фото проєкту Сайт кулінарної майстерні Oleg Cook"
+               width="280" height="200" />
           </picture>
 
           <div class="projects-item__wrapper">
-            <h3 class="projects-item__title">
+            <h3 class="text-label projects-item__title">
               Сайт кулінарної майстерні Oleg Cook
             </h3>
 
@@ -1003,27 +714,22 @@
 
         <div class="projects-item">
           <picture>
-            <source srcset="
-                ./images/main/projects/project-3-sm.webp    280w,
-                ./images/main/projects/project-3-sm@2x.webp 560w,
-                ./images/main/projects/project-3-md.webp    314w,
-                ./images/main/projects/project-3-md@2x.webp 628w,
-                ./images/main/projects/project-3-lg.webp    290w,
-                ./images/main/projects/project-3-lg@2x.webp 580w
-              " sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-3-lg.webp 1x, ./assets/images/main/projects/project-3-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-3-lg.jpg 1x, ./assets/images/main/projects/project-3-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-3-md.webp 1x, 
+            ./assets/images/main/projects/project-3-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-3-md.jpg 1x, 
+            ./assets/images/main/projects/project-3-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-3-sm.webp 1x, ./assets/images/main/projects/project-3-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-3-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
 
-            <img class="projects-item__image" srcset="
-                ./images/main/projects/project-3-sm.jpg    280w,
-                ./images/main/projects/project-3-sm@2x.jpg 560w,
-                ./images/main/projects/project-3-md.jpg    314w,
-                ./images/main/projects/project-3-md@2x.jpg 628w,
-                ./images/main/projects/project-3-lg.jpg    290w,
-                ./images/main/projects/project-3-lg@2x.jpg 580w
-              " src="./images/main/projects/project-3-md.jpg" alt="фото проєкту Меблі РЕМСЕРВІС"
-              sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" width="314" height="200" />
+            <img class="projects-item__image"  src="./images/main/projects/project-3-sm.jpg" alt="фото проєкту Меблі РЕМСЕРВІС"
+               width="280" height="200" />
           </picture>
           <div class="projects-item__wrapper">
-            <h3 class="projects-item__title">
+            <h3 class=" text-label projects-item__title">
               Меблі РЕМСЕРВІС
             </h3>
 
@@ -1037,27 +743,24 @@
         </div>
         <div class="projects-item">
           <picture>
-            <source srcset="
-                ./images/main/projects/project-1-sm.webp    280w,
-                ./images/main/projects/project-1-sm@2x.webp 560w,
-                ./images/main/projects/project-1-md.webp    314w,
-                ./images/main/projects/project-1-md@2x.webp 628w,
-                ./images/main/projects/project-1-lg.webp    290w,
-                ./images/main/projects/project-1-lg@2x.webp 580w
-              " sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" type="image/webp" />
+ 
+  
+            <source srcset="./assets/images/main/projects/project-1-lg.webp 1x, ./assets/images/main/projects/project-1-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-1-lg.jpg 1x, ./assets/images/main/projects/project-1-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-1-md.webp 1x, 
+            ./assets/images/main/projects/project-1-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-1-md.jpg 1x, 
+            ./assets/images/main/projects/project-1-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-1-sm.webp 1x, ./assets/images/main/projects/project-1-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-1-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
 
-            <img class="projects-item__image" srcset="
-                ./images/main/projects/project-1-sm.jpg    280w,
-                ./images/main/projects/project-1-sm@2x.jpg 560w,
-                ./images/main/projects/project-1-md.jpg    314w,
-                ./images/main/projects/project-1-md@2x.jpg 628w,
-                ./images/main/projects/project-1-lg.jpg    290w,
-                ./images/main/projects/project-1-lg@2x.jpg 580w
-              " src="./images/main/projects/project-1-md.jpg" alt="фото проєкту Therapy"
-              sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" width="314" height="200" />
+            <img class="projects-item__image"  src="./assets/images/main/projects/project-1-sm.jpg" alt="фото проєкту Therapy"
+              width="280" height="200" loading="lazy" />
           </picture>
           <div class="projects-item__wrapper">
-            <h3 class="projects-item__title">
+            <h3 class="text-label projects-item__title ">
               Сайт караоке-бару Smile Art Bar
             </h3>
 
@@ -1076,28 +779,23 @@
 
         <div class="projects-item">
           <picture>
-            <source srcset="
-                ./images/main/projects/project-2-sm.webp    280w,
-                ./images/main/projects/project-2-sm@2x.webp 560w,
-                ./images/main/projects/project-2-md.webp    314w,
-                ./images/main/projects/project-2-md@2x.webp 628w,
-                ./images/main/projects/project-2-lg.webp    290w,
-                ./images/main/projects/project-2-lg@2x.webp 580w
-              " sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-2-lg.webp 1x, ./assets/images/main/projects/project-2-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-2-lg.jpg 1x, ./assets/images/main/projects/project-2-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-2-md.webp 1x, 
+            ./assets/images/main/projects/project-2-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-2-md.jpg 1x, 
+            ./assets/images/main/projects/project-2-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-2-sm.webp 1x, ./assets/images/main/projects/project-2-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-2-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
 
-            <img class="projects-item__image" srcset="
-                ./images/main/projects/project-2-sm.jpg    280w,
-                ./images/main/projects/project-2-sm@2x.jpg 560w,
-                ./images/main/projects/project-2-md.jpg    314w,
-                ./images/main/projects/project-2-md@2x.jpg 628w,
-                ./images/main/projects/project-2-lg.jpg    290w,
-                ./images/main/projects/project-2-lg@2x.jpg 580w
-              " src="./images/main/projects/project-2-md.jpg" alt="фото проєкту Culinary Workshop"
-              sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" width="314" height="200" />
+            <img class="projects-item__image" src="./assets/images/main/projects/project-2-sm.jpg" alt="фото проєкту Сайт кулінарної майстерні Oleg Cook"
+               width="280" height="200" />
           </picture>
 
           <div class="projects-item__wrapper">
-            <h3 class="projects-item__title">
+            <h3 class="text-label projects-item__title">
               Сайт кулінарної майстерні Oleg Cook
             </h3>
 
@@ -1113,27 +811,22 @@
 
         <div class="projects-item">
           <picture>
-            <source srcset="
-                ./images/main/projects/project-3-sm.webp    280w,
-                ./images/main/projects/project-3-sm@2x.webp 560w,
-                ./images/main/projects/project-3-md.webp    314w,
-                ./images/main/projects/project-3-md@2x.webp 628w,
-                ./images/main/projects/project-3-lg.webp    290w,
-                ./images/main/projects/project-3-lg@2x.webp 580w
-              " sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-3-lg.webp 1x, ./assets/images/main/projects/project-3-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-3-lg.jpg 1x, ./assets/images/main/projects/project-3-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-3-md.webp 1x, 
+            ./assets/images/main/projects/project-3-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-3-md.jpg 1x, 
+            ./assets/images/main/projects/project-3-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/main/projects/project-3-sm.webp 1x, ./assets/images/main/projects/project-3-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-3-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
 
-            <img class="projects-item__image" srcset="
-                ./images/main/projects/project-3-sm.jpg    280w,
-                ./images/main/projects/project-3-sm@2x.jpg 560w,
-                ./images/main/projects/project-3-md.jpg    314w,
-                ./images/main/projects/project-3-md@2x.jpg 628w,
-                ./images/main/projects/project-3-lg.jpg    290w,
-                ./images/main/projects/project-3-lg@2x.jpg 580w
-              " src="./images/main/projects/project-3-md.jpg" alt="фото проєкту Меблі РЕМСЕРВІС"
-              sizes="(min-width: 1280px) 290px, (min-width: 768px) 314px, 280px" width="314" height="200" />
+            <img class="projects-item__image"  src="./images/main/projects/project-3-sm.jpg" alt="фото проєкту Меблі РЕМСЕРВІС"
+               width="280" height="200" />
           </picture>
           <div class="projects-item__wrapper">
-            <h3 class="projects-item__title">
+            <h3 class=" text-label projects-item__title">
               Меблі РЕМСЕРВІС
             </h3>
 
@@ -1145,26 +838,28 @@
             <a class="more-link" target="_blank" href="#" rel="noreferrer noopener nofollow">Переглянути</a>
           </div>
         </div>
+
 
 
       </div>
+      <a href="./testimonials.html" class="main-btn">Більше про результати наших учнів</a>
     </div>
-    <a href="./testimonials.html' %} class="main-btn">Більше про результати наших учнів</a>
-  </div>
-</section> <section class="appeal">
+
+</section> 
+  <section class="appeal section">
     <div class="container">
-        <h2 class="title">Допоможіть <br> своїй дитині <br> стати <span class="accent-text">лідером</span> <br>
+        <h2 class="section__title">Допоможіть <br> своїй дитині <br> стати <span class="text-accent">лідером</span> <br>
             майбутнього</h2>
         <p class="appeal__text">Кожен місяць правильно обраного зараз для дитини навчання обертається роками
             конкурентної переваги в майбутньому дорослому житті</p>
-        <button type="button" class="modal-btn" data-modal-open>Підібрати план навчання</button>
+        <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
     </div>
 </section>
 </main>
 <footer class="footer">
   <div class="container">
     <a href="/" class="footer__logo">
-      <img src="./images/footer/logo-white.png" alt="логотип" class="footer__logo-img">
+      <img src="./assets/images/footer/logo-white.png" alt="логотип" class="footer__logo-img">
     </a>
     <ul class="terms-list list">
       <li class="terms-list__item">

@@ -1,28 +1,40 @@
 .achievments {
-  padding-bottom: 0;
-  color: $white-text;
-  @include mq(tablet, max) {
-    background-image: url('../images/main/achievments/triangle_mobile_1.svg'),
-      url('../images/main/achievments/triangle_mobile_2.svg'),
-      linear-gradient(to bottom, $accent-color, $accent-color 100%);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top 14% right, top 50% right;
+ 
+  color: var( --white-text-cl);
+
+
+  &__cont {
+    margin-bottom: 60px;
+    padding: 68px 40px;
+   
+    @include mq(tablet, max) {
+      background-image: url('../images/main/achievments/triangle_mobile_1.svg'),
+        url('../images/main/achievments/triangle_mobile_2.svg'),
+        linear-gradient(to bottom, $accent-color, $accent-color 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-position: top 14% right, top 50% right;
+    }
+    @include mq(tablet) {
+      margin-bottom: 68px;
+      padding: 0;
+    }
+    @include mq(desktop) {
+      margin-bottom: 132px;
+    }
   }
 
-  .container {
-    margin-bottom: 35px;
-  }
-
-  &__wrapper {
-    @include mq('desktop') {
+  .wrapper {
+   
+    @include mq(desktop) {
+    
       display: flex;
       margin-left: -30px;
-      // justify-content: space-between;
+     
       align-items: flex-start;
     }
   }
 
-  &__img {
+  .img {
     display: none;
     margin-top: 52px;
     border-radius: 12px;
@@ -35,14 +47,12 @@
 
   &__side {
     @include mq('tablet') {
-      padding: 68px 75px 68px 100px;
+      padding: 68px 75px ;
       border-radius: 12px;
 
       background-image: url('../images/main/achievments/triangle_lg.svg'),
         linear-gradient(to bottom, $accent-color, $accent-color 100%);
-      // background-image: url('../images/main/achievments/triangle_tablet_1.svg'),
-      //   url('../images/main/achievments/triangle_tablet_2.svg'),
-      //   linear-gradient(to bottom, $accent-color, $accent-color 100%);
+
       background-repeat: no-repeat, no-repeat;
       background-position: bottom right, bottom right;
     }
@@ -54,13 +64,12 @@
     }
   }
 
-  &__title {
+  .section__title {
     margin-bottom: 24px;
-    font-weight: 700;
+
     font-size: 17px;
-    line-height: 1.3;
-    text-transform: uppercase;
-    color: $yellow-color;
+
+    color: var(--primary-accent-cl);
   }
 
   &__content {
@@ -76,12 +85,10 @@
 
   &__text {
     text-align: right;
-    color: $yellow-color;
+    color: var(--primary-accent-cl);
 
     span {
       display: block;
     }
   }
-  // ====================================================================
- 
 }

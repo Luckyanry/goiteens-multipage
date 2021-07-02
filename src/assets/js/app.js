@@ -9,7 +9,7 @@ $(document).ready(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       speed: 400,
-      infinite: false,
+      infinite: true,
       cssEase: 'linear',
       mobileFirst: true,
       responsive: [
@@ -24,11 +24,6 @@ $(document).ready(function () {
         {
           breakpoint: 1279,
           settings: 'unslick',
-          // settings: {
-          //   slidesToShow: 3,
-          //   slidesToScroll: 1,
-          //   dots: false,
-          // },
         },
       ],
     });
@@ -111,3 +106,17 @@ $(document).ready(function () {
   
    
   });
+
+
+  import AOS from 'aos';
+// import 'aos/dist/aos.css';
+
+AOS.init({
+    disable: 'mobile',
+    offset: 100, 
+    duration: 400, 
+    easing: 'ease-in-out', 
+    once: false, 
+    mirror: true, 
+    anchorPlacemen:'top-center'
+});

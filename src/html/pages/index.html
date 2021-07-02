@@ -1,11 +1,13 @@
 {% extends 'layout.html' %} {% block content %} {% include 'main/header.html' %}
 <main>
-  {% include 'main/redesign/hero.html' %} {% include 'main/redesign/branches.html' %} {% include
-  'main/redesign/advantages.html' %} {% include 'main/redesign/achievments.html' %}
-  <!-- {% include 'main/courses.html' %} -->
-  <!-- {% include 'main/format.html' %} -->
-  {% include 'main/dignity.html' %} {% include 'main/redesign/testimonials.html' %} {% include
-  'main/redesign/projects.html' %} {% include 'main/appeal.html' %}
+  {% include 'main/hero.html' %}
+   {% include 'main/branches.html' %} 
+   {% include 'main/advantages.html' %} 
+  {% include 'main/achievments.html' %}
+  {% include 'main/dignity.html' %} 
+  {% include 'main/students-reviews.html' %} 
+  {% include 'main/projects.html' %} 
+  {% include 'main/appeal.html' %}
 </main>
 {% include 'main/footer.html' %} {% include 'modal-form.html' %} {% include 'terms.html' %} {%
 endblock %}
