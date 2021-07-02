@@ -3,6 +3,7 @@
   display: block;
   width: 100%;
   max-width: 328px;
+
   @include font(16px, 700);
   color: #fff;
   background-color: $accent-color;

@@ -43,7 +43,7 @@
   $desktop: 1280px;
 
   @if $range == mobile-only {
-    @media (max-width: $tablet - 0.02) {
+    @media (max-width: #{$tablet - 0.02}) {
       @content;
     }
   } @else if $range == mobile {
@@ -144,15 +144,15 @@ div {
 ===== */
 
 /*DOTS COLORS*/
-@mixin dot-color($color) {
-  @if $color == --primary-accent-cl {
-    color: var(--primary-accent-cl);
-    --dots-color: var(--primary-accent-cl);
-  } @else if $color == --secondary-accent-cl {
-    color: var(--secondary-accent-cl);
-    --dots-color: var(--secondary-accent-cl);
-  }
-}
+// @mixin dot-color($color) {
+//   @if $color == --primary-accent-cl {
+//     color: var(--primary-accent-cl);
+//     --dots-color: var(--primary-accent-cl);
+//   } @else if $color == --secondary-accent-cl {
+//     color: var(--secondary-accent-cl);
+//     --dots-color: var(--secondary-accent-cl);
+//   }
+// }
 
 /* ===== Usage
 .CLASS YOUR SLICK-SLIDER .slick-dots li button {

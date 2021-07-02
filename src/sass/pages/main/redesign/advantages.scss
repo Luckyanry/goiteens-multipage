@@ -1,82 +1,64 @@
 .advantages {
-  padding-bottom: 66px;
+
   background-image: url('../images/main/advantages/how-vector.svg');
   background-size: 375px 352px;
   background-position: -237px top;
   background-repeat: no-repeat;
 
   @include mq(tablet) {
-    background-position: -70px 130px;
+    background-position: -70px 150px;
   }
   @include mq(desktop) {
-    background-position: 80px bottom;
+    background-position: 40px center;
   }
 
-  &__title {
-    position: relative;
-    margin-bottom: 32px;
-
-    @include fonts(24px, bold, 1.2);
-    text-transform: uppercase;
-
-    @include mq(desktop) {
-      width: 440px;
-      font-size: 34px;
-      line-height: 1.3;
-    }
+  .section__title {
+    max-width: 900px;
+   
+    
   }
 
-  &__list {
-    margin-top: -30px;
+  .list {
+   
     margin-bottom: 52px;
+    flex-direction: column;
+
     @include mq(tablet) {
-      display: flex;
-      margin-left: -30px;
+      --grid-item: 2;
+      
       flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: stretch;
+  
     }
   }
 
-  &__item {
+  .item {
     position: relative;
 
     padding: 40px 40px;
-    margin-top: 30px;
 
-    text-align: center;
+    background-color: var(--white-bg);
+    box-shadow: var(--block-shadow);
+    border-radius: var(--border-radius);
+    transition: all var(--fast-animation) ease-out;
 
-    background-color: $white-bg;
-    box-shadow: 0px 1px 2px rgba(92, 46, 145, 0.08),
-      10px 10px 40px rgba(92, 46, 145, 0.24);
-    border-radius: 12px;
-    // transition: all var(--fast-animation) ease-out;
-
-    @include mq(tablet) {
-      width: calc(100% / 2 - 30px);
-
-      margin-left: 30px;
-    }
-
-    @include mq('desktop') {
+    @include mq(desktop) {
       padding: 40px 100px;
-      text-align: start;
     }
   }
 
-  &__icon {
+  .icon {
     margin-bottom: 16px;
 
     @include mq('desktop') {
       position: absolute;
+      margin-bottom: 0;
       top: 18px;
       right: 18px;
     }
   }
 
   .text-bold {
-    margin-bottom: 34px;
+    margin-bottom: 24px;
     color: var(--main-text-cl);
   }
 
