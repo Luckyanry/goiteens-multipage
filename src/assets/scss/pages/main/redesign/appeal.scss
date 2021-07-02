@@ -32,7 +32,7 @@
       z-index: -1;
 
       @include mq(tablet) {
-        top: -40px;
+        top: 0;
         right: -140px;
         width: 534px;
         height: 516px;
