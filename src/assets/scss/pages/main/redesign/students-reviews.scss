@@ -36,9 +36,9 @@
         padding-top: 125px;
         padding-bottom: 65px;
         border-radius: 12px;
-        background-image: url('../images/main/testimonials/bck1.png'),
-          url('../images/main/testimonials/bck2.png'),
-          url('../images/main/testimonials/bck3.png');
+        background-image: url('../images/main/students-reviews/bck1.png'),
+          url('../images/main/students-reviews/bck2.png'),
+          url('../images/main/students-reviews/bck3.png');
         background-repeat: no-repeat;
         background-position: left -20px bottom 0, left 0 bottom 0,
           right 0 bottom 0;
@@ -60,7 +60,7 @@
         display: inline-block;
         width: 52px;
         height: 52px;
-        background-image: url('../images/main/testimonials/comma.svg');
+        background-image: url('../images/main/students-reviews/comma.svg');
         background-repeat: no-repeat;
 
         @include mq(tablet) {
@@ -137,7 +137,7 @@
         top: -20px;
         width: 62px;
         height: 12px;
-        background-image: url('../images/main/testimonials/arrow-left.svg');
+        background-image: url('../images/main/students-reviews/arrow-left.svg');
         background-repeat: no-repeat;
       }
       @include mq(desktop) {
@@ -161,7 +161,7 @@
         top: -20px;
         width: 62px;
         height: 12px;
-        background-image: url('../images/main/testimonials/arrow-right.svg');
+        background-image: url('../images/main/students-reviews/arrow-right.svg');
         background-repeat: no-repeat;
       }
       @include mq(desktop) {
@@ -176,8 +176,14 @@
       color: var(--title-cl);
 
       &::before {
-        background-image: url('../images/main/testimonials/white-comma.svg');
+        background-image: url('../images/main/students-reviews/white-comma.svg');
       }
     }
+  }
+
+  .scroll{
+    display: block;
+    height: 100%;
+    overflow-y: scroll;
   }
 }

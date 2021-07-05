@@ -1,211 +1,51 @@
+{% set projects = projects %} {% set projectsItems = projects.items %}
 <section class="section projects">
  
     <div class="container">
       <h2 class="section__title">
-        Останні реалізовані учнями проекти&#95;
+       {{projects.title}}
       </h2>
 
       <p class="text-label projects-description">
-        Ні, це не скрін з App Store! <span> Це проєкти, які наші учні розробляють на
-          курсі самостійно</span>
+       {{projects.description}}
       </p>
 
       <div class="projects-slider-js projects-list">
+        {% for item in projectsItems %}
         <div class="projects-item">
           <picture>
  
   
-            <source srcset="./assets/images/main/projects/project-1-lg.webp 1x, ./assets/images/main/projects/project-1-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-1-lg.jpg 1x, ./assets/images/main/projects/project-1-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+            <source srcset="./assets/images/main/projects/project-{{item.id}}-lg.webp 1x, ./assets/images/main/projects/project-{{item.id}}-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-{{item.id}}-lg.jpg 1x, ./assets/images/main/projects/project-{{item.id}}-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
   
-            <source srcset="./assets/images/main/projects/project-1-md.webp 1x, 
-            ./assets/images/main/projects/project-1-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-1-md.jpg 1x, 
-            ./assets/images/main/projects/project-1-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+            <source srcset="./assets/images/main/projects/project-{{item.id}}-md.webp 1x, 
+            ./assets/images/main/projects/project-{{item.id}}-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-{{item.id}}-md.jpg 1x, 
+            ./assets/images/main/projects/project-{{item.id}}-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
   
-            <source srcset="./assets/images/main/projects/project-1-sm.webp 1x, ./assets/images/main/projects/project-1-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-1-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
+            <source srcset="./assets/images/main/projects/project-{{item.id}}-sm.webp 1x, ./assets/images/main/projects/project-{{item.id}}-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/main/projects/project-{{item.id}}-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
 
-            <img class="projects-item__image"  src="./assets/images/main/projects/project-1-sm.jpg" alt="фото проєкту Therapy"
+            <img class="projects-item__image"  src="./assets/images/main/projects/project-{{item.id}}-sm.jpg" alt="фото проєкту {{item.title}}"
               width="280" height="200" loading="lazy" />
           </picture>
           <div class="projects-item__wrapper">
             <h3 class="text-label projects-item__title ">
-              Сайт караоке-бару Smile Art Bar
+              {{item.title}}
             </h3>
 
             <p class="projects-item__description ">
-              «Власниця закладу Наталія Ковальчук виступила у якості реального
-              замовника для груп Front-end #3 і Front-end #5. Наші студенти
-              впродовж 3-х тижнів працювали над розробкою одночасно привабливого
-              і функціонального сайту, і вже сьогодні готові запускати його в
-              продакшн.»
+           {{item.description}}
             </p>
 
-            <a class="more-link" target="_blank" href="http://karaoke-smile-art.com.ua/"
+            <a class="more-link" target="_blank" href="{{item.link}}"
               rel="noreferrer noopener nofollow">Переглянути</a>
           </div>
         </div>
-
-        <div class="projects-item">
-          <picture>
-            <source srcset="./assets/images/main/projects/project-2-lg.webp 1x, ./assets/images/main/projects/project-2-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-2-lg.jpg 1x, ./assets/images/main/projects/project-2-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
-  
-            <source srcset="./assets/images/main/projects/project-2-md.webp 1x, 
-            ./assets/images/main/projects/project-2-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-2-md.jpg 1x, 
-            ./assets/images/main/projects/project-2-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
-  
-            <source srcset="./assets/images/main/projects/project-2-sm.webp 1x, ./assets/images/main/projects/project-2-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-2-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
-
-            <img class="projects-item__image" src="./assets/images/main/projects/project-2-sm.jpg" alt="фото проєкту Сайт кулінарної майстерні Oleg Cook"
-               width="280" height="200" />
-          </picture>
-
-          <div class="projects-item__wrapper">
-            <h3 class="text-label projects-item__title">
-              Сайт кулінарної майстерні Oleg Cook
-            </h3>
-
-            <p class="projects-item__description">
-              «Студенти з Вінниці створили односторінковий сайт на замолвення одного з батьків. Тепер бізнес Олега, а
-              саме приготування їжі на замовлення, розвиватиметься ще з більшими темпами.»
-            </p>
-
-            <a class="more-link" target="_blank" href="https://olegcook.vn.ua/"
-              rel="noreferrer noopener nofollow">Переглянути</a>
-          </div>
-        </div>
-
-        <div class="projects-item">
-          <picture>
-            <source srcset="./assets/images/main/projects/project-3-lg.webp 1x, ./assets/images/main/projects/project-3-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-3-lg.jpg 1x, ./assets/images/main/projects/project-3-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
-  
-            <source srcset="./assets/images/main/projects/project-3-md.webp 1x, 
-            ./assets/images/main/projects/project-3-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-3-md.jpg 1x, 
-            ./assets/images/main/projects/project-3-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
-  
-            <source srcset="./assets/images/main/projects/project-3-sm.webp 1x, ./assets/images/main/projects/project-3-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-3-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
-
-            <img class="projects-item__image"  src="./images/main/projects/project-3-sm.jpg" alt="фото проєкту Меблі РЕМСЕРВІС"
-               width="280" height="200" />
-          </picture>
-          <div class="projects-item__wrapper">
-            <h3 class=" text-label projects-item__title">
-              Меблі РЕМСЕРВІС
-            </h3>
-
-            <p class="projects-item__description">
-              «Сайт компанії з ремонту та реставрації меблів. На сайті представлений увесь спектр послуг компанії,
-              приклади реалізованих робіт, конкурентні переваги та контакти для оформлення замовлення.»
-            </p>
-
-            <a class="more-link" target="_blank" href="#" rel="noreferrer noopener nofollow">Переглянути</a>
-          </div>
-        </div>
-        <div class="projects-item">
-          <picture>
- 
-  
-            <source srcset="./assets/images/main/projects/project-1-lg.webp 1x, ./assets/images/main/projects/project-1-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-1-lg.jpg 1x, ./assets/images/main/projects/project-1-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
-  
-            <source srcset="./assets/images/main/projects/project-1-md.webp 1x, 
-            ./assets/images/main/projects/project-1-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-1-md.jpg 1x, 
-            ./assets/images/main/projects/project-1-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
-  
-            <source srcset="./assets/images/main/projects/project-1-sm.webp 1x, ./assets/images/main/projects/project-1-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-1-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
-
-            <img class="projects-item__image"  src="./assets/images/main/projects/project-1-sm.jpg" alt="фото проєкту Therapy"
-              width="280" height="200" loading="lazy" />
-          </picture>
-          <div class="projects-item__wrapper">
-            <h3 class="text-label projects-item__title ">
-              Сайт караоке-бару Smile Art Bar
-            </h3>
-
-            <p class="projects-item__description ">
-              «Власниця закладу Наталія Ковальчук виступила у якості реального
-              замовника для груп Front-end #3 і Front-end #5. Наші студенти
-              впродовж 3-х тижнів працювали над розробкою одночасно привабливого
-              і функціонального сайту, і вже сьогодні готові запускати його в
-              продакшн.»
-            </p>
-
-            <a class="more-link" target="_blank" href="http://karaoke-smile-art.com.ua/"
-              rel="noreferrer noopener nofollow">Переглянути</a>
-          </div>
-        </div>
-
-        <div class="projects-item">
-          <picture>
-            <source srcset="./assets/images/main/projects/project-2-lg.webp 1x, ./assets/images/main/projects/project-2-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-2-lg.jpg 1x, ./assets/images/main/projects/project-2-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
-  
-            <source srcset="./assets/images/main/projects/project-2-md.webp 1x, 
-            ./assets/images/main/projects/project-2-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-2-md.jpg 1x, 
-            ./assets/images/main/projects/project-2-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
-  
-            <source srcset="./assets/images/main/projects/project-2-sm.webp 1x, ./assets/images/main/projects/project-2-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-2-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
-
-            <img class="projects-item__image" src="./assets/images/main/projects/project-2-sm.jpg" alt="фото проєкту Сайт кулінарної майстерні Oleg Cook"
-               width="280" height="200" />
-          </picture>
-
-          <div class="projects-item__wrapper">
-            <h3 class="text-label projects-item__title">
-              Сайт кулінарної майстерні Oleg Cook
-            </h3>
-
-            <p class="projects-item__description">
-              «Студенти з Вінниці створили односторінковий сайт на замолвення одного з батьків. Тепер бізнес Олега, а
-              саме приготування їжі на замовлення, розвиватиметься ще з більшими темпами.»
-            </p>
-
-            <a class="more-link" target="_blank" href="https://olegcook.vn.ua/"
-              rel="noreferrer noopener nofollow">Переглянути</a>
-          </div>
-        </div>
-
-        <div class="projects-item">
-          <picture>
-            <source srcset="./assets/images/main/projects/project-3-lg.webp 1x, ./assets/images/main/projects/project-3-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-3-lg.jpg 1x, ./assets/images/main/projects/project-3-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
-  
-            <source srcset="./assets/images/main/projects/project-3-md.webp 1x, 
-            ./assets/images/main/projects/project-3-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-3-md.jpg 1x, 
-            ./assets/images/main/projects/project-3-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
-  
-            <source srcset="./assets/images/main/projects/project-3-sm.webp 1x, ./assets/images/main/projects/project-3-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-            <source srcset="./assets/images/main/projects/project-3-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
-
-            <img class="projects-item__image"  src="./images/main/projects/project-3-sm.jpg" alt="фото проєкту Меблі РЕМСЕРВІС"
-               width="280" height="200" />
-          </picture>
-          <div class="projects-item__wrapper">
-            <h3 class=" text-label projects-item__title">
-              Меблі РЕМСЕРВІС
-            </h3>
-
-            <p class="projects-item__description">
-              «Сайт компанії з ремонту та реставрації меблів. На сайті представлений увесь спектр послуг компанії,
-              приклади реалізованих робіт, конкурентні переваги та контакти для оформлення замовлення.»
-            </p>
-
-            <a class="more-link" target="_blank" href="#" rel="noreferrer noopener nofollow">Переглянути</a>
-          </div>
-        </div>
-
+        {% endfor %}
+       
+       
 
 
       </div>

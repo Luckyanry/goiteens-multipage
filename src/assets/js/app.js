@@ -3,6 +3,7 @@ import { slick } from 'slick-carousel';
 $(document).ready(function () {
 
     $('.awards-slider-js').slick({
+      mobileFirst: true,
       arrows: false,
       dots: true,
       // adaptiveHeight: true,
@@ -11,7 +12,6 @@ $(document).ready(function () {
       speed: 400,
       infinite: true,
       cssEase: 'linear',
-      mobileFirst: true,
       responsive: [
         {
           breakpoint: 767,
