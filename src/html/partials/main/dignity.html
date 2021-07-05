@@ -1,123 +1,45 @@
+{% set dignity = dignity %} {% set dignityItems = dignity.items %}
 <section class="dignity section">
   <div class="container">
     <h2 class="section__title">
-      Чому нам <span class="text-accent">довіряють</span>&#95;
+     {{dignity.title}}
     </h2>
     <ul class="dignity__list list grid">
+      {% for item in dignityItems %}
       <li class="dignity__item grid__item">
         <picture>
           <source
           srcset="
-            ./assets/images/main/dignity/dignity-1.webp    1x,
-            ./assets/images/main/dignity/dignity-1@2x.webp 2x
+            ./assets/images/main/dignity/dignity-{{item.id}}.webp    1x,
+            ./assets/images/main/dignity/dignity-{{item.id}}@2x.webp 2x
           "
           media="(min-width: 320px)"
           type="image/webp"
         />
 
         <source
-          srcset="./assets/images/main/dignity/dignity-1@2x.png 2x"
+          srcset="./assets/images/main/dignity/dignity-{{item.id}}@2x.png 2x"
           media="(min-width: 320px)"
           type="image/png"
         />
           <img
             class="dignity__img"
-            src="./assets/images/main/dignity/dignity-1.png"
+            src="./assets/images/main/dignity/dignity-{{item.id}}.png"
             alt="діти на навчанні"
             width="222"
             height="130"
           />
         </picture>
         <h3 class="text-bold">
-          Розвиваємо власну мережу і контролюємо якість
+          {{item.title}}
         </h3>
         <p>
-          Школи у всіх містах працюють за єдиними стандартами якості та
-          управляються однією командою.
+      {{item.description}}
         </p>
       </li>
-      <li class="dignity__item grid__item">
-        <picture>
-          <source
-          srcset="
-            ./assets/images/main/dignity/dignity-2.webp    1x,
-            ./assets/images/main/dignity/dignity-2@2x.webp 2x
-          "
-          media="(min-width: 320px)"
-          type="image/webp"
-        />
+           
+      {% endfor %}
 
-        <source
-          srcset="./assets/images/main/dignity/dignity-2@2x.png 2x"
-          media="(min-width: 320px)"
-          type="image/png"
-        />
-          <img
-            class="dignity__img"
-            src="./assets/images/main/dignity/dignity-2.png"
-            alt="діти на навчанні"
-            width="222"
-            height="130"
-          />
-        </picture>
-        <h3 class="text-bold">
-            Відкрито спілкуємось з дітьми та батьками
-        </h3>
-        <p>
-            Щомісяця батьки отримують від нас звітність та зворотний зв'язок про успіхи дітей у навчанні.
-        </p>
-      </li>
-      <li class="dignity__item grid__item">
-        <picture>
-          <source
-          srcset="
-            ./assets/images/main/dignity/dignity-3.webp    1x,
-            ./assets/images/main/dignity/dignity-3@2x.webp 2x
-          "
-          media="(min-width: 320px)"
-          type="image/webp"
-        />
-
-        <source
-          srcset="./assets/images/main/dignity/dignity-3@2x.png 2x"
-          media="(min-width: 320px)"
-          type="image/png"
-        />
-          <img
-            class="dignity__img"
-            src="./assets/images/main/dignity/dignity-3.png"
-            alt="діти на навчанні"
-            width="222"
-            height="130"
-          />
-        </picture>
-        <h3 class="text-bold">
-            Показуємо зрозумілий результат навчання
-        </h3>
-        <p>
-            Протягом навчання учні реалізовують проекти: від простих концептів до реальних стартапів.
-        </p>
-      </li>
-      <li class="dignity__item grid__item">
-        <picture>
-      
-          <img
-            class="dignity__img"
-            src="./assets/images/main/dignity/dignity-4.png"
-            alt="діти на навчанні"
-            width="222"
-            height="130"
-          />
-        </picture>
-        <h3 class="text-bold">
-            Відповідаємо за безпеку
-        </h3>
-        <p>
-            Уважно ставимося до безпеки, контролюємо присутність та тримаємо зв'язок з батьками.
-        </p>
-      </li>
-     
-      
     </ul>
   </div>
 </section>

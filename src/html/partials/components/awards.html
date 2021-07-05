@@ -1,106 +1,43 @@
+{% set awards = awards %}
 <div class="awards">
   <div class="awards__wrapper">
     <div class="container">
       <div class="list awards__list awards-slider-js">
+        {% for item in awards %}
         <div class="awards__item">
           <div class="awards__item-wrapper">
             <picture>
               <source
                 srcset="
-                  ./assets/images/main/awards/award1_lg.webp    1x,
-                  ./assets/images/main/awards/award1_lg@2x.webp 2x
+                  ./assets/images/main/awards/award{{item.id}}_lg.webp    1x,
+                  ./assets/images/main/awards/award{{item.id}}_lg@2x.webp 2x
                 "
                 media="(min-width: 320px)"
                 type="image/webp"
               />
 
               <source
-                srcset="./assets/images/main/awards/award1_lg@2x.png 2x"
+                srcset="./assets/images/main/awards/award{{item.id}}_lg@2x.png 2x"
                 media="(min-width: 320px)"
                 type="image/png"
               />
 
               <img
                 class="awards__img"
-                src="./assets/images/main/awards/award1_lg.png"
-                alt="Нагорода Best IT Education 2015 "
-                width="120"
-                height="190"
+                src="./assets/images/main/awards/award{{item.id}}_lg.png"
+                alt="{{item.img_alt}}"
+                width="{{item.img_width}}"
+                height="{{item.img_height}}"
                 loading="lazy"
               />
             </picture>
           </div>
           <h3 class="item-title">
-            Best IT Education <br />
-            2015
+           {{item.title}}
           </h3>
-          <p>За внесок у підготовку сильних Junior-фахівців</p>
+          <p>{{item.description}}</p>
         </div>
-        <div class="awards__item">
-          <div class="awards__item-wrapper">
-            <picture>
-              <source
-              srcset="
-                ./assets/images/main/awards/award2_lg.webp    1x,
-                ./assets/images/main/awards/award2_lg@2x.webp 2x
-              "
-              media="(min-width: 320px)"
-              type="image/webp"
-            />
-
-            <source
-              srcset="./assets/images/main/awards/award2_lg@2x.png 2x"
-              media="(min-width: 320px)"
-              type="image/png"
-            />
-              <img
-                class="awards__img"
-                src="./assets/images/main/awards/award2_lg.png"
-                alt="Нагорода Best IT Education 2015"
-                width="146"
-                height="185"
-              />
-            </picture>
-          </div>
-          <h3 class="item-title">
-            Ukrainian IT Awards <br />
-            2016
-          </h3>
-          <p>За видатний внесок у IT-навчання українських Junior-розробників</p>
-        </div>
-        <div class="awards__item">
-          <div class="awards__item-wrapper">
-            <picture>
-              <source
-              srcset="
-                ./assets/images/main/awards/award3_lg.webp    1x,
-                ./assets/images/main/awards/award3_lg@2x.webp 2x
-              "
-              media="(min-width: 320px)"
-              type="image/webp"
-            />
-
-            <source
-              srcset="./assets/images/main/awards/award3_lg@2x.png 2x"
-              media="(min-width: 320px)"
-              type="image/png"
-            />
-
-              <img
-                class="awards__img"
-                src="./assets/images/main/awards/award3_lg.png"
-                alt="Нагорода Best IT Education 2015"
-                width="243"
-                height="192"
-              />
-            </picture>
-          </div>
-          <h3 class="item-title">
-            Українська народна премія <br />
-            2018-2020
-          </h3>
-          <p>За перемогу в номінації IT-освіта. Голосування серед споживачів</p>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
