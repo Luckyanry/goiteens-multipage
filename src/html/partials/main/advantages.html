@@ -1,3 +1,4 @@
+{% set advantages = advantages %} {% set advantagesItems = advantages.items %}
 <section class="section advantages">
   <div class="container">
     <h2 class="section__title">
@@ -5,25 +6,26 @@
       GoITeens?&#95;
     </h2>
     <ul class="list grid">
+      {% for item in advantagesItems %}
       <li
         class="item grid__item"
         data-aos="fade-up"
-        data-aos-delay="100"
+        data-aos-delay="{{item.delay}}"
         data-aos-anchor=".advantages"
       >
         <svg class="icon" width="72" height="72">
-          <use href="assets/images/sprite.svg#lamp"></use>
+          <use href="assets/images/sprite.svg{{item.svg_use}}"></use>
         </svg>
         <p class="text-bold">
-          Розвиток <span class="text-accent">технологічного</span> та
-          <span class="text-accent">інноваційного</span> мислення
+         {{item.title}}
         </p>
         <p>
-          Ваша дитина набуває Soft Skills та різні типи мислення, що допомагає
-          їй стати більш креативною, впевненою в собі людиною
+         {{item.description}}
         </p>
       </li>
-      <li
+      
+      {% endfor %}
+      <!-- <li
         class="item grid__item"
         data-aos="fade-up"
         data-aos-delay="200"
@@ -70,7 +72,7 @@
           По закінченню навчання діти не тільки отримують сертифікати, а й мають
           вже готові проєкти в портфоліо
         </p>
-      </li>
+      </li> -->
     </ul>
     <a href="./about.html" class="main-btn"
       >Більше про наш підхід до навчання</a
