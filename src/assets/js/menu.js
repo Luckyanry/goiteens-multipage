@@ -1,14 +1,16 @@
+import $ from 'jquery';
+
 (() => {
     const menuBtnRef = document.querySelector("[data-menu-button]");
     const mobileMenuRef = document.querySelector("[data-menu]");
-  
+
     menuBtnRef.addEventListener("click", () => {
       const expanded =
         menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-  
+
       menuBtnRef.classList.toggle("is-open");
       menuBtnRef.setAttribute("aria-expanded", !expanded);
-  
+
       mobileMenuRef.classList.toggle("is-open");
     });
 })();
@@ -40,7 +42,7 @@
         }
       ]
     });
-  
+
     $('.testimonials__nav-slider').slick({
       infinite: true,
       arrows: false,
@@ -73,7 +75,7 @@
       prevArrow: '<button type="button" class="slick-prev"></button>',
       nextArrow: '<button type="button" class="slick-next"></button>',
     });
-  
+
     $('.teacher__slider-content').slick({
       infinite: true,
       slidesToShow: 1,
@@ -82,7 +84,7 @@
       mobileFirst: true,
       swipe: false,
     });
-  
+
     $('.teacher__slider_desktop').slick({
       infinite: true,
       slidesToShow: 3,
@@ -99,7 +101,7 @@
         }
       ]
     });
-  
+
     $('.speakers__slider').slick({
       infinite: true,
       slidesToShow: 1,
@@ -111,7 +113,7 @@
       prevArrow: '<button type="button" class="slick-prev"></button>',
       nextArrow: '<button type="button" class="slick-next"></button>',
     });
-  
+
     $('.speakers__slider-content').slick({
       infinite: true,
       slidesToShow: 1,
@@ -120,7 +122,7 @@
       mobileFirst: true,
       swipe: false,
     });
-  
+
     $('.speakers__slider_desktop').slick({
       infinite: true,
       slidesToShow: 3,

@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $(document).ready(function () {
   var utm_source = getUrlParameter('utm_source');
   var utm_medium = getUrlParameter('utm_medium');
