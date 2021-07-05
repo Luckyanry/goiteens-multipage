@@ -84,7 +84,7 @@ $(document).ready(function () {
       slidesToScroll: 1,
       slidesToShow: 1,
       speed: 400,
-      infinite: true,
+      infinite: false,
       cssEase: 'linear',
       responsive: [
           {

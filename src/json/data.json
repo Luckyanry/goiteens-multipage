@@ -11,8 +11,9 @@
     "og_image_type": "image/png",
     "og_image_width": "1200",
     "og_image_height": "630",
-    "tw_image": "assets/images/twitter.png"
+    "tw_image": "assets/images/twitter.png"  
   },
+
   "hero": {
     "main": {
       "title": "Онлайн IT-курси для&nbsp;дітей в GoITeens",
@@ -88,7 +89,7 @@
     },
     {
       "id": "2",
-      "title": " Ukrainian IT Awards <br />2016",
+      "title": " Ukrainian IT Awards <br/>2016",
       "descripton": "За видатний внесок у IT-навчання українських Junior-розробників",
       "img_alt": "Нагорода Ukrainian IT Awards 2016",
       "img_width": "146",
@@ -96,7 +97,7 @@
     },
     {
       "id": "3",
-      "title": " Українська народна премія <br />    2018-2020",
+      "title": " Українська народна премія 2018-2020",
       "descripton": "За перемогу в номінації IT-освіта. Голосування серед споживачів",
       "img_alt": "Нагорода Українська народна премія 2018-2020 в номінації IT-освіта ",
       "img_width": "243",

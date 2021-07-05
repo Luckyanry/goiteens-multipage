@@ -7,10 +7,10 @@
     margin-bottom: 60px;
     padding: 68px 40px;
    
-    @include mq(tablet, max) {
+    @include mq(mobile-only) {
       background-image: url('../images/main/achievments/triangle_mobile_1.svg'),
         url('../images/main/achievments/triangle_mobile_2.svg'),
-        linear-gradient(to bottom, $accent-color, $accent-color 100%);
+        linear-gradient(to bottom, var(--secondary-accent-cl), var(--secondary-accent-cl) 100%);
       background-repeat: no-repeat, no-repeat;
       background-position: top 14% right, top 50% right;
     }
@@ -51,7 +51,7 @@
       border-radius: 12px;
 
       background-image: url('../images/main/achievments/triangle_lg.svg'),
-        linear-gradient(to bottom, $accent-color, $accent-color 100%);
+        linear-gradient(to bottom, var(--secondary-accent-cl), var(--secondary-accent-cl) 100%);
 
       background-repeat: no-repeat, no-repeat;
       background-position: bottom right, bottom right;

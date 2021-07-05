@@ -4,8 +4,8 @@
 
 @import './pages/main/redesign/utils/variables.scss';
 @import './pages/main/redesign/utils/mixins.scss';
-@import './utils/variables.scss';
-@import './utils/mixins.scss';
+// @import './utils/variables.scss';
+// @import './utils/mixins.scss';
 @import './utils/fonts.scss';
 
 @import './pages/main/redesign/component/slick.scss';
@@ -20,9 +20,8 @@
 // @import './base/container.scss';
 
 @import './components/modal-btn.scss';
-@import './components/title.scss';
-@import './components/accent-text.scss';
-// @import './components/awards.scss';
+
+
 @import './components/backdrop.scss';
 @import './components/terms-modal.scss';
 
@@ -31,15 +30,16 @@
 @import './pages/main/redesign/component/awards.scss';
 
 @import './layout/header.scss';
+
 @import './pages/main/redesign/hero.scss';
 @import './pages/main/redesign/branches.scss';
 @import './pages/main/redesign/advantages.scss';
 @import './pages/main/redesign/achievments.scss';
-@import './pages/main/courses.scss';
-@import './pages/main/format.scss';
+// @import './pages/main/courses.scss';
+// @import './pages/main/format.scss';
 @import './pages/main/redesign/dignity.scss';
 @import './pages/main/redesign/students-reviews.scss';
 @import './pages/main/redesign/projects.scss';
 @import './pages/main/redesign/appeal.scss';
-@import './pages/main/footer.scss';
+// @import './pages/main/footer.scss';
 @import './layout/modal-form.scss';
