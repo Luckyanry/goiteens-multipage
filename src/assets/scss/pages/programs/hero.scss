@@ -1,6 +1,27 @@
-.programs{
+.hero{
+  padding-top: 132px;
+  padding-bottom: 281px;
+  @include mq(desktop){
+    height: 849px;
+    background: url('../images/programs/hero/bg-1_lg.png'),
+    url('../images/programs/hero/bg-2_lg.png'),
+    linear-gradient(to bottom, var(--primary-accent-cl), var(--primary-accent-cl) 100%);
+    // background-image: url('../images/programs/hero/bg-children_lg.png');
+    // background-image: url('../images/programs/hero/1.png');
+    // background-image: url('../images/programs/hero/bg_lg-test.png');
+    // background: url('../images/programs/hero/bg-children_lg.png'),url('../images/programs/hero/bg_lg.png');
+    // background-size: contain;
+    background-repeat: no-repeat;
+    // background-color: var(--primary-accent-cl);
+    // background-position: top right;
+  }
+
   .hero__title{
-    color: red;
+    color: rgb(0, 17, 255);
+    @include mq(desktop){
+      margin-bottom: 52px;
+      max-width: 535px;
+    }
   }
 
 }

@@ -11,7 +11,13 @@
     "og_image_type": "image/png",
     "og_image_width": "1200",
     "og_image_height": "630",
-    "tw_image": "assets/images/twitter.png"  
+    "tw_image": "assets/images/twitter.png" ,
+    "main":{
+      "style":"main"
+    } ,
+    "programs":{
+      "style":"program-page"
+    }
   },
 
   "hero": {

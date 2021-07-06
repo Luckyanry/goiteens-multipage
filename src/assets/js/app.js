@@ -67,7 +67,6 @@ $(document).ready(function () {
           breakpoint: 767,
           settings: {
             arrows: true,
-            // centerPadding: '115px 0 0',
             appendArrows: '.review-button',
             prevArrow: $('.prev-but-js'),
             nextArrow: $('.next-but-js'),
@@ -108,15 +107,3 @@ $(document).ready(function () {
   });
 
 
-//   import AOS from 'aos';
-// // import 'aos/dist/aos.css';
-
-// AOS.init({
-//     disable: 'mobile',
-//     offset: 100, 
-//     duration: 400, 
-//     easing: 'ease-in-out', 
-//     once: false, 
-//     mirror: true, 
-//     anchorPlacemen:'top-center'
-// });
