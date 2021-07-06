@@ -1,50 +1,8 @@
-<section class="hero">
-    <div class="container">
-        <h1 class="hero__title">
-            В IT-школі для дітей GoITeens кожен від 8 до 16 років знайде чим хоче займатись, <span class="accent-text">а
-                ми допоможемо досягти мети</span>
-        </h1>
-        <p class="hero__text hero__text_bottom">а також навчання
-            проходить онлайн
-            з будь-якої точки світу
+{% set hero = hero %} {% set programsHero = hero.programs %}
+<section class="hero programs">
+  <div class="container">
+    <h1 class="hero__title">{{ programsHero.title }}</h1>
 
-        </p>
-        <button type="button" class="modal-btn" data-modal-open>Обрати план навчання</button>
-        <div class="location-banner">
-            <h2 class="location-banner__title">Мережа IT-академій для позашкільного навчання дітей від 8 до 15 років
-            </h2>
-            <ul class="location-banner__list list">
-                <li class="location-banner__list-item">
-                    <svg class="location-banner__list-item-icon">
-                        <use href="./assets/images/sprite.svg#pin"></use>
-                    </svg> Київ
-                </li>
-                <li class="location-banner__list-item">
-                    <svg class="location-banner__list-item-icon">
-                        <use href="./assets/images/sprite.svg#pin"></use>
-                    </svg> Львів
-                </li>
-                <li class="location-banner__list-item">
-                    <svg class="location-banner__list-item-icon">
-                        <use href="./assets/images/sprite.svg#pin"></use>
-                    </svg> Дніпро
-                </li>
-                <li class="location-banner__list-item">
-                    <svg class="location-banner__list-item-icon">
-                        <use href="./assets/images/sprite.svg#pin"></use>
-                    </svg> Харків
-                </li>
-                <li class="location-banner__list-item">
-                    <svg class="location-banner__list-item-icon">
-                        <use href="./assets/images/sprite.svg#pin"></use>
-                    </svg> Вінниця
-                </li>
-                <li class="location-banner__list-item">
-                    <svg class="location-banner__list-item-icon">
-                        <use href="./assets/images/sprite.svg#pin"></use>
-                    </svg> Online
-                </li>
-            </ul>
-        </div>
-    </div>
+    <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
+  </div>
 </section>

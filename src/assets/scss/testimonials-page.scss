@@ -1,13 +1,21 @@
-@import './utils/variables.scss';
-@import './utils/mixins.scss';
+
+
+
+@import './pages/main/redesign/utils/variables.scss';
+@import './pages/main/redesign/utils/mixins.scss';
+
 @import './utils/fonts.scss';
 
-@import './base/common.scss';
-@import './base/container.scss';
+@import './pages/main/redesign/component/slick.scss';
+@import './pages/main/redesign/component/slick-theme.scss';
+
+@import './pages/main/redesign/base/common.scss';
+@import './pages/main/redesign/base/container.scss';
+@import './pages/main/redesign/base/grid.scss';
+@import './pages/main/redesign/base/section.scss';
 
 @import './components/modal-btn.scss';
-@import './components/title.scss';
-@import './components/accent-text.scss';
+
 @import './components/backdrop.scss';
 @import './components/terms-modal.scss';
 

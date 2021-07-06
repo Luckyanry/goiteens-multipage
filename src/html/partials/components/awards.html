@@ -2,7 +2,7 @@
 <div class="awards">
   <div class="awards__wrapper">
     <div class="container">
-      <div class="list awards__list awards-slider-js">
+      <div class="awards__list awards-slider-js list">
         {% for item in awards %}
         <div class="awards__item">
           <div class="awards__item-wrapper">
@@ -35,7 +35,7 @@
           <h3 class="item-title">
            {{item.title}}
           </h3>
-          <p>{{item.description}}</p>
+          <p>{{item.descripton}}</p>
         </div>
         {% endfor %}
       </div>

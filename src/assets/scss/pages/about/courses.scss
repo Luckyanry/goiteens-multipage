@@ -1,81 +1,81 @@
-.courses {
-  padding-top: 36px;
-  padding-bottom: 48px;
+// .courses {
+//   padding-top: 36px;
+//   padding-bottom: 48px;
 
-  &__description {
-    @include font(16px, 400);
-    margin-bottom: 36px;
-  }
+//   &__description {
+//     @include font(16px, 400);
+//     margin-bottom: 36px;
+//   }
 
-  &__zoom-card {
-    margin-bottom: 26px;
-  }
+//   &__zoom-card {
+//     margin-bottom: 26px;
+//   }
 
-  &__img-link {
-    display: block;
-  }
-}
+//   &__img-link {
+//     display: block;
+//   }
+// }
 
-@include mq('tablet', max) {
-  .courses {
-    &__img-link {
-      position: relative;
-      display: block;
-      height: 244px;
-      border-radius: 6px;
-      overflow: hidden;
-    }
+// @include mq('tablet', max) {
+//   .courses {
+//     &__img-link {
+//       position: relative;
+//       display: block;
+//       height: 244px;
+//       border-radius: 6px;
+//       overflow: hidden;
+//     }
 
-    &__img {
-      transform: translateY(-15%) scale(0.6);
-    }
+//     &__img {
+//       transform: translateY(-15%) scale(0.6);
+//     }
 
-    &__overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 1;
-      background-color: rgba(0, 0, 0, 0.3);
-      width: 100%;
-      height: 100%;
-      content: '';
-    }
+//     &__overlay {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       z-index: 1;
+//       background-color: rgba(0, 0, 0, 0.3);
+//       width: 100%;
+//       height: 100%;
+//       content: '';
+//     }
 
-    &__overlay-icon-zoom {
-      fill: #fff;
-      width: 124px;
-      height: 124px;
-    }
-  }
-}
+//     &__overlay-icon-zoom {
+//       fill: #fff;
+//       width: 124px;
+//       height: 124px;
+//     }
+//   }
+// }
 
-@include mq('tablet') {
-  .courses {
-    &__overlay-icon-zoom {
-      display: none;
-    }
+// @include mq('tablet') {
+//   .courses {
+//     &__overlay-icon-zoom {
+//       display: none;
+//     }
 
-    &__img-link {
-      pointer-events: none;
-    }
-  }
-}
+//     &__img-link {
+//       pointer-events: none;
+//     }
+//   }
+// }
 
-@include mq('desktop') {
-  .courses {
-    padding-top: 74px;
-    padding-bottom: 74px;
+// @include mq('desktop') {
+//   .courses {
+//     padding-top: 74px;
+//     padding-bottom: 74px;
 
-    &__description {
-      max-width: 900px;
-      font-size: 24px;
-    }
+//     &__description {
+//       max-width: 900px;
+//       font-size: 24px;
+//     }
 
-    &__zoom-card {
-      margin-bottom: 100px;
-    }
-  }
-}
+//     &__zoom-card {
+//       margin-bottom: 100px;
+//     }
+//   }
+// }
