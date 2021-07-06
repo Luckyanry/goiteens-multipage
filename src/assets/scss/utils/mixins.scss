@@ -30,6 +30,10 @@
 //   }
 // }
 
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
 @mixin font($fs: 14px, $fw: 400, $lh: 1.2) {
   font-size: $fs;
   font-weight: $fw;
