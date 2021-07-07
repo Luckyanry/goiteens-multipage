@@ -3,12 +3,14 @@
   padding-bottom: 132px;
   background-color: var(--primary-accent-cl);
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size:cover;
   background-position:bottom center;
   background-image:
      url('../images/programs/hero/children-1_md.png');
    
-    
+    @include mq(tablet){
+      background-size:contain;
+    }
 
   @include mq(desktop){
     padding-bottom: 281px;
@@ -24,6 +26,13 @@
     
     
     background-position: bottom 24px left -57px, bottom -139px center, top 17px right 20px, top -143px right -228px;
+
+    @include mq(retina){
+      background-image:url('../images/programs/hero/bg-line_lg.svg'), url('../images/programs/hero/bg-bottom_lg.png'),
+      url('../images/programs/hero/children-decor_lg@2x.png'),
+    
+     url('../images/programs/hero/bg-elips_lg.png');
+    }
   }
 
 

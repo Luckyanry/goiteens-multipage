@@ -7,44 +7,72 @@
     margin-top: -200px;
   }
 
-  &__list{
-      @include mq(mobile-only){
-          justify-content: center;
-      }
+  &__list {
+    @include mq(mobile-only) {
+      justify-content: center;
+    }
   }
 
-  &__item{
-      padding-top: 255px;
-      padding-bottom: 30px;
+  &__item {
+    position: relative;
+    padding-top: 255px;
+    padding-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
-      border-radius: var(--border-radius);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: top center;
-      transition: all  var(--slow-animation) ease;
+    border-radius: var(--border-radius);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    transition: all var(--slow-animation) ease;
 
-    //   box-shadow:var(--block-shadow);
-      @include mq(mobile-only){
-        max-width: 320px;
+    @include mq(mobile-only) {
+      max-width: 320px;
     }
-      @include mq(tablet) {
-        padding-top: 255px;
-      }
-      @include mq(desktop) {
-        padding-top: 300px;
-      }
+    @include mq(tablet) {
+      padding-top: 255px;
+    }
+    @include mq(desktop) {
+      padding-top: 300px;
+    }
 
     &:hover,
-    &:focus{
-          box-shadow:var(--block-shadow); 
-          transform: scale(1.01)
+    &:focus {
+      box-shadow: var(--block-shadow);
+      transform: scale(1.01);
     }
-}
+    &::after {
+      content: '';
+      position: absolute;
+      top: 115px;
+      right: 0;
+      width: 152px;
+      height: 120px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('../images/programs/program-list/triangle.svg');
 
-@for $i from 1 through 9 {
-    .program-#{$i} { background-image: url("../images/programs/program-list/program-#{$i}.png"); }
-}
+      @include mq(tablet) {
+        top: 124px;
+        width: 162px;
+        height: 128px;
+      }
+      @include mq(desktop) {
+        top: 150px;
+        right: 32px;
+        width: 164px;
+        height: 158px;
+      }
+    }
+  }
+
+  @for $i from 1 through 9 {
+    .program-#{$i} {
+      background-image: url('../images/programs/program-list/program-#{$i}.png');
+      @include mq(retina){
+        background-image: url('../images/programs/program-list/program-#{$i}@2x.png');
+      }
+    }
+  }
 
   &__description {
     margin-bottom: 20px;
@@ -73,15 +101,13 @@
     }
     &__title {
       margin-bottom: 4px;
-
-      
     }
     &__icon {
       display: block;
       margin-bottom: 5px;
     }
-    &__level{
-        display: block;
+    &__level {
+      display: block;
     }
   }
 
@@ -89,41 +115,36 @@
     .features__age {
       padding-left: 23px;
     }
-    .features__age-from{
-        margin-right: 15px;
+    .features__age-from {
+      margin-right: 15px;
     }
-   
   }
   .features-2 {
     .features__age {
       padding-left: 53px;
     }
-    .features__age-from{
-        margin-right: 15px;
+    .features__age-from {
+      margin-right: 15px;
     }
-   
   }
   .features-3 {
     .features__age {
       padding-left: 23px;
     }
-    .features__age-from{
-        margin-right: 43px;
+    .features__age-from {
+      margin-right: 43px;
     }
-   
   }
   .features-4 {
     .features__age {
       padding-left: 80px;
     }
-       
   }
   .features-5,
   .features-6 {
     .features__age {
       padding-left: 110px;
     }
-       
   }
   .features-7,
   .features-8,
@@ -131,31 +152,27 @@
     .features__age {
       padding-left: 167px;
     }
-       
   }
   .features-1,
   .features-3,
-  .features-4{
-    .features__level{
-        padding-left: 60px;
+  .features-4 {
+    .features__level {
+      padding-left: 60px;
     }
   }
   .features-2,
   .features-5,
   .features-6,
-  .features-8{
-    .features__level{
-        padding-left: 130px;
+  .features-8 {
+    .features__level {
+      padding-left: 130px;
     }
   }
 
   .features-7,
-  .features-9{
-    .features__level{
-        padding-left: 200px;
+  .features-9 {
+    .features__level {
+      padding-left: 200px;
     }
   }
-
-
-
 }

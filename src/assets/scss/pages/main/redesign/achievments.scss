@@ -5,7 +5,7 @@
 
   &__cont {
     margin-bottom: 60px;
-    padding: 68px 40px;
+    padding: 68px 0;
    
     @include mq(mobile-only) {
       background-image: url('../images/main/achievments/triangle_mobile_1.svg'),
