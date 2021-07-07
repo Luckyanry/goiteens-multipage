@@ -51,12 +51,12 @@
 
 //   &__top-text {
 //     max-width: 290px;
-//     @include font(20px, 500, 1.2);
+//     @include fonts(20px, 500, 1.2);
 //     margin-bottom: 34px;
 //   }
 
 //   &__title {
-//     @include font(36px, 700, 1.2);
+//     @include fonts(36px, 700, 1.2);
 //     margin-bottom: 40px;
 //     max-width: 270px;
 //   }
@@ -67,7 +67,7 @@
 
 //   &__undertitle {
 //     max-width: 280px;
-//     @include font(24px, 400);
+//     @include fonts(24px, 400, 1.2);
 //     margin-bottom: 32px;
 //   }
 // }

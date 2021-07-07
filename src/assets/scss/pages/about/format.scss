@@ -3,7 +3,7 @@
 //   padding-bottom: 50px;
 
 //   &__description {
-//     @include font(16px, 400);
+//     @include fonts(16px, 400, 1.2);
 //     margin-bottom: 26px;
 //   }
 
@@ -33,12 +33,12 @@
 //   }
 
 //   &__list-title {
-//     @include font(16px, 700);
+//     @include fonts(16px, 700, 1.2);
 //     margin-bottom: 10px;
 //   }
 
 //   &__list-text {
-//     @include font(16px, 400);
+//     @include fonts(16px, 400, 1.2);
 //     max-width: 232px;
 //   }
 // }

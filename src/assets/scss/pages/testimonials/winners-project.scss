@@ -7,7 +7,7 @@
 //   }
 
 //   &__description {
-//     @include font(24px, 400, 1.2);
+//     @include fonts(24px, 400, 1.2);
 //     color: #282828;
 //     margin-bottom: 24px;
 //   }
@@ -24,13 +24,13 @@
 //   }
 
 //   &__content-title {
-//     @include font(24px, 700, 1.2);
+//     @include fonts(24px, 700, 1.2);
 //     color: #282828;
 //     margin-bottom: 36px;
 //   }
 
 //   &__content-text {
-//     @include font(24px, 400, 1.2);
+//     @include fonts(24px, 400, 1.2);
 //     color: #282828;
 //   }
 // }

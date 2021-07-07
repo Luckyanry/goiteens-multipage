@@ -8,7 +8,7 @@
 //   background-size: cover;
 
 //   &__title {
-//     @include font(36px, 700, 1.2);
+//     @include fonts(36px, 700, 1.2);
 //     color: #ffffff;
 //     margin-bottom: 40px;
 //   }
@@ -18,7 +18,7 @@
 //   }
 
 //   &__description {
-//     @include font(16px, 400, 1.2);
+//     @include fonts(16px, 400, 1.2);
 //     color: #ffffff;
 //     margin-bottom: 42px;
 //   }

@@ -1,9 +1,6 @@
 /*
- * Все паршалы импортировать в этот файл
+ * All partiasl import to this file
  */
-
-// @import './pages/main/redesign/utils/variables.scss';
-@import './pages/main/redesign/utils/mixins.scss';
 @import './utils/variables.scss';
 @import './utils/mixins.scss';
 @import './utils/fonts.scss';
@@ -18,7 +15,7 @@
 @import './pages/main/redesign/base/grid.scss';
 @import './pages/main/redesign/base/section.scss';
 
-// @import './base/common.scss';
+@import './base/common.scss';
 // @import './base/container.scss';
 
 @import './components/modal-btn.scss';

@@ -3,7 +3,7 @@
   display: block;
   width: 100%;
   max-width: 328px;
-  // @include font(16px, 700);
+  @include fonts(16px, 700, 1.2);
   color: #fff;
   background-color: var(--secondary-accent-cl);
   border: none;
