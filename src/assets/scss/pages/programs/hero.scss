@@ -1,6 +1,41 @@
-.programs{
-  .hero__title{
-    color: red;
+.hero{
+  padding-top: 132px;
+  padding-bottom: 132px;
+  background-color: var(--primary-accent-cl);
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position:bottom center;
+  background-image:
+     url('../images/programs/hero/children-1_md.png');
+   
+    
+
+  @include mq(desktop){
+    padding-bottom: 281px;
+    min-height: 849px;
+    background-image:url('../images/programs/hero/bg-line_lg.svg'), url('../images/programs/hero/bg-bottom_lg.png'),
+     url('../images/programs/hero/children-decor_lg.png'),
+   
+    url('../images/programs/hero/bg-elips_lg.png');
+    
+
+   
+    background-size: 100% 620px, 100% 419px, 660px 651px, 1060px auto;
+    
+    
+    background-position: bottom 24px left -57px, bottom -139px center, top 17px right 20px, top -143px right -228px;
+  }
+
+
+  &__title{
+    font-size: 30px;
+    color: var(--white-text-cl);
+    @include mq(desktop){
+      margin-bottom: 52px;
+      max-width: 535px;
+      font-size: 40px;
+     
+    }
   }
 
 }

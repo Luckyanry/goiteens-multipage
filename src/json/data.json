@@ -11,7 +11,13 @@
     "og_image_type": "image/png",
     "og_image_width": "1200",
     "og_image_height": "630",
-    "tw_image": "assets/images/twitter.png"  
+    "tw_image": "assets/images/twitter.png" ,
+    "main":{
+      "style":"main"
+    } ,
+    "programs":{
+      "style":"program-page"
+    }
   },
 
   "hero": {
@@ -21,7 +27,7 @@
       "description": "допомагаємо почати кар’єру розробника та заробляти ще до вступу в університет"
     },
     "programs": {
-      "title": "В IT-школі для дітей GoITeens кожен <span class='text-accent'>від 8 до 16 років</span> знайде чим хоче займатись,<span class='text-accent'>а ми допоможемо досягти мети</span> "
+      "title": "В IT-школі для дітей GoITeens кожен <span class='text-accent'>від 8 до 16 років</span> знайде чим хоче займатись,<span class='text-accent'> а ми допоможемо досягти мети</span> "
     }
   },
   "menu": [

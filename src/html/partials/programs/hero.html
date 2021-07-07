@@ -1,7 +1,11 @@
 {% set hero = hero %} {% set programsHero = hero.programs %}
-<section class="hero programs">
-  <div class="container">
-    <h1 class="hero__title">{{ programsHero.title }}</h1>
+<section class="hero">
+    <div class="container">
+        <h1 class="hero__title">
+       {{ programsHero.title }}
+        </h1>
+
+        <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
 
     <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
   </div>
