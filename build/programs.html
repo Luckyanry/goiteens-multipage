@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-
+     
 <meta charset="UTF-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -61,7 +61,7 @@
     <div class="page"> <header class="header">
     <div class="container">
         <a href="/" class="logo link" aria-label="логотип">
-            <img src="./images/header/logo.png" alt="логотип" class="logo__img">
+            <img src="./assets/images/header/logo.png" alt="логотип" class="logo__img">
             <span class="logo__text">мережа ІТ-академій <br> для дітей 8-15 років</span>
         </a>
         <button type="button" class="menu-btn" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
@@ -74,8 +74,7 @@
             <nav class="navigation">
                 <ul class="navigation__list list">
                     <li class="navigation__list-item">
-                        <a href="./programs.html"
-                            class="navigation__list-link navigation__list-link_current link">Програми</a>
+                        <a href="./programs.html" class="navigation__list-link link">Програми</a>
                     </li>
                     <li class="navigation__list-item">
                         <a href="./about.html" class="navigation__list-link link">Про нас</a>
@@ -89,32 +88,44 @@
                 </ul>
             </nav>
             <p class="location">
-                <svg width="24" height="22" class="location__icon">
-                    <use href="./assets/images/sprite.svg#location-icon"></use>
+                <svg width="18" height="18" class="location__icon">
+                    <use href="./assets/images/sprite.svg#location"></use>
                 </svg>
-                <span>київ</span>
+                <span>Київ</span>
             </p>
             <a href="tel:+380933432127" class="contact-tel link">+38 093 343 21 27</a>
+            <div class="language-select">
+                <select>
+                  <option value="0">Ukr</option>
+                  <option value="1">Ru</option>
+                  <option value="2">Pl</option>
+                  <option value="3">En</option>
+                  <option value="4">Tr</option>
+                  <option value="5">Ukr</option>
+                </select>
+              </div>
         </div>
     </div>
 </header>
 
 <main>
-
+   
 <section class="hero">
     <div class="container">
         <h1 class="hero__title">
-       В IT-школі для дітей GoITeens кожен <span class='text-accent'>від 8 до 16 років</span> знайде чим хоче займатись,<span class='text-accent'>а ми допоможемо досягти мети</span>
+       В IT-школі для дітей GoITeens кожен <span class='text-accent'>від 8 до 16 років</span> знайде чим хоче займатись,<span class='text-accent'> а ми допоможемо досягти мети</span> 
         </h1>
 
         <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
 
-    </div>
+    <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
+  </div>
 </section>
+ 
 <section class="programs section">
   <div class="container">
     <ul class="programs__list list grid">
-
+      
       <li class="programs__item grid__item program-1">
         <h3 class="item__title programs__item-title">SCRATCH</h3>
         <p class="programs__description">Діти створюють захопливі анімації та міні ігри в міжнародній навчальній платформі від MIT. Чудово підійде для дитини молодшого шкільного віку, щоб розвинути креативність, дизайн-мислення та навичку причинно-наслідкового зв'язку.</p>
@@ -144,7 +155,7 @@
           </li>
         </ul>
       </li>
-
+      
       <li class="programs__item grid__item program-2">
         <h3 class="item__title programs__item-title">Minecraft</h3>
         <p class="programs__description">Діти взаємодіють між собою на одній карті через ігрових персонажів (агентів), а також створюють власні 3D-світи на спеціальній платформі Minecraft Education Edition. Це самий ненудний спосіб перевести дитину з захопленості іграми в захопленість програмуванням та навчальним процесом. Адже на цьому курсі студенти отримують навички відеоблогінгу на Youtube та самопрезентації.</p>
@@ -174,7 +185,7 @@
           </li>
         </ul>
       </li>
-
+      
       <li class="programs__item grid__item program-3">
         <h3 class="item__title programs__item-title">ЦИФРОВА ГРАМОТНІСТЬ</h3>
         <p class="programs__description">Створення дизайну за допомогою професійних інструментів. Також діти дізнаються, як саме потрібно використовувати дизайн задля створення сайтів, під час розробки ігор.</p>
@@ -204,7 +215,7 @@
           </li>
         </ul>
       </li>
-
+      
       <li class="programs__item grid__item program-4">
         <h3 class="item__title programs__item-title">FRONT-END JUNIOR</h3>
         <p class="programs__description">Це курс, що допомагає дитині опанувати сучасні технології створення сайтів, дизайну, текстів, презентації та відео. Програма розроблена в ігровій формі й дозволяє навчатись весело та корисно.</p>
@@ -234,7 +245,7 @@
           </li>
         </ul>
       </li>
-
+      
       <li class="programs__item grid__item program-5">
         <h3 class="item__title programs__item-title">FRONT-END</h3>
         <p class="programs__description">Це курс для більш дорослих дітей. Програма передбачає створення (HTML+CSS) та динамических статичних Інтернет-сторінок (JavaScript), знайомство та роботу з системами зберігання даних (GitHub). Дуже важливо, що в підсумку дитина створить командний проєкт.</p>
@@ -264,7 +275,7 @@
           </li>
         </ul>
       </li>
-
+      
       <li class="programs__item grid__item program-6">
         <h3 class="item__title programs__item-title">IT-DESIGN</h3>
         <p class="programs__description">Створення дизайну за допомогою професійних інструментів. Також діти дізнаються, як саме потрібно використовувати дизайн задля створення сайтів, під час розробки ігор.</p>
@@ -294,7 +305,7 @@
           </li>
         </ul>
       </li>
-
+      
       <li class="programs__item grid__item program-7">
         <h3 class="item__title programs__item-title">GAME DEV</h3>
         <p class="programs__description">Дитина відчує себе справжнім розробником ігор. Це зовсім не дурниця, як гадає більшість батьків. Їх діти вивчать програмування, алгоритми створення комп’ютерних та мобільних ігор за допомогою платформ Unity, Real Engine.</p>
@@ -324,7 +335,7 @@
           </li>
         </ul>
       </li>
-
+      
       <li class="programs__item grid__item program-8">
         <h3 class="item__title programs__item-title">PYTHON</h3>
         <p class="programs__description">Це програма навчання, що зарекомендувала себе для дітей у всьому світі. Підійде для тих, хто хоче просто пояснити підлітку про складні математичні правила, терміни та алгоритми.</p>
@@ -354,7 +365,7 @@
           </li>
         </ul>
       </li>
-
+      
       <li class="programs__item grid__item program-9">
         <h3 class="item__title programs__item-title">ARDUINO</h3>
         <p class="programs__description">Діти навчаються програмувати процесори, створювати електричні схеми, підключати датчики, двигуни й сервоприводи. Зараз це один із найперспективніших напрямків розвитку технологій.</p>
@@ -384,7 +395,7 @@
           </li>
         </ul>
       </li>
-
+      
     </ul>
   </div>
 </section>
@@ -614,7 +625,8 @@
         </div>
     </div>
 </div>
- </div>
+
+</div>
 
     <script src="assets/js/app.js"></script>
   </body>
