@@ -10,34 +10,27 @@
 @import './vendors/slick-theme.scss';
 @import './vendors/aos.scss';
 
-@import './pages/main/redesign/base/common.scss';
-@import './pages/main/redesign/base/container.scss';
-@import './pages/main/redesign/base/grid.scss';
-@import './pages/main/redesign/base/section.scss';
-
 @import './base/common.scss';
-// @import './base/container.scss';
+@import './base/container.scss';
+@import './base/grid.scss';
+@import './base/section.scss';
 
-@import './components/modal-btn.scss';
-
+@import './components/button.scss';
 @import './components/backdrop.scss';
 @import './components/terms-modal.scss';
-
-@import './pages/main/redesign/component/button.scss';
-
-@import './pages/main/redesign/component/awards.scss';
+@import './components/awards.scss';
 
 @import './layout/header.scss';
 @import './components/language-select.scss';
-@import './pages/main/redesign/hero.scss';
-@import './pages/main/redesign/branches.scss';
-@import './pages/main/redesign/advantages.scss';
-@import './pages/main/redesign/achievments.scss';
-// @import './pages/main/courses.scss';
-// @import './pages/main/format.scss';
-@import './pages/main/redesign/dignity.scss';
-@import './pages/main/redesign/students-reviews.scss';
-@import './pages/main/redesign/projects.scss';
-@import './pages/main/redesign/appeal.scss';
+
+@import './pages/main/hero.scss';
+@import './pages/main/branches.scss';
+@import './pages/main/advantages.scss';
+@import './pages/main/achievments.scss';
+
+@import './pages/main/dignity.scss';
+@import './pages/main/students-reviews.scss';
+@import './pages/main/projects.scss';
+@import './pages/main/appeal.scss';
 // @import './pages/main/footer.scss';
 @import './layout/modal-form.scss';

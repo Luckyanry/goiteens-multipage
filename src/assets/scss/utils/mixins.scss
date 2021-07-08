@@ -1,62 +1,26 @@
-// @function decimal-round($number, $digits: 0, $mode: round) {
-//   $n: 1;
-//   // $number must be a number
-//   @if type-of($number) != number {
-//     @warn '#{ $number } is not a number.';
-//     @return $number;
-//   }
-//   // $digits must be a unitless number
-//   @if type-of($digits) != number {
-//     @warn '#{ $digits } is not a number.';
-//     @return $number;
-//   } @else if not unitless($digits) {
-//     @warn '#{ $digits } has a unit.';
-//     @return $number;
-//   }
-//   @if $digits > 0 {
-//     @for $i from 1 through $digits {
-//       $n: $n * 10;
-//     }
-//   }
-//   @if $mode == round {
-//     @return round($number * $n) / $n;
-//   } @else if $mode == ceil {
-//     @return ceil($number * $n) / $n;
-//   } @else if $mode == floor {
-//     @return floor($number * $n) / $n;
-//   } @else {
-//     @warn '#{ $mode } is undefined keyword.';
-//     @return $number;
-//   }
-// }
-
-/* SET HEX COLOR TO RGB FUNCTION */
-@function HexToRGB($hex) {
-  @return red($hex), green($hex), blue($hex);
-}
 
 /* SET REM FUNCTION */
 @function rem($px) {
   @return ($px / 16) + rem;
 }
 
-$breakpoints: (
-  'phone': 480px,
-  'tablet': 768px,
-  'desktop': 1200px,
-);
+// $breakpoints: (
+//   'phone': 480px,
+//   'tablet': 768px,
+//   'desktop': 1200px,
+// );
 
-@mixin mq($width, $type: min) {
-  @if map_has_key($breakpoints, $width) {
-    $width: map_get($breakpoints, $width);
-    @if $type == max {
-      $width: $width - 1px;
-    }
-    @media only screen and (#{$type}-width: $width) {
-      @content;
-    }
-  }
-}
+// @mixin mq($width, $type: min) {
+//   @if map_has_key($breakpoints, $width) {
+//     $width: map_get($breakpoints, $width);
+//     @if $type == max {
+//       $width: $width - 1px;
+//     }
+//     @media only screen and (#{$type}-width: $width) {
+//       @content;
+//     }
+//   }
+// }
 
 /* FONT-FASE */
 @mixin font-face(
@@ -89,11 +53,7 @@ $breakpoints: (
   letter-spacing: $ls;
 }
 
-// @mixin font($fs: 14px, $fw: 400, $lh: 1.2) {
-//   font-size: $fs;
-//   font-weight: $fw;
-//   line-height: $lh;
-// }
+
 
 /* MEDIA QUERIES*/
 @mixin mq($range) {
@@ -150,15 +110,15 @@ $breakpoints: (
 ===== */
 
 /*DOTS COLORS*/
-@mixin dot-color($color) {
-  @if $color == --yellow-color {
-    color: var(--yellow-color);
-    --dots-color: var(--yellow-color);
-  } @else if $color == --accent-color {
-    color: var(--accent-color);
-    --dots-color: var(--accent-color);
-  }
-}
+// @mixin dot-color($color) {
+//   @if $color == --yellow-color {
+//     color: var(--yellow-color);
+//     --dots-color: var(--yellow-color);
+//   } @else if $color == --accent-color {
+//     color: var(--accent-color);
+//     --dots-color: var(--accent-color);
+//   }
+// }
 
 /* ===== Usage
 .slick-dots li button { @include dot-color(--yellow-color); }

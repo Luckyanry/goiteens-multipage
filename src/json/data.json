@@ -17,6 +17,9 @@
     } ,
     "programs":{
       "style":"program-page"
+    },
+    "about":{
+      "style":"about-page"
     }
   },
 
@@ -27,7 +30,11 @@
       "description": "допомагаємо почати кар’єру розробника та заробляти ще до вступу в університет"
     },
     "programs": {
-      "title": "В IT-школі для дітей GoITeens кожен <span class='text-accent'>від 8 до 16 років</span> знайде чим хоче займатись,<span class='text-accent'> а ми допоможемо досягти мети</span> "
+      "title": "В IT-школі для дітей GoITeens кожен <span class='text-accent'>від&nbsp;8&nbsp;до&nbsp;16&nbsp;років</span> знайде чим хоче займатись,<span class='text-accent pseudo-element '> а&nbsp;ми допоможемо досягти мети</span> "
+    },
+    "about": {
+      "title": "Місія GoITeens - дати дітям старт в IT-кар’єрі.",
+      "description": "<p class='hero__description'> Ми робимо навчання для дитини цікавим та корисним, і надаємо можливість розпочати кар'єру в галузі, що буде актуальною багато років </p> <p class='hero__description'> Так і дитина буде займатись тим, чим бажає, і батьки будуть задоволені, що їх дитина займається дійсно важливими і корисними речами. </p>"
     }
   },
   "menu": [

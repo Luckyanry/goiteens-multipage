@@ -23,7 +23,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
-    transition: all var(--slow-animation) ease;
+    transition: all var(--fast-animation) ease;
+    // transform: scale(0.99);
 
     @include mq(mobile-only) {
       max-width: 320px;
@@ -39,7 +40,10 @@
     &:focus {
       box-shadow: var(--block-shadow);
       transform: scale(1.01);
+      -webkit-transform: scale(1.01); 
+
     }
+
     &::after {
       content: '';
       position: absolute;
@@ -77,6 +81,8 @@
   &__description {
     margin-bottom: 20px;
     line-height: 1.3;
+   
+
   }
 
   &__item-title {

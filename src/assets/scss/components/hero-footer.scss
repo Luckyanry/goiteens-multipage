@@ -9,15 +9,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(var(--dark-gradient-rgb), 0.7), rgba(var(--dark-gradient-rgb), 0.7)),
-    url('../images/hero-footer/bg_sm.jpg');
+  background-image: linear-gradient(rgba(var(--dark-gradient-rgb), 0.7), rgba(var(--dark-gradient-rgb), 0.7)), url('../images/hero-footer/bg_sm.jpg');
 
   @include mq(tablet){
     padding-top: 72px;
     padding-bottom: 78px;
       font-size: 36px;
-    background-image: linear-gradient(rgba(var(--dark-gradient-rgb), 0.7), rgba(var(--dark-gradient-rgb), 0.7)),
-    url('../images/hero-footer/bg_lg.jpg');
+    background-image: linear-gradient(rgba(var(--dark-gradient-rgb), 0.7), rgba(var(--dark-gradient-rgb), 0.7)), url('../images/hero-footer/bg_lg.jpg');
  
 
   }

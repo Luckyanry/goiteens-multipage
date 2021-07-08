@@ -1,11 +1,8 @@
-$accent-color: #aa43a2;
-$yellow-color: #fec830;
 
-$white-text: #ffffff;
-$white-bg: #ffffff;
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
 
-$title-fs-desktop: 48px;
-$title-fs-mob: 36px;
 
 :root {
 
@@ -51,5 +48,6 @@ $title-fs-mob: 36px;
     --btn-yellow-shadow: 0px 1px 1px #d7a823;
     --block-shadow: 0px 1px 2px rgba(92, 46, 145, 0.08), 10px 10px 40px rgba(92, 46, 145, 0.24);
     // --dots-color: #aa43a2;
+    --dark-gradient-rgb: #{HexToRGB(#000000)};
   }
 

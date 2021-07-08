@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="">
   <head>
      
 <meta charset="UTF-8" />
@@ -34,7 +34,7 @@
 <title></title>
 
 
-<link rel="stylesheet" href="assets/css/.css" />
+<link rel="stylesheet" href="assets/css/about-page.css" />
 <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
 <!-- <link rel="stylesheet" href="assets/css/program-page.css" /> -->
 
@@ -61,7 +61,7 @@
     <div class="page"> <header class="header">
     <div class="container">
         <a href="/" class="logo link" aria-label="логотип">
-            <img src="./images/header/logo.png" alt="логотип" class="logo__img">
+            <img src="./assets/images/header/logo.png" alt="логотип" class="logo__img">
             <span class="logo__text">мережа ІТ-академій <br> для дітей 8-15 років</span>
         </a>
         <button type="button" class="menu-btn" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
@@ -74,43 +74,46 @@
             <nav class="navigation">
                 <ul class="navigation__list list">
                     <li class="navigation__list-item">
-                        <a href="./programs.html' %} class="navigation__list-link link">Програми</a>
+                        <a href="./programs.html" class="navigation__list-link link">Програми</a>
                     </li>
                     <li class="navigation__list-item">
-                        <a href="./about.html' %} class="navigation__list-link navigation__list-link_current link">Про
-                            нас</a>
+                        <a href="./about.html" class="navigation__list-link link">Про нас</a>
                     </li>
                     <li class="navigation__list-item">
-                        <a href="./testimonials.html' %} class="navigation__list-link link">Результати учнів</a>
+                        <a href="./testimonials.html" class="navigation__list-link link">Результати учнів</a>
                     </li>
                     <li class="navigation__list-item">
-                        <a href="./contact-page.html' %} class="navigation__list-link link">Контакти</a>
+                        <a href="./contact-page.html" class="navigation__list-link link">Контакти</a>
                     </li>
                 </ul>
             </nav>
             <p class="location">
-                <svg width="24" height="22" class="location__icon">
-                    <use href="./assets/images/sprite.svg#location-icon"></use>
+                <svg width="18" height="18" class="location__icon">
+                    <use href="./assets/images/sprite.svg#location"></use>
                 </svg>
-                <span>київ</span>
+                <span>Київ</span>
             </p>
             <a href="tel:+380933432127" class="contact-tel link">+38 093 343 21 27</a>
+            <div class="language-select">
+                <select>
+                  <option value="0">Ukr</option>
+                  <option value="1">Ru</option>
+                  <option value="2">Pl</option>
+                  <option value="3">En</option>
+                  <option value="4">Tr</option>
+                  <option value="5">Ukr</option>
+                </select>
+              </div>
         </div>
     </div>
 </header>
 
 <main>
-  <section class="hero">
+   
+<section class="hero">
     <div class="container">
         <h1 class="hero__title">Місія GoITeens - дати дітям старт в IT-кар’єрі.</h1>
-        <p class="hero__description">
-            Ми робимо навчання для дитини цікавим та корисним, і надаємо можливість розпочати кар'єру в галузі, що буде
-            актуальною багато років
-        </p>
-        <p class="hero__description">
-            Так і дитина буде займатись тим, чим бажає, і батьки будуть задоволені, що їх дитина займається дійсно
-            важливими і корисними речами.
-        </p>
+       <p class='hero__description'> Ми робимо навчання для дитини цікавим та корисним, і надаємо можливість розпочати кар'єру в галузі, що буде актуальною багато років </p> <p class='hero__description'> Так і дитина буде займатись тим, чим бажає, і батьки будуть задоволені, що їх дитина займається дійсно важливими і корисними речами. </p>
     </div>
 </section> <section class="partners">
     <div class="container">
@@ -454,66 +457,7 @@
     </div>
 </section>
 
-  <!-- <section class="format">
-    <div class="container">
-        <h2 class="title">Формат навчання</h2>
-        <p class="format__description">Онлайн або офлайн</p>
-        <div class="format__content-wrapper">
-            <picture class="format__picture">
-                <source srcset="./images/main/format/format-img-desktop.jpg" media="(min-width: 1200px)">
-                <source srcset="./images/main/format/format-img.jpg" media="(min-width: 320px)">
-                <img src="./images/main/format/format-img.jpg" alt="студенты за партами" class="format__img">
-            </picture>
-            <ul class="format__list list">
-                <li class="format__list-item">
-                    <div class="format__list-icon-wrapper">
-                        <svg class="format__list-icon" width="39" height="36">
-                            <use href="./assets/images/sprite.svg#calendar"></use>
-                        </svg>
-                    </div>
-                    <div class="format__list-text-wrapper">
-                        <h3 class="format__list-title">9 місяців</h3>
-                        <p class="format__list-text">усі програми тривають
-                            з вересня по червень</p>
-                    </div>
-                </li>
-                <li class="format__list-item order-2">
-                    <div class="format__list-icon-wrapper">
-                        <img src="./images/main/format/day-icon.png" alt="иконка" class="format__list-icon">
-                    </div>
-                    <div class="format__list-text-wrapper">
-                        <h3 class="format__list-title">Кожні вихідні</h3>
-                        <p class="format__list-text">субота чи неділя відповідно до розкладу</p>
-                    </div>
-                </li>
-                <li class="format__list-item order-1">
-                    <div class="format__list-icon-wrapper">
-                        <svg class="format__list-icon" width="40" height="40">
-                            <use href="./assets/images/sprite.svg#time"></use>
-                        </svg>
-                    </div>
-                    <div class="format__list-text-wrapper">
-                        <h3 class="format__list-title">з 10:00 до 14:00</h3>
-                        <p class="format__list-text">4 години з перервами на відпочинок та смаколики</p>
-                    </div>
-                </li>
-                <li class="format__list-item order-3">
-                    <div class="format__list-icon-wrapper">
-                        <svg class="format__list-icon" width="39" height="37">
-                            <use href="./assets/images/sprite.svg#money"></use>
-                        </svg>
-                    </div>
-                    <div class="format__list-text-wrapper">
-                        <h3 class="format__list-title">від 600 грн на місяць</h3>
-                        <p class="format__list-text">вартість навчання залежить від міста, формату та конкретної
-                            програми</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
- -->
+
   <section class="proff-skills">
     <div class="container">
         <h2 class="title proff-skills__title">Комплексний <span class="accent-text">підхід</span> до розвитку
@@ -926,42 +870,7 @@
         </div>
     </div>
 </section>
-  <!-- <section class="teens-game">
-    <div class="container">
-        <h2 class="title">Щорічна всеукраїнська битва проєктів <span class="accent-text">Game of Teens</span></h2>
-        <div class="teens-game__content">
-            <iframe class="teens-game__video" src="https://www.youtube.com/embed/ppGpsoegMGQ" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <div class="teens-game__content-text-wrapper">
-                <p class="teens-game__content-text">Щорічно в кінці навчального року серед учнів усіх наших шкіл ми
-                    організовуємо конкурс проєктів.</p>
-                <p class="teens-game__content-text">
-                    Конкурсні проєкти створюються протягом року в рамках навчання на відповідних курсах і є наочним
-                    результатом учнівського прогресу.
-                </p>
-                <p class="teens-game__content-text">У 2019 році на участь у битві було подано понад 60 проєктів.</p>
-                <p class="teens-game__content-text">Деякі проєкти за результатами конкурсу мають нагоду отримати перші
-                    інвестиції та перетворитися на
-                    повноцінні самостійні стартапи.</p>
-            </div>
-        </div>
-        <ul class="teens-game__list list">
-            <li class="teens-game__list-item">
-                <img src="./images/about/teens-game/teens-game-img-1.png" alt="" class="teens-game__img">
-            </li>
-            <li class="teens-game__list-item">
-                <img src="./images/about/teens-game/teens-game-img-2.png" alt="" class="teens-game__img">
-            </li>
-            <li class="teens-game__list-item">
-                <img src="./images/about/teens-game/teens-game-img-3.png" alt="" class="teens-game__img">
-            </li>
-            <li class="teens-game__list-item">
-                <img src="./images/about/teens-game/teens-game-img-4.png" alt="" class="teens-game__img">
-            </li>
-        </ul>
-    </div>
-</section> -->
+ 
   <section class="projects">
     <div class="container">
         <h2 class="title">Останні реалізовані учнями <span class="accent-text">проєкти</span></h2>

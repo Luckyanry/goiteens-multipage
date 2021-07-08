@@ -1,28 +1,31 @@
-@import './pages/main/redesign/utils/variables.scss';
-@import './pages/main/redesign/utils/mixins.scss';
+@import './utils/mixins.scss';
+@import './utils/variables.scss';
 @import './utils/fonts.scss';
 
-@import './pages/main/redesign/component/slick.scss';
-@import './pages/main/redesign/component/slick-theme.scss';
+@import './vendors/modern-normalize.scss';
+@import './vendors/slick.scss';
+@import './vendors/slick-theme.scss';
+@import './vendors/aos.scss';
 
-@import './pages/main/redesign/base/common.scss';
-@import './pages/main/redesign/base/container.scss';
-@import './pages/main/redesign/base/grid.scss';
-@import './pages/main/redesign/base/section.scss';
+@import './base/common.scss';
+@import './base/container.scss';
+@import './base/grid.scss';
+@import './base/section.scss';
 
-@import './components/modal-btn.scss';
-
+@import './components/button.scss';
 @import './components/backdrop.scss';
-@import './components/people-slider.scss';
 @import './components/terms-modal.scss';
+@import './components/language-select.scss';
+@import './components/awards.scss';
 
 @import './layout/header.scss';
+
 @import './pages/about/hero.scss';
 @import './pages/about/partners.scss';
 @import './pages/about/skills.scss';
 @import './pages/about/format.scss';
 @import './pages/about/proff-skills.scss';
-@import './components/people-section.scss';
+
 @import './pages/about/teens-game.scss';
 @import './pages/about/projects.scss';
 @import './pages/about/hero-footer.scss';
