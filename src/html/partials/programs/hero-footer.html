@@ -1,11 +1,12 @@
-<section class="hero-footer">
+{% set hero_footer = programs_hero_footer %} 
+<section class="hero-footer programs-hero-footer">
     <div class="container">
         <h2 class="hero-footer__title">
-            <span class="hero-footer__accent-text">Складно обрати?</span> <br> Дитина не знає, що хоче? <br> Ви не
-            впевнені, що онлайн IT-курси необхідні вашій дитині?
+           {{hero_footer.title}}
         </h2>
-        <p class="hero-footer__description">Запишіться на безкоштовну консультацію, і наш менеджер розповість більше про
-            навчальну програму та надасть інформацію щодо пробних занять</p>
-        <button type="button" class="modal-btn" data-modal-open>Записатися на безкоштовну консультацію</button>
+        <p class="hero-footer__description text-yellow">
+            {{hero_footer.description}}
+        </p>
+        <button type="button" class="main-btn" data-modal-open>Записатися на безкоштовну консультацію</button>
     </div>
 </section>
