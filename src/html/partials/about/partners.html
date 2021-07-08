@@ -5,9 +5,7 @@
         <ul class=" list  partners__list">
             {% for item in partnersItems %}
             <li class=" partners__item">
-              <!-- <img src="./assets/images/about/partners/partner-{{item.id}}.png" width="{{item.width}}" height="{{item.height}}" alt="Логотип компанії '{{item.name}}' "> -->
-
-              <svg width="{{item.width}}" height="{{item.height}}" >
+                   <svg width="{{item.width}}" height="{{item.height}}" >
                 <use href="./assets/images/sprite.svg#partner-{{item.id}}" ></use>
              
             </svg>

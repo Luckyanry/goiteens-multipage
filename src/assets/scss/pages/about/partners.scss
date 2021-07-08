@@ -1,6 +1,4 @@
 .partners {
-  
-
   .title {
     margin-bottom: 28px;
   }
@@ -13,26 +11,24 @@
   }
 
   &__item {
-      display: flex;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      margin-left: 30px;
-      margin-top: 30px;
-      flex-basis: calc(100% / 2 - 30px);
-      align-items: center;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    align-items: center;
     justify-content: center;
-      
+    flex-basis: calc(100% / 2 - 30px);
+
     background: var(--white-bg);
     border: 1px dashed var(--primary-accent-cl);
-   
+
     border-radius: var(--border-radius);
-    @include mq(tablet){
-        flex-basis: calc(100% / 3 - 30px);
+    @include mq(tablet) {
+      flex-basis: calc(100% / 3 - 30px);
     }
-    @include mq(desktop){
-        flex-basis: calc(100% / 6 - 30px);
+    @include mq(desktop) {
+      flex-basis: calc(100% / 6 - 30px);
     }
   }
 }
-
-
