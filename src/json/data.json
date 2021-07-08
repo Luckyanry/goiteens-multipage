@@ -161,6 +161,54 @@
       }
     ]
   },
+  "partners":{
+    "title":"Про нас пишуть&lowbar;",
+    "items":[
+    {
+      "id":"1",
+      "name":"Сухари",
+      "width":"40",
+      "height":"40"
+      
+    },
+    {
+      "id":"2",
+      "name":"ZN,UA",
+      "width":"84",
+      "height":"34"
+      
+    },
+    {
+      "id":"3",
+      "name":"НВ",
+      "width":"40",
+      "height":"40"
+      
+    },
+    {
+      "id":"4",
+      "name":"WOMO",
+      "width":"82",
+      "height":"16"
+      
+    },
+    {
+      "id":"5",
+      "name":"Дія",
+      "width":"40",
+      "height":"40"
+      
+    },
+    {
+      "id":"6",
+      "name":"ФАКТИ",
+      "width":"84",
+      "height":"21"
+      
+    }
+  ]
+  }
+  ,
 
   "programs":[
       {

@@ -1,25 +1,20 @@
-<section class="partners">
+{% set partners = partners %} {% set partnersItems = partners.items %}
+<section class="partners section">
     <div class="container">
-        <h2 class="partners__title title">Про нас <span class="accent-text">пишуть</span>:</h2>
-        <ul class="partners__list list">
-            <li class="partners__list-item">
-                <img src="./images/about/partners/suhari.png" alt="" class="partners__list-logo">
+        <h2 class="section__title">{{partners.title}}</h2>
+        <ul class=" list  partners__list">
+            {% for item in partnersItems %}
+            <li class=" partners__item">
+              <!-- <img src="./assets/images/about/partners/partner-{{item.id}}.png" width="{{item.width}}" height="{{item.height}}" alt="Логотип компанії '{{item.name}}' "> -->
+
+              <svg width="{{item.width}}" height="{{item.height}}" >
+                <use href="./assets/images/sprite.svg#partner-{{item.id}}" ></use>
+             
+            </svg>
+            
             </li>
-            <li class="partners__list-item">
-                <img src="./images/about/partners/diya.png" alt="" class="partners__list-logo">
-            </li>
-            <li class="partners__list-item">
-                <img src="./images/about/partners/facts.png" alt="" class="partners__list-logo">
-            </li>
-            <li class="partners__list-item">
-                <img src="./images/about/partners/nv.png" alt="" class="partners__list-logo">
-            </li>
-            <li class="partners__list-item">
-                <img src="./images/about/partners/womo.png" alt="" class="partners__list-logo">
-            </li>
-            <li class="partners__list-item">
-                <img src="./images/about/partners/znua.png" alt="" class="partners__list-logo">
-            </li>
+            {% endfor %}
+          
         </ul>
     </div>
 </section>
