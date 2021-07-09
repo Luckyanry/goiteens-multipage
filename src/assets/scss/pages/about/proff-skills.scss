@@ -1,304 +1,108 @@
-// .proff-skills {
-//   padding-top: 54px;
-//   padding-bottom: 54px;
+.proff-skills {
+  --grid-item: 2;
+  .section__title {
+    margin-bottom: 24px;
+    max-width: 494px;
+  }
+  &__wrapper {
+   
+    margin-bottom: 32px;
+    @include mq(tablet-only) {
+      align-items: flex-end;
+    }
+    @include mq(desktop) {
+      padding-left: 80px;
+      margin-bottom: 54px;
+    }
+    .proff-skills__img {
+      margin-bottom: 24px;
+    }
+  }
+  &__descript {
+    margin-bottom: 30px;
+    @include mq(desktop){
+        max-width: 380px;
+    }
+  }
+  &__descript-list {
+    @include mq(desktop){
+        max-width: 380px;
+    }
+  }
+  
 
-//   &__description {
-//     font-size: 16px;
-//     font-weight: 400;
-//     line-height: 1.2;
-//     margin-bottom: 28px;
-//   }
+  &__descript-item {
+    position: relative;
+    padding-left: 24px;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-image: url('../images/about/proff-skills/marker.svg');
+    }
+  }
 
-//   &__list {
-//     margin-bottom: 90px;
-//   }
+  &__list{
+    @include mq(desktop){
+        padding-right: 80px;
+    }
+  }
 
-//   &__list-img-wrapper {
-//     position: relative;
-//     z-index: 0;
-//     background-color: #fecd4d;
-//     background-clip: content-box;
-//     margin-bottom: 22px;
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 52px;
+    }
+    @include mq(tablet) {
+      align-items: center;
+    }
+    // @include mq(desktop){
+    //     padding-right: 80px;
+    // }
+  }
 
-//     &_border-theme-1 {
-//       border-left: 4px solid #fecd4d;
-//       border-bottom: 20px solid #fecd4d;
-//       border-bottom-left-radius: 6px;
-//       border-top-left-radius: 6px;
-//       padding-top: 20px;
+  &__img-wrap {
+    position: relative;
+   display: block;
+   
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      right: 0;
+      width: 213px;
+      height: 225px;
+      border-bottom-right-radius: var(--border-radius);
+      background-repeat: no-repeat;
+      background-image: url('../images/about/proff-skills/decor-right.svg');
+      @include mq(tablet-only){
+        width: 218px;
+        height: 170px;
+      }
+    }
+  }
 
-//       &::before {
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         z-index: -1;
-//         content: '';
-//         width: 28%;
-//         height: 22px;
-//         background-color: #fecd4d;
-//         transform: translate(-4px, 0);
-//         border-top-left-radius: 6px;
-//         border-top-right-radius: 6px;
-//       }
+  &__img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    
+  }
 
-//       &::after {
-//         position: absolute;
-//         bottom: 0;
-//         right: 0;
-//         z-index: -1;
-//         content: '';
-//         width: 4px;
-//         height: 90%;
-//         background-color: #fecd4d;
-//         transform: translate(4px, 20px);
-//         border-bottom-right-radius: 6px;
-//         border-top-right-radius: 6px;
-//       }
-//     }
-
-//     &_border-theme-2 {
-//       border-right: 4px solid #fecd4d;
-//       border-top: 20px solid #fecd4d;
-//       border-top-right-radius: 6px;
-//       border-bottom-right-radius: 6px;
-//       padding-bottom: 20px;
-
-//       &::before {
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         z-index: -1;
-//         content: '';
-//         width: 4px;
-//         height: 90%;
-//         background-color: #fecd4d;
-//         transform: translate(-4px, -20px);
-//         border-top-left-radius: 6px;
-//         border-bottom-left-radius: 6px;
-//       }
-
-//       &::after {
-//         position: absolute;
-//         bottom: 0;
-//         right: 0;
-//         z-index: -1;
-//         content: '';
-//         width: 28%;
-//         height: 22px;
-//         background-color: #fecd4d;
-//         transform: translate(4px, 0);
-//         border-bottom-right-radius: 6px;
-//         border-bottom-left-radius: 6px;
-//       }
-//     }
-//   }
-
-//   &__list-img {
-//     max-width: unset;
-//     width: 100%;
-//   }
-
-//   &__list-title {
-//     @include fonts(18px, 700, 1.2);
-//     margin-bottom: 20px;
-//   }
-
-//   &__list-description {
-//     @include fonts(16px, 400, 1.2);
-//   }
-
-//   &__bottom-list-item {
-//     &:not(:last-child) {
-//       margin-bottom: 64px;
-//     }
-//   }
-
-//   &__bottom-list-content-wrapper ul {
-//     padding-left: 30px;
-//     margin-bottom: 18px;
-//   }
-
-//   &__bottom-list-content-wrapper ul li {
-//     &:not(:last-child) {
-//       margin-bottom: 6px;
-//     }
-//   }
-
-//   &__bottom-list-picture {
-//     display: block;
-//     margin-bottom: 18px;
-//   }
-
-//   &__bottom-list-content-title {
-//     font-size: 24px;
-//     font-weight: 700;
-//     line-height: 1.2;
-//     color: #282828;
-//     margin-bottom: 20px;
-//   }
-
-//   &__bottom-list-content-text {
-//     font-size: 16px;
-//     font-weight: 400;
-//     line-height: 1.2;
-//     color: #282828;
-
-//     &:not(:last-child) {
-//       margin-bottom: 18px;
-//     }
-//   }
-// }
-
-// @include mq('tablet', max) {
-//   .proff-skills {
-//     &__list-item {
-//       &:not(:last-child) {
-//         margin-bottom: 28px;
-//       }
-//     }
-//   }
-// }
-
-// @include mq('tablet') {
-//   .proff-skills {
-//     &__list {
-//       display: flex;
-//       justify-content: space-between;
-//       margin-bottom: 52px;
-//     }
-
-//     &__list-item {
-//       width: 30%;
-//     }
-
-//     &__bottom-list-item {
-//       display: flex;
-//       justify-content: space-between;
-
-//       &:nth-child(even) {
-//         flex-direction: row-reverse;
-//       }
-//     }
-
-//     &__bottom-list-picture {
-//       flex-shrink: 0;
-//       margin-bottom: 0;
-//     }
-
-//     &__bottom-list-content-wrapper {
-//       width: 50%;
-//     }
-//   }
-// }
-
-// @include mq('desktop') {
-//   .proff-skills {
-//     padding-top: 110px;
-//     padding-bottom: 110px;
-
-//     &__description {
-//       max-width: 760px;
-//       font-size: 21px;
-//       margin-bottom: 112px;
-//     }
-
-//     &__list {
-//       margin-bottom: 236px;
-//     }
-
-//     &__title {
-//       max-width: 840px;
-//     }
-
-//     &__list-item {
-//       width: 32%;
-//     }
-
-//     &__list-img-wrapper {
-//       margin-bottom: 40px;
-
-//       &_border-theme-1 {
-//         border-left: 28px solid #fecd4d;
-//         border-bottom: 28px solid #fecd4d;
-//         padding-top: 28px;
-//         padding-right: 28px;
-
-//         &::before {
-//           width: 28%;
-//           height: 28px;
-//           transform: translate(-28px, 0);
-//         }
-
-//         &::after {
-//           width: 28px;
-//           height: 90%;
-//           transform: translate(0, 28px);
-//         }
-//       }
-
-//       &_border-theme-2 {
-//         border-right: 28px solid #fecd4d;
-//         border-top: 28px solid #fecd4d;
-//         padding-bottom: 28px;
-//         padding-left: 28px;
-
-//         &::before {
-//           width: 28px;
-//           height: 90%;
-//           transform: translate(0, -28px);
-//         }
-
-//         &::after {
-//           width: 28%;
-//           height: 28px;
-//           transform: translate(28px, 0);
-//         }
-//       }
-//     }
-
-//     &__list-title {
-//       font-size: 21px;
-//     }
-
-//     &__list-description {
-//       font-size: 18px;
-//     }
-
-//     &__bottom-list-item {
-//       padding-left: 20px;
-
-//       &:nth-child(even) {
-//         padding-right: 44px;
-//       }
-
-//       &:not(:last-child) {
-//         margin-bottom: 80px;
-//       }
-//     }
-
-//     &__bottom-list-content-wrapper {
-//       padding-left: 60px;
-//       padding-top: 20px;
-//     }
-
-//     &__bottom-list-content-wrapper ul {
-//       max-width: 430px;
-//     }
-
-//     &__bottom-list-content-title {
-//       font-size: 30px;
-//       margin-bottom: 40px;
-//     }
-
-//     &__bottom-list-content-text {
-//       font-size: 18px;
-//       max-width: 430px;
-//     }
-
-//     &__bottom-list-content-text {
-//       &:not(:last-child) {
-//         margin-bottom: 24px;
-//       }
-//     }
-//   }
-// }
+  .item-1 {
+    flex-direction: row-reverse;
+    .proff-skills__img-wrap{
+    &::before {
+        
+        left: 0;
+        border-bottom-left-radius: var(--border-radius);
+        background-image: url('../images/about/proff-skills/decor-left.svg');
+      }
+    }
+  }
+}
