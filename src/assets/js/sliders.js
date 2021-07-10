@@ -100,6 +100,35 @@ $('.projects-slider-js').slick({
     },
   ],
 });
+
+$('.teachers-slider-js').slick({
+  mobileFirst: true,
+  dots: true,
+  arrows: false,
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  speed: 400,
+  infinite: true,
+  cssEase: 'linear',
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1279,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+
 /*****************
  * НА ЭТИХ ДВУХ СЛАЙДЕРАХ ПАДАЕТ СКРИПТ И ПОЛУЧАЕМ ОШИБКУ
  * СКОРЕЕ ВСЕГО ЭТО СВЯЗАНО С ТЕМ, ЧТО КНОПКИ prev-but-js/next-but-js

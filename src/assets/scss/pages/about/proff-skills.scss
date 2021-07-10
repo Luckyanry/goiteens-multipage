@@ -11,7 +11,8 @@
       align-items: flex-end;
     }
     @include mq(desktop) {
-      padding-left: 80px;
+      padding-left: 160px;
+    //   padding-left: 80px;
       margin-bottom: 54px;
     }
     .proff-skills__img {
@@ -19,7 +20,7 @@
     }
   }
   &__descript {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     @include mq(desktop){
         max-width: 380px;
     }
@@ -35,7 +36,7 @@
     position: relative;
     padding-left: 24px;
     &:not(:last-child) {
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
     &::before {
       content: '';
@@ -51,7 +52,10 @@
 
   &__list{
     @include mq(desktop){
-        padding-right: 80px;
+        // padding-right: 80px;
+        max-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
     }
   }
 
@@ -62,9 +66,7 @@
     @include mq(tablet) {
       align-items: center;
     }
-    // @include mq(desktop){
-    //     padding-right: 80px;
-    // }
+   
   }
 
   &__img-wrap {
@@ -76,8 +78,8 @@
       position: absolute;
       bottom: -1px;
       right: 0;
-      width: 213px;
-      height: 225px;
+      width: 212px;
+      height: 224px;
       border-bottom-right-radius: var(--border-radius);
       background-repeat: no-repeat;
       background-image: url('../images/about/proff-skills/decor-right.svg');
@@ -105,4 +107,6 @@
       }
     }
   }
+
+ 
 }
