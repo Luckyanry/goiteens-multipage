@@ -1,63 +1,39 @@
-<section class="contacts">
-    <div class="container">
-        <div class="contacts__left-side">
-            <picture class="contacts__picture">
-                <source srcset="./images/contacts/contacts/students-desktop.png" media="(min-width: 1200px)">
-                <source srcset="./images/contacts/contacts/students-mob.png" media="(min-width: 320px)">
-                <img src="./images/contacts/contacts/students-mob.png" alt="студенты слушают лектора"
-                    class="contacts__img">
-            </picture>
-        </div>
-        <div class="contacts__right-side">
-            <h2 class="contacts__right-side-title">Як з нами можна зв’язатись?</h2>
-            <ul class="contacts__list list">
-                <li class="contacts__list-item">
-                    <a href="mailto:contact@goiteens.ua" class="contacts__list-link link">contact@goiteens.ua</a>
-                </li>
-                <li class="contacts__list-item">
-                    <a href="tel:+380933432127" class="contacts__list-link link">+38 093 343 21 27</a>
-                    <a href="tel:+380673269592" class="contacts__list-link link">+38 067 326 95 92</a>
-                    <a href="tel:+380503661777" class="contacts__list-link link">+38 050 366 17 77</a>
-                </li>
-                <li class="contacts__list-item">
-                    <ul class="social-list social-list_contact-page list">
-                        <li class="social-list__item">
-                            <a href="https://www.facebook.com/GoITeens/?ref=page_internal​" target="_blank"
-                                rel="noopener noreferrer" class="social-list__link link">
-                                <svg class="social-list__svg">
-                                    <use href="./assets/images/sprite.svg#facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="https://www.instagram.com/go_iteens" target="_blank" rel="noopener noreferrer"
-                                class="social-list__link link">
-                                <svg class="social-list__svg">
-                                    <use href="./assets/images/sprite.svg#instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="https://t.me/devofteens" target="_blank" rel="noopener noreferrer"
-                                class="social-list__link link">
-                                <svg class="social-list__svg">
-                                    <use href="./assets/images/sprite.svg#telegram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-list__item">
-                            <a href="https://invite.viber.com/?g2=AQB8pGkQCDGHtEzc6ggFnRYuoKeUem7LLIGWK3i5DDNtQ7n2U3Q0kD5dyFYqCwJk"
-                                target="_blank" rel="noopener noreferrer" class="social-list__link link">
-                                <svg class="social-list__svg">
-                                    <use href="./assets/images/sprite.svg#viber"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <a href="./programs.html' %} class="ref-to-page link">Переглянути програми</a>
-            <button type="button" class="modal-btn" data-modal-open>Отримати консультацію</button>
-        </div>
+{% set contacts = contacts %} {% set contactsEmail = contacts.email %} {% set contactsPhone =
+contacts.phone %}
+
+<section class="section contacts">
+  <div class="container">
+    <h2 class="section__title contacts__title">{{contacts.title}}</h2>
+    <div class="grid contacts__content">
+      <div class="grid__item contacts__wrapper ">
+        <p class="contacts__item-title">{{contactsEmail.title}}</p>
+        <ul class="list">
+          {% for item in contactsEmail.items %}
+          <li class="contacts__item">
+            <a href="mailto:{{item.link}}" class="contacts__link link">{{item.link}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="grid__item contacts__wrapper ">
+        <p class="contacts__item-title">{{contactsPhone.title}}</p>
+        <ul class="list">
+          {% for item in contactsPhone.items %}
+          <li class="contacts__item">
+            <a href="tel:{{item.numb}}" class="contacts__link link">{{item.numb}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="grid__item contacts__wrapper ">
+        <p class="contacts__item-title">Socials</p>
+      </div>
     </div>
+    <div class="grid contacts__btn-wrapper">
+      <a  class="grid__item main-btn contacts__btn" href="./programs.html">Переглянути програми</a>
+      <button class="grid__item main-btn contacts__btn" type="button"  data-modal-open>
+        Отримати консультацію
+      </button>
+    </div>
+  </div>
 </section>

@@ -12,15 +12,17 @@
 @import './base/section.scss';
 
 @import './components/button.scss';
-
 @import './components/backdrop.scss';
-
 @import './components/terms-modal.scss';
+@import './components/language-select.scss';
+@import './components/branches.scss';
+@import './components/awards.scss';
 
 @import './layout/header.scss';
 @import './pages/contacts/hero.scss';
+@import './pages/contacts/contacts-branches.scss';
 @import './pages/contacts/contacts.scss';
-@import './pages/contacts/projects.scss';
+// @import './pages/contacts/projects.scss';
 @import './pages/contacts/achievments.scss';
-@import './layout/footer.scss';
+// @import './layout/footer.scss';
 @import './layout/modal-form.scss';

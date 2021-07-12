@@ -45,7 +45,6 @@ $('.students-review-slider-js').slick({
         arrows: true,
         focusOnSelect: true,
         centerPadding: '22%',
-        // appendArrows: '.review-button',
         prevArrow: $('.students-prev-but-js'),
         nextArrow: $('.students-next-but-js'),
       },
@@ -56,7 +55,6 @@ $('.students-review-slider-js').slick({
         arrows: true,
         focusOnSelect: true,
         centerPadding: '20%',
-        appendArrows: '.review-button',
         prevArrow: $('.students-prev-but-js'),
         nextArrow: $('.students-next-but-js'),
       },
@@ -117,7 +115,7 @@ $('.projects-slider-js').slick({
   slidesToScroll: 1,
   slidesToShow: 1,
   speed: 400,
-  infinite: true,
+  infinite: false,
   cssEase: 'linear',
   responsive: [
     {

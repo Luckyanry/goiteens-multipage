@@ -1,83 +1,72 @@
-// .contacts {
-//   padding-top: 58px;
-//   padding-bottom: 34px;
+.contacts {
+  position: relative;
+  @include mq(tablet){
+    
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top right;
+      background-image: url("../images/contacts/contacts/bg-students_lg.png");
 
-//   &__left-side {
-//     margin-bottom: 30px;
-//   }
+  }
+  @include mq(desktop){
+    padding-right: 344px;
+  }
 
-//   &__right-side-title {
-//     font-weight: 700;
-//     line-height: 1.2;
-//     margin-bottom: 20px;
-//   }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 375px;
+    height: 352px;
 
-//   &__list {
-//     margin-bottom: 34px;
-//   }
+    background-image: url('../images/components/triangle-gray.svg');
+    background-repeat: no-repeat;
 
-//   &__list-item {
-//     &:not(:last-child) {
-//       margin-bottom: 40px;
-//     }
-//   }
+    // z-index: -1;
+    @include mq(tablet) {
+      left: -20%;
+      top: 90%;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
 
-//   &__list-link {
-//     display: block;
-//     @include fonts(24px, 400);
-//     color: #000;
-//     &:not(:last-child) {
-//       margin-bottom: 20px;
-//     }
-//   }
+  &__content {
+    margin-bottom: 30px;
+    flex-direction: column;
+    @include mq(tablet-only) {
+      padding-right: 344px;
+    }
+    @include mq(desktop){
+        --grid-item: 3;
+        margin-bottom: 98px;
+        flex-direction: row;
+    }
+  }
 
-//   .ref-to-page {
-//     margin-bottom: 14px;
-//   }
-// }
+  &__item-title {
+    margin-bottom: 14px;
+    line-height: 1.3;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: start;
+  }
 
-// @include mq('tablet') {
-//   .contacts {
-//     .container {
-//       display: flex;
-//       flex-wrap: wrap;
-//     }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
 
-//     &__right-side-title {
-//       font-size: 28px;
-//       max-width: 300px;
-//     }
+  &__btn-wrapper {
+    --grid-item: 2;
+    @include mq(desktop){
+        max-width: 675px;
+    }
+  }
 
-//     &__left-side,
-//     &__right-side {
-//       width: 50%;
-//       flex-shrink: 0;
-//       margin-bottom: 0;
-//     }
-//   }
-// }
-
-// @include mq('desktop') {
-//   .contacts {
-//     padding-bottom: 52px;
-//     &__left-side,
-//     &__right-side {
-//       width: max-content;
-//     }
-
-//     &__right-side {
-//       flex-grow: 1;
-//       padding-left: 98px;
-//     }
-
-//     &__list {
-//       margin-bottom: 24px;
-//     }
-
-//     &__list-item {
-//       &:not(:last-child) {
-//         margin-bottom: 30px;
-//       }
-//     }
-//   }
-// }
+  
+}

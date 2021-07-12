@@ -14,21 +14,24 @@
     "tw_image": "assets/images/twitter.png",
     "main": {
       "style": "main",
-      "projects_style": "main-projects"
+      "projects_style": "projects__main",
+      "branches_style": "branches__main"
+
     },
     "programs": {
       "style": "program-page"
     },
     "about": {
       "style": "about-page",
-      "projects_style": "about-projects"
+      "projects_style": "projects__about"
     },
     "testimonials": {
       "style": "testimonials-page",
-      "projects_style": "testimonials-projects"
+      "projects_style": "projects__testimonials"
     },
     "contacts": {
-      "style": "contact-page"
+      "style": "contact-page",
+      "branches_style": "branches__contacts"
     }
   },
   "hero": {
@@ -68,7 +71,11 @@
     "title": "Шукаєте IT-курси для дитини?",
     "description": "В GoITeens ваша дитина зможе навчатися й розуміти як правильно обирати своє майбутнє - записуйтесь на безкоштовне пробне заняття."
   },
-  "achievments": {
+  "achievments_contacts": {
+    "title": "Наші досягнення&#95;"
+   
+  },
+  "achievments_main": {
     "title": " Майбутнє - за програмуванням. І наші діти зіграють в цьому головну роль!",
     "description": "<p> Програмування, за версією The World Economic Forum, це одна з ТОП-навичок, що буде потрібна у майбутньому.</p> <p>Тому якщо ви хочете знайти для своєї дитини актуальну та цікаву професію з високою зарплатою, то програмування та веб-розробка - це саме те що потрібно. </p> <p> Онлайн IT-курси для дітей - це не швидкий майстер-клас чи семінар від відомого фахівця. Це цікава та насичена необхідними навичками система навчання, що сподобається підлітку та його батькам. Вона підійде для тих, хто бажає перетворити любов дитини до комп’ютерних ігор в корисний навчальний процес чи підкаже з чого почати вести свій блог. </p> <p class='achievments__text'> Вячеслав Поліновський <span> CEO GoITeens </span></p>"
   },
@@ -174,6 +181,34 @@
       }
     ]
   },
+
+  "contacts":{
+    "title":"Як з нами можна зв’язатись?&#95;",
+   "email":{
+     "title":"email",
+     "items":[
+       {
+         "link":"contact@goiteens.ua"
+       }
+     ]
+   },
+   "phone":{
+     "title":"phone",
+     "items":[
+       {
+         "numb":"+38 093 343 21 27"
+       },
+       {
+         "numb":"+38 067 326 95 92"
+       },
+       {
+         "numb":"+38 050 366 17 77"
+       }
+     ]
+   }
+
+  },
+
   "dignity": {
     "title": " Чому нам <span class='text-accent'>довіряють</span>&#95;",
     "items": [

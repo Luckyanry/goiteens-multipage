@@ -19,13 +19,13 @@
     background-position: top right, bottom right;
   }
 
-  @include mq('desktop') {
+  @include mq(desktop) {
     position: relative;
     padding-top: 71px;
     padding-bottom: 145px;
     background-image: url('../images/main/hero/boy_lg1.png'),
       url('../images/main/hero/ellipse_lg.svg'),
-      linear-gradient(to right, #fec830 80%, #ffffff 80%);
+      linear-gradient(to right, var(--yellow-bg) 80%, var(--white-bg) 80%);
     background-size: 654px, contain, cover;
     background-position: right calc((100vw - 1196px) / 2) bottom,
       right 150px center, center;
@@ -34,8 +34,7 @@
   &__wrapper {
     margin-bottom: 52px;
     max-width: 507px;
-    @include mq('desktop') {
-    }
+   
   }
 
   .text-label {
