@@ -1,0 +1,55 @@
+{% set projects = projects %} {% set projectsItems = projects.items %}
+<section class="section projects {{ page.projects_style }}">
+ 
+    <div class="container">
+      <h2 class="section__title">
+       {{projects.title}}
+      </h2>
+
+      <p class="text-label projects-description">
+       {{projects.description}}
+      </p>
+
+      <div class="projects-slider-js projects-list">
+        {% for item in projectsItems %}
+        <div class="projects-item">
+          <picture>
+ 
+  
+            <source srcset="./assets/images/components/projects/project-{{item.id}}-lg.webp 1x, ./assets/images/components/projects/project-{{item.id}}-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-{{item.id}}-lg.jpg 1x, ./assets/images/components/projects/project-{{item.id}}-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/components/projects/project-{{item.id}}-md.webp 1x, 
+            ./assets/images/components/projects/project-{{item.id}}-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-{{item.id}}-md.jpg 1x, 
+            ./assets/images/components/projects/project-{{item.id}}-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/components/projects/project-{{item.id}}-sm.webp 1x, ./assets/images/components/projects/project-{{item.id}}-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-{{item.id}}-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
+
+            <img class="projects-item__image"  src="./assets/images/components/projects/project-{{item.id}}-sm.jpg" alt="фото проєкту {{item.title}}"
+              width="280" height="200" loading="lazy" />
+          </picture>
+          <div class="projects-item__wrapper">
+            <h3 class="text-label projects-item__title ">
+              {{item.title}}
+            </h3>
+
+            <p class="projects-item__description ">
+           {{item.description}}
+            </p>
+
+            <a class="more-link" target="_blank" href="{{item.link}}"
+              rel="noreferrer noopener nofollow">Переглянути</a>
+          </div>
+        </div>
+        {% endfor %}
+       
+       
+
+
+      </div>
+      <a href="./testimonials.html" class="main-btn">Більше про результати наших учнів</a>
+    </div>
+
+</section>

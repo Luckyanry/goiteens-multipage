@@ -1,0 +1,89 @@
+.speakers {
+    padding-top: 60px;
+    background: url('../images/components/bg-orange-bottom.svg')
+     ;
+  
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+
+    @include mq(tablet){
+        padding-top: 68px;
+    }
+    @include mq(desktop){
+        padding-top: 132px;
+    }
+  
+    .section__title {
+      margin-bottom: 24px;
+    }
+  
+    &-description {
+      margin-bottom: 52px;
+      max-width: 570px;
+    }
+  
+    &-list {
+      text-align: center;
+  
+      @include mq(tablet) {
+        max-width: 100%;
+      }
+    }
+  
+    &-item {
+      color: var(--title-cl);
+      max-width: 200px;
+      @include mq(tablet) {
+        max-width: 200px;
+      }
+  
+      @include mq(desktop) {
+        max-width: 170px;
+      }
+
+      &__wrapper{
+          margin-bottom: 24px;
+          padding: 9px;
+        border: 1.5px dashed var( --primary-accent-cl);
+       
+        border-radius: var(--border-radius);
+
+      }
+  
+      &__title {
+        margin-bottom: 8px;
+        font-weight: 700;
+      }
+
+    
+
+      &__company{
+          display: block;
+          text-transform: uppercase;
+      }
+  
+     
+    }
+    &-img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      border-radius: var(--border-radius);
+    }
+  
+    .speakers-slider-js {
+      --dots-color: var(--secondary-accent-cl);
+      .slick-dots {
+        bottom: -42px;
+        @include mq(desktop) {
+          bottom: -58px;
+        }
+      }
+    }
+  
+    .slick-dotted.slick-slider {
+      margin-bottom: 50px;
+    }
+  }
+  

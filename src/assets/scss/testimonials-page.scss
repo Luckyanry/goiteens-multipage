@@ -1,6 +1,3 @@
-
-
-
 @import './utils/variables.scss';
 @import './utils/mixins.scss';
 @import './utils/fonts.scss';
@@ -8,6 +5,7 @@
 @import './vendors/modern-normalize.scss';
 @import './vendors/slick.scss';
 @import './vendors/slick-theme.scss';
+
 
 @import './base/common.scss';
 @import './base/container.scss';
@@ -17,12 +15,19 @@
 @import './components/button.scss';
 @import './components/backdrop.scss';
 @import './components/terms-modal.scss';
+@import './components/language-select.scss';
+@import './components/projects.scss';
+@import './components/students-reviews.scss';
+
+
 
 @import './layout/header.scss';
+
+
 @import './pages/testimonials/hero.scss';
-@import './pages/testimonials/projects.scss';
+@import './pages/testimonials/last-projects.scss';
 @import './pages/testimonials/winners-project.scss';
-@import './pages/testimonials/winners-project-list.scss';
-@import './pages/testimonials/testimonials.scss';
+@import './pages/testimonials/parents-reviews.scss';
+
 @import './layout/footer.scss';
 @import './layout/modal-form.scss';

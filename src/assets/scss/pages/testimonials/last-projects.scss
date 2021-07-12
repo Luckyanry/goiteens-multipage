@@ -1,0 +1,124 @@
+.last-projects {
+  padding-top: 60px;
+  color: var(--white-text-cl);
+  @include mq(tablet) {
+    padding-top: 68px;
+  }
+  @include mq(desktop) {
+    padding-top: 132px;
+  }
+
+  &__cont {
+    margin-bottom: 48px;
+    padding: 68px 0;
+
+    @include mq(mobile-only) {
+      background-image: url('../images/components/triangle-white-1_sm.svg'),
+        url('../images/components/triangle-white-2_sm.svg'),
+        linear-gradient(to bottom, var(--secondary-accent-cl), var(--secondary-accent-cl) 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-position: top 14% right, top 50% right;
+    }
+    @include mq(tablet) {
+   
+      padding: 0;
+    }
+    @include mq(desktop) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__wrapper {
+    @include mq(desktop) {
+      display: flex;
+      margin-left: -30px;
+
+      align-items: flex-start;
+    }
+  }
+
+  &__img {
+    display: none;
+    margin-top: 52px;
+    border-radius: var(--border-radius);
+
+    @include mq(desktop) {
+      display: block;
+      margin-left: 30px;
+    }
+  }
+
+  &__side {
+    @include mq(tablet) {
+      padding: 68px 75px;
+      border-radius: 12px;
+
+      background-image: url('../images/components/triangle-white_lg.svg'),
+        linear-gradient(to bottom, var(--secondary-accent-cl), var(--secondary-accent-cl) 100%);
+
+      background-repeat: no-repeat, no-repeat;
+      background-position: bottom right, bottom right;
+    }
+
+    @include mq(desktop) {
+      padding: 52px 100px 52px 70px;
+      margin-left: 30px;
+      max-width: 670px;
+    }
+    .section__title {
+      margin-bottom: 16px;
+      font-size: 17px;
+      color: var(--white-text-cl);
+      span {
+          text-transform: none;
+          font-weight: 400;
+        //   text-transform: capitalize;
+      }
+    }
+  }
+
+  &__list{
+      justify-content: center;
+      @include mq(tablet){
+        --grid-item:3;
+
+      }
+
+      &-img{
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+      }
+
+  }
+
+  &__item{
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    
+        width: 164px;
+        height: 158px;
+      
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../images/components/triangle-orange.svg');
+  
+        @include mq(tablet-only) {
+            right: -15px;
+        
+            width: 122px;
+            height: 88px;
+        }
+      
+      }
+  }
+
+  .main-btn {
+    color: var(--title-cl);
+    background-color: var(--primary-accent-cl);
+  }
+}

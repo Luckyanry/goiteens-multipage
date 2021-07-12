@@ -1,17 +1,6 @@
 .dignity {
-  background-image: url('../images/main/advantages/how-vector.svg');
-  background-size: 375px 352px;
-  background-position: -237px top;
-  background-repeat: no-repeat;
-
-  @include mq(tablet) {
-    background-position: -70px 150px;
-  }
-  @include mq(desktop) {
-    background-position: left 40px bottom 66px;
-  }
-
   &__list {
+    position: relative;
     flex-direction: column;
     text-align: center;
     @include mq(tablet) {
@@ -20,9 +9,25 @@
     }
     @include mq(desktop) {
       --grid-item: 4;
-  
     }
 
+    &:before {
+      content: '';
+      position: absolute;
+      top: 140px;
+      left: -70px;
+      width: 375px;
+      height: 352px;
+
+      background-image: url('../images/components/triangle-gray.svg');
+      background-repeat: no-repeat;
+      z-index: -1;
+
+      @include mq(tablet) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
 
   &__item {
@@ -30,20 +35,18 @@
     border-radius: var(--border-radius);
     box-shadow: var(--block-shadow);
     background-color: var(--white-bg);
-
   }
 
-  &__img{
+  &__img {
     margin-bottom: 24px;
     width: 100%;
-    // height: 130px;
+
     border-radius: var(--border-radius);
   }
 
-  .text-bold{
+  .text-bold {
     margin-bottom: 24px;
     font-size: 17px;
     line-height: 1.3;
-    
   }
 }

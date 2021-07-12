@@ -1,33 +1,35 @@
 .advantages {
-
-  background-image: url('../images/main/advantages/how-vector.svg');
-  background-size: 375px 352px;
-  background-position: -237px top;
-  background-repeat: no-repeat;
-
-  @include mq(tablet) {
-    background-position: -70px 150px;
-  }
-  @include mq(desktop) {
-    background-position: 40px center;
-  }
-
   .section__title {
     max-width: 900px;
-   
-    
   }
 
   .list {
-   
+    position: relative;
+
     margin-bottom: 52px;
     flex-direction: column;
 
     @include mq(tablet) {
       --grid-item: 2;
-      
+
       flex-direction: row;
-  
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 140px;
+      left: -70px;
+      width: 375px;
+      height: 352px;
+
+      background-image: url('../images/components/triangle-gray.svg');
+      background-repeat: no-repeat;
+      z-index: -1;
+
+      @include mq(tablet) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   }
 

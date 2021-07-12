@@ -2,7 +2,7 @@
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url('../images/about/complex/bg-top.svg');
+  background-image: url('../images/components/bg-orange-top.svg');
 
   @include mq(tablet) {
     --grid-item: 2;
@@ -54,7 +54,7 @@
       height: 120px;
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url('../images/components/triangle.svg');
+      background-image: url('../images/components/triangle-orange.svg');
 
       @include mq(tablet) {
         top: 124px;

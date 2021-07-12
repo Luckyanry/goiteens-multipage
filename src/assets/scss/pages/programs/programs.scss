@@ -1,10 +1,14 @@
 .programs {
+  padding-bottom: 60px;
   @include mq(tablet) {
     --grid-item: 2;
+    padding-bottom: 68px;
+
   }
   @include mq(desktop) {
     --grid-item: 3;
     margin-top: -200px;
+    padding-bottom: 132px;
   }
 
   &__list {
@@ -24,7 +28,7 @@
     background-size: contain;
     background-position: top center;
     transition: all var(--fast-animation) ease;
-    // transform: scale(0.99);
+  
 
     @include mq(mobile-only) {
       max-width: 320px;
@@ -53,7 +57,7 @@
       height: 120px;
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url('../images/components/triangle.svg');
+      background-image: url('../images/components/triangle-orange.svg');
 
       @include mq(tablet) {
         top: 124px;
@@ -100,7 +104,7 @@
       color: var(--title-cl);
     }
     &__item {
-      // position: relative;
+   
       &:not(:last-child) {
         margin-bottom: 20px;
       }

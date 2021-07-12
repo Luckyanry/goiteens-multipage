@@ -1,0 +1,34 @@
+.about-hero-footer {
+  .hero-footer__title {
+      max-width: 500px;
+      font-size: 48px;
+      @include mq(tablet) {
+        margin-bottom: 160px;
+    }
+    &::after {
+      @include mq(tablet) {
+        top: 0%;
+        left: 67%;
+        width: 362px;
+        height: 294px;
+      }
+    }
+  }
+
+  .hero-footer__description{
+
+      &::after {
+        @include mq(tablet) {
+        top: 68%;
+       }
+
+       @include mq(desktop){
+           top: 43%;
+           right: 5%;
+           width: 390px;
+       }
+    }
+
+  }
+  
+}

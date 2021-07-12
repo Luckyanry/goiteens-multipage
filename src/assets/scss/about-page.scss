@@ -16,7 +16,8 @@
 @import './components/backdrop.scss';
 @import './components/terms-modal.scss';
 @import './components/language-select.scss';
-// @import './components/awards.scss';
+@import './components/projects.scss';
+@import './components/hero-footer.scss';
 
 
 
@@ -30,9 +31,10 @@
 // @import './pages/about/format.scss';
 @import './pages/about/proff-skills.scss';
 @import './pages/about/teachers.scss';
+@import './pages/about/speakers.scss';
 
-@import './pages/about/teens-game.scss';
-@import './pages/about/projects.scss';
-@import './pages/about/hero-footer.scss';
+// @import './pages/about/teens-game.scss';
+@import './pages/about/about-projects.scss';
+@import './pages/about/about-hero-footer.scss';
 @import './layout/footer.scss';
 @import './layout/modal-form.scss';

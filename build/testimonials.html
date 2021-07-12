@@ -1,7 +1,7 @@
-
+<!--  -->
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="">
   <head>
      
 <meta charset="UTF-8" />
@@ -34,7 +34,7 @@
 <title></title>
 
 
-<link rel="stylesheet" href="assets/css/.css" />
+<link rel="stylesheet" href="assets/css/testimonials-page.css" />
 <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
 <!-- <link rel="stylesheet" href="assets/css/program-page.css" /> -->
 
@@ -61,7 +61,7 @@
     <div class="page"> <header class="header">
     <div class="container">
         <a href="/" class="logo link" aria-label="логотип">
-            <img src="./images/header/logo.png" alt="логотип" class="logo__img">
+            <img src="./assets/images/header/logo.png" alt="логотип" class="logo__img">
             <span class="logo__text">мережа ІТ-академій <br> для дітей 8-15 років</span>
         </a>
         <button type="button" class="menu-btn" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
@@ -80,8 +80,7 @@
                         <a href="./about.html" class="navigation__list-link link">Про нас</a>
                     </li>
                     <li class="navigation__list-item">
-                        <a href="./testimonials.html"
-                            class="navigation__list-link navigation__list-link_current link">Результати учнів</a>
+                        <a href="./testimonials.html" class="navigation__list-link link">Результати учнів</a>
                     </li>
                     <li class="navigation__list-item">
                         <a href="./contact-page.html" class="navigation__list-link link">Контакти</a>
@@ -89,316 +88,1134 @@
                 </ul>
             </nav>
             <p class="location">
-                <svg width="24" height="22" class="location__icon">
-                    <use href="./assets/images/sprite.svg#location-icon"></use>
+                <svg width="18" height="18" class="location__icon">
+                    <use href="./assets/images/sprite.svg#location"></use>
                 </svg>
-                <span>київ</span>
+                <span>Київ</span>
             </p>
             <a href="tel:+380933432127" class="contact-tel link">+38 093 343 21 27</a>
+            <div class="language-select">
+                <select>
+                  <option value="0">Ukr</option>
+                  <option value="1">Ru</option>
+                  <option value="2">Pl</option>
+                  <option value="3">En</option>
+                  <option value="4">Tr</option>
+                  <option value="5">Ukr</option>
+                </select>
+              </div>
         </div>
     </div>
 </header>
 
 <main>
-  <section class="hero">
+   
+<section class="hero">
     <div class="container">
-        <h1 class="hero__title">Кожен курс <br> навчання в GoITeens закінчується реалізацією <br> та презентацією
-            проєкту
-        </h1>
-        <button type="button" class="modal-btn" data-modal-open>Підібрати план навчання</button>
+        <h1 class="hero__title">Кожен курс навчання&nbsp;в GoITeens закінчується реалізацією та презентацією проєкту</h1>
+        <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
     </div>
-</section> <section class="projects">
+</section>  
+<section class="section last-projects">
     <div class="container">
-        <h2 class="title projects__title">Останні <span class="accent-text">проєкти</span></h2>
-        <div class="projects__content-wrapper">
-            <picture class="projects__content-picture">
-                <source srcset="./images/testimonials/projects/oleksiy-nizitckiy-desktop.jpg"
-                    media="(min-width: 1200px)">
-                <img src="./images/testimonials/projects/oleksiy-nizitckiy.jpg" alt="" class="projects__content-img">
-            </picture>
-            <div class="projects__content-text-wrapper">
-                <h3 class="projects__content-title">Олексій Нізицький (Front-end)</h3>
-                <p class="projects__content-name">Money App</p>
-                <div class="projects__content-text-block">
-                    <p class="projects__description-name">Суть проєкту:</p>
-                    <p class="projects__description-text">Це швидкий калькулятор витрат. Розрахувати залишок від
-                        заробітку можна всього за 5 хвилин. Сайт зручний у використанні та багатий у функціоналі.</p>
-                </div>
-                <div class="projects__content-text-block">
-                    <p class="projects__description-name">Використані технології:</p>
-                    <p class="projects__description-text">HTML/CSS, JavaScript</p>
-                </div>
-                <a href="https://yablo4ko23.github.io/Money-App/" class="modal-btn link" target="_blank"
-                    rel="noopener noreferrer">Подивись детальніше</a>
-            </div>
+        <h2 class="section__title">Останні проєкти&#95;</h2>
+
+    </div>
+  <div class="last-projects__cont">
+    <div class="container">
+      <div class="last-projects__wrapper">
+        <picture>
+            <source
+            srcset="
+            ./assets/images/testimonials/last-projects/author_lg.webp    1x,
+            ./assets/images/testimonials/last-projects/author_lg@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+  
+          <source
+            srcset="./assets/images/testimonials/last-projects/author_lg@2x.jpg 2x"
+            media="(min-width: 320px)"
+            type="image/jpeg"
+          />
+          <img
+            src="./assets/images/testimonials/last-projects/author_lg.jpg"
+            class="last-projects__img"
+            alt="Фото Олексій Нізицький"
+            sizes="470px"
+            width="470"
+            height="440"
+            loading="lazy"
+          />
+        </picture>
+        <div class="last-projects__side">
+          <p class="section__title">
+            Олексій Нізицький
+            <span>(Front-end)</span>
+          </p>
+          <p class="section__title">Money App</p>
+          <p class="section__title">Суть проєкту:</p>
+
+          <p class="last-projects__content">Це швидкий калькулятор витрат. Розрахувати залишок від заробітку можна всього за 5 хвилин. Сайт зручний у використанні та багатий у функціоналі.</p>
+          <p class="section__title">Використані технології:</p>
+          <p>HTML/CSS, JavaScript</p>
+          <a
+            href="https://yablo4ko23.github.io/Money-App/"
+            class="main-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Подивись детальніше</a
+          >
         </div>
-        <ul class="projects__img-list list">
-            <li class="projects__img-list-item">
-                <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-5">
-                    <img src="./images/testimonials/projects/moneyapp.jpg" alt="" class="projects__img-list-img">
-                </div>
-            </li>
-            <li class="projects__img-list-item">
-                <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-6">
-                    <img src="./images/testimonials/projects/projectscreen1.jpg" alt="" class="projects__img-list-img">
-                </div>
-            </li>
-            <li class="projects__img-list-item">
-                <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-6">
-                    <img src="./images/testimonials/projects/projectscreen3.jpg" alt="" class="projects__img-list-img">
-                </div>
-            </li>
-            <li class="projects__img-list-item">
-                <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-6">
-                    <img src="./images/testimonials/projects/projectscreen4.jpg" alt="" class="projects__img-list-img">
-                </div>
-            </li>
-        </ul>
+      </div>
+
+      
     </div>
-</section> <section class="winners-project">
+  </div>
+
+<div class="container">
+    <ul class="last-projects__list grid list">
+      
+      <li class="last-projects__item grid__item">
+          <picture>
+            <source
+            srcset="
+            ./assets/images/testimonials/last-projects/project-1.webp    1x,
+            ./assets/images/testimonials/last-projects/project-1@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+  
+          <source
+            srcset="./assets/images/testimonials/last-projects/project-1@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+        <img
+          src="./assets/images/testimonials/last-projects/project-1.png"
+          class="last-projects__list-img"
+          alt="Фото проєкту Money App"
+          width="470"
+          height="440"
+          loading="lazy"
+        />
+
+        </picture>
+      </li>
+      
+      <li class="last-projects__item grid__item">
+          <picture>
+            <source
+            srcset="
+            ./assets/images/testimonials/last-projects/project-2.webp    1x,
+            ./assets/images/testimonials/last-projects/project-2@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+  
+          <source
+            srcset="./assets/images/testimonials/last-projects/project-2@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+        <img
+          src="./assets/images/testimonials/last-projects/project-2.png"
+          class="last-projects__list-img"
+          alt="Фото проєкту Money App"
+          width="470"
+          height="440"
+          loading="lazy"
+        />
+
+        </picture>
+      </li>
+      
+      <li class="last-projects__item grid__item">
+          <picture>
+            <source
+            srcset="
+            ./assets/images/testimonials/last-projects/project-3.webp    1x,
+            ./assets/images/testimonials/last-projects/project-3@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+  
+          <source
+            srcset="./assets/images/testimonials/last-projects/project-3@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+        <img
+          src="./assets/images/testimonials/last-projects/project-3.png"
+          class="last-projects__list-img"
+          alt="Фото проєкту Money App"
+          width="470"
+          height="440"
+          loading="lazy"
+        />
+
+        </picture>
+      </li>
+      
+    </ul>
+  </div>
+</section>
+
+
+ 
+
+<section class="section winners-project">
     <div class="container">
-        <h2 class="title winners-project__title">Проєкти <span class="accent-text">переможці</span> Game of Teens 2020
-        </h2>
-        <p class="winners-project__description">В кінці кожного навчального року ми проводимо конкурс проєктів серед
-            усіх наших студентів</p>
-        <div class="winners-project__content-wrapper">
-            <iframe class="winners-project__video" src="https://www.youtube.com/embed/ppGpsoegMGQ" frameborder="0"
+  
+        <div class="grid">
+            <iframe class="winners-project__video grid__item" src="https://www.youtube.com/embed/ppGpsoegMGQ" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             <!-- <img src="./images/testimonials/winners-project/video.png" alt="" class="winners-project__video"> -->
-            <div class="winners-project__content-text-wrapper">
-                <h3 class="winners-project__content-title">Як проходили презентації проєктів Game Of Teens 2020</h3>
-                <p class="winners-project__content-text">До фіналів дійшло 24 проєкта з 5 міст України</p>
+            <div class="grid__item">
+                <h2 class="section__title">Проєкти переможці Game of Teens 2020&lowbar;</h2>
+                <p class="text-label">В кінці кожного навчального року ми проводимо конкурс проектів серед усіх наших студентів</p>
+                <p class="text-bold">Як проходили презентації проєктів Game Of Teens 2020</p>
+                <p>До фіналів дійшло 24 проєкта з 5 міст України</p>
             </div>
 
         </div>
-        <ul class="projects__list list">
-            <li class="projects__list-item">
-                <a href="http://karaoke-smile-art.com.ua/" target="_blank" rel="noopener noreferrer">
-                    <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-1">
-                        <picture class="projects__list-picture">
-                            <source srcset="./images/projects/caraoke-desktop.png" media="(min-width: 1200px)">
-                            <source srcset="./images/projects/caraoke.png" media="(min-width: 320px)">
-                            <img src="./images/projects/caraoke.png" alt="" class="projects__list-img">
-                        </picture>
-                    </div>
-                </a>
-                <h3 class="projects__list-title">Сайт караоке-бару Smile Art Bar</h3>
-                <p class="projects__list-description">«Власниця закладу Наталія Ковальчук виступила у якості
-                    реального
-                    замовника для груп Front-end #3 і Front-end #5. Наші студенти впродовж 3-х тижнів працювали над
-                    розробкою одночасно привабливого і функціонального сайту, і вже сьогодні готові запускати його в
-                    продакшн.»</p>
-            </li>
-            <li class="projects__list-item">
-                <a href="https://olegcook.vn.ua/" target="_blank" rel="noopener noreferrer">
-                    <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-2">
-                        <picture class="projects__list-picture">
-                            <source srcset="./images/projects/cook-desktop.png" media="(min-width: 1200px)">
-                            <source srcset="./images/projects/cook.png" media="(min-width: 320px)">
-                            <img src="./images/projects/cook.png" alt="" class="projects__list-img">
-                        </picture>
-                    </div>
-                </a>
-                <h3 class="projects__list-title">Сайт кулінарної майстерні Oleg Cook</h3>
-                <p class="projects__list-description">«Студенти з Вінниці створили односторінковий сайт на замолвення
-                    одного з батьків. Тепер бізнес Олега, а саме приготування їжі на замовлення, розвиватиметься ще з
-                    більшими темпами.»</p>
-            </li>
-            <li class="projects__list-item">
-                <a href="http://mebelremservice.kh.ua/" target="_blank" rel="noopener noreferrer">
-                    <div class="projects__list-img-wrapper projects__list-img-wrapper_border-theme-1">
-                        <picture class="projects__list-picture">
-                            <source srcset="./images/projects/furniture-desktop.png" media="(min-width: 1200px)">
-                            <source srcset="./images/projects/furniture.png" media="(min-width: 320px)">
-                            <img src="./images/projects/furniture.png" alt="" class="projects__list-img">
-                        </picture>
-                    </div>
-                </a>
-                <h3 class="projects__list-title">Меблі РЕМСЕРВІС</h3>
-                <p class="projects__list-description">«Сайт компанії з ремонту та реставрації меблів. На сайті
-                    представлений увесь спектр послуг компанії, приклади реалізованих робіт, конкурентні переваги та
-                    контакти для оформлення замовлення.»</p>
-            </li>
-        </ul>
+
     </div>
-</section> <section class="testimonials">
+</section>
+   
+<section class="section projects testimonials-projects">
+ 
     <div class="container">
-        <h2 class="title">Що <span class="accent-text">говорять</span> наші учні</h2>
-        <div class="testimonials-slider testimonials__students-slider">
-            <div class="testimonials-slider__slide">
-                <div class="testimonials-slider__slide-content">
-                    <div class="testimonials-slider__slide-left-side">
-                        <p class="testimonials-slider__slide-text">«Основна моя сфера, яку я вивчаю протягом навчального
-                            року
-                            Front-end! Завдяки зрозумілому та сучасному методу викладання школи GoITeens, зокрема і мого
-                            викладача Родіона Романова мені вдалося зайняти найкраще місце на марафоні з програмування.
-                            Круто навчатися в школі GoITeens: цікаве, сучасне викладання та легке сприйняття матеріалу»
-                        </p>
-                    </div>
-                    <div class="testimonials-slider__slide-right-side">
-                        <picture class="testimonials-slider__slide-picture">
-                            <img src="./images/testimonials/students-testimonials/makar.png" alt=""
-                                class="testimonials-slider__slide-img">
-                        </picture>
-                        <div class="testimonials-slider__slide-img-description">
-                            <h3 class="testimonials-slider__slide-title">Макар Луцький</h3>
-                            <!-- <p class="testimonials-slider__slide-age">8 років</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonials-slider__slide">
-                <div class="testimonials-slider__slide-content">
-                    <div class="testimonials-slider__slide-left-side">
-                        <p class="testimonials-slider__slide-text">«Курси з розробки ігор дуже сподобались. Навчання йде
-                            швидко, багато практики, є допомога від викладача. Теорія також на високому рівні - вивчаємо
-                            те, що потрібно. Софт скіли також не підвели, там теж хороші викладачі, особливо Юля,
-                            матеріал вчиться швидко. Контингент учнів теж сподобався - люди оригінальні, дружні й
-                            цікаві.»</p>
-                    </div>
-                    <div class="testimonials-slider__slide-right-side">
-                        <picture class="testimonials-slider__slide-picture">
-                            <img src="./images/testimonials/students-testimonials/sergeiIvleev.png" alt=""
-                                class="testimonials-slider__slide-img">
-                        </picture>
-                        <div class="testimonials-slider__slide-img-description">
-                            <h3 class="testimonials-slider__slide-title">Сергій Ієвлєв</h3>
-                            <!-- <p class="testimonials-slider__slide-age">8 років</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonials-slider__slide">
-                <div class="testimonials-slider__slide-content">
-                    <div class="testimonials-slider__slide-left-side">
-                        <p class="testimonials-slider__slide-text">«Мені пощастило, що я навчаюся з GoIteens. Ці курси
-                            навчили/навчають мене не тільки розробці ігор, а й праці в команді, навчають мене думати
-                            по-іншому, знаходити нові рішення й вирішувати цікаві завдання. Тобто, GoIteens розвиває тебе
-                            ще і як людину. Вчителі добре пояснюють, допомагають, тому навчатися в GoIteens дуже цікаво.»
-                        </p>
-                    </div>
-                    <div class="testimonials-slider__slide-right-side">
-                        <picture class="testimonials-slider__slide-picture">
-                            <img src="./images/testimonials/students-testimonials/kirilAzarov.png" alt=""
-                                class="testimonials-slider__slide-img">
-                        </picture>
-                        <div class="testimonials-slider__slide-img-description">
-                            <h3 class="testimonials-slider__slide-title">Кирило Азаров</h3>
-                            <!-- <p class="testimonials-slider__slide-age">8 років</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonials-slider__slide">
-                <div class="testimonials-slider__slide-content">
-                    <div class="testimonials-slider__slide-left-side">
-                        <p class="testimonials-slider__slide-text">«Я задоволений навчанням, як і софтами так і хард
-                            скілами.
-                            Загалом заняття проходять цікаво і вся інформація подається дуже доступно і зрозуміло,
-                            методи навчання також подобаються( наприклад на хард скілах...спочатку вивчаєм важчий
-                            спосіб, щоб зрозуміти що і як працює і вже після спрощуєм собі життя ), клієнт менеджер
-                            завжди на зв'язку, якщо коротко то все класно🤟
-                            І скучив за атмосферою офісних занять <br><br> Цікаві моменти:
-                            Найцікавіші моменти відбуваються з 10 до 14, а вже після і до...як коли
-                            <br><br>
-                            Найбільше подобається бачити свій прогрес, коли я дивився на сайти і думав "вау, це так
-                            класно виглядає" і зараз дивлюсь на це і думаю " я можу набагато цікавіше»
-                        </p>
-                    </div>
-                    <div class="testimonials-slider__slide-right-side">
-                        <picture class="testimonials-slider__slide-picture">
-                            <img src="./images/testimonials/students-testimonials/yuriyPidlyskyy.png" alt=""
-                                class="testimonials-slider__slide-img">
-                        </picture>
-                        <div class="testimonials-slider__slide-img-description">
-                            <h3 class="testimonials-slider__slide-title">Юрій Підлиський</h3>
-                            <!-- <p class="testimonials-slider__slide-age">8 років</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <h2 class="section__title">
+       Останні реалізовані учнями проекти&#95;
+      </h2>
+
+      <p class="text-label projects-description">
+        Ні, це не скрін з App Store! <span> Це проєкти, які наші учні розробляють на курсі самостійно</span>
+      </p>
+
+      <div class="projects-slider-js projects-list">
+        
+        <div class="projects-item">
+          <picture>
+ 
+  
+            <source srcset="./assets/images/components/projects/project-1-lg.webp 1x, ./assets/images/components/projects/project-1-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-1-lg.jpg 1x, ./assets/images/components/projects/project-1-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/components/projects/project-1-md.webp 1x, 
+            ./assets/images/components/projects/project-1-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-1-md.jpg 1x, 
+            ./assets/images/components/projects/project-1-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/components/projects/project-1-sm.webp 1x, ./assets/images/components/projects/project-1-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-1-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
+
+            <img class="projects-item__image"  src="./assets/images/components/projects/project-1-sm.jpg" alt="фото проєкту Сайт караоке-бару Smile Art Bar"
+              width="280" height="200" loading="lazy" />
+          </picture>
+          <div class="projects-item__wrapper">
+            <h3 class="text-label projects-item__title ">
+              Сайт караоке-бару Smile Art Bar
+            </h3>
+
+            <p class="projects-item__description ">
+            «Власниця закладу Наталія Ковальчук виступила у якості реального замовника для груп Front-end #3 і Front-end #5. Наші студенти впродовж 3-х тижнів працювали над розробкою одночасно привабливого і функціонального сайту, і вже сьогодні готові запускати його в продакшн.»
+            </p>
+
+            <a class="more-link" target="_blank" href="http://karaoke-smile-art.com.ua/"
+              rel="noreferrer noopener nofollow">Переглянути</a>
+          </div>
         </div>
-    </div>
-</section> <section class="testimonials">
-    <div class="container">
-        <h2 class="title">Що <span class="accent-text">говорять</span> наші батьки</h2>
-        <div class="testimonials-slider testimonials__parents-slider">
-            <div class="testimonials-slider__slide">
-                <div class="testimonials-slider__slide-content">
-                    <div class="testimonials-slider__slide-left-side">
-                        <p class="testimonials-slider__slide-text">«Дуже круті заняття! син просто знайшов свою справу!
-                            так тримати!»</p>
-                    </div>
-                    <div class="testimonials-slider__slide-right-side">
-                        <picture class="testimonials-slider__slide-picture">
-                            <img src="./images/testimonials/parent-testimonials/myroslava-kosovych.png" alt=""
-                                class="testimonials-slider__slide-img">
-                        </picture>
-                        <div class="testimonials-slider__slide-img-description">
-                            <h3 class="testimonials-slider__slide-title">Мирослава Косович</h3>
-                            <!-- <p class="testimonials-slider__slide-age">8 років</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonials-slider__slide">
-                <div class="testimonials-slider__slide-content">
-                    <div class="testimonials-slider__slide-left-side">
-                        <p class="testimonials-slider__slide-text">«Як мама 14 сина, я радію, що син зараз не тільки
-                            бавиться на компі, а вже другий рік навчається в Go ITeens і опановує перспективний фах.»
-                        </p>
-                    </div>
-                    <div class="testimonials-slider__slide-right-side">
-                        <picture class="testimonials-slider__slide-picture">
-                            <img src="./images/testimonials/parent-testimonials/nataliya-rudnyk.png" alt=""
-                                class="testimonials-slider__slide-img">
-                        </picture>
-                        <div class="testimonials-slider__slide-img-description">
-                            <h3 class="testimonials-slider__slide-title">Наталія Рудник</h3>
-                            <!-- <p class="testimonials-slider__slide-age">8 років</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonials-slider__slide">
-                <div class="testimonials-slider__slide-content">
-                    <div class="testimonials-slider__slide-left-side">
-                        <p class="testimonials-slider__slide-text">«Goiteens надала можливість моєму сину відчути себе
-                            справжнім кодером! У нього з'явилась мета - стати успішним програмістом! »</p>
-                    </div>
-                    <div class="testimonials-slider__slide-right-side">
-                        <picture class="testimonials-slider__slide-picture">
-                            <img src="./images/testimonials/parent-testimonials/revizor.png" alt=""
-                                class="testimonials-slider__slide-img">
-                        </picture>
-                        <div class="testimonials-slider__slide-img-description">
-                            <h3 class="testimonials-slider__slide-title">Валерія Ревізор</h3>
-                            <!-- <p class="testimonials-slider__slide-age">8 років</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonials-slider__slide">
-                <div class="testimonials-slider__slide-content">
-                    <div class="testimonials-slider__slide-left-side">
-                        <p class="testimonials-slider__slide-text">Дякуємо школі GoITeens, а також досвідченим
-                            викладачам за цікавий підхід у розвитку навичок програмування у дітей.»</p>
-                    </div>
-                    <div class="testimonials-slider__slide-right-side">
-                        <picture class="testimonials-slider__slide-picture">
-                            <img src="./images/testimonials/parent-testimonials/julia-khvastunova.png" alt=""
-                                class="testimonials-slider__slide-img">
-                        </picture>
-                        <div class="testimonials-slider__slide-img-description">
-                            <h3 class="testimonials-slider__slide-title">Юлія Хвастунова</h3>
-                            <!-- <p class="testimonials-slider__slide-age">8 років</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
+        <div class="projects-item">
+          <picture>
+ 
+  
+            <source srcset="./assets/images/components/projects/project-2-lg.webp 1x, ./assets/images/components/projects/project-2-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-2-lg.jpg 1x, ./assets/images/components/projects/project-2-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/components/projects/project-2-md.webp 1x, 
+            ./assets/images/components/projects/project-2-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-2-md.jpg 1x, 
+            ./assets/images/components/projects/project-2-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/components/projects/project-2-sm.webp 1x, ./assets/images/components/projects/project-2-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-2-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
+
+            <img class="projects-item__image"  src="./assets/images/components/projects/project-2-sm.jpg" alt="фото проєкту Сайт кулінарної майстерні Oleg Cook"
+              width="280" height="200" loading="lazy" />
+          </picture>
+          <div class="projects-item__wrapper">
+            <h3 class="text-label projects-item__title ">
+              Сайт кулінарної майстерні Oleg Cook
+            </h3>
+
+            <p class="projects-item__description ">
+             «Студенти з Вінниці створили односторінковий сайт на замолвення одного з батьків. Тепер бізнес Олега, а саме приготування їжі на замовлення, розвиватиметься ще з більшими темпами.»
+            </p>
+
+            <a class="more-link" target="_blank" href="https://olegcook.vn.ua/"
+              rel="noreferrer noopener nofollow">Переглянути</a>
+          </div>
         </div>
+        
+        <div class="projects-item">
+          <picture>
+ 
+  
+            <source srcset="./assets/images/components/projects/project-3-lg.webp 1x, ./assets/images/components/projects/project-3-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-3-lg.jpg 1x, ./assets/images/components/projects/project-3-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/components/projects/project-3-md.webp 1x, 
+            ./assets/images/components/projects/project-3-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-3-md.jpg 1x, 
+            ./assets/images/components/projects/project-3-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/components/projects/project-3-sm.webp 1x, ./assets/images/components/projects/project-3-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-3-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
+
+            <img class="projects-item__image"  src="./assets/images/components/projects/project-3-sm.jpg" alt="фото проєкту Меблі РЕМСЕРВІС"
+              width="280" height="200" loading="lazy" />
+          </picture>
+          <div class="projects-item__wrapper">
+            <h3 class="text-label projects-item__title ">
+              Меблі РЕМСЕРВІС
+            </h3>
+
+            <p class="projects-item__description ">
+           «Сайт компанії з ремонту та реставрації меблів. На сайті представлений увесь спектр послуг компанії, приклади реалізованих робіт, конкурентні переваги та контакти для оформлення замовлення.»
+            </p>
+
+            <a class="more-link" target="_blank" href="#"
+              rel="noreferrer noopener nofollow">Переглянути</a>
+          </div>
+        </div>
+        
+        <div class="projects-item">
+          <picture>
+ 
+  
+            <source srcset="./assets/images/components/projects/project-4-lg.webp 1x, ./assets/images/components/projects/project-4-lg@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-4-lg.jpg 1x, ./assets/images/components/projects/project-4-lg@2x.jpg 2x" media="(min-width: 1280px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/components/projects/project-4-md.webp 1x, 
+            ./assets/images/components/projects/project-4-md@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-4-md.jpg 1x, 
+            ./assets/images/components/projects/project-4-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
+  
+            <source srcset="./assets/images/components/projects/project-4-sm.webp 1x, ./assets/images/components/projects/project-4-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./assets/images/components/projects/project-4-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
+
+            <img class="projects-item__image"  src="./assets/images/components/projects/project-4-sm.jpg" alt="фото проєкту Меблі РЕМСЕРВІС"
+              width="280" height="200" loading="lazy" />
+          </picture>
+          <div class="projects-item__wrapper">
+            <h3 class="text-label projects-item__title ">
+              Меблі РЕМСЕРВІС
+            </h3>
+
+            <p class="projects-item__description ">
+           «Сайт компанії з ремонту та реставрації меблів. На сайті представлений увесь спектр послуг компанії, приклади реалізованих робіт, конкурентні переваги та контакти для оформлення замовлення.»
+            </p>
+
+            <a class="more-link" target="_blank" href="#"
+              rel="noreferrer noopener nofollow">Переглянути</a>
+          </div>
+        </div>
+        
+       
+       
+
+
+      </div>
+      <a href="./testimonials.html" class="main-btn">Більше про результати наших учнів</a>
     </div>
+
+</section>  
+<section class="section testimonials-students-reviews">
+  <div class="container">
+    <h2 class="section__title">Що говорять наші учні&#95;</h2>
+  </div>
+
+   
+
+<div class="students-reviews">
+  <div class="students-review-slider-js review-list">
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/makar.webp    1x,
+              ./assets/images/components/students-reviews/makar@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/makar@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/makar.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description">«Основна моя сфера, яку я вивчаю протягом навчального року Front-end! Завдяки зрозумілому та сучасному методу викладання школи GoITeens, зокрема і мого викладача Родіона Романова, мені вдалося зайняти найкраще місце на марафоні з програмування. Круто навчатися в школі GoITeens: цікаве, сучасне викладання та легке сприйняття матеріалу.»</p>
+        <p class="review-list__title">Макар Луцький</p>
+        <p class="review-list__course">16 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/sergeiIvleev.webp    1x,
+              ./assets/images/components/students-reviews/sergeiIvleev@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/sergeiIvleev@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/sergeiIvleev.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description">«Курси з розробки ігор дуже сподобались. Навчання йде швидко, багато практики, є допомога від викладача. Теорія також на високому рівні - вивчаємо те, що потрібно. Софт скіли також не підвели, там теж хороші викладачі, особливо Юля, матеріал вчиться швидко. Контингент учнів теж сподобався - люди оригінальні, дружні й цікаві.»</p>
+        <p class="review-list__title">Сергій Ієвлєв</p>
+        <p class="review-list__course">15 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/kirilAzarov.webp    1x,
+              ./assets/images/components/students-reviews/kirilAzarov@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/kirilAzarov@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/kirilAzarov.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description">«Мені пощастило, що я навчаюся з GoIteens. Ці курси навчили/навчають мене не тільки розробці ігор, а й праці в команді, навчають мене думати по-іншому, знаходити нові рішення й вирішувати цікаві завдання. Тобто, GoIteens розвиває тебе ще і як людину. Вчителі добре пояснюють, допомагають, тому навчатися в GoIteens дуже цікаво.»</p>
+        <p class="review-list__title">Кирило Азаров</p>
+        <p class="review-list__course">15 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/yuriyPidlyskyy.webp    1x,
+              ./assets/images/components/students-reviews/yuriyPidlyskyy@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/yuriyPidlyskyy@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/yuriyPidlyskyy.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description"><span class='scroll'>«Я задоволений навчанням, як і софтами так і хард скілами. Загалом заняття проходять цікаво і вся інформація подається дуже доступно та зрозуміло, методи навчання також подобаються ( наприклад на хард скілах...спочатку вивчаєм важчий спосіб, щоб зрозуміти що і як працює, і вже після спрощуємо собі життя ), клієнт менеджер завжди на зв'язку, якщо коротко то все класно&#129311; І скучив за атмосферою офісних занять <br> Цікаві моменти:Найцікавіші моменти відбуваються з 10 до 14, а вже після і до...як коли <br> Найбільше подобається бачити свій прогрес, коли я дивився на сайти і думав 'вау, це так класно виглядає' і зараз дивлюсь на це і думаю 'я можу набагато цікавіше'» </span></p>
+        <p class="review-list__title">Юрій Підлиський</p>
+        <p class="review-list__course">15 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/ihorYakibiuk.webp    1x,
+              ./assets/images/components/students-reviews/ihorYakibiuk@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/ihorYakibiuk@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/ihorYakibiuk.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description">«Мене звати Ігор і я студент курсу Front_End школи Go_Iteens. Навчання доволі цікаве, інформативне. Також мені сподобались добрі, людяні викладачі, які завжди допоможуть тобі. Клієнт-менеджер теж на висоті, завжди надсилає важливу і необхідну інформацію. Найбільше сподобалось це працювати в команді з іншими студентами.»</p>
+        <p class="review-list__title">Ігор Якіб'юк</p>
+        <p class="review-list__course">13 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/annaYakibiuk.webp    1x,
+              ./assets/images/components/students-reviews/annaYakibiuk@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/annaYakibiuk@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/annaYakibiuk.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description">«Навчання у школі Go Іteens є надзвичайно цікавим,веселим та пізнавальним. Дуже подобаються викладачі та клієнт-менеджери,які завжди привітні. Найбільше вразили результати:сайти та ігри,які створені власноруч. Також дуже подобається,що на курсах є рейтинг,який дуже спонукає. Усім рекомендую!❤️»</p>
+        <p class="review-list__title">Анна-Домініка Якіб'юк</p>
+        <p class="review-list__course">14 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/sviatoslavToropov.webp    1x,
+              ./assets/images/components/students-reviews/sviatoslavToropov@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/sviatoslavToropov@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/sviatoslavToropov.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description"><span class='scroll'> Мене звати Святослав, і я хочу вам розповісти про школу GoITeens! Спочатку розповім про декілька фактів.<br><br>1.Чудова група, гарний викладач.<br>2.Відзивчивість на вищому рівні, якщо тобі щось не зрозуміло тобі моментально відповідають.<br>3.В деякі моменти можна пошуткувати і посміятись.<br><br>Я вже майже 2 роки в GoITeens. І я дуже багато знаю з моменту вступу до GoITeens!  Ця компанія одна із самих класних компаній в Україні по IT! ВСІМ РЕКОМЕНДУЮ.» </span></p>
+        <p class="review-list__title">Святослав Торопов</p>
+        <p class="review-list__course">13 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/vladyslavShevchuk.webp    1x,
+              ./assets/images/components/students-reviews/vladyslavShevchuk@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/vladyslavShevchuk@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/vladyslavShevchuk.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description"><span class='scroll'>«Протягом усього часу навчання у IT-школі GoITeens я відчував по-справжньому дружню та веселу атмосферу. Викладачі завжди все докладно пояснюють та допомагають у разі виникнення труднощів. Спочатку я вирішив для себе спробувати щось нове, але згодом це переросло у зацікавленість, а зараз у захоплення улюбленою справою. Я подолав купу труднощів, дізнався багато нового та відкрив для себе новий світ - світ інформаційних технологій. І я дуже вдячний школі GoITeens за таку можливість.» </span></p>
+        <p class="review-list__title">Владислав Шевчук</p>
+        <p class="review-list__course">15 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/svitlanaDenysenko.webp    1x,
+              ./assets/images/components/students-reviews/svitlanaDenysenko@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/svitlanaDenysenko@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/svitlanaDenysenko.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description"><span class='scroll'>«Навчання улюбленій справі - справжнє задоволення, особливо коли вчителі справді прагнуть передати увесь досвід, який в них є, щоб внести величезний вклад у життя багатьох людей. Саме таке ставлення я побачила в GoITeens. Кожен, хто тут працює, має головну мету - навчити покоління особистостей впевнено йти до своїх мрій. Хочу висловити особисту подяку за максимальну віддачу та готовність домогти в разі потреби нашому викладачу Олександрі Х. Завдяки їй, я вважаю, що знайшла те, чим збираюся займатися у майбутньому. Рекомендую всім, хто хоче знайти себе в IT сфері, звертатися саме сюди.»</span></p>
+        <p class="review-list__title">Світлана Денисенко</p>
+        <p class="review-list__course">13 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/katiaBoyko.webp    1x,
+              ./assets/images/components/students-reviews/katiaBoyko@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/katiaBoyko@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/katiaBoyko.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description">«Мені дуже подобається навчання в GoITeens. З викладачами легко знайти спільну мову, а вони в свою чергу досить якісно викладають предмет. Ще гарно та цікаво те, що мова і вивчається з самого початку, але під час навчання розкриваються деякі деталі та подробиці, про які не розповідають у школі.Отож, загалом, навчання приносить багато задоволення й користі.»</p>
+        <p class="review-list__title">Катя Бойко</p>
+        <p class="review-list__course">13 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/oleksiyPukhtaievych.webp    1x,
+              ./assets/images/components/students-reviews/oleksiyPukhtaievych@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/oleksiyPukhtaievych@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/oleksiyPukhtaievych.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description">«Вже не перший рік навчаюсь на курсах GoITeens. Весела атмосфера та дружнє оточення мотивують працювати над собою та вивчати щось нове. Особливо хотілося б відзначити кваліфікованих викладачів, які завжди готові допомогти і поспілкуватися»</p>
+        <p class="review-list__title">Олексій Пухтаєвич</p>
+        <p class="review-list__course">14 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/andriyAvramenko.webp    1x,
+              ./assets/images/components/students-reviews/andriyAvramenko@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/andriyAvramenko@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/andriyAvramenko.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description">«Відвідую курс програмування Frontend. Спочатку, коли було тяжко, я відчував підтримку у всьому з боку викладачів і менеджера Олександри. Діти в моїй групі доброзичливі, допомагають один одному. Завдяки GoIT я здобув впевненість в тому, що програмування - це те, чим я хотів би займатися все життя.»</p>
+        <p class="review-list__title">Андрій Авраменко</p>
+        <p class="review-list__course">10 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/emilKhrystoforov.webp    1x,
+              ./assets/images/components/students-reviews/emilKhrystoforov@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/emilKhrystoforov@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/emilKhrystoforov.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description">«Привіт, я Еміль. Я навчаюся в школі GoiTeens. Тут мені подобається мій вчитель з hard skills - Віктор. Він веселий, добрий та зрозуміло пояснює матеріал.»</p>
+        <p class="review-list__title">Еміль Христофоров</p>
+        <p class="review-list__course">14 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/rostyslavRudenko.webp    1x,
+              ./assets/images/components/students-reviews/rostyslavRudenko@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/rostyslavRudenko@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/rostyslavRudenko.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description">«Мені подобається ця школа, вони мене навчили багатьом технічним речам, які знадобляться у майбутньому. Я вчуся в 1 групі по фронт-енд ще з літа і планую далі вчитися»</p>
+        <p class="review-list__title">Ростислав Руденко</p>
+        <p class="review-list__course">14 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/maksymRevizor.webp    1x,
+              ./assets/images/components/students-reviews/maksymRevizor@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/maksymRevizor@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/maksymRevizor.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description"><span class='scroll'>«Найкраще , що подобається мені в житті - це пізнавати світ! GoITeens - безмежний океан знань і спосіб пірнати й діставати нові знання із тех та софт скілів. Я згадую панду із мульта:нульового рівня не існує, але саме такий рівень був у мене до того, як я познайомився із супер крутим Любомиром та прекрасною Вікторією! Вони дарують години 'радісної' цікавої незнайомої інформації у світі програмування. Я навіть не уявляв, що це може так притягувати. Це, як музика! Ти хочеш творити власними руками: писати код, займатися версткою. Тобі завжди допоможуть, направлять, протягнуть руку помочі! Цікаво було працювати над командним захистом проєкту! Я відчув себе частиною цілого! Ми допомогали один одному. Це нереально круто! В кінці маса емоцій і єдина робота! Дякую Любомирові, що дав можливість повірити в себе! Вікторія, як фея у нас, вчить м'яким навикам майбутнього професіоналізму! Ого! Які слова я знаю, а ще я вже можу створити рекламу. За це теж велике дякую! Я росту, змінююсь, світ змінюється і дорослішає разом зі мною! А ще є такі прекрасні  добрі чудові й неймовірно талановиті люди в GoITeens, як Анна Одзуковська й Михайло Максімов. Світ прекрасний, коли тобі дарують частину свого серця й душі! Великий Вам уклін Педагоги GoITeens і щире дякую!» </span></p>
+        <p class="review-list__title">Максим Ревізор</p>
+        <p class="review-list__course">12 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/maksymPopsuy.webp    1x,
+              ./assets/images/components/students-reviews/maksymPopsuy@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/maksymPopsuy@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/maksymPopsuy.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description"><span class='scroll'>«Я вчив html, css в школі GoIteens, це був дуже цікавий досвід, напочатку було важко, але далі я адаптувався. Навчання було складним і водночас цікавим. Я потрапив у школу GoIteens через ознайомчий вебінар, де саме і показали курси по фронтенду. Один з найцікавіших моментів у навчанні був проєкт на початку грудня 2020, ми верстали макет сайту-реклами гри Brawl Stars, я робив секцію зі слайдером. Але окрім проєкту в кінці курса є багато цікавих моментів у навчанні, наприклад зараз я вивчаю Javascript.»</span></p>
+        <p class="review-list__title">Максим Попсуй</p>
+        <p class="review-list__course">13 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/olehTsir.webp    1x,
+              ./assets/images/components/students-reviews/olehTsir@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/olehTsir@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/olehTsir.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description"><span class='scroll'>«Мережа IT-шкіл GoITeens надає нам цікаве та високоякісне навчання. Навчання включає в себе різноманітність предметів, цікаві завдання під часу уроку та систематичні домашні завдання. Викладачі в GoITeens досить комунікабельні та професійні, швидко відповідають на незрозумілі тобі завдання. Незважаючи на онлайн-заняття відчувається дружній колектив серед студентів. Мені подобається здобувати знання в IT-школі GoITeens.&#129300;» </span></p>
+        <p class="review-list__title">Олег Цір</p>
+        <p class="review-list__course">15 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/karpenko.webp    1x,
+              ./assets/images/components/students-reviews/karpenko@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/karpenko@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/karpenko.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description"><span class='scroll'>«Я узнал о школе GoIteens прошлым летом, когда увидел в фейсбуке новость о 3-месячном марафоне. Мне всегда хотелось попробовать свои силы в программировании. На марафоне была возможность познакомиться с азами фронтэнда, джава и Пайтона, а также прокачать свои навыки общения. Это был крутой опыт, который позволил мне определиться. Сейчас я занимаюсь на курсе по фронтэнду и уже сделал несколько сайтов. Спасибо школе GoIteens за возможность подготовить крутое портфолио, которое поможет мне при поступлении в колледж.»</span></p>
+        <p class="review-list__title">Олександр Карпенко</p>
+        <p class="review-list__course">15 років</p>
+      </div>
+    </div>
+    
+    <div class="review-list__item">
+      <div class="review-list__wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/oleksiyNizitskyy.webp    1x,
+              ./assets/images/components/students-reviews/oleksiyNizitskyy@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/oleksiyNizitskyy@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="review-list__img"
+            src="./assets/images/components/students-reviews/oleksiyNizitskyy.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="review-list__description"><span class='scroll'>«За майже рік навчання у @go_iteens я сильно змінився. Отримав безцінний досвід, купу нових знань, чудових друзів та навіть почав дивитись на світ під трішки іншим кутом&#128517; (всі здобуті навички та знання можна подивитись на 3 та 4 фото&#128064;) На протязі цих змін мені допомагали мої вчителі. Яким я дуже вдячний за отриманий досвід та інформацію. Особливо дякую @victor_stashko за, мабуть, найкращі методи викладання&#128514; В цілому, я не жалію, ні витрачених коштів, ані часу. І рекомендую Go ITeens кожному, хто хоче спробувати себе у IT. Дякую за чудовий рік&#128420;»</span></p>
+        <p class="review-list__title">Олексій Нізицький</p>
+        <p class="review-list__course">15 років</p>
+      </div>
+    </div>
+    
+  </div>
+  <div class="review-btn-cont">
+    <button
+      class="review-prev-btn students-prev-but-js"
+      type="button"
+      aria-label="Попередній слайд"
+    ></button>
+    <button class="review-next-btn students-next-but-js" type="button" aria-label="Наступний слайд"></button>
+  </div>
+</div>
+
+
+
+</section>    
+<section class="section parents-reviews">
+  <div class="container">
+    <h2 class="section__title">Що говорять наші батьки&#95;</h2>
+ 
+
+    <div class="parent-review-slider-js review-list">
+      
+      <div class="review-list__item">
+        <div class="review-list__wrap">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/testimonials/parent-reviews/myroslava-kosovych.webp    1x,
+                ./assets/images/testimonials/parent-reviews/myroslava-kosovych@2x.webp 2x
+              "
+              media="(min-width: 320px)"
+              type="image/webp"
+            />
+  
+            <source
+              srcset="./assets/images/testimonials/parent-reviews/myroslava-kosovych@2x.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
+            <img
+              class="review-list__img"
+              src="./assets/images/testimonials/parent-reviews/myroslava-kosovych.png"
+              alt="Фото Мирослава Косович"
+              width="62"
+              height="62"
+              loading="lazy"
+            />
+          </picture>
+          <p class="review-list__description">«Дуже круті заняття! син просто знайшов свою справу! так тримати!»</p>
+          <p class="review-list__title">Мирослава Косович</p>
+        
+        </div>
+      </div>
+      
+      <div class="review-list__item">
+        <div class="review-list__wrap">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/testimonials/parent-reviews/nataliya-rudnyk.webp    1x,
+                ./assets/images/testimonials/parent-reviews/nataliya-rudnyk@2x.webp 2x
+              "
+              media="(min-width: 320px)"
+              type="image/webp"
+            />
+  
+            <source
+              srcset="./assets/images/testimonials/parent-reviews/nataliya-rudnyk@2x.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
+            <img
+              class="review-list__img"
+              src="./assets/images/testimonials/parent-reviews/nataliya-rudnyk.png"
+              alt="Фото Наталія Рудник"
+              width="62"
+              height="62"
+              loading="lazy"
+            />
+          </picture>
+          <p class="review-list__description">«Як мама 14 сина, я радію, що син зараз не тільки бавиться на компі, а вже другий рік навчається в Go ITeens і опановує перспективний фах.»</p>
+          <p class="review-list__title">Наталія Рудник</p>
+        
+        </div>
+      </div>
+      
+      <div class="review-list__item">
+        <div class="review-list__wrap">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/testimonials/parent-reviews/valeria-revizor.webp    1x,
+                ./assets/images/testimonials/parent-reviews/valeria-revizor@2x.webp 2x
+              "
+              media="(min-width: 320px)"
+              type="image/webp"
+            />
+  
+            <source
+              srcset="./assets/images/testimonials/parent-reviews/valeria-revizor@2x.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
+            <img
+              class="review-list__img"
+              src="./assets/images/testimonials/parent-reviews/valeria-revizor.png"
+              alt="Фото Валерія Ревізор"
+              width="62"
+              height="62"
+              loading="lazy"
+            />
+          </picture>
+          <p class="review-list__description">Goiteens надала можливість моєму сину відчути себе справжнім кодером! У нього з'явилась мета - стати успішним програмістом! »</p>
+          <p class="review-list__title">Валерія Ревізор</p>
+        
+        </div>
+      </div>
+      
+      <div class="review-list__item">
+        <div class="review-list__wrap">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/testimonials/parent-reviews/julia-khvastunova.webp    1x,
+                ./assets/images/testimonials/parent-reviews/julia-khvastunova@2x.webp 2x
+              "
+              media="(min-width: 320px)"
+              type="image/webp"
+            />
+  
+            <source
+              srcset="./assets/images/testimonials/parent-reviews/julia-khvastunova@2x.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
+            <img
+              class="review-list__img"
+              src="./assets/images/testimonials/parent-reviews/julia-khvastunova.png"
+              alt="Фото Юлія Хвастунова"
+              width="62"
+              height="62"
+              loading="lazy"
+            />
+          </picture>
+          <p class="review-list__description">«Дякуємо школі GoITeens, а також досвідченим викладачам за цікавий підхід у розвитку навичок програмування у дітей.» </p>
+          <p class="review-list__title">Юлія Хвастунова</p>
+        
+        </div>
+      </div>
+      
+    </div>
+    <div class="review-btn-cont">
+      <button
+        class="review-prev-btn parent-prev-but-js"
+        type="button"
+        aria-label="Попередній слайд"
+      ></button>
+      <button class="review-next-btn parent-next-but-js" type="button" aria-label="Наступний слайд"></button>
+    </div>
+
+ </div>
 </section>
 </main>
 <footer class="footer">

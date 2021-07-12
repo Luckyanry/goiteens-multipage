@@ -1,165 +1,65 @@
-<section class="people-section speakers">
+{% set speakers = speakers %} {% set speakersItems = speakers.items %}
+<section class="speakers section">
     <div class="container">
-        <h2 class="title people-section__title">Запрошені <span class="accent-text">спікери</span></h2>
-        <p class="people-section__description">Періодично ми запрошуємо визнаних експертів-практиків провести для дітей
-            семінари за своїм фахом</p>
-        <div class="people-slider people-slider_desktop speakers__slider_desktop">
-            <div class="people-slider__item">
-                <img src="./images/about/speakers/tonkopiy-desktop.jpg" alt="" class="people-slider__img">
-                <h3 class="people-slider-content__title">Данило Тонкопій</h3>
-                <p class="people-slider-content__text">CEO & Founder <br> <i>DELFAST</i></p>
-            </div>
-            <div class="people-slider__item">
-                <img src="./images/about/speakers/melnychuk-desktop.jpg" alt="" class="people-slider__img">
-                <h3 class="people-slider-content__title">Іван Мельничук</h3>
-                <p class="people-slider-content__text">Senior Java Developer, <br> розробник курсу
-                    <br> <i>GOIT & GOITEENS</i>
+        <h2 class="section__title">{{speakers.title}}</h2>
+        <p class="text-label speakers-description">{{speakers.description}}</p>
+        <div class="speakers-slider-js speakers-list">
+            {% for item in speakersItems %}
+            <div class="speakers-item">
+            <div class="speakers-item__wrapper">
+              <picture>
+                <source
+                srcset="
+                  ./assets/images/about/speakers/speaker-{{item.id}}_lg.webp    1x,
+                  ./assets/images/about/speakers/speaker-{{item.id}}_lg@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+    
+              <source
+                srcset="./assets/images/about/speakers/speaker-{{item.id}}_lg.jpg 1x, ./assets/images/about/speakers/speaker-{{item.id}}_lg@2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+                <source
+                srcset="
+                  ./assets/images/about/speakers/speaker-{{item.id}}_sm.webp    1x,
+                  ./assets/images/about/speakers/speaker-{{item.id}}_sm@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+    
+              <source
+                srcset="./assets/images/about/speakers/speaker-{{item.id}}_sm@2x.jpg 2x"
+                media="(max-width: 767px)"
+                type="image/jpeg"
+              />
+              <img
+                class="speakers-img"
+                src="./assets/images/about/speakers/speaker-{{item.id}}_sm.jpg"
+                alt="Фото викладача {{item.name}}"
+                width="190"
+                height="280"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+                <p class="text-accent speakers-item__title ">
+                  {{item.name}}
                 </p>
-            </div>
-            <div class="people-slider__item">
-                <img src="./images/about/speakers/kondratyuk-desktop.jpg" alt="" class="people-slider__img">
-                <h3 class="people-slider-content__title">Станіслав Кондратюк</h3>
-                <p class="people-slider-content__text">JavaScript розробник <br>
-                    <i>EPAM SYSTEMS</i>
+    
+                <p>
+               {{item.position}} <span class="speakers-item__company"> {{item.company}}</span>
                 </p>
+
+    
+               
+            
             </div>
-            <div class="people-slider__item">
-                <img src="./images/about/speakers/romanov-desktop.jpg" alt="" class="people-slider__img">
-                <h3 class="people-slider-content__title">Родіон Романов</h3>
-                <p class="people-slider-content__text">JavaScript розробник <br>
-                    <i>JOOBLE</i>
-                </p>
-            </div>
-            <div class="people-slider__item">
-                <img src="./images/about/speakers/levkiv-desktop.jpg" alt="" class="people-slider__img">
-                <h3 class="people-slider-content__title">Микола Левків</h3>
-                <p class="people-slider-content__text">Node.js розробник <br>
-                    <i>SOFTSERVE</i>
-                </p>
-            </div>
-            <div class="people-slider__item">
-                <img src="./images/about/speakers/albert-desktop.jpg" alt="" class="people-slider__img">
-                <h3 class="people-slider-content__title">Анна Альберт</h3>
-                <p class="people-slider-content__text">Product owner <br>
-                    <i>FORTUMO (ЕСТОНІЯ)</i>
-                </p>
-            </div>
-            <div class="people-slider__item">
-                <img src="./images/about/speakers/yanov-desktop.jpg" alt="" class="people-slider__img">
-                <h3 class="people-slider-content__title">Олександр Янов</h3>
-                <p class="people-slider-content__text">Java розробник <br>
-                    <i>EPAM SYSTEMS</i>
-                </p>
-            </div>
-            <div class="people-slider__item">
-                <img src="./images/about/speakers/shapoval-desktop.jpg" alt="" class="people-slider__img">
-                <h3 class="people-slider-content__title">Ольга Шаповал</h3>
-                <p class="people-slider-content__text">Директорка <br>
-                    <i>KHARKIV IT-СLUSTER</i>
-                </p>
-            </div>
+            {% endfor %}
         </div>
     </div>
-    <div class="mobile-slider">
-        <div class="people-slider people-slider_mobile speakers__slider">
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/speakers/tonkopiy-desktop.jpg" media="(min-width: 1200px)">
-                    <img src="./images/about/speakers/tonkopiy.jpg" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/speakers/melnychuk-desktop.jpg" media="(min-width: 1200px)">
-                    <img src="./images/about/speakers/melnychuk.jpg" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/speakers/kondratyuk-desktop.jpg" media="(min-width: 1200px)">
-                    <img src="./images/about/speakers/kondratyuk.jpg" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/speakers/romanov-desktop.jpg" media="(min-width: 1200px)">
-                    <img src="./images/about/speakers/romanov.jpg" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/speakers/levkiv-desktop.jpg" media="(min-width: 1200px)">
-                    <img src="./images/about/speakers/levkiv.jpg" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/speakers/albert-desktop.jpg" media="(min-width: 1200px)">
-                    <img src="./images/about/speakers/albert.jpg" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/speakers/yanov-desktop.jpg" media="(min-width: 1200px)">
-                    <img src="./images/about/speakers/yanov.jpg" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/speakers/shapoval-desktop.jpg" media="(min-width: 1200px)">
-                    <img src="./images/about/speakers/shapoval.jpg" alt="" class="people-slider__img">
-                </picture>
-            </div>
-        </div>
-        <div class="container">
-            <div class="people-slider-content people-slider-content_mobile speakers__slider-content">
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Данило Тонкопій</h3>
-                    <p class="people-slider-content__text">CEO & Founder <br> <i>DELFAST</i></p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Іван Мельничук</h3>
-                    <p class="people-slider-content__text">Senior Java Developer, <br> розробник курсу
-                        <br> <i>GOIT & GOITEENS</i>
-                    </p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Станіслав Кондратюк</h3>
-                    <p class="people-slider-content__text">JavaScript розробник <br>
-                        <i>EPAM SYSTEMS</i>
-                    </p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Родіон Романов</h3>
-                    <p class="people-slider-content__text">JavaScript розробник <br>
-                        <i>JOOBLE</i>
-                    </p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Микола Левків</h3>
-                    <p class="people-slider-content__text">Node.js розробник <br>
-                        <i>SOFTSERVE</i>
-                    </p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Анна Альберт</h3>
-                    <p class="people-slider-content__text">Product owner <br>
-                        <i>FORTUMO (ЕСТОНІЯ)</i>
-                    </p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Олександр Янов</h3>
-                    <p class="people-slider-content__text">Java розробник <br>
-                        <i>EPAM SYSTEMS</i>
-                    </p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Ольга Шаповал</h3>
-                    <p class="people-slider-content__text">Директорка <br>
-                        <i>KHARKIV IT-СLUSTER</i>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </section>
