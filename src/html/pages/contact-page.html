@@ -1,5 +1,4 @@
-{% extends 'layout.html' %} {% block content %} {% include 'main/header.html' %} {% include
-'contacts/header.html' %}
+{% set page = page.contacts %} {% extends 'layout.html' %} {% block content %} {% include 'header.html' %} 
 <main>
   {% include 'contacts/hero.html' %} {% include 'contacts/contacts.html' %} {% include
   'contacts/achievments.html' %}

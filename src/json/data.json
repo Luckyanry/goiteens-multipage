@@ -26,6 +26,9 @@
     "testimonials": {
       "style": "testimonials-page",
       "projects_style": "testimonials-projects"
+    },
+    "contacts": {
+      "style": "contact-page"
     }
   },
   "hero": {
@@ -43,7 +46,13 @@
     },
     "testimonials": {
       "title": "Кожен курс навчання&nbsp;в GoITeens закінчується реалізацією та презентацією проєкту"
+    },
+    "contacts": {
+      "title": "Ми проводимо IT-курси для дітей <span class='text-bold'> онлайн</span>",
+      "text_label": "Мережа IT-академій для позашкільного навчання дітей&lbrack;&nbsp;<span>від 8 до 15 років</span>&nbsp;&rbrack;",
+      "description": "Тому діти можуть навчатися з будь-якої точки світу"
     }
+    
   },
   "menu": [
     {
