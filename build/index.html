@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-     
+    
 <meta charset="UTF-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -38,12 +38,13 @@
 <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
 <!-- <link rel="stylesheet" href="assets/css/program-page.css" /> -->
 
-
-<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
-<link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
-<link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#fec830">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
   </head>
 
@@ -1291,19 +1292,37 @@
 <footer class="footer">
   <div class="container">
     <a href="/" class="footer__logo">
-      <img src="./assets/images/footer/logo-white.png" alt="логотип" class="footer__logo-img">
+      <img src="./assets/images/footer/logo.svg" alt="логотип" class="footer__logo-img" />
     </a>
-    <ul class="terms-list list">
-      <li class="terms-list__item">
-        <button type="button" class="terms-list__link link" data-terms="responsibility">Відмова від
-          відповідальності</button>
+    <ul class="list menus">
+      <li class="list-item menus-item">
+        <a class="link" href="/" aria-label="Каталог">Каталог курсів</a>
       </li>
-      <li class="terms-list__item">
-        <button type="button" class="terms-list__link link" data-terms="policy">Політика
-          конфіденційності</button>
+      <li class="list-item menus-item">
+        <a class="link" href="tel:+380933432127" aria-label="Телефон">+38 093 343 21 27</a>
       </li>
     </ul>
-    <a href="tel:+380933432127" class="footer__tel link">+38 093 343 21 27</a>
+    <ul class="list grid socials">
+      <li class="list-item grid__item socials-item">
+        <a class="link socials-link" href="https://web.telegram.org/k/"  rel="noopener noreferrer nofollow" target="_blank" aria-label="Телеграмм"><svg> <use href="./assets/images/footer/socials.svg#tg"></use></svg></a>
+      </li>
+      <li class="list-item grid__item socials-item">
+        <a class="socials-link" href="https://www.instagram.com/?hl=ru" rel="noopener noreferrer nofollow" target="_blank" aria-label="Инстаграмм"><svg> <use href="./assets/images/footer/socials.svg#insta"></use></svg></a>
+      </li>
+      <li class="list-item grid__item socials-item">
+        <a class="socials-link" href="https://uk-ua.facebook.com/" rel="noopener noreferrer nofollow" target="_blank" aria-label="Фейсбук"><svg> <use href="./assets/images/footer/socials.svg#fb"></use></svg></a>
+      </li>
+      <li class="list-item grid__item socials-item">
+        <a class="socials-link" href="https://www.youtube.com/" rel="noopener noreferrer nofollow" target="_blank" aria-label="Ютуб"><svg> <use href="./assets/images/footer/socials.svg#ytube"></use></svg></a>
+      </li>
+    </ul>
+    <ul class="list pays">
+      <li class="item pays-item"><img class="card-visa" src="./assets/images/footer/visa.svg" alt="Виза" /></li>
+      <li class="item pays-item"><img class="card-master" src="./assets/images/footer/mastercard.svg" alt="Мастер Кард" /></li>
+    </ul>
+    <button class="terms-list__link link" type="button" data-terms="responsibility">
+      Публічний договір
+    </button>
   </div>
 </footer>
  <div class="backdrop backdrop_form is-hidden" data-modal>
