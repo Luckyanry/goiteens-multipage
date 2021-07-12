@@ -1,0 +1,71 @@
+.advantages {
+  .section__title {
+    max-width: 900px;
+  }
+
+  .list {
+    position: relative;
+
+    margin-bottom: 52px;
+    flex-direction: column;
+
+    @include mq(tablet) {
+      --grid-item: 2;
+
+      flex-direction: row;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 140px;
+      left: -70px;
+      width: 375px;
+      height: 352px;
+
+      background-image: url('../images/components/triangle-gray.svg');
+      background-repeat: no-repeat;
+      z-index: -1;
+
+      @include mq(tablet) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .item {
+    position: relative;
+
+    padding: 40px 40px;
+
+    background-color: var(--white-bg);
+    box-shadow: var(--block-shadow);
+    border-radius: var(--border-radius);
+    transition: all var(--fast-animation) ease-out;
+
+    @include mq(desktop) {
+      padding: 40px 100px;
+    }
+  }
+
+  .icon {
+    margin-bottom: 16px;
+
+    @include mq('desktop') {
+      position: absolute;
+      margin-bottom: 0;
+      top: 18px;
+      right: 18px;
+    }
+  }
+
+  .text-bold {
+    margin-bottom: 24px;
+    color: var(--main-text-cl);
+  }
+
+  .main-btn {
+    margin: 0 auto;
+    line-height: 20px;
+  }
+}

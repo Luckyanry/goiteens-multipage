@@ -1,0 +1,52 @@
+  {% set reviews = parents_reviews %} {% set reviewsItems = reviews.items %}
+<section class="section parents-reviews">
+  <div class="container">
+    <h2 class="section__title">{{reviews.title}}</h2>
+ 
+
+    <div class="parent-review-slider-js review-list">
+      {% for item in reviewsItems %}
+      <div class="review-list__item">
+        <div class="review-list__wrap">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/testimonials/parent-reviews/{{item.id}}.webp    1x,
+                ./assets/images/testimonials/parent-reviews/{{item.id}}@2x.webp 2x
+              "
+              media="(min-width: 320px)"
+              type="image/webp"
+            />
+  
+            <source
+              srcset="./assets/images/testimonials/parent-reviews/{{item.id}}@2x.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
+            <img
+              class="review-list__img"
+              src="./assets/images/testimonials/parent-reviews/{{item.id}}.png"
+              alt="Фото {{item.name}}"
+              width="62"
+              height="62"
+              loading="lazy"
+            />
+          </picture>
+          <p class="review-list__description">{{item.description}}</p>
+          <p class="review-list__title">{{item.name}}</p>
+        
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="review-btn-cont">
+      <button
+        class="review-prev-btn parent-prev-but-js"
+        type="button"
+        aria-label="Попередній слайд"
+      ></button>
+      <button class="review-next-btn parent-next-but-js" type="button" aria-label="Наступний слайд"></button>
+    </div>
+
+ </div>
+</section>

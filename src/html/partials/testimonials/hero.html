@@ -1,8 +1,7 @@
+{% set hero = hero %} {% set testimonialsHero = hero.testimonials %}
 <section class="hero">
     <div class="container">
-        <h1 class="hero__title">Кожен курс <br> навчання в GoITeens закінчується реалізацією <br> та презентацією
-            проєкту
-        </h1>
-        <button type="button" class="modal-btn" data-modal-open>Підібрати план навчання</button>
+        <h1 class="hero__title">{{testimonialsHero.title}}</h1>
+        <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
     </div>
 </section>

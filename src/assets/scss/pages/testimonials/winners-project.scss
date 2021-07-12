@@ -1,83 +1,71 @@
-// .winners-project {
-//   padding-top: 32px;
-//   padding-bottom: 36px;
+.winners-project {
+ background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
 
-//   &__title {
-//     margin-bottom: 14px;
-//   }
+  background-image: url('../images/components/bg-white-bottom.svg'),
+    linear-gradient(
+      to bottom,
+      var(--white-bg) 0,
+      var(--white-bg) 22%,
+      var(--yellow-bg) 22%,
+      var(--yellow-bg) 100%
+    );
+ 
+  @include mq(tablet) {
+    background-image: url('../images/components/bg-white-bottom.svg'),
+      linear-gradient(
+        to bottom,
+        var(--white-bg) 0,
+        var(--white-bg) 29%,
+        var(--yellow-bg) 29%,
+        var(--yellow-bg) 100%
+      );
+  }
+  @include mq(desktop) {
+    background-image: url('../images/components/bg-white-bottom.svg'),
+      linear-gradient(
+        to bottom,
+        var(--white-bg) 0,
+        var(--white-bg) 44%,
+        var(--yellow-bg) 44%,
+        var(--yellow-bg) 100%
+      );
+  }
 
-//   &__description {
-//     @include fonts(24px, 400, 1.2);
-//     color: #282828;
-//     margin-bottom: 24px;
-//   }
+  .grid {
+    --grid-item: 2;
+    @include mq(tablet) {
+      align-items: center;
+    }
+  }
 
-//   &__video {
-//     display: block;
-//     width: 100%;
-//     height: 200px;
-//     margin-bottom: 56px;
-//   }
+  .section__title {
+    margin-bottom: 24px;
+   
+  }
+  .text-label,
+  .text-bold {
+    margin-bottom: 16px;
+  }
 
-//   &__content-wrapper {
-//     margin-bottom: 70px;
-//   }
+  .text-label{
+      max-width: 500px;
+  }
+  .text-bold {
+    color: inherit;
+    max-width: 300px;
+  }
 
-//   &__content-title {
-//     @include fonts(24px, 700, 1.2);
-//     color: #282828;
-//     margin-bottom: 36px;
-//   }
+  &__video {
+    display: block;
+    width: 100%;
+    // height: auto;
+    height: 300px;
 
-//   &__content-text {
-//     @include fonts(24px, 400, 1.2);
-//     color: #282828;
-//   }
-// }
-
-// @include mq('tablet') {
-//   .winners-project {
-//     &__description {
-//       max-width: 540px;
-//       font-size: 21px;
-//     }
-
-//     &__video {
-//       width: 466px;
-//       height: 284px;
-//       flex-shrink: 0;
-//       margin-bottom: 0;
-//     }
-
-//     &__content-wrapper {
-//       display: flex;
-//     }
-
-//     &__content-text-wrapper {
-//       padding-left: 20px;
-//     }
-//   }
-// }
-
-// @include mq('desktop') {
-//   .winners-project {
-//     padding-top: 76px;
-//     padding-bottom: 56px;
-
-//     &__description {
-//       margin-bottom: 88px;
-//     }
-
-//     &__content-wrapper {
-//       margin-bottom: 100px;
-//     }
-
-//     &__content-text-wrapper {
-//       max-width: 600px;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       padding-left: 100px;
-//     }
-//   }
-// }
+    @include mq(desktop) {
+      width: 570px;
+      height: 360px;
+    }
+  }
+}

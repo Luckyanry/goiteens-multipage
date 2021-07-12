@@ -1,152 +1,79 @@
-<section class="people-section teacher">
+{% set teachers = teachers %} {% set teachersItems = teachers.items %}
+<section class="section teachers">
+ 
     <div class="container">
-        <h2 class="title people-section__title">Наші <span class="accent-text">викладачі</span></h2>
-        <p class="people-section__description">Фахівці у своєї галузі, тому на IT-курсах в GoTeens ваші діти будуть
-            отримувати практичні навички, а не тільки теорію</p>
-        <div class="people-slider people-slider_desktop teacher__slider_desktop">
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/kevhayan-desktop.png" media="(min-width: 768px)">
-                    <img src="./images/about/teachers/kevhayan.png" alt="" class="people-slider__img">
-                </picture>
-                <h3 class="people-slider-content__title">Єлізавета Кевхаян</h3>
-                <p class="people-slider-content__text"> Поділиться практичним досвідом про те, як
-                    створити конкурентне графічне портфоліо. <br><br> <i>Digital Designer</i></p>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/lyubomyr-desktop.png" media="(min-width: 768px)">
-                    <img src="./images/about/teachers/lyubomyr.png" alt="" class="people-slider__img">
-                </picture>
-                <h3 class="people-slider-content__title">Любомир Горбатюк</h3>
-                <p class="people-slider-content__text">Навчає розробці веб-сайтів не тільки підлітків, але й дорослих.
-                    Працює в команді розробників в компанії SoftServe. <br><br> <i>Front-end Developer</i></p>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/maksymets-desktop.png" media="(min-width: 768px)">
-                    <img src="./images/about/teachers/maksymets.png" alt="" class="people-slider__img">
-                </picture>
-                <h3 class="people-slider-content__title">Юлія Максимець</h3>
-                <p class="people-slider-content__text">Експерт у блочному програмуванню для дітей з 11-річним досвідом
-                    викладання. <br><br> <i>Minecraft Education</i></p>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/pichurin-desktop.png" media="(min-width: 768px)">
-                    <img src="./images/about/teachers/pichurin.png" alt="" class="people-slider__img">
-                </picture>
-                <h3 class="people-slider-content__title">Вадим Пічурін</h3>
-                <p class="people-slider-content__text">Front-end розробник в компанії SafeSwiss Company, а в минулому
-                    інженер з 10-річним досвідом. Його студенти - фіналісти конкурсу GameOfTeens <br><br> <i>Front-end
-                        Developer</i>
-                </p>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/prykhodko-desktop.png" media="(min-width: 768px)">
-                    <img src="./images/about/teachers/prykhodko.png" alt="" class="people-slider__img">
-                </picture>
-                <h3 class="people-slider-content__title">Юлия Приходько</h3>
-                <p class="people-slider-content__text">Допоможе прокачати навички комунікації, розібратись з
-                    тайм-менеджментом і скласти особистий план розвитку. <br><br> <i>Soft Skills Trainer</i></p>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/svidersky-desktop.png" media="(min-width: 768px)">
-                    <img src="./images/about/teachers/svidersky.png" alt="" class="people-slider__img">
-                </picture>
-                <h3 class="people-slider-content__title">Кирилл Свидерский</h3>
-                <p class="people-slider-content__text">Розробник ігор у Dragon's Lake Entertainment і володар 30 призів
-                    всеукраїнських олімпіад. Його студенти вже отримують пропозиції стажувань у реальних компаніях
-                    <br><br>
-                    <i>Gаme Developer</i>
-                </p>
-            </div>
+      <h2 class="section__title">
+       {{teachers.title}}
+      </h2>
+
+      <p class="text-label teachers-description">
+       {{teachers.description}}
+      </p>
+
+      <div class="teachers-slider-js teachers-list">
+        {% for item in teachersItems %}
+        <div class="teachers-item">
+        
+          <picture>
+            <source
+            srcset="
+              ./assets/images/about/teachers/teacher-{{item.id}}_lg.webp    1x,
+              ./assets/images/about/teachers/teacher-{{item.id}}_lg@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/about/teachers/teacher-{{item.id}}_lg.jpg 1x, ./assets/images/about/teachers/teacher-{{item.id}}_lg@2x.jpg 2x"
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+            <source
+            srcset="
+              ./assets/images/about/teachers/teacher-{{item.id}}_sm.webp    1x,
+              ./assets/images/about/teachers/teacher-{{item.id}}_sm@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/about/teachers/teacher-{{item.id}}_sm@2x.jpg 2x"
+            media="(max-width: 767px)"
+            type="image/jpeg"
+          />
+          <img
+            class="teachers-img"
+            src="./assets/images/about/teachers/teacher-{{item.id}}_sm.jpg"
+            alt="Фото викладача {{item.name}}"
+            width="190"
+            height="280"
+            loading="lazy"
+          />
+        </picture>
+      
+            <p class="text-accent teachers-item__title ">
+              {{item.name}}
+            </p>
+
+            <p class="teachers-item__description" >
+           {{item.description}}
+            </p>
+            <p class="text-accent ">
+           {{item.position}}
+            </p>
+
+           
+        
         </div>
+        {% endfor %}
+       
+       
+
+
+      </div>
+    
     </div>
-    <div class="mobile-slider">
-        <div class="people-slider people-slider_mobile teacher__slider">
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/kevhayan-desktop.png" media="(min-width: 1200px)">
-                    <img src="./images/about/teachers/kevhayan.png" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/lyubomyr-desktop.png" media="(min-width: 1200px)">
-                    <img src="./images/about/teachers/lyubomyr.png" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/maksymets-desktop.png" media="(min-width: 1200px)">
-                    <img src="./images/about/teachers/maksymets.png" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/pichurin-desktop.png" media="(min-width: 1200px)">
-                    <img src="./images/about/teachers/pichurin.png" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/prykhodko-desktop.png" media="(min-width: 1200px)">
-                    <img src="./images/about/teachers/prykhodko.png" alt="" class="people-slider__img">
-                </picture>
-            </div>
-            <div class="people-slider__item">
-                <picture class="people-slider__picture">
-                    <source srcset="./images/about/teachers/svidersky-desktop.png" media="(min-width: 1200px)">
-                    <img src="./images/about/teachers/svidersky.png" alt="" class="people-slider__img">
-                </picture>
-            </div>
-        </div>
-        <div class="container">
-            <div class="people-slider-content people-slider-content_mobile teacher__slider-content">
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Єлізавета Кевхаян</h3>
-                    <p class="people-slider-content__text">Поділиться практичним досвідом про те, як
-                        створити конкурентне графічне портфоліо. <br><br> <i>Digital Designer</i></p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Любомир Горбатюк</h3>
-                    <p class="people-slider-content__text">Навчає розробці веб-сайтів не тільки підлітків, але й
-                        дорослих.
-                        Працює в команді розробників в компанії SoftServe. <br><br> <i>Front-end Developer</i></p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Юлія Максимець</h3>
-                    <p class="people-slider-content__text">Експерт у блочному програмуванню для дітей з 11-річним
-                        досвідом
-                        викладання. <br><br> <i>Minecraft Education</i></p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Вадим Пічурін</h3>
-                    <p class="people-slider-content__text">Front-end розробник в компанії SafeSwiss Company, а в
-                        минулому
-                        інженер з 10-річним досвідом. Його студенти - фіналісти конкурсу GameOfTeens <br><br>
-                        <i>Front-end
-                            Developer</i>
-                    </p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Юлия Приходько</h3>
-                    <p class="people-slider-content__text">Допоможе прокачати навички комунікації, розібратись з
-                        тайм-менеджментом і скласти особистий план розвитку. <br><br> <i>Soft Skills Trainer</i></p>
-                </div>
-                <div class="people-slider-content-item">
-                    <h3 class="people-slider-content__title">Кирилл Свидерский</h3>
-                    <p class="people-slider-content__text">Розробник ігор у Dragon's Lake Entertainment і володар 30
-                        призів
-                        всеукраїнських олімпіад. Його студенти вже отримують пропозиції стажувань у реальних компаніях
-                        <br><br>
-                        <i>Gаme Developer</i>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </section>

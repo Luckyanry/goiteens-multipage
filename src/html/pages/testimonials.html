@@ -39,11 +39,12 @@
     <link rel="stylesheet" href="./css/testimonials-page.css" />
   </head> -->
 
-{% extends 'layout.html' %} {% block content %} {% include 'testimonials/header.html' %}
+  {% set page = page.testimonials %} {% extends 'layout.html' %} {% block content %} {% include 'header.html' %}
 <main>
-  {% include 'testimonials/hero.html' %} {% include 'testimonials/projects.html' %} {% include
-  'testimonials/winners-project.html' %} {% include 'testimonials/students-testimonials.html' %} {%
-  include 'testimonials/parents-testimonials.html' %}
+  {% include 'testimonials/hero.html' %} {% include 'testimonials/last-projects.html' %} {% include
+  'testimonials/winners-project.html' %}
+  {% include 'components/projects.html' %} {% include 'testimonials/students-reviews.html' %} {%
+  include 'testimonials/parents-reviews.html' %}
 </main>
 {% include 'testimonials/footer.html' %} {% include 'modal-form.html' %} {% include 'terms.html' %}
 {% endblock %}

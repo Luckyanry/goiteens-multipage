@@ -1,9 +1,12 @@
-<section class="hero-footer">
+{% set hero_footer = about_hero_footer %} 
+<section class="hero-footer about-hero-footer">
     <div class="container">
-        <h2 class="hero-footer__title">Шукаєте IT-курси для дитини?
+        <h2 class="hero-footer__title">
+           {{hero_footer.title}}
         </h2>
-        <p class="hero-footer__description">В GoITeens ваша дитина зможе навчатися й розуміти як правильно обирати своє
-            майбутнє - записуйтесь на безкоштовне пробне заняття.</p>
-        <button type="button" class="modal-btn" data-modal-open>Записатись на пробне заняття</button>
+        <p class="hero-footer__description text-yellow">
+            {{hero_footer.description}}
+        </p>
+        <button type="button" class="main-btn" data-modal-open>Записатися на безкоштовну консультацію</button>
     </div>
 </section>
