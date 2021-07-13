@@ -21,26 +21,23 @@
 
   @include mq(desktop) {
     position: relative;
-    padding-top: 71px;
+    padding-top: 70px;
     padding-bottom: 145px;
-    background-image: url('../images/main/hero/boy_lg.png'),
-      url('../images/main/hero/ellipse_lg.svg'),
-      linear-gradient(to right, var(--yellow-bg) 80%, var(--white-bg) 80%);
+    background-image:  url(../images/main/hero/boy_lg.png), url(../images/main/hero/ellipse_lg.svg), linear-gradient(to right, var(--yellow-bg) 76%, var(--white-bg) 76%);
     background-size: 654px, contain, cover;
-    background-position: right calc((100vw - 1196px) / 2) bottom,
-      right 150px center, center;
+    background-position: right calc((100vw - 1196px) / 2) bottom, right calc((100vw - 1450px) / 2) center, center;
   }
 
   &__wrapper {
     margin-bottom: 52px;
     max-width: 507px;
-   
+
   }
 
   &__label {
     margin-bottom: 60px;
     max-width: 200px;
-   
+
 
     span {
       color: var(--white-text-cl);
@@ -58,5 +55,5 @@
     @include fonts(20px, 400, 1.5);
   }
 
- 
+
 }
