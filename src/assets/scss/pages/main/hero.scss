@@ -23,7 +23,7 @@
     position: relative;
     padding-top: 71px;
     padding-bottom: 145px;
-    background-image: url('../images/main/hero/boy_lg1.png'),
+    background-image: url('../images/main/hero/boy_lg.png'),
       url('../images/main/hero/ellipse_lg.svg'),
       linear-gradient(to right, var(--yellow-bg) 80%, var(--white-bg) 80%);
     background-size: 654px, contain, cover;
@@ -37,7 +37,7 @@
    
   }
 
-  .text-label {
+  &__label {
     margin-bottom: 60px;
     max-width: 200px;
    

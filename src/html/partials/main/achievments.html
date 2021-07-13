@@ -2,7 +2,7 @@
 <section class="section achievments">
   <div class="achievments__cont">
     <div class="container">
-      <div class="wrapper">
+      <div class="achievments__wrapper">
         <picture>
           <!-- <source srcset="
                 ./images/achievments/portrait.webp    470w,
@@ -10,7 +10,7 @@
               " type="image/webp" sizes="470px" /> -->
           <img
             src="./assets/images/main/achievments/vp_lg.jpg"
-            class="img"
+            class="achievments__img"
             alt="Фото Вячеслава Поліновського CEO GoITeens"
             sizes="470px"
             width="470"
@@ -19,18 +19,21 @@
           />
         </picture>
         <div class="achievments__side">
-          <h2 class="section__title">
+          <h2 class="section__title achievments__title">
             {{achievments.title}}
  
           </h2>
           <div class="achievments__content">
             {{achievments.description}}
+            <p class="achievments__text">{{achievments.author}}
+              <span> {{achievments.position}} </span>
+
+            </p>
           
           </div>
         </div>
       </div>
     </div>
   </div>
-  {% include 'components/awards.html' %}
   
 </section>

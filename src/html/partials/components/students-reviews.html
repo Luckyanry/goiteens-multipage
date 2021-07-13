@@ -1,10 +1,10 @@
-{% set reviews = students_reviews %} {% set reviewsItems = reviews.items %}
+{% set reviews = students_reviews %} 
 
 <div class="students-reviews">
-  <div class="students-review-slider-js review-list">
-    {% for item in reviewsItems %}
-    <div class="review-list__item">
-      <div class="review-list__wrap">
+  <div class="students-review-slider-js students-reviews__list">
+    {% for item in reviews %}
+    <div class="students-reviews__item">
+      <div class="students-reviews__item-wrap">
         <picture>
           <source
             srcset="
@@ -21,7 +21,7 @@
             type="image/png"
           />
           <img
-            class="review-list__img"
+            class="students-reviews__item-img"
             src="./assets/images/components/students-reviews/{{item.id}}.png"
             alt="Cтудент"
             width="62"
@@ -29,20 +29,20 @@
             loading="lazy"
           />
         </picture>
-        <p class="review-list__description">{{item.description}}</p>
-        <p class="review-list__title">{{item.name}}</p>
-        <p class="review-list__course">{{item.age}} років</p>
+        <p class="students-reviews__item-descript">{{item.description}}</p>
+        <p class="students-reviews__item-title">{{item.name}}</p>
+        <p class="students-reviews__item-course">{{item.age}} років</p>
       </div>
     </div>
     {% endfor %}
   </div>
-  <div class="review-btn-cont">
+  <div class="students-reviews__btn-wrapper">
     <button
-      class="review-prev-btn students-prev-but-js"
+      class="students-reviews__prev-btn students-prev-but-js"
       type="button"
       aria-label="Попередній слайд"
     ></button>
-    <button class="review-next-btn students-next-but-js" type="button" aria-label="Наступний слайд"></button>
+    <button class="students-reviews__next-btn students-next-but-js" type="button" aria-label="Наступний слайд"></button>
   </div>
 </div>
 

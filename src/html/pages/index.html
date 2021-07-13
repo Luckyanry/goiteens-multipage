@@ -1,10 +1,12 @@
 {% set page = page.main %} {% extends 'layout.html' %} {% block content %} {% include 'header.html'
 %}
 <main>
-  {% include 'main/hero.html' %} {% include 'components/branches.html' %} {% include
-  'main/advantages.html' %} {% include 'main/achievments.html' %} {% include 'main/dignity.html' %}
-  {% include 'main/students-reviews.html' %} {% include 'components/projects.html' %} {% include
+  {% include 'main/hero.html' %} {% include 'main/branches.html' %} {% include
+  'main/advantages.html' %} {% include 'main/achievments.html' %} {% include 'main/main-awards.html' %} {% include 'main/dignity.html' %}
+  {% include 'main/students-reviews.html' %} {% include 'main/projects.html' %} {% include
   'main/appeal.html' %}
 </main>
-{% include 'main/footer.html' %} {% include 'modal-form.html' %} {% include 'terms.html' %} {%
-endblock %}
+{# {% include 'footer.html' %} #}
+{% include 'modal-form.html' %} 
+{% include 'terms.html' %} 
+{% endblock %}

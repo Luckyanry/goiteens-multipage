@@ -1,9 +1,11 @@
-{% set reviewsTitle = students_reviews.main_title %} 
+{% set reviews = main_students_reviews %} 
 <section class="section main-students-reviews">
   <div class="container">
-    <h2 class="section__title">{{reviewsTitle}}</h2>
+    <h2 class="section__title">{{reviews.title}}</h2>
   </div>
 
   {% include 'components/students-reviews.html' %}
 
 </section>
+
+

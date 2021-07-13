@@ -1,12 +1,12 @@
 {% set speakers = speakers %} {% set speakersItems = speakers.items %}
-<section class="speakers section">
+<section class="section speakers ">
     <div class="container">
-        <h2 class="section__title">{{speakers.title}}</h2>
-        <p class="text-label speakers-description">{{speakers.description}}</p>
-        <div class="speakers-slider-js speakers-list">
+        <h2 class="section__title speakers__title">{{speakers.title}}</h2>
+        <p class="text-label speakers__description">{{speakers.description}}</p>
+        <div class="speakers-slider-js speakers__list">
             {% for item in speakersItems %}
-            <div class="speakers-item">
-            <div class="speakers-item__wrapper">
+            <div class="speakers__item">
+            <div class="speakers__item-wrapper">
               <picture>
                 <source
                 srcset="
@@ -37,7 +37,7 @@
                 type="image/jpeg"
               />
               <img
-                class="speakers-img"
+                class="speakers__item-img"
                 src="./assets/images/about/speakers/speaker-{{item.id}}_sm.jpg"
                 alt="Фото викладача {{item.name}}"
                 width="190"
@@ -46,12 +46,12 @@
               />
             </picture>
           </div>
-                <p class="text-accent speakers-item__title ">
+                <p class="text-accent speakers__item-title ">
                   {{item.name}}
                 </p>
     
                 <p>
-               {{item.position}} <span class="speakers-item__company"> {{item.company}}</span>
+               {{item.position}} <span class="speakers__item-company"> {{item.company}}</span>
                 </p>
 
     

@@ -1,18 +1,19 @@
-{% set projects = projects %} {% set projectsItems = projects.items %}
-<section class="section projects {{ page.projects_style }}">
+{% set projects = projects %} {% set projectsItems = projects.items %} 
+
+<div class=" projects ">
  
-    <div class="container">
-      <h2 class="section__title">
+  
+      <h2 class="section__title projects__title">
        {{projects.title}}
       </h2>
 
-      <p class="text-label projects-description">
+      <p class="text-label projects__description">
        {{projects.description}}
       </p>
 
-      <div class="projects-slider-js projects-list">
+      <div class="projects-slider-js projects__list">
         {% for item in projectsItems %}
-        <div class="projects-item">
+        <div class="projects__item">
           <picture>
  
   
@@ -27,19 +28,19 @@
             <source srcset="./assets/images/components/projects/project-{{item.id}}-sm.webp 1x, ./assets/images/components/projects/project-{{item.id}}-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
             <source srcset="./assets/images/components/projects/project-{{item.id}}-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
 
-            <img class="projects-item__image"  src="./assets/images/components/projects/project-{{item.id}}-sm.jpg" alt="фото проєкту {{item.title}}"
+            <img class="projects__item-image"  src="./assets/images/components/projects/project-{{item.id}}-sm.jpg" alt="фото проєкту {{item.title}}"
               width="280" height="200" loading="lazy" />
           </picture>
-          <div class="projects-item__wrapper">
-            <h3 class="text-label projects-item__title ">
+          <div class="projects__item-wrapper">
+            <h3 class="text-label projects__item-title ">
               {{item.title}}
             </h3>
 
-            <p class="projects-item__description ">
+            <p class="projects__item-description ">
            {{item.description}}
             </p>
 
-            <a class="more-link" target="_blank" href="{{item.link}}"
+            <a class="projects__link" target="_blank" href="{{item.link}}"
               rel="noreferrer noopener nofollow">Переглянути</a>
           </div>
         </div>
@@ -49,7 +50,7 @@
 
 
       </div>
-      <a href="./testimonials.html" class="main-btn">Більше про результати наших учнів</a>
-    </div>
+      <a href="./testimonials.html" class="main-btn projects__btn">Більше про результати наших учнів</a>
+  
 
-</section>
+</div>

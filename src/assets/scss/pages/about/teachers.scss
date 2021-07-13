@@ -1,5 +1,9 @@
 .teachers {
-  background: url('../images/components/bg-white-bottom.svg'),
+    background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  
+  background-image: url('../images/components/bg-white-bottom.svg'),
     linear-gradient(
       to bottom,
       var(--white-bg) 0,
@@ -8,20 +12,18 @@
       var(--yellow-bg) 100%
     );
 
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
 
-  .section__title {
+
+  &__title {
     margin-bottom: 24px;
   }
 
-  &-description {
+  &__description {
     margin-bottom: 52px;
     max-width: 570px;
   }
 
-  &-list {
+  &__list {
     text-align: center;
 
     @include mq(tablet) {
@@ -29,7 +31,7 @@
     }
   }
 
-  &-item {
+  &__item {
     color: var(--title-cl);
     max-width: 200px;
     @include mq(tablet) {
@@ -39,17 +41,18 @@
     @include mq(desktop) {
       max-width: 270px;
     }
-
-    &__title {
-      margin-bottom: 8px;
-      font-weight: 700;
-    }
-
-    &__description {
-      margin-bottom: 16px;
-    }
   }
-  &-img {
+
+  &__item-title {
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  &__item-description {
+    margin-bottom: 16px;
+  }
+
+  &__item-img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;

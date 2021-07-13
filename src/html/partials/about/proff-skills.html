@@ -1,10 +1,10 @@
 {% set proffSkills = proff_skills %} {% set proffItems = proffSkills.items %} {% set proffDescript =
 proffSkills.description_list %} {% set proffDescriptItems = proffDescript.items %}
-<section class="proff-skills section">
+<section class="section proff-skills ">
   <div class="container">
-    <div class="proff-skills__wrapper grid">
+    <div class="grid proff-skills__title-wrapper ">
       <div class="grid__item">
-        <h2 class="section__title">{{proffSkills.title}}</h2>
+        <h2 class="section__title proff-skills__title">{{proffSkills.title}}</h2>
         <p class="proff-skills__descript">{{proffDescript.text}}</p>
         <ul class="list proff-skills__descript-list">
           {% for item in proffDescriptItems %}
@@ -49,13 +49,7 @@ proffSkills.description_list %} {% set proffDescriptItems = proffDescript.items 
           <p>{{item.description}}</p>
         </div>
         <picture class="grid__item proff-skills__img-wrap">
-          <!-- <source srcset="./assets/images/about/proff-skills/list-img-{{item.id}}_lg.webp 1x, 
-            ./assets/images/about/proff-skills/list-img-{{item.id}}_lg@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
-            <source srcset="./assets/images/about/proff-skills/list-img-{{item.id}}_lg.jpg 1x, 
-            ./assets/images/about/proff-skills/list-img-{{item.id}}_lg@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
-  
-            <source srcset="./assets/images/about/proff-skills/list-img-{{item.id}}_md.webp 1x, ./assets/images/about/proff-skills/list-img-{{item.id}}_md@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-            <source srcset="./assets/images/about/proff-skills/list-img-{{item.id}}_md@2x.jpg" media="(max-width: 767)" type="image/jpeg" /> -->
+
           <source
             srcset="
               ./assets/images/about/proff-skills/list-img-{{item.id}}_lg.webp    1x,
