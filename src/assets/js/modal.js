@@ -9,7 +9,7 @@
       e.addEventListener('click', toggleModal);
     });
     refs.closeModalBtn.addEventListener('click', toggleModal);
-  
+
     function toggleModal() {
       refs.modal.classList.toggle('is-hidden');
     }
@@ -22,7 +22,7 @@
         }
       }
       return;
-    }); 
+    });
 
     // Закрытие модального окна по клику на backdrop
     window.addEventListener('click', (e) => {
@@ -32,7 +32,7 @@
         }
       }
       return;
-    }); 
+    });
 
   })();
 
@@ -40,7 +40,7 @@
   const refs = {
     openTermsBtn: [...document.querySelectorAll('[data-terms]')],
     closeTermsBtn: [...document.querySelectorAll('[data-terms-close]')],
-    termsModal: [...document.querySelectorAll('[data-termsModal]')],
+    termsModal: [...document.querySelectorAll('[data-termsmodal]')],
   };
 
   refs.openTermsBtn.forEach(e => {
@@ -72,7 +72,7 @@
   //     }
   //   }
   //   return;
-  // }); 
+  // });
 
   // // Закрытие модального окна по клику на backdrop
   // window.addEventListener('click', (e) => {
@@ -82,5 +82,5 @@
   //     }
   //   }
   //   return;
-  // }); 
+  // });
 })();

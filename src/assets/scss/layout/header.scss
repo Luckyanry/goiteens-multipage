@@ -46,7 +46,7 @@
   display: flex;
   align-items: center;
   @include fonts(18px, 700, 1.2);
-  color: #AA43A2;
+  color: #aa43a2;
 
   &__icon {
     fill: #aa43a2;
@@ -180,6 +180,7 @@
     font-size: 14px;
     margin-left: auto;
     margin-right: 10px;
+    margin-bottom: 0;
 
     &__icon {
       display: none;
@@ -212,7 +213,7 @@
     &__img {
       width: 140px;
       height: 36px;
-      margin-right: 4px;
+      margin-right: 15px;
     }
 
     &__text {
