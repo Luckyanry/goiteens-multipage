@@ -10,7 +10,7 @@
   
     @include mq(tablet) {
       padding-bottom: 34px;
-      background: url('../images/main/projects/bg-line_md.svg') center/contain no-repeat,
+      background: url('../images/components/projects/bg-line_md.svg') center/contain no-repeat,
         linear-gradient(
           to bottom,
           var(--white-bg) 0,
@@ -22,7 +22,7 @@
   
     @include mq(desktop) {
       padding-bottom: 45px;
-      background: url('../images/main/projects/bg-line_lg.svg') bottom 40% center/contain no-repeat,
+      background: url('../images/components/projects/bg-line_lg.svg') bottom 40% center/contain no-repeat,
         linear-gradient(
           to bottom,
           var(--white-bg) 0,

@@ -64,23 +64,5 @@
     });
   });
 
-  // // Закрытие модального окна по клику на esc
-  // window.addEventListener('keydown', (e) => {
-  //   if (!refs.modal.classList.contains('is-hidden')) {
-  //     if(e.keyCode === 27) {
-  //       refs.modal.classList.toggle('is-hidden');
-  //     }
-  //   }
-  //   return;
-  // });
-
-  // // Закрытие модального окна по клику на backdrop
-  // window.addEventListener('click', (e) => {
-  //   if (!refs.modal.classList.contains('is-hidden')) {
-  //     if(e.target.classList.contains('backdrop')) {
-  //       refs.modal.classList.toggle('is-hidden');
-  //     }
-  //   }
-  //   return;
-  // });
+ 
 })();
