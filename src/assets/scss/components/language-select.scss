@@ -2,13 +2,17 @@
   position: relative;
   width: 44px;
   height: 44px;
-  margin-left: 40px;
+  margin-top: 20px;
 
   background-color: var(--secondary-accent-cl);
 
-  box-shadow: 10px 10px 40px rgba(92, 46, 145, 0.24),
-    0px 1px 2px rgba(92, 46, 145, 0.08);
+  box-shadow: 10px 10px 40px rgba(92, 46, 145, 0.24), 0px 1px 2px rgba(92, 46, 145, 0.08);
   border-radius: 10px;
+
+  @include mq(tablet) {
+    margin-top: 0;
+    margin-left: 40px;
+  }
 
   select {
     display: none;
@@ -53,10 +57,9 @@
   color: #ffffff;
 
   background-color: var(--secondary-accent-cl);
-  box-shadow: 10px 10px 40px rgba(92, 46, 145, 0.24),
-    0px 1px 2px rgba(92, 46, 145, 0.08);
+  box-shadow: 10px 10px 40px rgba(92, 46, 145, 0.24), 0px 1px 2px rgba(92, 46, 145, 0.08);
   border-radius: 10px;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
 
@@ -80,5 +83,5 @@
 
 .select-items div:hover,
 .same-as-selected {
-  background-color: darken(#aa43a2,5%);
+  background-color: darken(#aa43a2, 5%);
 }
