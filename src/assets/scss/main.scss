@@ -22,12 +22,13 @@
 @import './components/projects.scss';
 @import './components/students-reviews.scss';
 @import './components/socials.scss';
+@import './components/branches.scss';
 
 @import './layout/header.scss';
 @import './components/language-select.scss';
 
 @import './pages/main/hero.scss';
-@import './pages/main/branches.scss';
+@import './pages/main/main-branches.scss';
 @import './pages/main/advantages.scss';
 @import './pages/main/achievments.scss';
 
@@ -36,4 +37,5 @@
 @import './pages/main/main-projects.scss';
 @import './pages/main/appeal.scss';
 @import './layout/footer.scss';
+
 @import './layout/modal-form.scss';

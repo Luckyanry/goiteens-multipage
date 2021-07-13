@@ -1,10 +1,9 @@
 .projects {
-
-  .section__title {
+  &__title {
     margin-bottom: 24px;
   }
 
-  .projects-description {
+  &__description {
     margin-bottom: 52px;
 
     span {
@@ -12,32 +11,38 @@
     }
   }
 
-  &-list {
+  &__list {
     margin-left: auto;
     margin-right: auto;
     max-width: 280px;
     text-align: center;
-    
-    counter-reset: item; 
+
+    counter-reset: item;
 
     @include mq(tablet) {
       max-width: 100%;
     }
+
+    // --dots-color: var(--secondary-accent-cl);
+    // .slick-dots {
+    //   @include mq(desktop) {
+    //     bottom: -80px;
+    //   }
+    // }
   }
 
-  &-item {
+  &__item {
     position: relative;
-    
+
     margin-bottom: 30px;
     text-align: start;
-   
+
     background-color: var(--white-bg);
     border-radius: var(--border-radius);
 
     counter-increment: item;
 
     @include mq(tablet) {
-    
       max-width: 298px;
       box-shadow: 2px 8px 8px #5c2e9114, 2px 2px 4px #5c2e913d;
     }
@@ -64,48 +69,47 @@
       color: var(--white-text-cl);
       background-color: var(--dark-bg);
     }
+  }
 
-    &__image {
-      margin-bottom: 24px;
-      width: 100%;
-      border-radius: 12px 12px 0 0;
+  &__item-image {
+    margin-bottom: 24px;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
 
-      @include mq(desktop) {
-        border-radius: var(--border-radius);
-      }
-    }
-
-    &__wrapper {
-      padding-left: 20px;
-      padding-right: 20px;
-     
-      padding-bottom: 32px;
-      min-height: 484px;
-     
-      @include mq(tablet){
-        min-height: 413px;
-      }
-      @include mq(desktop) {
-        padding: 0;
-        min-height: 348px;
-      }
-    }
-
-    &__title {
-      margin-bottom: 16px;
-      padding-right: 15px;
-
-      @include mq(desktop) {
-        margin-bottom: 8px;
-      }
-    }
-
-    &__description {
-      margin-bottom: 20px;
+    @include mq(desktop) {
+      border-radius: var(--border-radius);
     }
   }
 
-  .more-link {
+  &__item-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    padding-bottom: 32px;
+    min-height: 484px;
+
+    @include mq(tablet) {
+      min-height: 413px;
+    }
+    @include mq(desktop) {
+      padding: 0;
+      min-height: 348px;
+    }
+  }
+  &__item-title {
+    margin-bottom: 16px;
+    padding-right: 15px;
+
+    @include mq(desktop) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__item-description {
+    margin-bottom: 20px;
+  }
+
+  &__link {
     position: relative;
     display: inline-block;
     width: 158px;
@@ -123,8 +127,8 @@
     border-radius: 4px;
     background: linear-gradient(
       90deg,
-      var( --secondary-accent-cl) 0,
-      var( --secondary-accent-cl)  32px,
+      var(--secondary-accent-cl) 0,
+      var(--secondary-accent-cl) 32px,
       var(--small-btn-bg) 32px,
       var(--small-btn-bg) 100%
     );
@@ -150,16 +154,15 @@
         90deg,
         var(--small-btn-bg) 0,
         var(--small-btn-bg) 32px,
-        var( --secondary-accent-cl) 32px,
-        var( --secondary-accent-cl) 100%
+        var(--secondary-accent-cl) 32px,
+        var(--secondary-accent-cl) 100%
       );
     }
   }
 
-  .main-btn {
+  &__btn {
     margin: 0 auto;
     line-height: 20px;
-    
   }
 
   .projects-slider-js {

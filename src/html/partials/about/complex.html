@@ -1,8 +1,8 @@
 {% set complex = complex %} {% set complexItems = complex.items %}
-<section class="complex section">
+<section class="section complex ">
     <div class="container">
       <h2 class="section__title complex__title">{{complex.title}}</h2>
-      <p class="text-label">{{complex.description}}</p>
+      <p class="text-label complex__label">{{complex.description}}</p>
     <ul class="complex__list list grid">
       {% for item in complexItems %}
       <li class="complex__item grid__item complex-{{item.id}}">

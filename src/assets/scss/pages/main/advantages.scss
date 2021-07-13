@@ -1,9 +1,9 @@
 .advantages {
-  .section__title {
+  &__title {
     max-width: 900px;
   }
 
-  .list {
+  &__list {
     position: relative;
 
     margin-bottom: 52px;
@@ -33,7 +33,7 @@
     }
   }
 
-  .item {
+  &__item {
     position: relative;
 
     padding: 40px 40px;
@@ -48,7 +48,7 @@
     }
   }
 
-  .icon {
+  &__icon {
     margin-bottom: 16px;
 
     @include mq('desktop') {
@@ -59,12 +59,12 @@
     }
   }
 
-  .text-bold {
+  &__text {
     margin-bottom: 24px;
     color: var(--main-text-cl);
   }
 
-  .main-btn {
+  &__btn {
     margin: 0 auto;
     line-height: 20px;
   }

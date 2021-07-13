@@ -1,18 +1,17 @@
 .proff-skills {
   --grid-item: 2;
-  .section__title {
+
+  &__title {
     margin-bottom: 24px;
     max-width: 494px;
   }
-  &__wrapper {
-   
+  &__title-wrapper {
     margin-bottom: 32px;
     @include mq(tablet-only) {
       align-items: flex-end;
     }
     @include mq(desktop) {
       padding-left: 160px;
-    //   padding-left: 80px;
       margin-bottom: 54px;
     }
     .proff-skills__img {

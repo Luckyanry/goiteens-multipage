@@ -1,9 +1,6 @@
 .students-reviews {
-    .slick-dots {
-    bottom: -45px;
-  }
-
-  .review-list {
+  
+  &__list {
     --dots-color: var(--primary-accent-cl);
     text-align: center;
 
@@ -11,105 +8,105 @@
       width: 648px;
       margin: 0 auto;
     }
+  }
 
-    &__item {
-      margin-bottom: 25px;
-      padding-top: 45px;
-      color: var(--white-text-cl);
+  &__item {
+    margin-bottom: 25px;
+    padding-top: 45px;
+    color: var(--white-text-cl);
+  }
+
+  &__item-wrap {
+    position: relative;
+    padding-top: 77px;
+    padding-bottom: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--secondary-accent-cl);
+
+    @include mq(tablet) {
+      padding-top: 125px;
+      padding-bottom: 65px;
+      border-radius: var(--border-radius);
+      background-image: url('../images/components/students-reviews/bg-1.png'),
+        url('../images/components/students-reviews/bg-2.png'),
+        url('../images/components/students-reviews/bg-3.png');
+      background-repeat: no-repeat;
+      background-position: left -20px bottom 0, left 0 bottom 0,
+        right 0 bottom 0;
     }
-
-    &__wrap {
-      position: relative;
-      padding-top: 77px;
-      padding-bottom: 32px;
-      padding-left: 20px;
-      padding-right: 20px;
-      background-color: var(--secondary-accent-cl);
-
-      @include mq(tablet) {
-        padding-top: 125px;
-        padding-bottom: 65px;
-        border-radius: 12px;
-        background-image: url('../images/components/students-reviews/bck1.png'),
-          url('../images/components/students-reviews/bck2.png'),
-          url('../images/components/students-reviews/bck3.png');
-        background-repeat: no-repeat;
-        background-position: left -20px bottom 0, left 0 bottom 0,
-          right 0 bottom 0;
-      }
-      @include mq(desktop) {
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 125px;
-        padding-bottom: 65px;
-        border-radius: 12px;
-        width: 80%;
-      }
-
-      &::before {
-        position: absolute;
-        left: 20%;
-        top: 30px;
-        content: '';
-        display: inline-block;
-        width: 52px;
-        height: 52px;
-        background-image: url('../images/components/students-reviews/comma.svg');
-        background-repeat: no-repeat;
-
-        @include mq(tablet) {
-          top: 100px;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-
-    &__img {
-      position: absolute;
-      top: 0;
-      left: 49%;
-      transform: translate(-50%, -50%);
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      border: 5px solid white;
-      object-fit: cover;
-    }
-
-    &__description {
-      margin-bottom: 32px;
+    @include mq(desktop) {
       margin-left: auto;
       margin-right: auto;
-      height: 355px;
-      max-width: 280px;
+      padding-top: 125px;
+      padding-bottom: 65px;
+      border-radius: 12px;
+      width: 80%;
+    }
 
-      @include mq(mobile-only) {
-      }
-
-      @media screen and (min-width: 480px) {
-        max-width: 480px;
-        height: 192px;
-        
-      }
+    &::before {
+      position: absolute;
+      left: 20%;
+      top: 30px;
+      content: '';
+      display: inline-block;
+      width: 52px;
+      height: 52px;
+      background-image: url('../images/components/students-reviews/comma.svg');
+      background-repeat: no-repeat;
 
       @include mq(tablet) {
-        margin-bottom: 24px;
-        width: 600px;
-      
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
+  }
 
-    &__title {
-      margin-bottom: 6px;
+  &__item-img {
+    position: absolute;
+    top: 0;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+  }
+
+  &__item-descript {
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 355px;
+    max-width: 280px;
+
+    
+    @media screen and (min-width: 480px) {
+      max-width: 480px;
+      height: 192px;
+      
     }
 
-    &__course {
-      font-size: 14px;
-      opacity: 0.6;
+    @include mq(tablet) {
+      margin-bottom: 24px;
+      width: 600px;
+    
     }
   }
-  .review-btn-cont {
+
+  &__item-title {
+    margin-bottom: 6px;
+  }
+
+  &__item-course {
+    font-size: 14px;
+    opacity: 0.6;
+  }
+
+
+  &__btn-wrapper {
     position: relative;
     width: 200px;
     margin: 0 auto;
@@ -117,7 +114,7 @@
   }
 
 
-  .review-prev-btn {
+  &__prev-btn {
     outline: none;
     border: none;
     background-color: transparent;
@@ -141,7 +138,7 @@
     }
   }
 
-  .review-next-btn {
+  &__next-btn {
     outline: none;
     border: none;
     background-color: transparent;
@@ -165,9 +162,10 @@
     }
   }
 
+  
   & .slick-slide:nth-child(2n) {
-    & .review-list__wrap {
-      background-color: #fec830;
+    & .students-reviews__item-wrap {
+      background-color: var(--yellow-bg);
       color: var(--title-cl);
 
       &::before {
@@ -175,10 +173,10 @@
       }
     }
   }
-
-  .scroll{
-    display: block;
-    height: 100%;
-    overflow-y: scroll;
+  .slick-dots {
+    bottom: -45px;
   }
+
+
+  
 }

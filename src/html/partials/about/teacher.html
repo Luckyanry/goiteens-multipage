@@ -2,17 +2,17 @@
 <section class="section teachers">
  
     <div class="container">
-      <h2 class="section__title">
+      <h2 class="section__title teachers__title">
        {{teachers.title}}
       </h2>
 
-      <p class="text-label teachers-description">
+      <p class="text-label teachers__description">
        {{teachers.description}}
       </p>
 
-      <div class="teachers-slider-js teachers-list">
+      <div class="teachers-slider-js teachers__list">
         {% for item in teachersItems %}
-        <div class="teachers-item">
+        <div class="teachers__item">
         
           <picture>
             <source
@@ -44,7 +44,7 @@
             type="image/jpeg"
           />
           <img
-            class="teachers-img"
+            class="teachers__item-img"
             src="./assets/images/about/teachers/teacher-{{item.id}}_sm.jpg"
             alt="Фото викладача {{item.name}}"
             width="190"
@@ -53,11 +53,11 @@
           />
         </picture>
       
-            <p class="text-accent teachers-item__title ">
+            <p class="text-accent teachers__item-title ">
               {{item.name}}
             </p>
 
-            <p class="teachers-item__description" >
+            <p class="teachers__item-description" >
            {{item.description}}
             </p>
             <p class="text-accent ">

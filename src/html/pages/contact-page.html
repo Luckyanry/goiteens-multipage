@@ -1,7 +1,8 @@
-{% set page = page.contacts %} {% extends 'layout.html' %} {% block content %} {% include 'header.html' %} 
+{% set page = page.contacts %} {% extends 'layout.html' %} {% block content %} {% include 'header.html' %}
 <main>
-  {% include 'contacts/hero.html' %} {% include 'contacts/contacts.html' %} {% include
+  {% include 'contacts/hero.html' %} {% include 'contacts/branches.html' %} {% include 'contacts/contacts.html' %} {% include
   'contacts/achievments.html' %}
 </main>
-{% include 'contacts/footer.html' %} {% include 'modal-form.html' %} {% include 'terms.html' %} {%
+{# {% include 'contacts/footer.html' %} #}
+{% include 'modal-form.html' %} {% include 'terms.html' %} {%
 endblock %}
