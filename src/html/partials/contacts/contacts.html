@@ -2,10 +2,10 @@
 contacts.phone %}
 
 <section class="section contacts">
-  <div class="container">
+  <div class="container contacts__wrapper">
     <h2 class="section__title contacts__title">{{contacts.title}}</h2>
     <div class="grid contacts__content">
-      <div class="grid__item contacts__wrapper ">
+      <div class="grid__item ">
         <p class="contacts__item-title">{{contactsEmail.title}}</p>
         <ul class="list">
           {% for item in contactsEmail.items %}
@@ -15,7 +15,7 @@ contacts.phone %}
           {% endfor %}
         </ul>
       </div>
-      <div class="grid__item contacts__wrapper ">
+      <div class="grid__item ">
         <p class="contacts__item-title">{{contactsPhone.title}}</p>
         <ul class="list">
           {% for item in contactsPhone.items %}
@@ -25,7 +25,7 @@ contacts.phone %}
           {% endfor %}
         </ul>
       </div>
-      <div class="grid__item contacts__wrapper ">
+      <div class="grid__item ">
         <p class="contacts__item-title">Socials</p>
         {% include 'components/social-list.html' %}
         <img src="" alt="">

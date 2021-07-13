@@ -1,13 +1,17 @@
 .contacts {
   position: relative;
-  @include mq(tablet) {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top right;
-    background-image: url('../images/contacts/contacts/bg-students_lg.png');
-  }
-  @include mq(desktop) {
-    padding-right: 344px;
+
+  &__wrapper {
+    @include mq(tablet) {
+      background-repeat: no-repeat;
+      background-size: auto;
+    background-position: top 44% right;
+      background-image: url('../images/contacts/contacts/bg-students_lg.png');
+    }
+    @include mq(desktop) {
+      padding-right: 284px;
+    }
+
   }
 
   &:before {
@@ -75,6 +79,10 @@
     }
     &__svg {
       fill: var(--grey-bg);
+      &:hover,
+      &:focus{
+        fill: var( --secondary-accent-cl);
+      }
     }
   }
 }
