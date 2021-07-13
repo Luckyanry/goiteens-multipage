@@ -39,9 +39,12 @@
       max-width: 535px;
       font-size: 40px;
     }
+    span {
+      color: var(--secondary-accent-cl);
+    }
   }
 
-  .pseudo-element {
+  &__title-pseudo {
     display: block;
     &::after {
       content: '';

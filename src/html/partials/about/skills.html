@@ -6,13 +6,13 @@
             {{skills.title}}</h2>
 
         <div class="skills__list">
-            <p class="item-grid skills__description text-accent ">{{skills.description}}</p>
+            <p class="skills__item-grid skills__description text-accent ">{{skills.description}}</p>
             {% for name, lists in partnersLists %}
-            <div class="item-grid text-label skills__label ">
+            <div class="skills__item-grid text-label skills__label ">
                 {{lists.title}}
             </div>
             {% for item in lists.items %}
-            <div class="item-grid skills__item skills-{{item.id}}">
+            <div class="skills__item-grid skills__item skills-{{item.id}}">
                 <p class="skills__item-title ">{{item.title}}</p>
                 <p >
                     {{item.description}}

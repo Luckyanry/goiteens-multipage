@@ -14,22 +14,21 @@
       padding-left: 160px;
       margin-bottom: 54px;
     }
-    .proff-skills__img {
+    & img {
       margin-bottom: 24px;
     }
   }
   &__descript {
     margin-bottom: 20px;
-    @include mq(desktop){
-        max-width: 380px;
+    @include mq(desktop) {
+      max-width: 380px;
     }
   }
   &__descript-list {
-    @include mq(desktop){
-        max-width: 380px;
+    @include mq(desktop) {
+      max-width: 380px;
     }
   }
-  
 
   &__descript-item {
     position: relative;
@@ -49,12 +48,11 @@
     }
   }
 
-  &__list{
-    @include mq(desktop){
-        // padding-right: 80px;
-        max-width: 970px;
-        margin-left: auto;
-        margin-right: auto;
+  &__list {
+    @include mq(desktop) {
+      max-width: 970px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -65,13 +63,23 @@
     @include mq(tablet) {
       align-items: center;
     }
-   
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      .proff-skills__img-wrap {
+        &::before {
+          left: 0;
+          border-bottom-left-radius: var(--border-radius);
+          background-image: url('../images/about/proff-skills/decor-left.svg');
+        }
+      }
+    }
   }
 
   &__img-wrap {
     position: relative;
-   display: block;
-   
+    display: block;
+
     &::before {
       content: '';
       position: absolute;
@@ -82,7 +90,7 @@
       border-bottom-right-radius: var(--border-radius);
       background-repeat: no-repeat;
       background-image: url('../images/about/proff-skills/decor-right.svg');
-      @include mq(tablet-only){
+      @include mq(tablet-only) {
         width: 218px;
         height: 170px;
       }
@@ -92,20 +100,5 @@
   &__img {
     width: 100%;
     border-radius: var(--border-radius);
-    
   }
-
-  .item-1 {
-    flex-direction: row-reverse;
-    .proff-skills__img-wrap{
-    &::before {
-        
-        left: 0;
-        border-bottom-left-radius: var(--border-radius);
-        background-image: url('../images/about/proff-skills/decor-left.svg');
-      }
-    }
-  }
-
- 
 }

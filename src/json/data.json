@@ -1,20 +1,20 @@
 {
   "page": {
-    "lang": "ru",
-    "title": "",
+    "lang": "uk",
+    "title": "Goiteens",
     "description": "",
     "canonical": "https:///",
     "og_site_name": "",
-    "og_title": "",
-    "og_description": "",
-    "og_image": "",
-    "og_image_type": "image/png",
-    "og_image_width": "1200",
-    "og_image_height": "630",
+    "og_title": "GoITeens — мережа IT-академій для дітей та підлітків.",
+    "og_description": "Тут здобувають навички та професії майбутнього:  ▸програмування для дітей MineCraft та Scratch ▸створення сайтів та додатків (HTML, CSS, JavaScript) ▸програмування Phyton ▸розробка ігор на Unity та C# ▸3D-дизайна та Digital Art ▸робототехніка та Arduino",
+    "og_image": "images/Og.jpg",
+    "og_image_type": "image/jpeg",
+    "og_image_width": "300",
+    "og_image_height": "300",
     "tw_image": "assets/images/twitter.png",
     "main": {
-      "style": "main",
-      "branches_style": "branches__main"
+      "style": "main"
+     
 
     },
     "programs": {
@@ -40,7 +40,8 @@
       "description": "допомагаємо почати кар’єру розробника та заробляти ще до вступу в університет"
     },
     "programs": {
-      "title": "В IT-школі для дітей GoITeens кожен <span class='text-accent'>від&nbsp;8&nbsp;до&nbsp;16&nbsp;років</span> знайде чим хоче займатись,<span class='text-accent pseudo-element '> а&nbsp;ми допоможемо досягти мети</span> "
+      "title": "В IT-школі для дітей GoITeens кожен <span>від&nbsp;8&nbsp;до&nbsp;16&nbsp;років</span> знайде чим хоче займатись,",
+      "title_element":"а&nbsp;ми допоможемо досягти мети"
     },
     "about": {
       "title": "Місія GoITeens - дати дітям старт в IT-кар’єрі.",

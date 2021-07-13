@@ -1,7 +1,7 @@
 {% set lastProjects = last_projects %} {% set lastProjectsItems = lastProjects.items %}
 <section class="section last-projects">
     <div class="container">
-        <h2 class="section__title">{{lastProjects.title}}</h2>
+        <h2 class="section__title ">{{lastProjects.title}}</h2>
 
     </div>
   <div class="last-projects__cont">
@@ -33,7 +33,7 @@
           />
         </picture>
         <div class="last-projects__side">
-          <p class="section__title">
+          <p class="section__title last-projects__side-title">
             {{lastProjects.author}}
             <span>{{lastProjects.course}}</span>
           </p>
@@ -45,7 +45,7 @@
           <p>{{lastProjects.project_technologies}}</p>
           <a
             href="https://yablo4ko23.github.io/Money-App/"
-            class="main-btn"
+            class="main-btn last-projects__btn"
             target="_blank"
             rel="noopener noreferrer"
             >Подивись детальніше</a

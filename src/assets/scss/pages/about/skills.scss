@@ -1,8 +1,8 @@
 .skills {
-    background-position: bottom center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url('../images/components/bg-orange-bottom.svg');
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/components/bg-orange-bottom.svg');
 
   &__title {
     @include mq(tablet) {
@@ -64,7 +64,7 @@
       grid-template-columns: 1fr 1px 1fr 1fr 1fr;
     }
   }
-  .item-grid {
+  &__item-grid {
     @include mq(tablet) {
       &:nth-child(1) {
         grid-column-start: 1;
@@ -194,27 +194,19 @@
       background-position: bottom left;
       background-size: 100%;
       background-repeat: no-repeat;
-     
     }
+  }
 
-}
-
-@for $i from 1 through 8 {
+  @for $i from 1 through 8 {
     .skills-#{$i} {
-        &::before{
-            
-            background-image: url('../images/about/skills/icon-#{$i}.svg');
-            
-            }
-
-        }
+      &::before {
+        background-image: url('../images/about/skills/icon-#{$i}.svg');
+      }
     }
+  }
 
-&__item-title{
-        margin-bottom: 12px;
-        color: var(--title-cl) ;
-
-    }
-  
-
+  &__item-title {
+    margin-bottom: 12px;
+    color: var(--title-cl);
+  }
 }
