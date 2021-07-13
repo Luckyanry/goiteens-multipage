@@ -18,19 +18,18 @@
 
     },
     "programs": {
-      "style": "program-page"
+      "style": "program-page",
+      "footer": "transparent"
     },
     "about": {
-      "style": "about-page"
-      
+      "style": "about-page",
+      "footer": "transparent"
     },
     "testimonials": {
       "style": "testimonials-page"
-     
     },
     "contacts": {
       "style": "contact-page"
-     
     }
   },
 
@@ -112,7 +111,7 @@
       "text_label": "Мережа IT-академій для позашкільного навчання дітей &lbrack;&nbsp;<span>від 8 до 15 років</span>&nbsp;&rbrack;",
       "description": "Тому діти можуть навчатися з будь-якої точки світу"
     }
-    
+
   },
  
   "about_hero_footer": {
@@ -121,7 +120,7 @@
   },
   "achievments_contacts": {
     "title": "Наші досягнення&#95;"
-   
+
   },
   "achievments_main": {
     "title": " Майбутнє - за програмуванням. І наші діти зіграють в цьому головну роль!",
@@ -231,7 +230,6 @@
       }
     ]
   },
-
   "contacts":{
     "title":"Як з нами можна зв’язатись?&#95;",
    "email":{
@@ -258,9 +256,7 @@
    }
 
   },
- 
-
-  "dignity": {
+   "dignity": {
     "title": " Чому нам <span class='text-accent'>довіряють</span>&#95;",
     "items": [
       {
@@ -309,9 +305,8 @@
   "main_students_reviews":{
     "title":"Відгуки учнів про нас&#95;"
   },
-
   "parents_reviews": {
-   
+
     "title": "Що говорять наші батьки&#95;",
     "items": [
       {
@@ -334,7 +329,7 @@
         "name": "Юлія Хвастунова",
         "description": "«Дякуємо школі GoITeens, а також досвідченим викладачам за цікавий підхід у розвитку навичок програмування у дітей.» "
       }
-   
+
     ]
   },
   "partners": {
@@ -513,7 +508,7 @@
   "projects": {
     "title": "Останні реалізовані учнями проєкти&#95;",
     "description": " Ні, це не скрін з App Store! <span> Це проєкти, які наші учні розробляють на курсі самостійно</span>",
- 
+
     "items": [
       {
         "id": "1",

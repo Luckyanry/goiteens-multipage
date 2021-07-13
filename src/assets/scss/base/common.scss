@@ -52,16 +52,10 @@ select {
   font: inherit;
 }
 
-// .visually-hidden {
-//   position: absolute !important;
-//   clip: rect(1px 1px 1px 1px);
-//   clip: rect(1px, 1px, 1px, 1px);
-//   padding: 0 !important;
-//   border: 0 !important;
-//   height: 1px !important;
-//   width: 1px !important;
-//   overflow: hidden;
-// }
+.page {
+  position: relative;
+  overflow: hidden;
+}
 
 .link {
   color: inherit;
@@ -69,7 +63,7 @@ select {
 
   &:hover,
   &:focus {
-    color: var( --secondary-accent-cl);
+    color: var(--secondary-accent-cl);
   }
 }
 
@@ -111,13 +105,11 @@ select {
   color: var(--title-cl);
 }
 
-.hero__title{
+.hero__title {
   @include fonts(36px, 700, 1.3);
   @include mq(desktop) {
     font-size: 40px;
-
   }
-
 }
 
 .text-bold {
@@ -129,19 +121,19 @@ select {
   color: var(--secondary-accent-cl);
 }
 .text-yellow {
-  color: var( --primary-accent-cl);
+  color: var(--primary-accent-cl);
 }
 
 .text-nowrap {
   white-space: nowrap;
 }
 
-.text-label{
+.text-label {
   @include fonts(13px, 700, 1.45, 0.07em);
   text-transform: uppercase;
 }
 
- .scroll{
+.scroll {
   display: block;
   height: 100%;
   overflow-y: scroll;
