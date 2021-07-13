@@ -85,14 +85,19 @@
       position: absolute;
       bottom: -1px;
       right: 0;
-      width: 212px;
-      height: 224px;
+      width: 206px;
+      height: 174px;
       border-bottom-right-radius: var(--border-radius);
       background-repeat: no-repeat;
       background-image: url('../images/about/proff-skills/decor-right.svg');
-      @include mq(tablet-only) {
+
+      @include mq(tablet) {
         width: 218px;
         height: 170px;
+      }
+      @include mq(desktop) {
+        width: 212px;
+      height: 224px;
       }
     }
   }

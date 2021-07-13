@@ -33,10 +33,67 @@
      
     }
   },
+
+  "social_list":[
+    {
+      "id":"telegram",
+      "link":"https://t.me/devofteens",
+      "svg_width":"32",
+      "svg_height":"32",
+      "svg_id":"#tg"
+
+
+    },
+    {
+      "id":"instagram",
+      "link":"https://www.instagram.com/go_iteens",
+      "svg_width":"32",
+      "svg_height":"32",
+      "svg_id":"#insta"
+
+
+    },
+    {
+      "id":"facebook",
+      "link":"https://www.facebook.com/GoITeens/?ref=page_internal%E2%80%8B",
+      "svg_width":"32",
+      "svg_height":"32",
+      "svg_id":"#fb"
+
+
+    },
+    {
+      "id":"youtube",
+      "link":"https://www.youtube.com/channel/UCePQwxtFDx2ypM-oTh7gqMQ",
+      "svg_width":"32",
+      "svg_height":"32",
+      "svg_id":"#ytube"
+
+
+    }
+  ],
+  "navigation": [
+    {
+      "title": "Програми",
+      "link": "./programs.html"
+    },
+    {
+      "title": "Про нас",
+      "link": "./about.html"
+    },
+    {
+      "title": "Результати учнів",
+      "link": "./testimonials.html"
+    },
+    {
+      "title": "Контакти",
+      "link": "./contact-page.html"
+    }
+  ],
   "hero": {
     "main": {
       "title": "Онлайн IT-курси для&nbsp;дітей в GoITeens",
-      "text_label": "Мережа IT-академій для позашкільного навчання дітей&lbrack;&nbsp;<span>від 8 до 15 років</span>&nbsp;&rbrack;",
+      "text_label": "Мережа IT-академій для позашкільного навчання дітей &lbrack;&nbsp;<span>від 8 до 15 років</span>&nbsp;&rbrack;",
       "description": "допомагаємо почати кар’єру розробника та заробляти ще до вступу в університет"
     },
     "programs": {
@@ -52,21 +109,12 @@
     },
     "contacts": {
       "title": "Ми проводимо IT-курси для дітей <span class='text-bold'> онлайн</span>",
-      "text_label": "Мережа IT-академій для позашкільного навчання дітей&lbrack;&nbsp;<span>від 8 до 15 років</span>&nbsp;&rbrack;",
+      "text_label": "Мережа IT-академій для позашкільного навчання дітей &lbrack;&nbsp;<span>від 8 до 15 років</span>&nbsp;&rbrack;",
       "description": "Тому діти можуть навчатися з будь-якої точки світу"
     }
     
   },
-  "menu": [
-    {
-      "title": "как это будет",
-      "link": "#steps"
-    },
-    {
-      "title": "что в итоге",
-      "link": "#result"
-    }
-  ],
+ 
   "about_hero_footer": {
     "title": "Шукаєте IT-курси для дитини?",
     "description": "В GoITeens ваша дитина зможе навчатися й розуміти як правильно обирати своє майбутнє - записуйтесь на безкоштовне пробне заняття."
@@ -82,7 +130,7 @@
     "position":"CEO GoITeens"
   },
   "advantages": {
-    "title": " Завдяки чому ваша дитина створить свій перший власний проект в GoITeens?&#95;",
+    "title": " Завдяки чому ваша дитина створить свій перший власний проєкт в GoITeens&nbsp;?&nbsp;&#95;",
     "items": [
       {
         "id": "1",
@@ -228,7 +276,7 @@
       {
         "id": "3",
         "title": " Показуємо зрозумілий результат навчання",
-        "description": "  Протягом навчання учні реалізовують проекти: від простих концептів до реальних стартапів."
+        "description": "  Протягом навчання учні реалізовують проєкти: від простих концептів до реальних стартапів."
       },
       {
         "id": "4",
@@ -331,9 +379,9 @@
     ]
   },
   "proff_skills": {
-    "title": "В основі навчання - створення реальних проектів&#95;",
+    "title": "В основі навчання - створення реальних проєктів&#95;",
     "description_list": {
-      "text": "Дитина набуває IT-навички на курсах GoITeens тільки через створення реальних проектів. Це і",
+      "text": "Дитина набуває IT-навички на курсах GoITeens тільки через створення реальних проєктів. Це і",
       "items": [
         {
           "item_text": "програмування роботів;"
@@ -772,7 +820,7 @@
   },
   "winners_project": {
     "title": "Проєкти переможці Game of Teens 2020&lowbar;",
-    "description": "В кінці кожного навчального року ми проводимо конкурс проектів серед усіх наших студентів",
+    "description": "В кінці кожного навчального року ми проводимо конкурс проєктів серед усіх наших студентів",
     "text_1": "Як проходили презентації проєктів Game Of Teens 2020",
     "text_2": "До фіналів дійшло 24 проєкта з 5 міст України"
   }

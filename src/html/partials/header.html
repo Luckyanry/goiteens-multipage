@@ -1,3 +1,4 @@
+{% set navigationList = navigation %}
 <header class="header">
     <div class="container">
         <a href="/" class="logo link" aria-label="логотип">
@@ -13,18 +14,12 @@
         <div class="mobile-menu" data-menu>
             <nav class="navigation">
                 <ul class="navigation__list list">
+                    {% for item in navigationList %}
                     <li class="navigation__list-item">
-                        <a href="./programs.html" class="navigation__list-link link">Програми</a>
+                        <a href="{{item.link}}" class="navigation__list-link link">{{item.title}}</a>
                     </li>
-                    <li class="navigation__list-item">
-                        <a href="./about.html" class="navigation__list-link link">Про нас</a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a href="./testimonials.html" class="navigation__list-link link">Результати учнів</a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a href="./contact-page.html" class="navigation__list-link link">Контакти</a>
-                    </li>
+                   
+                    {% endfor %}
                 </ul>
             </nav>
             <p class="location">

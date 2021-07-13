@@ -22,13 +22,6 @@
     @include mq(tablet) {
       max-width: 100%;
     }
-
-    // --dots-color: var(--secondary-accent-cl);
-    // .slick-dots {
-    //   @include mq(desktop) {
-    //     bottom: -80px;
-    //   }
-    // }
   }
 
   &__item {
@@ -39,12 +32,12 @@
 
     background-color: var(--white-bg);
     border-radius: var(--border-radius);
+    box-shadow: 2px 8px 8px #5c2e9114, 2px 2px 4px #5c2e913d;
 
     counter-increment: item;
 
     @include mq(tablet) {
       max-width: 298px;
-      box-shadow: 2px 8px 8px #5c2e9114, 2px 2px 4px #5c2e913d;
     }
 
     @include mq(desktop) {

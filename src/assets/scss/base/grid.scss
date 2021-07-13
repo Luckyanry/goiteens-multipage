@@ -3,16 +3,16 @@
   flex-wrap: wrap;
   margin-top: calc(var(--grid-mr-top) * -1);
 
-  margin-left: calc(var(--grid-mr-left) * -1);
   @include mq(tablet) {
+    margin-left: calc(var(--grid-mr-left) * -1);
   }
 }
 
 .grid__item {
   margin-top: var(--grid-mr-top);
 
-  flex-basis: calc(100% / var(--grid-item) - var(--grid-mr-left));
-  margin-left: var(--grid-mr-left);
   @include mq(tablet) {
+    margin-left: var(--grid-mr-left);
+    flex-basis: calc(100% / var(--grid-item) - var(--grid-mr-left));
   }
 }

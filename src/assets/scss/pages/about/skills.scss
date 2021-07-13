@@ -15,10 +15,12 @@
 
   &__title-span {
     display: block;
+    margin-bottom: 8px;
     font-size: 105px;
     line-height: 0.8;
 
     @include mq(tablet) {
+      margin-bottom: 0;
       margin-right: 20px;
     }
     @include mq(desktop) {
