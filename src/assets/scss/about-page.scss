@@ -1,27 +1,7 @@
-@import './utils/mixins.scss';
-@import './utils/variables.scss';
-@import './utils/fonts.scss';
+@import './commonly-used-style/commonly-used-style.scss';
 
-@import './vendors/modern-normalize.scss';
-@import './vendors/slick.scss';
-@import './vendors/slick-theme.scss';
-@import './vendors/aos.scss';
-
-@import './base/common.scss';
-@import './base/container.scss';
-@import './base/grid.scss';
-@import './base/section.scss';
-
-@import './components/button.scss';
-@import './components/backdrop.scss';
-@import './components/terms-modal.scss';
-@import './components/language-select.scss';
 @import './components/projects.scss';
 @import './components/hero-footer.scss';
-
-
-
-@import './layout/header.scss';
 
 @import './pages/about/hero.scss';
 @import './pages/about/partners.scss';
@@ -33,5 +13,3 @@
 @import './pages/about/speakers.scss';
 @import './pages/about/about-projects.scss';
 @import './pages/about/about-hero-footer.scss';
-@import './layout/footer.scss';
-@import './layout/modal-form.scss';
