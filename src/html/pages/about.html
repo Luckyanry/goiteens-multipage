@@ -1,16 +1,11 @@
-{% set page = page.about %} {% extends 'layout.html' %} {% block content %} {% include 'header.html' %}
+{% set page = page.about %} {% extends 'layout.html' %} {% block content %} {% include 'header.html'
+%}
 <main>
-  {% include 'about/hero.html' %} 
-  {% include 'about/partners.html' %} 
-  {% include 'about/courses.html' %} 
-  {% include 'about/skills.html' %}
-  {% include 'about/complex.html' %}
-
-  {% include 'about/proff-skills.html' %} {% include 'about/teacher.html' %} {% include
-  'about/speakers.html' %}
- 
-  {% include 'about/projects.html' %} {% include 'about/hero-footer.html' %}
+  {% include 'about/hero.html' %} {% include 'about/partners.html' %} {% include
+  'about/courses.html' %} {% include 'about/skills.html' %} {% include 'about/complex.html' %} {%
+  include 'about/proff-skills.html' %} {% include 'about/teacher.html' %} {% include
+  'about/speakers.html' %} {% include 'about/projects.html' %} {% include 'about/hero-footer.html'
+  %}
 </main>
-{# {% include 'footer.html' %} #} 
-{% include 'modal-form.html' %} {% include 'terms.html' %} {%
-endblock %}
+{% include 'footer.html' %} {% include 'modal-form.html' %} {% include 'terms.html' %} {% endblock
+%}

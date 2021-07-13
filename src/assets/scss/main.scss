@@ -1,39 +1,15 @@
-/*
- * All partiasl import to this file
- */
-@import './utils/variables.scss';
-@import './utils/mixins.scss';
-@import './utils/fonts.scss';
+@import './commonly-used-style/commonly-used-style.scss';
 
-@import './vendors/modern-normalize.scss';
-@import './vendors/slick.scss';
-@import './vendors/slick-theme.scss';
-@import './vendors/aos.scss';
-
-@import './base/common.scss';
-@import './base/container.scss';
-@import './base/grid.scss';
-@import './base/section.scss';
-
-@import './components/button.scss';
-@import './components/backdrop.scss';
-@import './components/terms-modal.scss';
 @import './components/awards.scss';
 @import './components/projects.scss';
-@import './components/students-reviews.scss';
 @import './components/branches.scss';
-
-@import './layout/header.scss';
-@import './components/language-select.scss';
+@import './components/students-reviews.scss';
 
 @import './pages/main/hero.scss';
 @import './pages/main/main-branches.scss';
 @import './pages/main/advantages.scss';
 @import './pages/main/achievments.scss';
-
 @import './pages/main/dignity.scss';
-// @import './pages/main/students-reviews.scss';
 @import './pages/main/main-projects.scss';
 @import './pages/main/appeal.scss';
 
-@import './layout/modal-form.scss';
