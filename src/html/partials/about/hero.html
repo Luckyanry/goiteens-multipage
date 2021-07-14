@@ -1,7 +1,10 @@
 {% set hero = hero %} {% set aboutHero = hero.about %}
 <section class="hero">
-    <div class="container">
-        <h1 class="hero__title">{{aboutHero.title}}</h1>
-       {{aboutHero.description}}
-    </div>
+  <div class="container">
+    <h1 class="hero__title">{{aboutHero.title}}</h1>
+
+    {% for item in aboutHero.description %}
+    <p class="hero__description">{{item.text}}</p>
+    {% endfor %}
+  </div>
 </section>

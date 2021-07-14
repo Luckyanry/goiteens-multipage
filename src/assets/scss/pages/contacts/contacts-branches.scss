@@ -1,36 +1,11 @@
 .contacts-branches {
-  @include mq(tablet) {
-    background-image: linear-gradient(
-      to bottom,
-      var(--white-bg) 40%,
-      rgba(var(--grey-bg-rgb), 0.08) 40%,
-      rgba(var(--grey-bg-rgb), 0.08) 100%
-    );
-  }
 
+
+  margin-top: -64px;
+ 
   @include mq(desktop) {
-    background-image: none;
     margin-top: -110px;
   }
 
-  &::before {
-    display: block;
-    content: '';
-    width: 320px;
-    height: 350px;
-    margin: 0 auto;
 
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('../images/contacts/hero/boy-bg_lg.png');
-    @include mq(tablet) {
-      width: 468px;
-      height: 380px;
-    }
-
-    @include mq(desktop) {
-      display: none;
-    }
-  }
 }
