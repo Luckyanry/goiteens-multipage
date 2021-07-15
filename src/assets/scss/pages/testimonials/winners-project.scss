@@ -9,7 +9,7 @@
       var(--white-bg) 0,
       var(--white-bg) 22%,
       var(--yellow-bg) 22%,
-      var(--yellow-bg) 100%
+      var(--yellow-bg) 
     );
  
   @include mq(tablet) {
@@ -19,7 +19,7 @@
         var(--white-bg) 0,
         var(--white-bg) 29%,
         var(--yellow-bg) 29%,
-        var(--yellow-bg) 100%
+        var(--yellow-bg) 
       );
   }
   @include mq(desktop) {
@@ -29,7 +29,7 @@
         var(--white-bg) 0,
         var(--white-bg) 44%,
         var(--yellow-bg) 44%,
-        var(--yellow-bg) 100%
+        var(--yellow-bg) 
       );
   }
 
@@ -60,8 +60,8 @@
   &__video {
     display: block;
     width: 100%;
-    // height: auto;
     height: 300px;
+    border: 0px;
 
     @include mq(desktop) {
       width: 570px;

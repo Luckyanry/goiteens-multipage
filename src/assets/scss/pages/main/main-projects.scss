@@ -5,7 +5,7 @@
       var(--white-bg) 0,
       var(--white-bg) 32%,
       var(--yellow-bg) 32%,
-      var(--yellow-bg) 100%
+      var(--yellow-bg) 
     );
   
     @include mq(tablet) {
@@ -16,7 +16,7 @@
           var(--white-bg) 0,
           var(--white-bg) 25%,
           var(--yellow-bg) 25%,
-          var(--yellow-bg) 100%
+          var(--yellow-bg) 
         );
     }
   
@@ -28,7 +28,7 @@
           var(--white-bg) 0,
           var(--white-bg) 30%,
           var(--yellow-bg) 30%,
-          var(--yellow-bg) 100%
+          var(--yellow-bg) 
         );
     }
   

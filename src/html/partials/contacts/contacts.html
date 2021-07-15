@@ -20,7 +20,7 @@ contacts.phone %}
         <ul class="list">
           {% for item in contactsPhone.items %}
           <li class="contacts__item">
-            <a href="tel:{{item.numb}}" class="contacts__link link">{{item.numb}}</a>
+            <a href="tel:{{item.href}}" class="contacts__link link">{{item.numb}}</a>
           </li>
           {% endfor %}
         </ul>
@@ -28,7 +28,6 @@ contacts.phone %}
       <div class="grid__item ">
         <p class="contacts__item-title">Socials</p>
         {% include 'components/social-list.html' %}
-        <img src="" alt="">
       </div>
     </div>
     <div class="grid contacts__btn-wrapper">

@@ -15,7 +15,7 @@
     @include mq(mobile-only) {
       background-image: url('../images/components/triangle-white-1_sm.svg'),
         url('../images/components/triangle-white-2_sm.svg'),
-        linear-gradient(to bottom, var(--secondary-accent-cl), var(--secondary-accent-cl) 100%);
+        linear-gradient( var(--secondary-accent-cl), var(--secondary-accent-cl));
       background-repeat: no-repeat, no-repeat;
       background-position: top 14% right, top 50% right;
     }
@@ -53,7 +53,7 @@
       border-radius: 12px;
 
       background-image: url('../images/components/triangle-white_lg.svg'),
-        linear-gradient(to bottom, var(--secondary-accent-cl), var(--secondary-accent-cl) 100%);
+        linear-gradient( var(--secondary-accent-cl), var(--secondary-accent-cl));
 
       background-repeat: no-repeat, no-repeat;
       background-position: bottom right, bottom right;

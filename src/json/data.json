@@ -14,7 +14,8 @@
 
     "main": {
       "title": "Goiteens",
-      "style": "main"
+      "style": "main",
+      "url":"/programs.html"
     },
     "programs": {
       "title": "Goiteens programs",
@@ -243,13 +244,16 @@
       "title": "phone",
       "items": [
         {
-          "numb": "+38 093 343 21 27"
+          "numb": "+38 093 343 21 27",
+          "href":"+380933432127"
         },
         {
-          "numb": "+38 067 326 95 92"
+          "numb": "+38 067 326 95 92",
+          "href":"+380673269592"
         },
         {
-          "numb": "+38 050 366 17 77"
+          "numb": "+38 050 366 17 77",
+          "href":"+380503661777"
         }
       ]
     }
