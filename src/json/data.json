@@ -13,25 +13,29 @@
     "tw_image": "assets/images/twitter.jpg",
 
     "main": {
+      "url":"index.html",
       "title": "Goiteens",
-      "style": "main",
-      "url":"/programs.html"
+      "style": "main"
     },
     "programs": {
+      "url":"programs.html",
       "title": "Goiteens programs",
       "style": "program-page",
       "footer": "transparent"
     },
     "about": {
+      "url":"about.html",
       "title": "About Goiteens",
       "style": "about-page",
       "footer": "transparent"
     },
     "testimonials": {
+      "url":"testimonials.html",
       "title": "Goiteens student results",
       "style": "testimonials-page"
     },
     "contacts": {
+      "url":"contact-page.html",
       "title": "Goiteens contacts",
       "style": "contact-page"
     }
