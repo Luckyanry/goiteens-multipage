@@ -9,7 +9,7 @@
   background-position: center, top right;
 
   background-color: var(--yellow-bg);
-  background-image: url('../images/components/hero-bg_sm_md.png'),
+  background-image: linear-gradient(rgba(var(--grey-bg-rgb),.8),rgba(var(--grey-bg-rgb),.8)),
     url('../images/contacts/hero/boy-bg_md.png');
 
   @include mq(tablet) {
