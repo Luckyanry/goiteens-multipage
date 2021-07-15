@@ -19,6 +19,7 @@
         class="header__button menu-btn"
         type="button"
         aria-expanded="false"
+       
         aria-controls="mobile-menu"
         aria-label="кнопка меню"
         data-menu-button
@@ -39,7 +40,7 @@
         </select>
       </div>
     </div>
-    <div class="mobile-menu" data-menu>
+    <div class="mobile-menu" id="mobile-menu" data-menu>
       <nav class="navigation">
         <ul class="navigation__list list">
           {% for item in navigationList %}

@@ -27,7 +27,7 @@
 <meta name="robots" content="index, follow" />
 <meta name="google" content="notranslate" />
 <meta name="format-detection" content="telephone=no" />
-<meta name="description" content="Тут здобувають навички та професії майбутнього:  ▸програмування для дітей MineCraft та Scratch ▸створення сайтів та додатків (HTML, CSS, JavaScript) ▸програмування Phyton ▸розробка ігор на Unity та C# ▸3D-дизайна та Digital Art ▸робототехніка та Arduino" />
+<!-- <meta name="description" content="Тут здобувають навички та професії майбутнього:  ▸програмування для дітей MineCraft та Scratch ▸створення сайтів та додатків (HTML, CSS, JavaScript) ▸програмування Phyton ▸розробка ігор на Unity та C# ▸3D-дизайна та Digital Art ▸робототехніка та Arduino" /> -->
 <meta name="msapplication-TileColor" content="#da532c" />
 <meta name="theme-color" content="#ffffff" />
 
@@ -95,6 +95,7 @@
         class="header__button menu-btn"
         type="button"
         aria-expanded="false"
+       
         aria-controls="mobile-menu"
         aria-label="кнопка меню"
         data-menu-button
@@ -115,7 +116,7 @@
         </select>
       </div>
     </div>
-    <div class="mobile-menu" data-menu>
+    <div class="mobile-menu" id="mobile-menu" data-menu>
       <nav class="navigation">
         <ul class="navigation__list list">
           
@@ -174,6 +175,7 @@
         </div>
         <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
     </div>
+    
 </section> <section class="section main-branches">
   
         
@@ -291,15 +293,25 @@
     <div class="container">
       <div class="achievments__wrapper">
         <picture>
-          <!-- <source srcset="
-                ./images/achievments/portrait.webp    470w,
-                ./images/achievments/portrait@2x.webp 940w
-              " type="image/webp" sizes="470px" /> -->
+          <source
+          srcset="
+          ./assets/images/main/achievments/vp_lg.webp    1x,
+          ./assets/images/main/achievments/vp_lg@2x.webp 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="./assets/images/main/achievments/vp_lg@2x.jpg 2x"
+          media="(min-width: 1280px)"
+          type="image/jpeg"
+        />
           <img
             src="./assets/images/main/achievments/vp_lg.jpg"
             class="achievments__img"
             alt="Фото Вячеслава Поліновського CEO GoITeens"
-            sizes="470px"
+            
             width="470"
             height="580"
             loading="lazy"
@@ -1256,7 +1268,7 @@
             ./assets/images/components/projects/project-1-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
   
             <source srcset="./assets/images/components/projects/project-1-sm.webp 1x, ./assets/images/components/projects/project-1-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-            <source srcset="./assets/images/components/projects/project-1-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
+            <source srcset="./assets/images/components/projects/project-1-sm@2x.jpg" media="(max-width: 767px)" type="image/jpeg" />
 
             <img class="projects__item-image"  src="./assets/images/components/projects/project-1-sm.jpg" alt="фото проєкту Сайт караоке-бару Smile Art Bar"
               width="280" height="200" loading="lazy" />
@@ -1288,7 +1300,7 @@
             ./assets/images/components/projects/project-2-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
   
             <source srcset="./assets/images/components/projects/project-2-sm.webp 1x, ./assets/images/components/projects/project-2-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-            <source srcset="./assets/images/components/projects/project-2-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
+            <source srcset="./assets/images/components/projects/project-2-sm@2x.jpg" media="(max-width: 767px)" type="image/jpeg" />
 
             <img class="projects__item-image"  src="./assets/images/components/projects/project-2-sm.jpg" alt="фото проєкту Сайт кулінарної майстерні Oleg Cook"
               width="280" height="200" loading="lazy" />
@@ -1320,7 +1332,7 @@
             ./assets/images/components/projects/project-3-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
   
             <source srcset="./assets/images/components/projects/project-3-sm.webp 1x, ./assets/images/components/projects/project-3-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-            <source srcset="./assets/images/components/projects/project-3-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
+            <source srcset="./assets/images/components/projects/project-3-sm@2x.jpg" media="(max-width: 767px)" type="image/jpeg" />
 
             <img class="projects__item-image"  src="./assets/images/components/projects/project-3-sm.jpg" alt="фото проєкту Меблі РЕМСЕРВІС"
               width="280" height="200" loading="lazy" />
@@ -1352,7 +1364,7 @@
             ./assets/images/components/projects/project-4-md@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
   
             <source srcset="./assets/images/components/projects/project-4-sm.webp 1x, ./assets/images/components/projects/project-4-sm@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-            <source srcset="./assets/images/components/projects/project-4-sm@2x.jpg" media="(max-width: 767)" type="image/jpeg" />
+            <source srcset="./assets/images/components/projects/project-4-sm@2x.jpg" media="(max-width: 767px)" type="image/jpeg" />
 
             <img class="projects__item-image"  src="./assets/images/components/projects/project-4-sm.jpg" alt="фото проєкту Меблі РЕМСЕРВІС"
               width="280" height="200" loading="lazy" />
@@ -1386,7 +1398,7 @@
   
 <section class="appeal section">
     <div class="container appeal__wrapper">
-        <h2 class="section__title appeal__title">Допоможіть <br> своїй дитині <br> стати <span class='text-accent'>лідером</span> <br> майбутнього</h2></h2>
+        <h2 class="section__title appeal__title">Допоможіть <br> своїй дитині <br> стати <span class='text-accent'>лідером</span> <br> майбутнього</h2>
         <p class="appeal__text">Кожен місяць правильно обраного зараз для дитини навчання обертається роками конкурентної переваги в майбутньому дорослому житті</p>
         <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
     </div>
