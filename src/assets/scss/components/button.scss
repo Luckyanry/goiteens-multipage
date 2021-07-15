@@ -43,4 +43,14 @@
     background-color: var(--small-btn-bg);
     box-shadow: var(--btn-violet-shadow);
   }
+
+  &--yellow {
+    color: var(--title-cl);
+    background-color: var(--primary-accent-cl);
+    &:hover,
+    &:focus {
+      background-color: var(--yellow-btn-hover);
+      box-shadow: var(--btn-yellow-shadow);
+    }
+  }
 }

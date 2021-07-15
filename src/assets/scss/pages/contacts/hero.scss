@@ -1,42 +1,59 @@
 .hero {
-  padding-top: 106px;
-  padding-bottom: 60px;
+  padding-top: 46px;
+  padding-bottom: 80px;
 
-  color: var(--title-cl);
-  background-color: var(--primary-accent-cl);
-  background-image: url('../images/main/hero/ellipse_sm.svg');
-  background-size: 92px;
-  background-position: top right;
+  color: var(--primary-accent-cl);
+
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, top right;
+
+  background-color: var(--yellow-bg);
+  background-image: url('../images/components/hero-bg_sm_md.png'),
+    url('../images/contacts/hero/boy-bg_md.png');
 
   @include mq(tablet) {
-    padding-top: 158px;
-    padding-bottom: 68px;
-
-    background-image: url('../images/main/hero/ellipse_sm.svg'),
-      url('../images/main/hero/triangle.svg');
-    background-size: 134px 150px, 180px 190px;
-    background-position: top right, bottom right;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-size: cover, contain;
   }
 
   @include mq(desktop) {
-    position: relative;
     padding-top: 71px;
-    padding-bottom: 145px;
+    padding-bottom: 151px;
+    color: var(--title-cl);
+    background-size: 654px, 924px 818px;
+    background-position: right 69px bottom, right -94px top -9px;
     background-image: url('../images/contacts/hero/boy-bg_lg.png'),
       url('../images/contacts/hero/bg_lg.svg');
-      background-size: 654px, 924px 818px;
-      background-position: right 69px bottom, right -94px top -9px;
+
+    @include mq(retina) {
+      background-image: url('../images/contacts/hero/boy-bg_lg@2x.png'),
+        url('../images/contacts/hero/bg_lg.svg');
+    }
   }
 
   &__wrapper {
-    margin-bottom: 76px;
-    max-width: 600px;
+    margin-bottom: 52px;
+    max-width: 570px;
+
+    @include mq(desktop) {
+      margin-bottom: 76px;
+      max-width: 600px;
+    }
   }
 
   &__label {
-    margin-bottom: 60px;
+    margin-bottom: 32px;
     max-width: 200px;
+
+    @include mq(tablet) {
+      margin-bottom: 52px;
+    }
+    @include mq(desktop) {
+      margin-bottom: 60px;
+    }
+
     span {
       color: var(--white-text-cl);
       white-space: nowrap;
@@ -44,14 +61,28 @@
   }
 
   &__title {
-    margin-bottom: 8px;
-    color: var(--white-text-cl);
+    margin-bottom: 4px;
     text-transform: uppercase;
+
+    @include mq(tablet) {
+      margin-bottom: 16px;
+    }
+    @include mq(desktop) {
+      margin-bottom: 8px;
+    }
+
+    span {
+      @include mq(notDesktop) {
+        color: var(--primary-accent-cl);
+      }
+    }
   }
 
-
-
   &__text {
-    @include fonts(20px, 400, 1.5);
+    @include fonts(18px, 400, 1.5);
+
+    @include mq(tablet) {
+      font-size: 20px;
+    }
   }
 }
