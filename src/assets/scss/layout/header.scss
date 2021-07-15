@@ -2,14 +2,48 @@
   position: relative;
   padding: 22px 0;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-}
 
-.logo {
-  display: block;
+  .container {
+    @include mq(notDesktop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    display: block;
+
+    @include mq(notDesktop) {
+      &-text {
+        display: none;
+      }
+    }
+  }
 
   &__img {
-    width: 140px;
-    height: 36px;
+    width: 80px;
+    height: 20px;
+
+    @include mq(tablet) {
+      width: 100px;
+      height: 25px;
+    }
+  }
+
+  &__wrapper {
+    width: calc(100% - 45%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(desktop) {
+      display: none;
+    }
+  }
+
+  &__button {
+    fill: var(--secondary-accent-cl);
   }
 }
 
@@ -45,6 +79,7 @@
 .location {
   display: flex;
   align-items: center;
+
   @include fonts(18px, 700, 1.2);
   color: #aa43a2;
 
@@ -69,22 +104,6 @@
 }
 
 @include mq(notDesktop) {
-  .logo {
-    &__text {
-      display: none;
-    }
-  }
-}
-
-@include mq(mobile-only) {
-  .navigation {
-    margin-bottom: 40px;
-
-    &__list-link {
-      padding: 20px 0;
-    }
-  }
-
   .menu-btn {
     display: flex;
     align-items: center;
@@ -92,7 +111,6 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    margin-left: auto;
 
     &__icon_burger {
       .menu-btn.is-open & {
@@ -116,14 +134,20 @@
     z-index: 10;
     transform: translateX(-50%) scaleY(0);
     width: 100%;
-    max-width: 428px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 60px 0;
+
     background-color: #fff;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url(../images/header/menu-bg-sm.svg);
 
     transition: transform 250ms linear;
     transform-origin: center top;
@@ -132,24 +156,93 @@
       transform: translateX(-50%) scaleY(1);
     }
   }
-
-  .location {
-    margin-bottom: 20px;
-  }
 }
 
-@include mq('tablet') {
-  .logo {
-    margin-right: 20px;
+@include mq(notDesktop) {
+  .navigation {
+    margin-bottom: 40px;
 
-    &__img {
-      width: 100px;
-      height: 26px;
+    &__list-link {
+      padding: 20px 0;
     }
   }
 
-  .menu-btn {
-    display: none;
+  .location {
+    margin-bottom: 20px;
+
+    @include mq(desktop) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// @include mq(tablet) {
+//   .header__img {
+//     width: 100px;
+//     height: 25px;
+//   }
+
+//   .navigation {
+//     &__list {
+//       display: flex;
+//     }
+
+//     &__list-item:not(:last-child) {
+//       margin-right: 20px;
+//     }
+
+//     &__list-link {
+//       &_current {
+//         &::before {
+//           bottom: -6px;
+//         }
+//       }
+//     }
+//   }
+
+//   .location {
+//     font-size: 14px;
+//     margin-left: auto;
+//     margin-right: 10px;
+//     margin-bottom: 0;
+
+//     &__icon {
+//       display: none;
+//     }
+
+//     span {
+//       margin-top: 0;
+//     }
+//   }
+
+//   .contact-tel {
+//     font-size: 14px;
+//   }
+// }
+
+@include mq(desktop) {
+  .header {
+    padding: 36px 0;
+
+    .container {
+      display: flex;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      margin-right: 25px;
+
+      &-text {
+        @include fonts(12px, 400, 1.3);
+        color: #0d0d0d;
+      }
+    }
+    &__img {
+      width: 140px;
+      height: 36px;
+      margin-right: 15px;
+    }
   }
 
   .mobile-menu {
@@ -162,67 +255,6 @@
     &__list {
       display: flex;
     }
-
-    &__list-item:not(:last-child) {
-      margin-right: 20px;
-    }
-
-    &__list-link {
-      &_current {
-        &::before {
-          bottom: -6px;
-        }
-      }
-    }
-  }
-
-  .location {
-    font-size: 14px;
-    margin-left: auto;
-    margin-right: 10px;
-    margin-bottom: 0;
-
-    &__icon {
-      display: none;
-    }
-
-    span {
-      margin-top: 0;
-    }
-  }
-
-  .contact-tel {
-    font-size: 14px;
-  }
-}
-
-@include mq('desktop') {
-  .header {
-    padding: 36px 0;
-
-    .container {
-      display: flex;
-    }
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    margin-right: 25px;
-
-    &__img {
-      width: 140px;
-      height: 36px;
-      margin-right: 15px;
-    }
-
-    &__text {
-      @include fonts(12px, 400, 1.3);
-      color: #0d0d0d;
-    }
-  }
-
-  .navigation {
     &__list-item:not(:last-child) {
       margin-right: 24px;
     }

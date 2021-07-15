@@ -19,6 +19,26 @@
     display: block;
   }
 
+  &--mobile {
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin: 0;
+
+    box-shadow: none;
+
+    @include mq(desktop) {
+      display: none;
+    }
+
+    .select-items div,
+    .select-selected {
+      width: 38px;
+      height: 38px;
+      @include fonts(14px, 400, 1.29);
+    }
+  }
+
   select {
     display: none;
   }
