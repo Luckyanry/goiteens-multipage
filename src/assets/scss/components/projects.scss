@@ -14,20 +14,21 @@
   &__list {
     margin-left: auto;
     margin-right: auto;
-    max-width: 280px;
+    // max-width: 280px;
     text-align: center;
 
     counter-reset: item;
 
-    @include mq(tablet) {
-      max-width: 100%;
-    }
+    // @include mq(tablet) {
+    //   max-width: 100%;
+    // }
   }
 
   &__item {
     position: relative;
-
     margin-bottom: 30px;
+    max-width: 320px;
+
     text-align: start;
 
     background-color: var(--white-bg);
@@ -156,6 +157,9 @@
   &__btn {
     margin: 0 auto;
     line-height: 20px;
+    @include mq(desktop){
+      margin-top: 50px;
+    }
   }
 
   .projects-slider-js {
