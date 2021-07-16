@@ -1,4 +1,6 @@
 .hero {
+  padding-top: 0;
+  &__wrapper{
   padding-top: 46px;
   padding-bottom: 80px;
 
@@ -7,17 +9,16 @@
   background-repeat: no-repeat;
   background-size: cover, auto;
   background-position: center, top right;
-
+  // overflow: hidden;
   background-color: var(--yellow-bg);
-  background-image: linear-gradient(rgba(var(--grey-bg-rgb),.8),rgba(var(--grey-bg-rgb),.8)),
+  background-image: linear-gradient(rgba(var(--grey-bg-rgb), 0.8), rgba(var(--grey-bg-rgb), 0.8)),
     url('../images/main/hero/boy_sm.png');
-
 
   @include mq(tablet) {
     padding-top: 70px;
     padding-bottom: 93px;
 
-    background-image: linear-gradient(rgba(var(--grey-bg-rgb),.8),rgba(var(--grey-bg-rgb),.8)),
+    background-image: linear-gradient(rgba(var(--grey-bg-rgb), 0.8), rgba(var(--grey-bg-rgb), 0.8)),
       url('../images/main/hero/boy_md.png');
   }
 
@@ -38,8 +39,9 @@
         linear-gradient(to right, var(--yellow-bg) 76%, var(--white-bg) 76%);
     }
   }
+}
 
-  &__wrapper {
+  &__text-wrapper {
     margin-bottom: 24px;
     max-width: 507px;
     @include mq(tablet) {

@@ -1,4 +1,7 @@
 .hero {
+  padding-top: 0;
+
+  &__wrapper{
   padding-top: 46px;
   padding-bottom: 80px;
 
@@ -32,8 +35,9 @@
         url('../images/contacts/hero/bg_lg.svg');
     }
   }
+}
 
-  &__wrapper {
+  &__text-wrapper {
     margin-bottom: 52px;
     max-width: 570px;
 

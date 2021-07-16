@@ -1,8 +1,9 @@
 {% set hero = hero %} {% set contactsHero = hero.contacts %}
 
-<section class="hero">
+<section class="section hero">
+    <div class="hero__wrapper">
     <div class="container">
-        <div class="hero__wrapper">
+        <div class="hero__text-wrapper">
      
             <p class="text-label hero__label">{{contactsHero.text_label}}</p>
             <h1 class="hero__title">{{contactsHero.title}}
@@ -12,4 +13,6 @@
         </div>
         <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
     </div>
+    </div>
+    {% include 'components/branches.html' %}
 </section>

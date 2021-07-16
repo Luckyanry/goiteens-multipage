@@ -7,11 +7,16 @@
       background-size: auto;
     background-position: top 44% right;
       background-image: url('../images/contacts/contacts/bg-students_lg.png');
+
+      @include mq(retina) {
+        background-size: 358px;
+        background-image: url('../images/contacts/contacts/bg-students_lg@2x.png');
     }
+  }
+    
     @include mq(desktop) {
       padding-right: 284px;
     }
-
   }
 
   &:before {

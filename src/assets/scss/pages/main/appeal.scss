@@ -45,6 +45,9 @@
         height: 774px;
         background-size: contain;
         background-image: url('../images/main/appeal/girl_lg.png');
+        @include mq(retina) {
+          background-image: url('../images/main/appeal/girl_lg@2x.png');
+        }
       }
     }
   }

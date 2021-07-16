@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
 
     background-position: top 45% left 50%;
-    background-image: url(../images/main/awards/bg-line.png),
+    background-image: url("../images/components/awards/bg-line.png"),
       linear-gradient(
         to top,
         var(--yellow-bg),
@@ -84,5 +84,9 @@
 
   &__img {
     margin: auto;
+  }
+
+  &__contacts{
+    padding-bottom: 0;
   }
 }
