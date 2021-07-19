@@ -31,7 +31,7 @@
 
     background-color: var(--white-bg);
     border-radius: var(--border-radius);
-    box-shadow: 2px 8px 8px #5c2e9114, 2px 2px 4px #5c2e913d;
+    box-shadow: var(--slider-shadow);
 
     counter-increment: item;
 
@@ -41,7 +41,6 @@
       max-width: 370px;
       margin-bottom: 0;
       padding: 40px;
-      box-shadow: var(--block-shadow);
     }
 
     &::before {
@@ -92,10 +91,6 @@
   &__item-title {
     margin-bottom: 20px;
     padding-right: 15px;
-
-    // @include mq(desktop) {
-    //   margin-bottom: 8px;
-    // }
   }
  
   &__item-description,

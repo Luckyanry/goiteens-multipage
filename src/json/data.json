@@ -13,30 +13,30 @@
     "tw_image": "assets/images/twitter.jpg",
 
     "main": {
-      "url": "",
-      "title": "Goiteens",
+      "url": "index.html",
+      "title": "GoITeens",
       "style": "main"
     },
     "programs": {
       "url": "programs.html",
-      "title": "Goiteens programs",
+      "title": "Програми GoITeens",
       "style": "program-page",
       "footer": "transparent"
     },
     "about": {
       "url": "about.html",
-      "title": "About Goiteens",
+      "title": "Про GoITeens",
       "style": "about-page",
       "footer": "transparent"
     },
     "testimonials": {
       "url": "testimonials.html",
-      "title": "Goiteens student results",
+      "title": "Результати учнів GoITeens",
       "style": "testimonials-page"
     },
     "contacts": {
       "url": "contact-page.html",
-      "title": "Goiteens contacts",
+      "title": "Контакти GoITeens",
       "style": "contact-page"
     }
   },
