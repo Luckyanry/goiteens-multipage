@@ -13,9 +13,6 @@
       background-image: url('../images/components/triangle-white-1_sm.svg'),
         url('../images/components/triangle-white-2_sm.svg');
       
-      // background-image: url('../images/components/triangle-white-1_sm.svg'),
-      //   url('../images/components/triangle-white-2_sm.svg'),
-      //   linear-gradient(to bottom, var(--secondary-accent-cl), var(--secondary-accent-cl) );
       background-repeat: no-repeat, no-repeat;
       background-position: top 14% right, top 50% right;
     }
@@ -65,10 +62,14 @@
 
   &__title {
     margin-bottom: 24px;
-
     font-size: 17px;
-
     color: var(--primary-accent-cl);
+    
+    @include mq(desktop) {
+      margin-bottom: 24px;
+      font-size: 17px;
+      color: var(--primary-accent-cl);
+    }
   }
 
   &__content {

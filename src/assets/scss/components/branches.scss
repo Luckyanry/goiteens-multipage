@@ -1,12 +1,13 @@
 .branches {
-  margin-top: -30px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 6;
 
-  @include mq(desktop) {
-    margin-top: -50px;
-  }
-  &__wrapper {
-    display: flex;
-    justify-content: center;
+  @include mq(tablet){
+    bottom: 64px;
   }
 
   &__list {

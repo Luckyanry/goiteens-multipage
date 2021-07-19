@@ -1,13 +1,15 @@
 .hero {
+  position: relative;
   padding-top: 86px;
   padding-bottom: 86px;
+ overflow: hidden;
   
-  background-repeat: no-repeat;
-  background-size: cover, cover;
-  background-position: center, bottom center;
+  // background-repeat: no-repeat;
+  // background-size: cover, cover;
+  // background-position: center, bottom center;
 
-  background-image: linear-gradient(rgba($grey-bg-rgb,.8),rgba($grey-bg-rgb,.8)),
-    url('../images/programs/hero/children_md.png');
+  // background-image: linear-gradient(rgba($grey-bg-rgb,.8),rgba($grey-bg-rgb,.8)),
+  //   url('../images/programs/hero/children_md.png');
 
   @include mq(tablet) {
    padding-top: 102px; 
@@ -18,23 +20,72 @@
   @include mq(desktop) {
     padding-top: 132px; 
     padding-bottom: 281px;
-  
+    background-repeat: no-repeat;
     background-color: var(--yellow-bg);
-    background-size: auto, 100% 419px, 660px 651px, 1060px auto;
-    background-position: bottom 72px left 58%, bottom -139px center, top 60px right 20px,
-    top -150px right -224px;
-    background-image: url('../images/programs/hero/bg-line1_lg.svg'),
-      url('../images/programs/hero/bg-bottom_lg.png'),
-      url('../images/programs/hero/children-decor_lg.png'),
-      url('../images/programs/hero/bg-elips_lg.png');
+    // background-size: auto, 100% 419px;
+    // background-position: bottom 72px left 58%, bottom -139px center;
+    // background-image: url('../images/programs/hero/bg-line1_lg.svg'),
+    //   url('../images/programs/hero/bg-bottom_lg.png');
+     
+    
+    // background-size: auto, 100% 419px, 1060px auto;
+    // background-position: bottom 72px left 58%, bottom -139px center, top -150px right -224px;
+    // background-image: url('../images/programs/hero/bg-line1_lg.svg'),
+    //   url('../images/programs/hero/bg-bottom_lg.png'),
+     
+    //   url('../images/programs/hero/bg-elips_lg.png');
 
-    @include mq(retina) {
-      background-image: url('../images/programs/hero/bg-line1_lg.svg'),
-        url('../images/programs/hero/bg-bottom_lg.png'),
-        url('../images/programs/hero/children-decor_lg@2x.png'),
-        url('../images/programs/hero/bg-elips_lg.png');
-    }
+    // @include mq(retina) {
+    //   background-image: url('../images/programs/hero/bg-line1_lg.svg'),
+    //     url('../images/programs/hero/bg-bottom_lg.png'),
+    //     url('../images/programs/hero/children-decor_lg@2x.png'),
+    //     url('../images/programs/hero/bg-elips_lg.png');
+    // }
   }
+  &__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 505px;
+    z-index: 1;
+    object-fit: cover;
+
+    @include mq(desktop){
+      top: -20px;
+      right: 0px;
+      left: auto;
+      transform: none;
+      width: 100%;
+      height: 862px;
+    
+    
+    }
+
+  
+   
+  }
+
+  &__image-wrapper {
+
+    @include mq(notDesktop){
+      &::before {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: rgba($grey-bg-rgb, 0.8);
+      }
+
+    }
+   
+  }
+
 
   &__title {
     margin-bottom: 52px;
@@ -54,6 +105,11 @@
         color: var(--secondary-accent-cl);
       }
     }
+  }
+
+  &__title-wrapper{
+    position: relative;
+    z-index: 50;
   }
 
   &__title-pseudo {
