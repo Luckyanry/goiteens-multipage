@@ -12,6 +12,10 @@ $('.awards-slider-js').slick({
   cssEase: 'linear',
   responsive: [
     {
+      breakpoint: 200,
+      settings: 'unslick',
+    },
+    {
       breakpoint: 767,
       settings: {
         slidesToShow: 2,

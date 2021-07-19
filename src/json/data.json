@@ -13,29 +13,29 @@
     "tw_image": "assets/images/twitter.jpg",
 
     "main": {
-      "url":"",
+      "url": "",
       "title": "Goiteens",
       "style": "main"
     },
     "programs": {
-      "url":"programs.html",
+      "url": "programs.html",
       "title": "Goiteens programs",
       "style": "program-page",
       "footer": "transparent"
     },
     "about": {
-      "url":"about.html",
+      "url": "about.html",
       "title": "About Goiteens",
       "style": "about-page",
       "footer": "transparent"
     },
     "testimonials": {
-      "url":"testimonials.html",
+      "url": "testimonials.html",
       "title": "Goiteens student results",
       "style": "testimonials-page"
     },
     "contacts": {
-      "url":"contact-page.html",
+      "url": "contact-page.html",
       "title": "Goiteens contacts",
       "style": "contact-page"
     }
@@ -249,15 +249,15 @@
       "items": [
         {
           "numb": "+38 093 343 21 27",
-          "href":"+380933432127"
+          "href": "+380933432127"
         },
         {
           "numb": "+38 067 326 95 92",
-          "href":"+380673269592"
+          "href": "+380673269592"
         },
         {
           "numb": "+38 050 366 17 77",
-          "href":"+380503661777"
+          "href": "+380503661777"
         }
       ]
     }
@@ -516,7 +516,7 @@
       {
         "id": "1",
         "title": "Сайт караоке-бару Smile Art Bar",
-        "description": " «Власниця закладу Наталія Ковальчук виступила у якості реального замовника для груп Front-end #3 і Front-end #5. Наші студенти впродовж 3-х тижнів працювали над розробкою одночасно привабливого і функціонального сайту, і вже сьогодні готові запускати його в продакшн.»",
+        "description": " «Власниця закладу Наталія Ковальчук виступила у якості реального замовника для груп Front-end #3 і Front-end #5. Наші студенти впродовж 3-х тижнів працювали над проєктом.»",
         "link": "http://karaoke-smile-art.com.ua/"
       },
       {
@@ -527,11 +527,82 @@
       },
       {
         "id": "3",
-        "title": "Меблі РЕМСЕРВІС",
-        "description": "«Сайт компанії з ремонту та реставрації меблів. На сайті представлений увесь спектр послуг компанії, приклади реалізованих робіт, конкурентні переваги та контакти для оформлення замовлення.»",
-        "link": "#"
+        "title": "Центр сомнотерапії Оксани Волошиної",
+        "description": "« Центр Оксани Волошиної допомагає людям віднайти та налаштувати правильний сон. Тому учні вирішили зробили сайт саме для них, адже розуміють їхню важливу роль в суспільстві»",
+        "link": "https://son.lviv.ua"
+      },
+      {
+        "id": "4",
+        "title": "Zmeika2000",
+        "description": "« Це вдосконалена версія класичної гри &quot;Змійка&quot;. Гра написана на чистому JavaScript і має не тільки оновлений дизайн, а ще й передбачає бонуси для гравця.»",
+        "link": "https://game-snake2000-encoders-proj.netlify.app/"
+      },
+      {
+        "id": "5",
+        "title": "Sublime",
+        "description": "« Сайт компанії, яка створює ігровий контент і пропонує сервіси у game індустрії. Також сайт можна використовувати для продажу ігрових акаунтів.»",
+        "link": "https://vladyefimchuk.github.io/game_of_teens_lviv_fr2/"
+      },
+      {
+        "id": "6",
+        "title": "Travel Website",
+        "description": "« Сайт-візитка туристичного магазину, на якому розміщені товари для подорожей – валізи, намети, обладнання для фото- і відео-зйомки.»",
+        "link": "https://vladyefimchuk.github.io/game_of_teens_fr4_lviv/"
+      },
+      {
+        "id": "7",
+        "title": "Front-End Helper",
+        "students": {
+          "title": " розробка учнів&#58;",
+          "items": [
+            {
+              "name": "Михайло Даніш",
+              "age": "15&nbsp;років"
+            },
+            {
+              "name": "Макар Луцький",
+              "age": "13&nbsp;років"
+            },
+            {
+              "name": "Богдан Ковальський",
+              "age": "14&nbsp;років"
+            }
+          ]
+        },
+        "link": "https://front-end-helper.netlify.app/"
+      },
+      {
+        "id": "8",
+        "title": "Sypher Machine",
+        "students": {
+          "title": "розробка учня&#58;",
+          "items": [
+            {
+              "name": "Андрій Артеменко",
+              "age": "15&nbsp;років"
+            }
+          ]
+        },
+        "link": "https://artandrey.github.io/confidence-inf/shmorze2/"
+      },
+      {
+        "id": "9",
+        "title": "Piano",
+        "students": {
+          "title": "розробка учнів&#58;",
+          "items": [
+            {
+              "name": "Андрій Артеменко",
+              "age": "15&nbsp;років"
+            },
+            {
+              "name": "Андрій Копиленко",
+              "age": "15&nbsp;років"
+            }
+          ]
+        },
+        "link": "https://pianowebapp.github.io/piano/"
       }
-     
     ]
   },
   "skills": {

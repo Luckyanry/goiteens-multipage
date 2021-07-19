@@ -1,0 +1,12 @@
+.contacts-awards {
+  padding-bottom: 0;
+
+  .awards__wrapper {
+    @include mq(mobile-only) {
+      padding-top: 30px;
+      padding-bottom: 60px;
+
+      background-color: var(--yellow-bg);
+    }
+  }
+}

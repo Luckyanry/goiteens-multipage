@@ -1,4 +1,7 @@
 .advantages {
+  @include mq(mobile-only){
+    padding-bottom: 60px;
+  }
   &__title {
     max-width: 900px;
   }

@@ -9,7 +9,7 @@
   }
 
   &__cont {
-    margin-bottom: 48px;
+    
     padding: 68px 0;
 
     @include mq(mobile-only) {
@@ -20,6 +20,7 @@
       background-position: top 14% right, top 50% right;
     }
     @include mq(tablet) {
+      margin-bottom: 48px;
       padding: 0;
     }
     @include mq(desktop) {
@@ -77,8 +78,10 @@
   }
 
   &__list {
+    display: none;
     justify-content: center;
     @include mq(tablet) {
+      display: flex;
       --grid-item: 3;
     }
   }

@@ -14,14 +14,12 @@
   &__list {
     margin-left: auto;
     margin-right: auto;
-    // max-width: 280px;
+
     text-align: center;
 
     counter-reset: item;
 
-    // @include mq(tablet) {
-    //   max-width: 100%;
-    // }
+ 
   }
 
   &__item {
@@ -37,12 +35,10 @@
 
     counter-increment: item;
 
-    @include mq(tablet) {
-      max-width: 298px;
-    }
+   
 
     @include mq(desktop) {
-      max-width: 371px;
+      max-width: 370px;
       margin-bottom: 0;
       padding: 40px;
       box-shadow: var(--block-shadow);
@@ -51,7 +47,7 @@
     &::before {
       content: 'project \0023'counter(item);
       position: absolute;
-      top: 52px;
+      top: 15px;
       left: 0;
       padding-top: 6px;
       padding-bottom: 6px;
@@ -62,6 +58,9 @@
       text-transform: uppercase;
       color: var(--white-text-cl);
       background-color: var(--dark-bg);
+      @include mq(desktop) {
+        top:52px;
+      }
     }
   }
 
@@ -80,29 +79,35 @@
     padding-right: 20px;
 
     padding-bottom: 32px;
-    min-height: 484px;
+    min-height: 380px;
 
     @include mq(tablet) {
-      min-height: 413px;
+      min-height: 340px;
     }
     @include mq(desktop) {
       padding: 0;
-      min-height: 348px;
+      min-height: 280px;
     }
   }
   &__item-title {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     padding-right: 15px;
 
-    @include mq(desktop) {
-      margin-bottom: 8px;
-    }
+    // @include mq(desktop) {
+    //   margin-bottom: 8px;
+    // }
   }
-
-  &__item-description {
+ 
+  &__item-description,
+  &__item-list,
+  &__item-label {
     margin-bottom: 20px;
   }
-
+ &__item-students{
+   &:not(:last-child){
+     margin-bottom: 10px;
+   }
+ }
   &__link {
     position: relative;
     display: inline-block;
@@ -157,10 +162,10 @@
   &__btn {
     margin: 0 auto;
     line-height: 20px;
-    @include mq(desktop) {
-      margin-top: 50px;
-    }
+ 
   }
+
+
 
   .projects-slider-js {
     --dots-color: var(--secondary-accent-cl);
