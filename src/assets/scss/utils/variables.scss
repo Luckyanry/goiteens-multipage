@@ -4,6 +4,9 @@
 }
 
    /* GRADIENT COLORS */
+   $grey-bg-rgb:rgb(80, 76, 92);
+  //  $yellow-bg: #fec830;
+   $dark-gradient-rgb: rgb(0, 0, 0);
 
 
 :root {
@@ -24,7 +27,6 @@
     /* BACKGROUND COLORS */
     --white-bg: #ffffff;
     --grey-bg: #504c5c;
-    --grey-bg-rgb: #{HexToRGB(#504c5c)};
     --dark-bg: #04102f;
     --yellow-bg: #fec830;
     --yellow-bg-rgb: #{HexToRGB(#fec830)};

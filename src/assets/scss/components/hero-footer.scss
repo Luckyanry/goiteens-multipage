@@ -10,8 +10,8 @@
   background-position: center;
  
   background-image: linear-gradient(
-      rgba(var(--dark-gradient-rgb), 0.7),
-      rgba(var(--dark-gradient-rgb), 0.7)),
+      rgba($dark-gradient-rgb, 0.7),
+      rgba($dark-gradient-rgb, 0.7)),
     url("../images/hero-footer/bg_sm.jpg");
 
   @include mq(tablet) {

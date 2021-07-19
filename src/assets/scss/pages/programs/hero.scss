@@ -6,7 +6,7 @@
   background-size: cover, cover;
   background-position: center, bottom center;
 
-  background-image: linear-gradient(rgba(var(--grey-bg-rgb),.8),rgba(var(--grey-bg-rgb),.8)),
+  background-image: linear-gradient(rgba($grey-bg-rgb,.8),rgba($grey-bg-rgb,.8)),
     url('../images/programs/hero/children_md.png');
 
   @include mq(tablet) {

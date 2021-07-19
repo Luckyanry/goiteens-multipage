@@ -11,14 +11,14 @@
   background-position: center, top right;
   // overflow: hidden;
   background-color: var(--yellow-bg);
-  background-image: linear-gradient(rgba(var(--grey-bg-rgb), 0.8), rgba(var(--grey-bg-rgb), 0.8)),
+  background-image: linear-gradient(rgba($grey-bg-rgb, 0.8), rgba($grey-bg-rgb, 0.8)),
     url('../images/main/hero/boy_sm.png');
 
   @include mq(tablet) {
     padding-top: 70px;
     padding-bottom: 93px;
 
-    background-image: linear-gradient(rgba(var(--grey-bg-rgb), 0.8), rgba(var(--grey-bg-rgb), 0.8)),
+    background-image: linear-gradient(rgba($grey-bg-rgb, 0.8), rgba($grey-bg-rgb, 0.8)),
       url('../images/main/hero/boy_md.png');
   }
 
