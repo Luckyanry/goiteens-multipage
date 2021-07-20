@@ -1,52 +1,75 @@
+@import '../components/custom-scroll.scss';
+
 .terms-modal {
-  position: absolute;
   display: flex;
   flex-direction: column;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 80%;
+  transform: translate(-50%, -50%);
+  width: 90%;
   max-height: 90%;
+  padding: 40px 15px;
+
   background-color: var(--white-bg);
-  padding: 40px;
-  text-align: center;
-  overflow: scroll;
-  transition: transform 250ms linear 250ms;
+  border-radius: 6px;
+
+  visibility: hidden;
+  overflow: hidden;
+  pointer-events: none;
+  transition: all 250ms linear;
+  border-radius: 6px;
+
+  @include mq(tablet) {
+    width: 80%;
+    max-height: 90%;
+    padding: 40px;
+  }
+
+  .backdrop_terms.is-hidden & {
+    transition: all 250ms linear 0s;
+  }
+
+  &__content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    p {
+      margin: 0;
+      @include fonts(14px, 400, 1.6);
+      word-break: break-word;
+
+      @include mq(tablet) {
+        font-size: 16px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--secondary-accent-cl);
+    }
+  }
 
   &__title {
     margin-bottom: 20px;
     @include fonts(18px, 700, 1.2);
-   
+    text-transform: uppercase;
+    text-align: center;
+
     @include mq(tablet) {
       font-size: 24px;
     }
   }
 
-  &__content p {
-    @include fonts(14px, 400, 1.4);
+  &__subtitle {
+    @include fonts(16px, 700, 1.4);
+    text-align: center;
 
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     @include mq(tablet) {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
-}
-
-.backdrop_terms {
-  transition: all 250ms linear 0ms;
-}
-
-.backdrop_terms.is-terms-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: all 250ms linear 250ms;
-}
-
-.backdrop_terms.is-terms-hidden .terms-modal {
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 250ms linear 0ms;
 }
