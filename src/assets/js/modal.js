@@ -1,26 +1,29 @@
-const refs1 = {
+const refs = {
   openTermsBtn: [...document.querySelectorAll('[data-terms]')],
   closeTermsBtn: [...document.querySelectorAll('[data-terms-close]')],
   termsModal: [...document.querySelectorAll('[data-termsmodal]')],
+  body: document.querySelector('body'),
 };
 
-refs1.openTermsBtn.forEach(e => {
+refs.openTermsBtn.forEach(e => {
   e.addEventListener('click', () => {
     e.preventDefault;
-    toggleModal1(e.dataset.terms);
+    toggleModal(e.dataset.terms);
   });
 });
 
-function toggleModal1(currentModal) {
-  refs1.termsModal.forEach(e => {
+function toggleModal(currentModal) {
+  refs.termsModal.forEach(e => {
     if (e.dataset.termsmodal === `${currentModal}`) {
       e.classList.toggle('is-hidden');
     }
+    refs.body.classList.toggle('no-scroll');
   });
 }
 
-refs1.closeTermsBtn.forEach(e => {
+refs.closeTermsBtn.forEach(e => {
   e.addEventListener('click', () => {
     e.closest('.backdrop').classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
   });
 });
