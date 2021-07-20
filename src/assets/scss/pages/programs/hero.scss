@@ -1,38 +1,84 @@
 .hero {
+  position: relative;
   padding-top: 86px;
   padding-bottom: 86px;
-  
-  background-repeat: no-repeat;
-  background-size: cover, cover;
-  background-position: center, bottom center;
-
-  background-image: linear-gradient(rgba(var(--grey-bg-rgb),.8),rgba(var(--grey-bg-rgb),.8)),
-    url('../images/programs/hero/children_md.png');
+  overflow: hidden;
 
   @include mq(tablet) {
-   padding-top: 102px; 
+    padding-top: 102px;
     padding-bottom: 72px;
-    background-size: cover, contain;
   }
 
   @include mq(desktop) {
-    padding-top: 132px; 
+    padding-top: 132px;
     padding-bottom: 281px;
-  
-    background-color: var(--yellow-bg);
-    background-size: auto, 100% 419px, 660px 651px, 1060px auto;
-    background-position: bottom 72px left 58%, bottom -139px center, top 60px right 20px,
-    top -150px right -224px;
-    background-image: url('../images/programs/hero/bg-line1_lg.svg'),
-      url('../images/programs/hero/bg-bottom_lg.png'),
-      url('../images/programs/hero/children-decor_lg.png'),
-      url('../images/programs/hero/bg-elips_lg.png');
 
-    @include mq(retina) {
-      background-image: url('../images/programs/hero/bg-line1_lg.svg'),
-        url('../images/programs/hero/bg-bottom_lg.png'),
-        url('../images/programs/hero/children-decor_lg@2x.png'),
-        url('../images/programs/hero/bg-elips_lg.png');
+    background-color: var(--yellow-bg);
+
+  }
+
+  &::after {
+    content: '';
+    @include mq(desktop) {
+      position: absolute;
+      bottom: 78px;
+      width: 100%;
+      height: 222px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../images/programs/hero/bg-line_lg.svg");
+      z-index: 9;
+
+    }
+
+    @media (min-width: 1700px){
+     
+     
+      height: 255px;
+    }
+  }
+  &__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 505px;
+    z-index: 1;
+    object-fit: cover;
+    @include mq(tablet) {
+      height: 558px;
+    }
+
+    @include mq(desktop) {
+      bottom: -15%;
+      right: 0px;
+      left: auto;
+      transform: none;
+      width: 100%;
+      height: 1065px;
+    }
+
+    @media (min-width: 1700px){
+      bottom: -20%;
+      height: 1148px;
+    }
+  }
+
+  &__image-wrapper {
+    @include mq(notDesktop) {
+      &::before {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: rgba($grey-bg-rgb, 0.8);
+      }
     }
   }
 
@@ -54,6 +100,11 @@
         color: var(--secondary-accent-cl);
       }
     }
+  }
+
+  &__title-wrapper {
+    position: relative;
+    z-index: 9;
   }
 
   &__title-pseudo {

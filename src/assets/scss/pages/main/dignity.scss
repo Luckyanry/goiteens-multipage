@@ -1,4 +1,8 @@
 .dignity {
+
+  @include mq(mobile-only) {
+   padding-top: 60px;
+  }
   &__list {
     position: relative;
     flex-direction: column;
@@ -37,6 +41,11 @@
     border-radius: var(--border-radius);
     box-shadow: var(--block-shadow);
     background-color: var(--white-bg);
+
+    @include mq(mobile-only){
+      max-width: 320px;
+      align-self: center;
+    }
   }
 
   &__img {

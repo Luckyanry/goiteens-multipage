@@ -3,18 +3,21 @@
 
   &__wrapper {
     padding-bottom: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
 
-    background-position: top 45% left 50%;
-    background-image: url("../images/components/awards/bg-line.png"),
-      linear-gradient(
-        to top,
-        var(--yellow-bg),
-        var(--yellow-bg) 85%,
-        var(--white-bg) 85%,
-        var(--white-bg) 
-      );
+    @include mq(tablet) {
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      background-position: top 45% left 50%;
+      background-image: url('../images/components/awards/bg-line.png'),
+        linear-gradient(
+          to top,
+          var(--yellow-bg),
+          var(--yellow-bg) 85%,
+          var(--white-bg) 85%,
+          var(--white-bg)
+        );
+    }
 
     @include mq(desktop) {
       padding-bottom: 52px;
@@ -25,9 +28,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 280px;
-   
+
     --dots-color: var(--secondary-accent-cl);
-   
 
     @include mq(tablet) {
       max-width: 640px;
@@ -35,7 +37,7 @@
 
     @include mq(desktop) {
       display: flex;
-      
+
       margin-left: -30px;
       margin-top: -30px;
       margin-right: 0;
@@ -45,19 +47,26 @@
       max-width: 100%;
       flex-wrap: wrap;
     }
+
+    .slick-track {
+      margin-bottom: 30px;
+    }
   }
 
   &__item {
-    margin-bottom: 30px;
-    @include mq(tablet){
+    @include mq(mobile-only) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @include mq(tablet) {
       margin-left: 10px;
       margin-right: 10px;
       max-width: 289px;
-}
+    }
 
     @include mq(desktop) {
       margin-top: 30px;
-      margin-bottom: 0;
       margin-left: 30px;
       margin-right: 0;
       max-width: 100%;
@@ -74,9 +83,16 @@
     padding: 32px;
     margin-bottom: 40px;
     background-color: var(--white-bg);
+   
     box-shadow: var(--block-shadow);
     border-radius: var(--border-radius);
 
+
+
+    @include mq(tablet-only) {
+      box-shadow: var(--slider-shadow);
+
+    }
     @include mq(tablet) {
       height: 275px;
     }
@@ -84,9 +100,5 @@
 
   &__img {
     margin: auto;
-  }
-
-  &__contacts{
-    padding-bottom: 0;
   }
 }

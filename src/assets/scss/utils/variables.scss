@@ -4,6 +4,9 @@
 }
 
    /* GRADIENT COLORS */
+   $grey-bg-rgb:rgb(80, 76, 92);
+  //  $yellow-bg: #fec830;
+   $dark-gradient-rgb: rgb(0, 0, 0);
 
 
 :root {
@@ -24,7 +27,6 @@
     /* BACKGROUND COLORS */
     --white-bg: #ffffff;
     --grey-bg: #504c5c;
-    --grey-bg-rgb: #{HexToRGB(#504c5c)};
     --dark-bg: #04102f;
     --yellow-bg: #fec830;
     --yellow-bg-rgb: #{HexToRGB(#fec830)};
@@ -52,6 +54,8 @@
 
     --btn-yellow-shadow: 0px 1px 1px #d7a823;
     --block-shadow: 0px 1px 2px rgba(92, 46, 145, 0.08), 10px 10px 40px rgba(92, 46, 145, 0.24);
+
+    --slider-shadow:2px 8px 8px rgba(92, 46, 145, 0.078), 2px 2px 10px rgba(92, 46, 145, 0.239);
 
     --dark-gradient-rgb: #{HexToRGB(#000000)};
   }

@@ -31,9 +31,9 @@
 <meta name="msapplication-TileColor" content="#da532c" />
 <meta name="theme-color" content="#ffffff" />
 
-<title>Goiteens programs</title>
+<title>Програми GoITeens</title>
 
-<link rel="canonical" href="https://goiteens.ua/programs.html">
+<link rel="canonical" href="https://goiteens.ua/programs/">
 
 <link rel="stylesheet" href="assets/css/program-page.css" />
 
@@ -48,7 +48,7 @@
 <!-- OG markup -->
 
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://goiteens.ua/programs.html" />
+<meta property="og:url" content="https://goiteens.ua/programs/" />
 <meta property="og:image" content="assets/images/og-img.jpg" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="1200" />
@@ -58,9 +58,10 @@
 <!-- OG markup for twitter Summary Card with Large Image -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="GoITeens — мережа IT-академій для дітей та підлітків." />
-<meta name="twitter:title" content="GoITeens — мережа IT-академій для дітей та підлітків." />
+<meta name="twitter:title" content="Програми GoITeens" />
 <meta name="twitter:description" content="Тут здобувають навички та професії майбутнього:  ▸програмування для дітей MineCraft та Scratch ▸створення сайтів та додатків (HTML, CSS, JavaScript) ▸програмування Phyton ▸розробка ігор на Unity та C# ▸3D-дизайна та Digital Art ▸робототехніка та Arduino" />
 <meta name="twitter:image:src" content="assets/images/twitter.jpg" />
+
 
   </head>
 
@@ -162,7 +163,39 @@
 <main>
    
 <section class="hero">
-    <div class="container">
+  <picture class="hero__image-wrapper">
+    <source
+    srcset="
+    ./assets/images/programs/hero/children_lg.webp    1x,
+    ./assets/images/programs/hero/children_lg@2x.webp 2x
+    "
+    media="(min-width: 1280px)"
+    type="image/webp"
+  />
+    <source
+    srcset="./assets/images/programs/hero/children_lg.png 1x, 
+    ./assets/images/programs/hero/children_lg@2x.png 2x"
+    media="(min-width: 1280px)"
+    type="image/png"
+  />
+
+  <source
+  srcset="
+  ./assets/images/programs/hero/children_md.webp    1x,
+  ./assets/images/programs/hero/children_md@2x.webp 2x
+  "
+  media="(max-width: 1279px)"
+  type="image/webp"
+/>
+  <source
+  srcset="./assets/images/programs/hero/children_md@2x.png 2x"
+  media="(max-width: 1279px)"
+  type="image/png"
+/>
+    <img class="hero__image" src="./assets/images/programs/hero/children_md.png" alt="Фото дітей за навчанням"
+    width="609" height="558">
+</picture>
+    <div class="container hero__title-wrapper">
         <h1 class="hero__title">
        В IT-школі для дітей GoITeens кожен <span>від 8 до 16 років</span> знайде чим хоче займатись,
        <span class="hero__title-pseudo">а ми допоможемо досягти мети</span>
@@ -172,7 +205,7 @@
   </div>
 </section>
  
-<section class="programs section">
+<section class="programs ">
   <div class="container">
     <ul class="programs__list list grid">
       

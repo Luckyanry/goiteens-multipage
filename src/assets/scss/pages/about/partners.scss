@@ -1,5 +1,12 @@
 .partners {
- 
+  padding-top: 60px;
+
+  @include mq(tablet) {
+    padding-top: 68px;
+  }
+  @include mq(desktop) {
+    padding-top: 100px;
+  }
 
   &__list {
     display: flex;

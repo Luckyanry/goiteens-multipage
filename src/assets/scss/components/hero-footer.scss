@@ -10,19 +10,31 @@
   background-position: center;
  
   background-image: linear-gradient(
-      rgba(var(--dark-gradient-rgb), 0.7),
-      rgba(var(--dark-gradient-rgb), 0.7)),
+      rgba($dark-gradient-rgb, 0.7),
+      rgba($dark-gradient-rgb, 0.7)),
     url("../images/hero-footer/bg_sm.jpg");
+    @include mq(retina){
+      background-image: linear-gradient(
+        rgba($dark-gradient-rgb, 0.7),
+        rgba($dark-gradient-rgb, 0.7)),
+      url("../images/hero-footer/bg_sm@2x.jpg");
+    }
 
   @include mq(tablet) {
     padding-top: 72px;
     padding-bottom: 294px;
     font-size: 36px;
     background-image: linear-gradient(
-        rgba(var(--dark-gradient-rgb), 0.7),
-        rgba(var(--dark-gradient-rgb), 0.7)
+        rgba($dark-gradient-rgb, 0.7),
+        rgba($dark-gradient-rgb, 0.7)
       ),
       url("../images/hero-footer/bg_lg.jpg");
+      @include mq(retina){
+        background-image: linear-gradient(
+          rgba($dark-gradient-rgb, 0.7),
+          rgba($dark-gradient-rgb, 0.7)),
+        url("../images/hero-footer/bg_lg@2x.jpg");
+      }
   }
   @include mq(desktop) {
     padding-bottom: 190px;

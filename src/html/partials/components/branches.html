@@ -1,13 +1,13 @@
 {% set branches = branches %}
 <div class="branches">
   <div class="container">
-    <div class="branches__wrapper">
+  
       <ul class="grid branches__list list">
         {% for item in branches %}
         <li class="grid__item branches__item  {{item.id}} ">{{item.text}}</li>
         {% endfor %}
       </ul>
-    </div>
+  
   </div>
 </div>
 

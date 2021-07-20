@@ -1,14 +1,24 @@
 .programs {
+  padding-top: 60px;
   padding-bottom: 60px;
   @include mq(tablet) {
     --grid-item: 2;
+    padding-top: 68px;
     padding-bottom: 68px;
 
   }
   @include mq(desktop) {
+    position: relative;
     --grid-item: 3;
-    margin-top: -200px;
+    margin-top: -240px;
+    padding-top: 66px;
     padding-bottom: 132px;
+    z-index: 50;
+   
+  }
+
+  @media (min-width: 1700px){
+    margin-top: -200px;
   }
 
   &__list {

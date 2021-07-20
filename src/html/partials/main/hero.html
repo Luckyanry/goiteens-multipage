@@ -1,15 +1,69 @@
 {% set hero = hero %} {% set mainHero = hero.main %}
 
-<section class="section hero">
-    <div class="hero__wrapper">
-    <div class="container">
-        <div class="hero__text-wrapper">
-            <p class="text-label hero__label">{{mainHero.text_label}}</p>
-            <h1 class="hero__title">{{mainHero.title}}</h1>
-            <p class="hero__text ">{{mainHero.description}}</p>
-        </div>
-        <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
+<section class="hero">
+  <div class="hero__wrapper">
+    <picture class="hero__image-wrapper">
+      <source
+        srcset="
+          ./assets/images/main/hero/boy_lg.webp    1x,
+          ./assets/images/main/hero/boy_lg@2x.webp 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./assets/images/main/hero/boy_lg.png 1x, ./assets/images/main/hero/boy_lg@2x.png 2x"
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+
+  
+      <source
+        srcset="
+          ./assets/images/main/hero/boy_md.webp    1x,
+          ./assets/images/main/hero/boy_md@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+    
+      <source
+        srcset="./assets/images/main/hero/boy_md.png 1x, 
+        ./assets/images/main/hero/boy_md@2x.png 2x"
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+    
+      <source
+        srcset="
+          ./assets/images/main/hero/boy_sm.webp    1x,
+          ./assets/images/main/hero/boy_sm@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./assets/images/main/hero/boy_sm@2x.png 2x"
+        media="(max-width: 767px)"
+        type="image/png"
+      />
+      <img
+        class="hero__image"
+        src="./assets/images/main/hero/boy_sm.png"
+        alt="Фото хлопчика, вивчаючого мови програмування"
+        width="320"
+        height="565"
+        loading="lazy"
+      />
+    </picture>
+    <div class="container hero__title-wrapper">
+      <div class="hero__text-wrapper">
+        <p class="text-label hero__label">{{mainHero.text_label}}</p>
+        <h1 class="hero__title">{{mainHero.title}}</h1>
+        <p class="hero__text">{{mainHero.description}}</p>
+      </div>
+      <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
     </div>
-    </div>
-    {% include 'components/branches.html' %}
+  </div>
+  {% include 'components/branches.html' %}
 </section>
