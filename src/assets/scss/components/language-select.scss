@@ -7,7 +7,7 @@
 
   background-color: var(--secondary-accent-cl);
 
-  box-shadow: 10px 10px 40px rgba(92, 46, 145, 0.24), 0px 1px 2px rgba(92, 46, 145, 0.08);
+  box-shadow: 8px 8px 20px rgba(92, 46, 145, 0.24), 0px 1px 2px rgba(92, 46, 145, 0.08);
   border-radius: 10px;
 
   @include mq(tablet) {
@@ -82,7 +82,7 @@
   color: #ffffff;
 
   background-color: var(--secondary-accent-cl);
-  box-shadow: 10px 10px 40px rgba(92, 46, 145, 0.24), 0px 1px 2px rgba(92, 46, 145, 0.08);
+  box-shadow: 8px 8px 20px rgba(92, 46, 145, 0.24), 0px 1px 2px rgba(92, 46, 145, 0.08);
   border-radius: 10px;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
