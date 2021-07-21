@@ -1,13 +1,21 @@
 {% set programs = programs %}
-<section class="programs ">
+<section class="programs">
   <div class="container">
     <ul class="programs__list list grid">
       {% for item in programs %}
-      <li class="programs__item grid__item program-{{item.id}}">
-        <h3 class="item__title programs__item-title">{{item.title}}</h3>
-        <p class="programs__description">{{item.description}}</p>
-        {% include 'components/program-features.html' %}
-       
+      <li class="programs__item grid__item">
+        <a
+          class="programs__item-link"
+          href="https://course.goiteens.ua/{{item.link}}"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+        >
+          <div class="programs__item-wrapper program-{{item.id}} ">
+            <h3 class="item__title programs__item-title">{{item.title}}</h3>
+            <p class="programs__item-descript">{{item.description}}</p>
+            {% include 'components/program-features.html' %}
+          </div>
+        </a>
       </li>
       {% endfor %}
     </ul>
