@@ -3,16 +3,19 @@
 <section class="winners-project section">
     <div class="container">
   
-        <div class="grid">
-            <iframe class="winners-project__video grid__item" title="відео IT-змагань серед підлітків" src="https://www.youtube.com/embed/ppGpsoegMGQ" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy"></iframe>
+        <div class="winners-project__wrapper grid">
+
+            <div class="winners-project__video-wrap grid__item">
+                <div class="winners-project__video youtube-js" data-embed="ppGpsoegMGQ">
+                    {% include 'components/play-btn.html' %}
+                </div>
+              </div>
 
             <div class="grid__item">
-                <h2 class="section__title">{{winnersProject.title}}</h2>
-                <p class="text-label">{{winnersProject.description}}</p>
-                <p class="text-bold">{{winnersProject.text_1}}</p>
-                <p>{{winnersProject.text_2}}</p>
+                <h2 class="winners-project__title title">{{winnersProject.title}}</h2>
+                <p class="winners-project__descript text-label">{{winnersProject.description}}</p>
+                <p class="winners-project__text text-bold">{{winnersProject.text_how}}</p>
+                <p>{{winnersProject.text_winners}}</p>
             </div>
 
         </div>

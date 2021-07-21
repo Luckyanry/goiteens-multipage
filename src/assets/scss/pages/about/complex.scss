@@ -12,10 +12,16 @@
   }
 
   &__title {
+    margin-bottom: 32px;
     max-width: 480px;
+   
     @include mq(desktop) {
       max-width: 530px;
+     
       margin-bottom: 24px;
+    }
+    span{
+      color: var(--secondary-accent-cl);
     }
   }
 

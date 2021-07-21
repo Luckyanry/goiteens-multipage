@@ -8,14 +8,20 @@
     padding-top: 132px;
   }
 
+  &__title {
+    margin-bottom: 32px;
+    @include mq(desktop) {
+      margin-bottom: 52px;
+    }
+  }
+
   &__cont {
-    
     padding: 68px 0;
 
     @include mq(mobile-only) {
       background-image: url('../images/components/triangle-white-1_sm.svg'),
         url('../images/components/triangle-white-2_sm.svg'),
-        linear-gradient( var(--secondary-accent-cl), var(--secondary-accent-cl));
+        linear-gradient(var(--secondary-accent-cl), var(--secondary-accent-cl));
       background-repeat: no-repeat, no-repeat;
       background-position: top 14% right, top 50% right;
     }
@@ -54,7 +60,7 @@
       border-radius: 12px;
 
       background-image: url('../images/components/triangle-white_lg.svg'),
-        linear-gradient( var(--secondary-accent-cl), var(--secondary-accent-cl));
+        linear-gradient(var(--secondary-accent-cl), var(--secondary-accent-cl));
 
       background-repeat: no-repeat, no-repeat;
       background-position: bottom right, bottom right;
@@ -114,6 +120,4 @@
       }
     }
   }
-
- 
 }

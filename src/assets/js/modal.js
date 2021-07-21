@@ -1,3 +1,5 @@
+
+
 const refs = {
   openTermsBtn: [...document.querySelectorAll('[data-terms]')],
   closeTermsBtn: [...document.querySelectorAll('[data-terms-close]')],
@@ -27,3 +29,5 @@ refs.closeTermsBtn.forEach(e => {
     refs.body.classList.toggle('no-scroll');
   });
 });
+
+

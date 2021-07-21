@@ -1,18 +1,16 @@
 .teachers {
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-  
+
   background-image: url('../images/components/bg-white-bottom.svg'),
     linear-gradient(
       to bottom,
       var(--white-bg) 0,
       var(--white-bg) 30%,
       var(--yellow-bg) 30%,
-      var(--yellow-bg) 
+      var(--yellow-bg)
     );
-
-
 
   &__title {
     margin-bottom: 24px;
@@ -40,6 +38,21 @@
 
     @include mq(desktop) {
       max-width: 270px;
+    }
+  }
+
+  &__img-wrap{
+    position: relative;
+    display: block;
+   
+    &::before{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--border-radius);
+      background: linear-gradient(180deg, rgba( $dark-gradient-rgb, 0.45) 0%, rgba( $dark-gradient-rgb, 0) 100%)
     }
   }
 

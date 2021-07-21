@@ -1,18 +1,15 @@
 {% set partners = partners %} {% set partnersItems = partners.items %}
 <section class="partners section">
-    <div class="container">
-        <h2 class="section__title">{{partners.title}}</h2>
-        <ul class=" list  partners__list">
-            {% for item in partnersItems %}
-            <li class=" partners__item">
-                   <svg width="{{item.width}}" height="{{item.height}}" >
-                <use href="./assets/images/sprite.svg#partner-{{item.id}}" ></use>
-             
-            </svg>
-            
-            </li>
-            {% endfor %}
-          
-        </ul>
-    </div>
+  <div class="container">
+    <h2 class="partners__title title">{{partners.title}}</h2>
+    <ul class="list partners__list">
+      {% for item in partnersItems %}
+      <li class="partners__item">
+        <svg width="{{item.width}}" height="{{item.height}}">
+          <use href="./assets/images/sprite.svg#partner-{{item.id}}"></use>
+        </svg>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
