@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+
 
 var x, i, j, l, ll, selElmnt, a, b, c;
 /* Look for any elements with the class "language-select": */
@@ -81,4 +81,4 @@ function closeAllSelect(elmnt) {
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
 
-})
+

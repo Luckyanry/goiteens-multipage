@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+
 
 const menuBtnRef = document.querySelector('[data-menu-button]');
 const mobileMenuRef = document.querySelector('[data-menu]');
@@ -37,4 +37,4 @@ function setActiveNavLink(items) {
 
 setActiveNavLink(navLinks);
 
-})
+

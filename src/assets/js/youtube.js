@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+
     var youtube = document.querySelectorAll('.youtube-js');
   
     for (var i = 0; i < youtube.length; i++) {
@@ -35,4 +35,3 @@ window.addEventListener('DOMContentLoaded', function () {
         this.appendChild(iframe);
       });
     }
-  });

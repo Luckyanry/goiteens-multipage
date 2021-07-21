@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+
 
 const refs = {
   openTermsBtn: [...document.querySelectorAll('[data-terms]')],
@@ -30,4 +30,4 @@ refs.closeTermsBtn.forEach(e => {
   });
 });
 
-});
+
