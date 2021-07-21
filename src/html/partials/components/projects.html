@@ -72,7 +72,7 @@
         <p class="text-label projects__item-label">{{item.students.title}}</p>
         <ul class="list projects__item-list">
           {% for item in item.students.items %}
-          <li class="projects__item-students">{{item.name}} &#40;&nbsp;{{item.age}}&nbsp;&#41;</li>
+          <li class="projects__item-students">{{item.name}} <span>&#40;{{item.age}}&#41;</span></li>
           {% endfor %}
         </ul>
         {% else %}

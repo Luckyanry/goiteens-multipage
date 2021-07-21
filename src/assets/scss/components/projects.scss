@@ -102,6 +102,9 @@
    &:not(:last-child){
      margin-bottom: 10px;
    }
+   span{
+    white-space: nowrap;
+   }
  }
   &__link {
     position: relative;
