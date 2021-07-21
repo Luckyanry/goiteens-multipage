@@ -1,7 +1,7 @@
 {% set speakers = speakers %} {% set speakersItems = speakers.items %}
 <section class="speakers section">
     <div class="container">
-        <h2 class="section__title speakers__title">{{speakers.title}}</h2>
+        <h2 class="speakers__title title">{{speakers.title}}</h2>
         <p class="text-label speakers__description">{{speakers.description}}</p>
         <div class="speakers-slider-js speakers__list">
             {% for item in speakersItems %}

@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', function () {
+
 const refs = {
   openTermsBtn: [...document.querySelectorAll('[data-terms]')],
   closeTermsBtn: [...document.querySelectorAll('[data-terms-close]')],
@@ -26,4 +28,6 @@ refs.closeTermsBtn.forEach(e => {
     e.closest('.backdrop').classList.toggle('is-hidden');
     refs.body.classList.toggle('no-scroll');
   });
+});
+
 });

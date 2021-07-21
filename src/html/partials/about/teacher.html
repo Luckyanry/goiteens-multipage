@@ -2,7 +2,7 @@
 <section class="teachers section">
  
     <div class="container">
-      <h2 class="section__title teachers__title">
+      <h2 class="teachers__title title">
        {{teachers.title}}
       </h2>
 
@@ -14,7 +14,7 @@
         {% for item in teachersItems %}
         <div class="teachers__item">
      
-          <picture>
+          <picture class="teachers__img-wrap" >
             <source
             srcset="
               ./assets/images/about/teachers/teacher-{{item.id}}_lg.webp    1x,

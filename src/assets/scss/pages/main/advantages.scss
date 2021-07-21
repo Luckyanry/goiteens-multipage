@@ -1,9 +1,13 @@
 .advantages {
-  @include mq(mobile-only){
+  @include mq(mobile-only) {
     padding-bottom: 60px;
   }
   &__title {
+    margin-bottom: 32px;
     max-width: 900px;
+    @include mq(desktop) {
+      margin-bottom: 52px;
+    }
   }
 
   &__list {
@@ -65,6 +69,9 @@
   &__text {
     margin-bottom: 24px;
     color: var(--main-text-cl);
+    span {
+      color: var(--secondary-accent-cl);
+    }
   }
 
   &__btn {

@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', function () {
+
 var x, i, j, l, ll, selElmnt, a, b, c;
 /* Look for any elements with the class "language-select": */
 x = document.getElementsByClassName("language-select");
@@ -78,3 +80,5 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+})

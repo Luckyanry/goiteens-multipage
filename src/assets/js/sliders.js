@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import slick from 'slick-carousel';
 
+$(document).ready(function () {
+
 $('.awards-slider-js').slick({
   mobileFirst: true,
   arrows: false,
@@ -191,5 +193,7 @@ $('.speakers-slider-js').slick({
     },
   ],
 });
+
+})
 
 

@@ -5,6 +5,9 @@
   background-image: url('../images/components/bg-orange-bottom.svg');
 
   &__title {
+    margin-bottom: 32px;
+   
+
     @include mq(tablet) {
       display: flex;
       max-width: 672px;

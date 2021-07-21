@@ -17,22 +17,7 @@
     padding-bottom: 158px;
   }
 
-  &__image-wrapper {
-    &::before {
-      @include mq(notDesktop) {
-        content: '';
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba($grey-bg-rgb, 0.8);
-        z-index: 2;
-      }
-    }
-  }
-
+ 
   &__image {
     position: absolute;
     bottom: 0;
@@ -53,10 +38,7 @@
     }
   }
 
-  &__title-wrapper {
-    position: relative;
-    z-index: 9;
-  }
+
 
   &__title {
     margin-bottom: 16px;

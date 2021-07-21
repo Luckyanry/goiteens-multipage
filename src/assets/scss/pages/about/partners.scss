@@ -8,6 +8,13 @@
     padding-top: 100px;
   }
 
+  &__title {
+    margin-bottom: 32px;
+    @include mq(desktop) {
+      margin-bottom: 52px;
+    }
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;

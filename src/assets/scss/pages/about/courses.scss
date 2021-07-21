@@ -1,6 +1,10 @@
 .courses {
     padding-top: 36px;
     padding-bottom: 48px;
+
+    &__title{
+      margin-bottom: 32px;
+    }
   
     &__description {
       margin-bottom: 36px;
@@ -157,6 +161,9 @@
     .courses {
       padding-top: 74px;
       padding-bottom: 74px;
+      &__title{
+        margin-bottom: 52px;
+      }
   
       &__description {
         max-width: 900px;

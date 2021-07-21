@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', function () {
+
 const menuBtnRef = document.querySelector('[data-menu-button]');
 const mobileMenuRef = document.querySelector('[data-menu]');
 const navLinks = document.querySelectorAll(".navigation__list-link")
@@ -34,3 +36,5 @@ function setActiveNavLink(items) {
 }
 
 setActiveNavLink(navLinks);
+
+})

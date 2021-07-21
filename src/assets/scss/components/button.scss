@@ -54,3 +54,41 @@
     }
   }
 }
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+
+  border: 1.5px solid var(--white-bg);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+
+  transition: border 250ms linear;
+
+  &:hover,
+  &:focus {
+    border-color: var(--yellow-bg);
+  }
+
+  &__svg {
+    fill: var(--white-bg);
+    transition: fill 250ms linear;
+
+    .play:hover &,
+    .play:focus & {
+      fill: var(--yellow-bg);
+    }
+  }
+}
