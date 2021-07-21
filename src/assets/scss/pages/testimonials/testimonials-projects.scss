@@ -1,9 +1,19 @@
 .testimonials-projects {
+  padding-top: 60px;
+  @include mq(tablet) {
+    padding-top: 68px;
+  }
+  @include mq(desktop) {
+    padding-top: 132px;
+  }
   .projects__btn {
     display: none;
   }
 
   .slick-dotted.slick-slider {
-    margin-bottom: 30px;
+    @include mq(desktop){
+      margin-bottom: 86px;
+
+    }
   }
 }

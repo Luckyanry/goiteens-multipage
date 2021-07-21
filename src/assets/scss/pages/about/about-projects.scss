@@ -11,4 +11,11 @@
     @include mq(desktop){
         padding-bottom: 132px;
     }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 60px;
+        @include mq(desktop) {
+          margin-bottom: 139px;
+        }
+      }
 }

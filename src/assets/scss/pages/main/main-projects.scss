@@ -31,5 +31,12 @@
           var(--yellow-bg) 
         );
     }
+
+    .slick-dotted.slick-slider {
+      margin-bottom: 60px;
+      @include mq(desktop) {
+        margin-bottom: 139px;
+      }
+    }
   
 }
