@@ -3,7 +3,7 @@ const refs = {
   openModalBtn: [...document.querySelectorAll('[data-modal-open]')],
   closeModalBtn: document.querySelector('[data-modal-close]'),
   modal: document.querySelector('[data-modal]'),
-  // body: document.querySelector('body'),
+  body: document.querySelector('body'),
 };
 
 refs.openModalBtn.forEach(e => {
@@ -21,7 +21,7 @@ window.addEventListener('keydown', e => {
   if (!refs.modal.classList.contains('is-hidden')) {
     if (e.keyCode === 27) {
       refs.modal.classList.toggle('is-hidden');
-      // refs.body.classList.toggle('no-scroll');
+      refs.body.classList.toggle('no-scroll');
     }
   }
   return;
@@ -32,7 +32,7 @@ window.addEventListener('click', e => {
   if (!refs.modal.classList.contains('is-hidden')) {
     if (e.target.classList.contains('backdrop')) {
       refs.modal.classList.toggle('is-hidden');
-      // refs.body.classList.toggle('no-scroll');
+      refs.body.classList.toggle('no-scroll');
     }
   }
   return;
