@@ -13,9 +13,9 @@ $(document).ready(function () {
   $('input[name=utm_content]').val(utm_content);
 
   // $('input[type="tel"]').mask("+38(999)999-99-99");
-  //$('input[type="tel"]').inputmask("+380(99)999-99-99"); //маска
+  // $('input[type="tel"]').inputmask("+380(99)999-99-99"); //маска
   $('form').on('submit', function (e) {
-    console.log('click');
+   
     e.preventDefault();
     if (
       $(this).find(
@@ -30,16 +30,17 @@ $(document).ready(function () {
         url: 'crm/registration.php',
         dataType: 'json',
         data: $form.serialize(),
+       
         success: function (response) {
           if (response.status == 'success') {
             //window.location.href = "ok";
-            console.log('ok');
+              $(this).html(
+        `<h2 style="font-size:18px; font-family: HelveticaB;margin-bottom: 2rem;text-align: center;text-transform:uppercase;">Дякуємо!</h2><p style="font-size: 1rem;text-align:center;font-family:HelveticaR;line-height: 1.2;">Ваша заявка прийнята. Наші консультанти зв'яжуться <br> з вами найближчим часом!</p>`,
+      );
           }
         },
       });
-      $(this).html(
-        `<h2 style="font-size:18px; font-family: HelveticaB;margin-bottom: 2rem;text-align: center;text-transform:uppercase;">Дякуємо!</h2><p style="font-size: 1rem;text-align:center;font-family:HelveticaR;line-height: 1.2;">Ваша заявка прийнята. Наші консультанти зв'яжуться <br> з вами найближчим часом!</p>`,
-      );
+   
     }
   });
 });

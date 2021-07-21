@@ -1,5 +1,8 @@
 .custom-scroll {
   @include mq(desktop) {
+    scrollbar-width: thin;
+    
+
     &::-webkit-scrollbar {
       width: 14px;
       height: 18px;
