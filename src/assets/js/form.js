@@ -47,6 +47,12 @@ if (content && (Cookies.get('utm_content') == null || Cookies.get('utm_content')
 }
 
 $(document).ready(function () {
+  $('.modal-term-checkbox').on('click', function () {
+    $('button.main-btn.btn').attr('disabled', function (_, attr) {
+      return !attr;
+    });
+  });
+
   const im = new Inputmask('+389999999999');
   im.mask($('input[type="tel"]'));
 
@@ -192,9 +198,7 @@ function getUrlParameter(sParam) {
 function validName(nameInput) {
   var phoneValue = nameInput.value;
   var valid = phoneValue.length >= 2;
-  !valid
-    ? (nameInput.style.border = '2px solid red')
-    : (nameInput.style.border = '2px solid #ccc');
+  !valid ? (nameInput.style.border = '2px solid red') : (nameInput.style.border = '2px solid #ccc');
   return valid;
 }
 function validPhone(phoneInput) {
