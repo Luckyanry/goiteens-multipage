@@ -7,7 +7,7 @@ const paths = require('../paths');
 const fs = require('fs');
 
 const imageMinConfig = {
-  mozjpeg: { quality: 75, progressive: true },
+  mozjpeg: { quality: 90, progressive: true },
   optipng: { optimizationLevel: 5 },
   svgo: {
     plugins: [{ removeViewBox: true }, { cleanupIDs: false }],

@@ -15,7 +15,7 @@ const scripts = done => {
       .src(paths.src.js)
       .pipe(
         plumber({
-          errorHandler: function(err) {
+          errorHandler: function (err) {
             notify.onError({
               title: 'JS Error',
               message: 'Error: <%= error.message %>',
@@ -40,7 +40,15 @@ const scripts = done => {
                 exclude: /(node_modules)/,
                 loader: 'babel-loader',
                 query: {
-                  presets: ['@babel/preset-env'],
+                  plugins: [
+                    [
+                      '@babel/plugin-transform-runtime',
+                      {
+                        regenerator: true,
+                        corejs: 3,
+                      },
+                    ],
+                  ],
                 },
               },
             ],

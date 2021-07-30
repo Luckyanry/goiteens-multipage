@@ -1,7 +1,5 @@
 import AOS from 'aos';
 
-
-
 AOS.init({
   disable: 'mobile',
   offset: 100,
@@ -11,5 +9,3 @@ AOS.init({
   mirror: true,
   anchorPlacemen: 'top-center',
 });
-
-
