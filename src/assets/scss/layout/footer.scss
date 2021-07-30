@@ -35,6 +35,7 @@
     }
   }
   & .link {
+    display: block;
     transition: color 250ms linear;
 
     &:hover,
@@ -43,11 +44,9 @@
     }
   }
   &__link {
+    display: inline-block;
     &:not(:last-child) {
-      margin-bottom: 32px;
-    }
-    &:last-child {
-      margin-bottom: 44px;
+      margin-bottom: 10px;
     }
   }
   .wrapper {
