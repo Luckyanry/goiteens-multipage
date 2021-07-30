@@ -1,0 +1,90 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-outer">
+    <button class="btn-close" type="button" data-modal-close aria-label=""></button>
+    <img
+      class="logo"
+      src="./assets/images/header/logo.svg"
+      alt="GoIT логотип"
+      width="77"
+      height="24"
+    />
+    <div class="modal-progress">
+      <ul class="list modal-progress-bar">
+        <li class="item is-active"><span>Перший крок</span></li>
+        <li class="item"><span>Готово</span></li>
+      </ul>
+    </div>
+    <form class="modal-form" id="register_form" novalidate data-form>
+      <h2 class="title">Залишити заявку</h2>
+      <div class="modal-group">
+        <label class="modal-label"> І'мя <span class="modal-label-required"> * </span></label>
+        <input
+          class="modal-input"
+          type="text"
+          id="register_form_input_name"
+          name="first_name"
+          required=""
+          data-required="name"
+          data-invalid-message="* Введіть коректне і'мя!"
+        />
+      </div>
+      <div class="modal-group">
+        <label class="modal-label"> Контактний телефон <span class="modal-label-required"> * </span></label>
+        <input
+          class="modal-input"
+          type="tel"
+          id="register_form_input_tel"
+          name="phone"
+          required=""
+          data-required="phone"
+          data-invalid-message="* Введіть коректний номер телефону!"
+        />
+      </div>
+      <div class="modal-group">
+        <label class="modal-label"> Email <span class="modal-label-required"> * </span></label>
+        <input
+          class="modal-input"
+          type="email"
+          id="register_form_input_email"
+          name="email"
+          required=""
+          data-required="email"
+          data-invalid-message="* Введіть коректну поштову адресу!"
+        />
+      </div>
+      <div class="btn-cont">
+        <button class="main-btn btn" type="submit">Надіслати</button>
+      </div>
+      <div class="modal-term">
+        <label class="modal-term-label" for="user-policy">
+          <input
+            class="modal-term-checkbox"
+            type="checkbox"
+            name="user-policy"
+            value="accept"
+            id="user-policy"
+            checked
+            required
+          />
+          Відправкою даної заявки я підтверджую, що я ознайомлений з
+          <a
+            href="https://goiteens.ua/privacy_policy.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Політикою конфіденційності</a
+          >, приймаю її умови і згоден з нею, включаючи ті, що стосуються регламентації обробки моїх
+          персональних даних.
+        </label>
+      </div>
+    </form>
+    <div class="modal-message">
+      <p class="text">Зачекайте декілька секунд... майже отримали Вашу заявку</p>
+      <div class="progress">
+        <div class="color"></div>
+      </div>
+    </div>
+    <div class="leeloo">
+      <!-- <div class="wepster-hash-<?= $params['LEELOO_HASH'] ?? 'Не определено'?>" data-leeloo></div> -->
+    </div>
+  </div>
+</div>

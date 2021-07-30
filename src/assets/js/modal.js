@@ -1,5 +1,3 @@
-
-
 const refs = {
   openTermsBtn: [...document.querySelectorAll('[data-terms]')],
   closeTermsBtn: [...document.querySelectorAll('[data-terms-close]')],
@@ -18,8 +16,8 @@ function toggleModal(currentModal) {
   refs.termsModal.forEach(e => {
     if (e.dataset.termsmodal === `${currentModal}`) {
       e.classList.toggle('is-hidden');
+      refs.body.classList.toggle('no-scroll');
     }
-    refs.body.classList.toggle('no-scroll');
   });
 }
 
@@ -29,5 +27,3 @@ refs.closeTermsBtn.forEach(e => {
     refs.body.classList.toggle('no-scroll');
   });
 });
-
-

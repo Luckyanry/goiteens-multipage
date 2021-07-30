@@ -31,7 +31,7 @@ const css = done => {
     .pipe(size({ showFiles: true }))
     .pipe(gulp.dest(paths.build.css));
 
-    done();
-  };
+  done();
+};
 
 module.exports = css;
