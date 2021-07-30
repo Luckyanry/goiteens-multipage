@@ -34,7 +34,7 @@
       background-size: contain, cover;
       background-position: right calc((100vw - 1450px) / 2) center, center;
       background-image: url('../images/main/hero/ellipse_lg.svg'),
-        linear-gradient(to right, var(--yellow-bg) 76%, var(--white-bg) 76%);
+        linear-gradient(to right, #fec830 76%, #ffffff 76%);
     }
   }
 
@@ -99,7 +99,7 @@
   &__text {
     max-width: 380px;
     @include fonts(18px, 400, 1.5);
-    
+
     @include mq(tablet) {
       font-size: 20px;
     }
