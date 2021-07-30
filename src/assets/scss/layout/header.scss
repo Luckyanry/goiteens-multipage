@@ -210,6 +210,7 @@
 .contact-tel {
   @include fonts(24px, 700, 0.75);
   color: var(--secondary-accent-cl);
+  white-space: nowrap;
   transition: opacity 250ms linear;
 
   &:hover,

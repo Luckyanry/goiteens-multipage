@@ -147,7 +147,7 @@ function afterSend(form) {
     leeloo.classList.add('leeloo--active');
     message.classList.toggle('modal-message--show');
   } else {
-    $progressBar.children('.item')[2].classList.add('is-active');
+    $progressBar.children('.item')[1].classList.add('is-active');
     messageText.textContent = params.successMessage;
     $progress.css('display', 'none');
   }
