@@ -25,7 +25,7 @@ function ensureUtmData(data) {
   return data;
 }
 function send(data) {
-  return fetch('https://goiteens.ua/crm/lead.php', {
+  return fetch('./crm/lead.php', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
