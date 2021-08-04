@@ -1,0 +1,6 @@
+.main-awards {
+    @include mq(mobile-only) {
+      padding-top: 60px;
+      background-color: var(--yellow-bg);
+    }
+  }

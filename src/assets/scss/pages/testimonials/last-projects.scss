@@ -1,0 +1,123 @@
+.last-projects {
+  padding-top: 60px;
+  color: var(--white-text-cl);
+  @include mq(tablet) {
+    padding-top: 68px;
+  }
+  @include mq(desktop) {
+    padding-top: 132px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    @include mq(desktop) {
+      margin-bottom: 52px;
+    }
+  }
+
+  &__cont {
+    padding: 68px 0;
+
+    @include mq(mobile-only) {
+      background-image: url('../images/components/triangle-white-1_sm.svg'),
+        url('../images/components/triangle-white-2_sm.svg'),
+        linear-gradient(var(--secondary-accent-cl), var(--secondary-accent-cl));
+      background-repeat: no-repeat, no-repeat;
+      background-position: top 14% right, top 50% right;
+    }
+    @include mq(tablet) {
+      margin-bottom: 48px;
+      padding: 0;
+    }
+    @include mq(desktop) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__wrapper {
+    @include mq(desktop) {
+      display: flex;
+      margin-left: -30px;
+
+      align-items: flex-start;
+    }
+  }
+
+  &__img {
+    display: none;
+    margin-top: 52px;
+    border-radius: var(--border-radius);
+
+    @include mq(desktop) {
+      display: block;
+      margin-left: 30px;
+    }
+  }
+
+  &__side {
+    @include mq(tablet) {
+      padding: 68px 75px;
+      border-radius: 12px;
+
+      background-image: url('../images/components/triangle-white_lg.svg'),
+        linear-gradient(var(--secondary-accent-cl), var(--secondary-accent-cl));
+
+      background-repeat: no-repeat, no-repeat;
+      background-position: bottom right, bottom right;
+    }
+
+    @include mq(desktop) {
+      padding: 52px 100px 52px 70px;
+      margin-left: 30px;
+      max-width: 670px;
+    }
+  }
+  &__side-title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white-text-cl);
+    span {
+      text-transform: none;
+      font-weight: 400;
+    }
+  }
+
+  &__list {
+    display: none;
+    justify-content: center;
+    @include mq(tablet) {
+      display: flex;
+      --grid-item: 3;
+    }
+  }
+  &__list-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+
+      width: 164px;
+      height: 158px;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('../images/components/triangle-orange.svg');
+
+      @include mq(tablet-only) {
+        right: -15px;
+
+        width: 122px;
+        height: 88px;
+      }
+    }
+  }
+}

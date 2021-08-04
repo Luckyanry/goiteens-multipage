@@ -1,0 +1,58 @@
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+/* GRADIENT COLORS */
+$grey-bg-rgb: rgb(80, 76, 92);
+$dark-gradient-rgb: rgb(0, 0, 0);
+
+:root {
+  /* COLORS */
+  --primary-accent-cl: #fec830;
+  --secondary-accent-cl: #aa43a2;
+
+  /* TEXT COLORS */
+  --title-cl: #202020;
+  --main-text-cl: #504c5c;
+  --dark-text-cl-rgb: #{HexToRGB(#504c5c)};
+  --inactive-text-cl: #96949d;
+  --white-text-cl: #ffffff;
+  --white-text-cl-rgb: #{HexToRGB(#ffffff)};
+  --modal-input-cl: #757575;
+  --modal-text-cl: #cccccc;
+
+  /* BACKGROUND COLORS */
+  --white-bg: #ffffff;
+  --grey-bg: #504c5c;
+  --dark-bg: #04102f;
+  --yellow-bg: #fec830;
+  --yellow-bg-rgb: #{HexToRGB(#fec830)};
+  --small-btn-bg: #8d3987;
+  --yellow-btn-hover: #f3b604;
+  --footer-bg: #202020;
+  --modal-close-btn: #cccccc;
+
+  /* FONTS */
+  --main-font: 'Gotham Pro', sans-serif;
+
+  /* ANIMATIONS SPEED */
+  --fast-animation: 0.2s;
+  --slow-animation: 0.4s;
+  --very-slow-animation: 0.6s;
+
+  /* BASE GRID */
+  --grid-item: 1;
+  --grid-mr-left: 30px;
+  --grid-mr-top: 30px;
+
+  /* OTHERS */
+  --border-radius: 12px;
+  --btn-violet-shadow: 0px 1px 1px #8d3887, 4px 4px 16px rgba(131, 100, 14, 0.3);
+
+  --btn-yellow-shadow: 0px 1px 1px #d7a823;
+  --block-shadow: 0px 1px 2px rgba(92, 46, 145, 0.08), 10px 10px 40px rgba(92, 46, 145, 0.24);
+
+  --slider-shadow: 2px 8px 8px rgba(92, 46, 145, 0.078), 2px 2px 10px rgba(92, 46, 145, 0.239);
+
+  --dark-gradient-rgb: #{HexToRGB(#000000)};
+}

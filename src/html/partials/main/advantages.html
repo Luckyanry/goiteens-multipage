@@ -1,0 +1,30 @@
+{% set advantages = advantages %} {% set advantagesItems = advantages.items %}
+<section class="advantages section">
+  <div class="container">
+    <h2 class="advantages__title title">
+      Завдяки чому ваша дитина створить свій перший власний проєкт в GoITeens?&#95;
+    </h2>
+    <ul class="grid list advantages__list">
+      {% for item in advantagesItems %}
+      <li
+        class="grid__item advantages__item"
+        data-aos="fade-up"
+        data-aos-delay="{{item.delay}}"
+        data-aos-anchor=".advantages"
+      >
+        <svg class="advantages__icon" width="72" height="72">
+          <use href="assets/images/sprite.svg{{item.svg_use}}"></use>
+        </svg>
+        <p class="text-bold advantages__text">{{item.title}}</p>
+        <p>{{item.description}}</p>
+      </li>
+
+      {% endfor %}
+    </ul>
+    <a
+      class="main-btn advantages__btn"
+      href="./about.html"
+      >Більше про наш підхід до навчання</a
+    >
+  </div>
+</section>

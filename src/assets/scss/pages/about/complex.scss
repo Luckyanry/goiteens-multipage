@@ -1,0 +1,92 @@
+.complex {
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/components/bg-orange-top.svg');
+
+  @include mq(tablet) {
+    --grid-item: 2;
+  }
+  @include mq(desktop) {
+    --grid-item: 3;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    max-width: 480px;
+   
+    @include mq(desktop) {
+      max-width: 530px;
+     
+      margin-bottom: 24px;
+    }
+    span{
+      color: var(--secondary-accent-cl);
+    }
+  }
+
+  &__label {
+    max-width: 570px;
+  }
+
+  &__list {
+    @include mq(mobile-only) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 255px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+
+    @include mq(mobile-only) {
+      max-width: 320px;
+    }
+
+    @include mq(desktop) {
+      padding-top: 300px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 115px;
+      right: 0;
+      width: 152px;
+      height: 120px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('../images/components/triangle-orange.svg');
+
+      @include mq(tablet) {
+        top: 124px;
+        width: 162px;
+        height: 128px;
+      }
+      @include mq(desktop) {
+        top: 150px;
+        right: 32px;
+        width: 164px;
+        height: 158px;
+      }
+    }
+  }
+
+  @for $i from 1 through 3 {
+    .complex-#{$i} {
+      background-image: url('../images/about/complex/complex-#{$i}.png');
+      @include mq(retina) {
+        background-image: url('../images/about/complex/complex-#{$i}@2x.png');
+      }
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}

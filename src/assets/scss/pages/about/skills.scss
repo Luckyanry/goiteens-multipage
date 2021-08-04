@@ -1,0 +1,217 @@
+.skills {
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/components/bg-orange-bottom.svg');
+
+  &__title {
+    margin-bottom: 32px;
+   
+
+    @include mq(tablet) {
+      display: flex;
+      max-width: 672px;
+      font-size: 34px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__title-span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 105px;
+    line-height: 0.8;
+
+    @include mq(tablet) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+    @include mq(desktop) {
+      margin-right: 30px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    display: none;
+    position: relative;
+    padding-left: 83px;
+    color: rgba(var(--dark-text-cl-rgb), 0.82);
+
+    @include mq(tablet) {
+      display: inline-block;
+    }
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 7px;
+      left: 0;
+
+      width: 68px;
+      height: 1.5px;
+
+      vertical-align: middle;
+      background-color: rgba(var(--dark-text-cl-rgb), 0.2);
+    }
+  }
+  &__list {
+    @include mq(tablet) {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: 1px 1fr 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    @include mq(desktop) {
+      grid-template-columns: 1fr 1px 1fr 1fr 1fr;
+    }
+  }
+  &__item-grid {
+    @include mq(tablet) {
+      &:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      &:nth-child(2) {
+        grid-row-start: 2;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        grid-row-start: 3;
+      }
+      &:nth-child(6) {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9) {
+        grid-row-start: 5;
+      }
+
+      &:nth-child(10) {
+        grid-row-start: 6;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      &:nth-child(11),
+      &:nth-child(12) {
+        grid-row-start: 7;
+      }
+
+      &:nth-child(3),
+      &:nth-child(7),
+      &:nth-child(11) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+      &:nth-child(4),
+      &:nth-child(8),
+      &:nth-child(12) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+      &:nth-child(5),
+      &:nth-child(9) {
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+    }
+    @include mq(desktop) {
+      &:nth-child(1) {
+        grid-row-start: 1;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+      &:nth-child(2) {
+        grid-row-start: 1;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        grid-row-start: 2;
+      }
+      &:nth-child(6) {
+        grid-row-start: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9) {
+        grid-row-start: 4;
+      }
+
+      &:nth-child(10) {
+        grid-row-start: 5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+      &:nth-child(11),
+      &:nth-child(12) {
+        grid-row-start: 6;
+      }
+      &:nth-child(3),
+      &:nth-child(7),
+      &:nth-child(11) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+      &:nth-child(4),
+      &:nth-child(8),
+      &:nth-child(12) {
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+      &:nth-child(5),
+      &:nth-child(9) {
+        grid-column-start: 5;
+        grid-column-end: 6;
+      }
+    }
+  }
+  &__item {
+    @include mq(mobile-only) {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 16px;
+
+      background-position: bottom left;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @for $i from 1 through 8 {
+    .skills-#{$i} {
+      &::before {
+        background-image: url('../images/about/skills/icon-#{$i}.svg');
+      }
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 12px;
+    color: var(--title-cl);
+  }
+}

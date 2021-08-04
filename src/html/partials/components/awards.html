@@ -1,0 +1,44 @@
+{% set awards = awards %}
+<div class="awards">
+  <div class="awards__wrapper">
+    <div class="container">
+      <div class="awards__list awards-slider-js list">
+        {% for item in awards %}
+        <div class="awards__item">
+          <div class="awards__item-wrapper">
+            <picture>
+              <source
+                srcset="
+                  ./assets/images/components/awards/award{{item.id}}_lg.webp    1x,
+                  ./assets/images/components/awards/award{{item.id}}_lg@2x.webp 2x
+                "
+                media="(min-width: 320px)"
+                type="image/webp"
+              />
+
+              <source
+                srcset="./assets/images/components/awards/award{{item.id}}_lg@2x.png 2x"
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+
+              <img
+                class="awards__img"
+                src="./assets/images/components/awards/award{{item.id}}_lg.png"
+                alt="{{item.img_alt}}"
+                width="{{item.img_width}}"
+                height="{{item.img_height}}"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <h3 class="item-title">
+           {{item.title}}
+          </h3>
+          <p>{{item.descripton}}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+.awards {
+  color: var(--title-cl);
+
+  &__wrapper {
+    padding-bottom: 30px;
+
+    @include mq(tablet) {
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      background-position: top 45% left 50%;
+      background-image: url('../images/components/awards/bg-line.png'),
+        linear-gradient(
+          to top,
+          var(--yellow-bg),
+          var(--yellow-bg) 85%,
+          var(--white-bg) 85%,
+          var(--white-bg)
+        );
+    }
+
+    @include mq(desktop) {
+      padding-bottom: 52px;
+    }
+  }
+
+  &__list {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 280px;
+
+    --dots-color: var(--secondary-accent-cl);
+
+    @include mq(tablet) {
+      max-width: 640px;
+    }
+
+    @include mq(desktop) {
+      display: flex;
+
+      margin-left: -30px;
+      margin-top: -30px;
+      margin-right: 0;
+      padding-left: 100px;
+      padding-right: 100px;
+
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .slick-track {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    @include mq(mobile-only) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @include mq(tablet) {
+      margin-left: 10px;
+      margin-right: 10px;
+      max-width: 289px;
+    }
+
+    @include mq(desktop) {
+      margin-top: 30px;
+      margin-left: 30px;
+      margin-right: 0;
+      max-width: 100%;
+      width: calc(100% / 3 - 30px);
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 12px;
+  }
+
+  &__item-wrapper {
+    height: 254px;
+    padding: 32px;
+    margin-bottom: 40px;
+    background-color: var(--white-bg);
+   
+    box-shadow: var(--block-shadow);
+    border-radius: var(--border-radius);
+
+
+
+    @include mq(tablet-only) {
+      box-shadow: var(--slider-shadow);
+
+    }
+    @include mq(tablet) {
+      height: 275px;
+    }
+  }
+
+  &__img {
+    margin: auto;
+  }
+}

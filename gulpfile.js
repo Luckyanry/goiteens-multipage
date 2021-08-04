@@ -1,47 +1,73 @@
-'use strict';
+"use strict";
 
-const { series, parallel, watch } = require('gulp');
-const requireDir = require('require-dir');
-const browserSync = require('browser-sync').create();
-
-const tasks = requireDir('./gulp/tasks', { recurse: true });
-const paths = require('./gulp/paths');
+const { series, parallel, watch } = require("gulp");
+const requireDir = require("require-dir");
+const browserSync = require("browser-sync").create();
+const tasks = requireDir("./gulp/tasks", { recurse: true });
+const paths = require("./gulp/paths");
 
 const serve = () => {
   return browserSync.init({
-    server: 'build',
+    server: "build/",
+    startPath: "/index.html",
     notify: false,
-    open: false,
+    open: true,
     cors: true,
     ui: false,
-    logPrefix: 'DevServer',
-    host: 'localhost',
+    logPrefix: "DevServer",
+    host: "localhost",
     port: process.env.PORT || 1234,
   });
 };
 
-const watcher = done => {
-  watch(paths.watch.html).on('change', series(tasks.html, browserSync.reload));
-  watch(paths.watch.css).on('change', series(tasks.css, browserSync.reload));
-  watch(paths.watch.js).on('change', series(tasks.scripts, browserSync.reload));
+const watcher = (done) => {
+  watch(paths.watch.html).on(
+    "change",
+    parallel(tasks.html.html, browserSync.reload)
+  );
+  watch(paths.watch.data).on(
+    "change",
+    parallel(tasks.html.html, browserSync.reload)
+  );
+
+  watch(paths.watch.css).on("change", series(tasks.css, browserSync.reload));
+  watch(paths.watch.js).on("change", series(tasks.scripts, browserSync.reload));
   watch(paths.watch.images, tasks.images);
+  watch(paths.watch.video, tasks.video);
   watch(paths.watch.fonts, tasks.fonts);
+  watch(paths.watch.crm, tasks.crm);
 
   done();
 };
 
 exports.start = series(
   tasks.clean,
-  tasks.images,
-  parallel(tasks.css, tasks.fonts, tasks.scripts, tasks.html),
-  tasks.inject,
+  parallel(
+    tasks.php,
+    tasks.db,
+    tasks.images,
+    tasks.video,
+    tasks.css,
+    tasks.fonts,
+    tasks.scripts,
+    tasks.html.html,
+    tasks.crm
+  ),
   watcher,
-  serve,
+  serve
 );
 
 exports.build = series(
   tasks.clean,
-  tasks.images,
-  parallel(tasks.css, tasks.fonts, tasks.scripts, tasks.html),
-  tasks.inject,
+  parallel(
+    tasks.php,
+    tasks.db,
+    tasks.images,
+    tasks.video,
+    tasks.css,
+    tasks.fonts,
+    tasks.scripts,
+    tasks.html.html,
+    tasks.crm
+  )
 );

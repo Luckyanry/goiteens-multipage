@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
 
   $('.awards-slider-js').slick({
@@ -24,11 +22,6 @@ $(document).ready(function () {
       {
         breakpoint: 1279,
         settings: 'unslick',
-        // settings: {
-        //   slidesToShow: 3,
-        //   slidesToScroll: 1,
-        //   dots: false,
-        // },
       },
     ],
   });
@@ -109,7 +102,7 @@ $(document).ready(function () {
     ],
   });
 
- 
+
 });
 
 

@@ -1,0 +1,16 @@
+{% set complex = complex %} {% set complexItems = complex.items %}
+<section class="complex section">
+    <div class="container">
+      <h2 class="complex__title title">{{complex.title}}</h2>
+      <p class="text-label complex__label">{{complex.description}}</p>
+    <ul class="complex__list list grid">
+      {% for item in complexItems %}
+      <li class="complex__item grid__item complex-{{item.id}}">
+        <p class="text-bold complex__item-title">{{item.title}}</p>
+        <p >{{item.description}}</p>
+ 
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

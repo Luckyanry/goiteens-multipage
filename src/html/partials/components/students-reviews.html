@@ -1,0 +1,48 @@
+{% set reviews = students_reviews %} 
+
+<div class="students-reviews">
+  <div class="students-review-slider-js students-reviews__list">
+    {% for item in reviews %}
+    <div class="students-reviews__item">
+      <div class="students-reviews__item-wrap">
+        <picture>
+          <source
+            srcset="
+              ./assets/images/components/students-reviews/{{item.id}}.webp    1x,
+              ./assets/images/components/students-reviews/{{item.id}}@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/components/students-reviews/{{item.id}}@2x.png 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <img
+            class="students-reviews__item-img"
+            src="./assets/images/components/students-reviews/{{item.id}}.png"
+            alt="Cтудент"
+            width="62"
+            height="62"
+            loading="lazy"
+          />
+        </picture>
+        <p class="students-reviews__item-descript custom-scroll">{{item.description}}</p>
+        <p class="students-reviews__item-title">{{item.name}}</p>
+        <p class="students-reviews__item-course">{{item.age}} років</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="students-reviews__btn-wrapper">
+    <button
+      class="students-reviews__prev-btn students-prev-but-js"
+      type="button"
+      aria-label="Попередній слайд"
+    ></button>
+    <button class="students-reviews__next-btn students-next-but-js" type="button" aria-label="Наступний слайд"></button>
+  </div>
+</div>
+

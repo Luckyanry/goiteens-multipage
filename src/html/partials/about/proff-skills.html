@@ -1,0 +1,79 @@
+{% set proffSkills = proff_skills %} {% set proffItems = proffSkills.items %} {% set proffDescript =
+proffSkills.description_list %} {% set proffDescriptItems = proffDescript.items %}
+<section class="proff-skills section">
+  <div class="container">
+    <div class="grid proff-skills__title-wrapper">
+      <div class="grid__item">
+        <h2 class="proff-skills__title title">{{proffSkills.title}}</h2>
+        <p class="proff-skills__descript">{{proffDescript.text}}</p>
+        <ul class="list proff-skills__descript-list">
+          {% for item in proffDescriptItems %}
+          <li class="proff-skills__descript-item">{{item.item_text}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="grid__item">
+        <picture class="proff-skills__img-wrap">
+          <source
+            srcset="
+              ./assets/images/about/proff-skills/title-img_lg.webp    1x,
+              ./assets/images/about/proff-skills/title-img_lg@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/about/proff-skills/title-img_lg@2x.jpg 2x"
+            media="(min-width: 320px)"
+            type="image/jpeg"
+          />
+          <img
+            class="proff-skills__img"
+            src="./assets/images/about/proff-skills/title-img_lg.jpg"
+            alt="діти на навчанні"
+            width="470"
+            height="341"
+            loading="lazy"
+          />
+        </picture>
+        <p>{{proffSkills.description}}</p>
+      </div>
+    </div>
+
+    <ul class="list proff-skills__list">
+      {% for item in proffItems %}
+      <li class="grid proff-skills__item">
+        <div class="grid__item proff-skills__item-wrap">
+          <h3 class="proff-skills__title title">{{item.title}}</h3>
+          <p>{{item.description}}</p>
+        </div>
+        <picture class="grid__item proff-skills__img-wrap">
+          <source
+            srcset="
+              ./assets/images/about/proff-skills/list-img-{{item.id}}_lg.webp    1x,
+              ./assets/images/about/proff-skills/list-img-{{item.id}}_lg@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./assets/images/about/proff-skills/list-img-{{item.id}}_lg@2x.jpg 2x"
+            media="(min-width: 320px)"
+            type="image/jpeg"
+          />
+          <img
+            class="proff-skills__img"
+            src="./assets/images/about/proff-skills/list-img-{{item.id}}_lg.jpg"
+            alt="діти на навчанні"
+            width="470"
+            height="341"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+<footer class="footer {{ currentPage.footer }}">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="wrapper__top">
+        <div class="wrapper__logo">
+          <a class="footer__link" href="/">
+          <img src="./assets/images/footer/logo.svg" class="footer__logo" width="143" height="37" alt="лого компанії GoITeens" />
+          </a>
+        </div>
+        <nav class="footer__nav">
+          <ul class="list nav__list">
+            <li class="item">
+              <a class="link footer__link" href="./programs.html" aria-label="goiteens programs"
+                target="_blank" rel="noopener noreferrer nofollow">Каталог курсів</a>
+            </li>
+            <li class="item">
+              <a class="link footer__link" href="tel:+380671587368">+38 067 158 73 68</a>
+              <a class="link footer__link" href="tel:+380633035139">+38 063 303 51 39</a>
+              <a class="link footer__link" href="tel:+380504576601">+38 050 457 66 01</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrapper__bottom">
+        {% include 'components/social-list.html' %}
+
+        <div class="payment">
+          <div class="payment__cards">
+            <svg class="payment__svg" width="34" height="34">
+              <use href="./assets/images/footer/socials.svg#visa"></use>
+            </svg>
+            <svg class="payment__svg" width="34" height="34">
+              <use
+                href="./assets/images/footer/socials.svg#mastercard"
+              ></use>
+            </svg>
+          </div>
+          <a class="link payment__contract" data-terms="agreements">Публічний
+            договір</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

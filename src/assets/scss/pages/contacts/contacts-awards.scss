@@ -1,0 +1,27 @@
+.contacts-awards {
+  padding-top: 30px;
+  padding-bottom: 0;
+  @include mq(tablet) {
+   padding-top: 34px;
+  }
+  @include mq(desktop) {
+    padding-top: 66px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    @include mq(desktop) {
+      margin-bottom: 52px;
+    }
+  }
+
+  .awards__wrapper {
+    @include mq(mobile-only) {
+      padding-top: 30px;
+      padding-bottom: 60px;
+
+      background-color: var(--yellow-bg);
+    }
+  }
+}

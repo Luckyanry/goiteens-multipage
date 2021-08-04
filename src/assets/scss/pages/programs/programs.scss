@@ -1,0 +1,111 @@
+.programs {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include mq(tablet) {
+    --grid-item: 2;
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+  @include mq(desktop) {
+    position: relative;
+    --grid-item: 3;
+    margin-top: -240px;
+    padding-top: 66px;
+    padding-bottom: 132px;
+    z-index: 50;
+  }
+
+  @media (min-width: 1700px) {
+    margin-top: -200px;
+  }
+
+  &__list {
+    @include mq(mobile-only) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    border-radius: var(--border-radius);
+    transition: all var(--fast-animation) ease;
+
+    @include mq(mobile-only) {
+      max-width: 320px;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: var(--block-shadow);
+      transform: scale(1.01);
+      -webkit-transform: scale(1.01);
+    }
+  }
+
+  &__item-link {
+    display: block;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__item-wrapper {
+    position: relative;
+    padding-top: 255px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    @include mq(desktop) {
+      padding-top: 300px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 115px;
+      right: 0;
+      width: 152px;
+      height: 120px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('../images/components/triangle-orange.svg');
+
+      @include mq(tablet) {
+        top: 124px;
+        width: 162px;
+        height: 128px;
+      }
+      @include mq(desktop) {
+        top: 150px;
+        right: 32px;
+        width: 164px;
+        height: 158px;
+      }
+    }
+  }
+
+  @for $i from 1 through 9 {
+    .program-#{$i} {
+      background-image: url('../images/programs/program-list/program-#{$i}.png');
+      @include mq(retina) {
+        background-image: url('../images/programs/program-list/program-#{$i}@2x.png');
+      }
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__item-descript {
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+
+ 
+}

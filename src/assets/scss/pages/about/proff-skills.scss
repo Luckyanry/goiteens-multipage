@@ -1,0 +1,110 @@
+.proff-skills {
+  --grid-item: 2;
+
+  &__title {
+    margin-bottom: 24px;
+    max-width: 494px;
+   
+  }
+  &__title-wrapper {
+    margin-bottom: 32px;
+    @include mq(tablet-only) {
+      align-items: flex-end;
+    }
+    @include mq(desktop) {
+      padding-left: 160px;
+      margin-bottom: 54px;
+    }
+    & img {
+      margin-bottom: 24px;
+    }
+  }
+  &__descript {
+    margin-bottom: 20px;
+    @include mq(desktop) {
+      max-width: 380px;
+    }
+  }
+  &__descript-list {
+    @include mq(desktop) {
+      max-width: 380px;
+    }
+  }
+
+  &__descript-item {
+    position: relative;
+    padding-left: 24px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-image: url('../images/about/proff-skills/marker.svg');
+    }
+  }
+
+  &__list {
+    @include mq(desktop) {
+      max-width: 970px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 52px;
+    }
+    @include mq(tablet) {
+      align-items: center;
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      .proff-skills__img-wrap {
+        &::before {
+          left: 0;
+          border-bottom-left-radius: var(--border-radius);
+          background-image: url('../images/about/proff-skills/decor-left.svg');
+        }
+      }
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+    display: block;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      right: 0;
+      width: 206px;
+      height: 174px;
+      border-bottom-right-radius: var(--border-radius);
+      background-repeat: no-repeat;
+      background-image: url('../images/about/proff-skills/decor-right.svg');
+
+      @include mq(tablet) {
+        width: 218px;
+        height: 170px;
+      }
+      @include mq(desktop) {
+        width: 212px;
+      height: 224px;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: var(--border-radius);
+  }
+}

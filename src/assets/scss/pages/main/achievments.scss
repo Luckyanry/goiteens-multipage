@@ -1,0 +1,83 @@
+.achievments {
+  color: var(--white-text-cl);
+
+  @include mq(mobile-only) {
+    background-color: var(--secondary-accent-cl);
+  }
+
+  &__cont {
+    padding: 38px 0;
+
+    @include mq(mobile-only) {
+      background-image: url('../images/components/triangle-white-1_sm.svg'),
+        url('../images/components/triangle-white-2_sm.svg');
+
+      background-repeat: no-repeat, no-repeat;
+      background-position: top 14% right, top 50% right;
+    }
+    @include mq(tablet) {
+      padding: 0;
+    }
+  }
+
+  &__wrapper {
+    @include mq(desktop) {
+      display: flex;
+      margin-left: -30px;
+
+      align-items: flex-start;
+    }
+  }
+
+  &__img {
+    display: none;
+    margin-top: 52px;
+    border-radius: 12px;
+
+    @include mq('desktop') {
+      display: block;
+      margin-left: 30px;
+    }
+  }
+
+  &__side {
+    @include mq('tablet') {
+      padding: 68px 75px;
+      border-radius: 12px;
+
+      background-image: url('../images/components/triangle-white_lg.svg'),
+        linear-gradient(var(--secondary-accent-cl), var(--secondary-accent-cl));
+
+      background-repeat: no-repeat, no-repeat;
+      background-position: bottom right, bottom right;
+    }
+
+    @include mq(desktop) {
+      padding: 52px 100px 52px 70px;
+      margin-left: 30px;
+      max-width: 670px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    text-align: start;
+    color: var(--primary-accent-cl);
+    @include fonts(17px, 700, 1.3);
+  }
+
+  &__content {
+    font-size: 17px;
+    line-height: 1.3;
+  }
+
+  &__text {
+    text-align: right;
+    color: var(--primary-accent-cl);
+
+    span {
+      display: block;
+    }
+  }
+}

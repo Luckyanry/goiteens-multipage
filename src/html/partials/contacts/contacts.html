@@ -1,0 +1,40 @@
+{% set contacts = contacts %} {% set contactsEmail = contacts.email %} {% set contactsPhone =
+contacts.phone %}
+
+<section class="contacts section">
+  <div class="container contacts__wrapper">
+    <h2 class="contacts__title title">{{contacts.title}}</h2>
+    <div class="grid contacts__content">
+      <div class="grid__item ">
+        <p class="contacts__item-title">{{contactsEmail.title}}</p>
+        <ul class="list">
+          {% for item in contactsEmail.items %}
+          <li class="contacts__item">
+            <a href="mailto:{{item.link}}" class="contacts__link link">{{item.link}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="grid__item ">
+        <p class="contacts__item-title">{{contactsPhone.title}}</p>
+        <ul class="list">
+          {% for item in contactsPhone.items %}
+          <li class="contacts__item">
+            <a href="tel:{{item.href}}" class="contacts__link link">{{item.numb}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="grid__item ">
+        <p class="contacts__item-title">Socials</p>
+        {% include 'components/social-list.html' %}
+      </div>
+    </div>
+    <div class="grid contacts__btn-wrapper">
+      <a  class="grid__item main-btn" href="./programs.html">Переглянути програми</a>
+      <button class="grid__item main-btn " type="button"  data-modal-open>
+        Отримати консультацію
+      </button>
+    </div>
+  </div>
+</section>
