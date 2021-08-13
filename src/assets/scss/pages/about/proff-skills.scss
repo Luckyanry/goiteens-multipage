@@ -4,7 +4,6 @@
   &__title {
     margin-bottom: 24px;
     max-width: 494px;
-   
   }
   &__title-wrapper {
     margin-bottom: 32px;
@@ -98,7 +97,7 @@
       }
       @include mq(desktop) {
         width: 212px;
-      height: 224px;
+        height: 224px;
       }
     }
   }

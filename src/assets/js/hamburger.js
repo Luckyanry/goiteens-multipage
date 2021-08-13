@@ -1,4 +1,3 @@
-
 // Look for .hamburger
 const hamburger = document.querySelector('.hamburger');
 // On click

@@ -1,10 +1,7 @@
 {% set projects = projects %} {% set projectsItems = projects.items %}
-
 <div class="projects">
   <h2 class="projects__title title">{{projects.title}}</h2>
-
   <p class="text-label projects__description">{{projects.description}}</p>
-
   <div class="projects-slider-js projects__list">
     {% for item in projectsItems %}
     <div class="projects__item">
@@ -42,7 +39,6 @@
           media="(min-width: 768px)"
           type="image/jpeg"
         />
-
         <source
           srcset="
             ./assets/images/components/projects/project-{{item.id}}_sm.webp    1x,
@@ -56,7 +52,6 @@
           media="(max-width: 767px)"
           type="image/jpeg"
         />
-
         <img
           class="projects__item-image"
           src="./assets/images/components/projects/project-{{item.id}}_sm.jpg"
@@ -76,11 +71,8 @@
           {% endfor %}
         </ul>
         {% else %}
-
         <p class="projects__item-description">{{item.description}}</p>
-
         {% endif %}
-
         <a
           class="projects__link"
           target="_blank"
@@ -92,9 +84,5 @@
     </div>
     {% endfor %}
   </div>
-  <a
-    class="main-btn projects__btn"
-    href="./testimonials.html"
-    >Більше про результати наших учнів</a
-  >
+  <a class="main-btn projects__btn" href="./testimonials.html">Більше про результати наших учнів</a>
 </div>

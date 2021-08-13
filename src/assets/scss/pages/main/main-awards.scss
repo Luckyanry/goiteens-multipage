@@ -1,6 +1,19 @@
 .main-awards {
-    @include mq(mobile-only) {
-      padding-top: 60px;
-      background-color: var(--yellow-bg);
+  @include mq(mobile-only) {
+    padding-top: 60px;
+    background-color: var(--yellow-bg);
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    max-width: 900px;
+
+    @include mq(desktop) {
+      margin-bottom: 52px;
+    }
+
+    span {
+      color: var(--secondary-accent-cl);
     }
   }
+}

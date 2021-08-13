@@ -1,7 +1,7 @@
 {% set navigationList = navigation %}
 <header class="header">
   <div class="container">
-    <a href="/" class="header__logo link" aria-label="логотип">
+    <a  class="header__logo link" href="/" aria-label="Логотип">
       <img
         class="header__img"
         src="./assets/images/header/logo.svg"
@@ -11,7 +11,7 @@
       />
       <span class="header__logo-text">
         мережа ІТ-академій <br />
-        для дітей 8-15 років</span
+        для дітей 8-16 років</span
       >
     </a>
     <div class="header__wrapper">
@@ -20,7 +20,7 @@
         type="button"
         aria-expanded="false"
         aria-controls="mobile-menu"
-        aria-label="кнопка меню"
+        aria-label="Кнопка меню"
         data-menu-button
       >
         <span class="hamburger-box">
@@ -43,7 +43,7 @@
         <ul class="navigation__list list">
           {% for item in navigationList %}
           <li class="navigation__list-item">
-            <a href="{{item.link}}" class="navigation__list-link link">{{item.title}}</a>
+            <a class="navigation__list-link link" href="{{item.link}}">{{item.title}}</a>
           </li>
           {% endfor %}
         </ul>

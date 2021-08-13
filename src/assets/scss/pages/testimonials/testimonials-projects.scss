@@ -11,9 +11,8 @@
   }
 
   .slick-dotted.slick-slider {
-    @include mq(desktop){
+    @include mq(desktop) {
       margin-bottom: 86px;
-
     }
   }
 }
