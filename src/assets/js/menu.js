@@ -1,8 +1,6 @@
-
-
 const menuBtnRef = document.querySelector('[data-menu-button]');
 const mobileMenuRef = document.querySelector('[data-menu]');
-const navLinks = document.querySelectorAll(".navigation__list-link")
+const navLinks = document.querySelectorAll('.navigation__list-link');
 
 const toggleBurgerMenu = () => {
   const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
@@ -36,5 +34,3 @@ function setActiveNavLink(items) {
 }
 
 setActiveNavLink(navLinks);
-
-

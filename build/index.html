@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="uk">
   <head>
@@ -7,17 +6,17 @@
 <meta charset="UTF-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
 <meta name="robots" content="index, follow" />
 <meta name="google" content="notranslate" />
 <meta name="facebook-domain-verification" content="ki24msd9vl6vr85ooi6ekrj93d06yy" />
 <meta name="format-detection" content="telephone=no" />
-<meta name="description" content="Тут здобувають навички та професії майбутнього:  ▸програмування для дітей MineCraft та Scratch ▸створення сайтів та додатків (HTML, CSS, JavaScript) ▸програмування Phyton ▸розробка ігор на Unity та C# ▸3D-дизайна та Digital Art ▸робототехніка та Arduino" />
+<meta name="description" content="Тут здобувають навички та професії майбутнього: ▸програмування для дітей MineCraft та Scratch ▸створення сайтів та додатків (HTML, CSS, JavaScript) ▸програмування Phyton ▸розробка ігор на Unity та C# ▸3D-дизайна та Digital Art ▸робототехніка та Arduino" />
 <meta name="msapplication-TileColor" content="#da532c" />
 <meta name="theme-color" content="#ffffff" />
 
 <!-- OG markup -->
-
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://goiteens.ua/" />
 <meta property="og:image" content="assets/images/og-img.jpg" />
@@ -25,12 +24,12 @@
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:title" content="GoITeens — мережа IT-академій для дітей та підлітків." />
-<meta property="og:description" content="Тут здобувають навички та професії майбутнього:  ▸програмування для дітей MineCraft та Scratch ▸створення сайтів та додатків (HTML, CSS, JavaScript) ▸програмування Phyton ▸розробка ігор на Unity та C# ▸3D-дизайна та Digital Art ▸робототехніка та Arduino" />
+<meta property="og:description" content="Тут здобувають навички та професії майбутнього: ▸програмування для дітей MineCraft та Scratch ▸створення сайтів та додатків (HTML, CSS, JavaScript) ▸програмування Phyton ▸розробка ігор на Unity та C# ▸3D-дизайна та Digital Art ▸робототехніка та Arduino" />
 <!-- OG markup for twitter Summary Card with Large Image -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="GoITeens — мережа IT-академій для дітей та підлітків." />
 <meta name="twitter:title" content="GoITeens" />
-<meta name="twitter:description" content="Тут здобувають навички та професії майбутнього:  ▸програмування для дітей MineCraft та Scratch ▸створення сайтів та додатків (HTML, CSS, JavaScript) ▸програмування Phyton ▸розробка ігор на Unity та C# ▸3D-дизайна та Digital Art ▸робототехніка та Arduino" />
+<meta name="twitter:description" content="Тут здобувають навички та професії майбутнього: ▸програмування для дітей MineCraft та Scratch ▸створення сайтів та додатків (HTML, CSS, JavaScript) ▸програмування Phyton ▸розробка ігор на Unity та C# ▸3D-дизайна та Digital Art ▸робототехніка та Arduino" />
 <meta name="twitter:image:src" content="assets/images/twitter.jpg" />
 
 
@@ -46,20 +45,6 @@
 <link rel="stylesheet" href="./assets/css/main.css" />
 
 <!-- Google Tag Manager -->
-
-<script>
-  (function (w, d, s, l) {
-    w[l] = w[l] || [];
-    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=<?= $params['GTM'] ?>" + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer');
-</script>
-
 <script async>
   (function (w, d, s, l, i) {
     w[l] = w[l] || [];
@@ -99,7 +84,7 @@
     <div class="page"> 
 <header class="header">
   <div class="container">
-    <a href="/" class="header__logo link" aria-label="логотип">
+    <a  class="header__logo link" href="/" aria-label="Логотип">
       <img
         class="header__img"
         src="./assets/images/header/logo.svg"
@@ -109,7 +94,7 @@
       />
       <span class="header__logo-text">
         мережа ІТ-академій <br />
-        для дітей 8-15 років</span
+        для дітей 8-16 років</span
       >
     </a>
     <div class="header__wrapper">
@@ -118,7 +103,7 @@
         type="button"
         aria-expanded="false"
         aria-controls="mobile-menu"
-        aria-label="кнопка меню"
+        aria-label="Кнопка меню"
         data-menu-button
       >
         <span class="hamburger-box">
@@ -141,19 +126,19 @@
         <ul class="navigation__list list">
           
           <li class="navigation__list-item">
-            <a href="./programs.html" class="navigation__list-link link">Програми</a>
+            <a class="navigation__list-link link" href="./programs.html">Програми</a>
           </li>
           
           <li class="navigation__list-item">
-            <a href="./about.html" class="navigation__list-link link">Про нас</a>
+            <a class="navigation__list-link link" href="./about.html">Про нас</a>
           </li>
           
           <li class="navigation__list-item">
-            <a href="./testimonials.html" class="navigation__list-link link">Результати учнів</a>
+            <a class="navigation__list-link link" href="./testimonials.html">Результати учнів</a>
           </li>
           
           <li class="navigation__list-item">
-            <a href="./contact-page.html" class="navigation__list-link link">Контакти</a>
+            <a class="navigation__list-link link" href="./contact-page.html">Контакти</a>
           </li>
           
         </ul>
@@ -184,8 +169,6 @@
 
 <section class="hero">
   <div class="hero__wrapper">
-
-
     <picture class="hero__image-wrapper">
       <source
         srcset="
@@ -200,39 +183,34 @@
         media="(min-width: 1280px)"
         type="image/png"
       />
-
       <source
         srcset="./assets/images/main/hero/boy_md.webp"
         media="(min-width: 768px)"
         type="image/webp"
       />
-
       <source
         srcset="./assets/images/main/hero/boy_md.png"
         media="(min-width: 768px)"
         type="image/png"
       />
-
       <source
         srcset="./assets/images/main/hero/boy_sm.webp"
         media="(max-width: 767px)"
         type="image/webp"
       />
-
       <img
         class="hero__image"
         src="./assets/images/main/hero/boy_sm.png"
         alt="Фото хлопчика, вивчаючого мови програмування"
         width="320"
         height="565"
-       
       />
     </picture>
     <div class="container hero__title-wrapper">
       <div class="hero__text-wrapper">
-        <p class="text-label hero__label">Мережа IT-академій для позашкільного навчання дітей &lbrack;&nbsp;<span>від 8 до 15 років</span>&nbsp;&rbrack;</p>
-        <h1 class="hero__title">Онлайн IT-курси для дітей&nbsp;в GoITeens</h1>
-        <p class="hero__text">допомагаємо почати кар’єру розробника та заробляти ще до вступу в університет</p>
+        <p class="text-label hero__label">Мережа IT-академій для позашкільного навчання дітей та підлітків &lbrack;&nbsp;<span>від 8 до 16 років</span>&nbsp;&rbrack;</p>
+        <h1 class="hero__title">Онлайн IT-курси для дітей та підлітків в GoITeens</h1>
+        <p class="hero__text"> вашим дітям стати успішними та розпочати кар’єру ще до вступу в університет</p>
       </div>
       <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
     </div>
@@ -240,30 +218,25 @@
   
 <div class="branches">
   <div class="container">
-  
-      <ul class="grid branches__list list">
-        
-        <li class="grid__item branches__item  online ">Online</li>
-        
-        <li class="grid__item branches__item  ukraine ">Україна</li>
-        
-        <li class="grid__item branches__item  poland ">Польща</li>
-        
-        <li class="grid__item branches__item  turkey ">Турція</li>
-        
-      </ul>
-  
+    <ul class="grid branches__list list">
+      
+      <li class="grid__item branches__item  online ">Online</li>
+      
+      <li class="grid__item branches__item  ukraine ">Україна</li>
+      
+      <li class="grid__item branches__item  poland ">Польща</li>
+      
+      <li class="grid__item branches__item  turkey ">Туреччина</li>
+      
+    </ul>
   </div>
 </div>
-
 
 </section>
   
 <section class="advantages section">
   <div class="container">
-    <h2 class="advantages__title title">
-      Завдяки чому ваша дитина створить свій перший власний проєкт в GoITeens?&#95;
-    </h2>
+    <h2 class="advantages__title title">Чого досягне ваша дитина, навчаючись в GoITeens?&#95;</h2>
     <ul class="grid list advantages__list">
       
       <li
@@ -275,10 +248,9 @@
         <svg class="advantages__icon" width="72" height="72">
           <use href="assets/images/sprite.svg#lamp"></use>
         </svg>
-        <p class="text-bold advantages__text">Розвиток <span >технологічного</span> та <span>інноваційного</span> мислення</p>
-        <p>Ваша дитина набуває Soft Skills та різні типи вмінь, що допомагає їй стати більш креативною, впевненою в собі людиною</p>
+        <p class="text-bold advantages__text">Розвиток <span>технічного</span> та <span>креативного</span> мислення</p>
+        <p>Наші учні вчаться не тільки програмуванню й дизайну. Ми навчаємо працювати в команді, нестандартно підходити до вирішення завдань та бути лідерами в колективі</p>
       </li>
-
       
       <li
         class="grid__item advantages__item"
@@ -290,9 +262,8 @@
           <use href="assets/images/sprite.svg#menthor"></use>
         </svg>
         <p class="text-bold advantages__text"> Менторство</p>
-        <p> Наші вчителі мають індивідуальний підхід до кожної дитини. Вони завжди допомагають, але так, щоб дитина робила все власноруч</p>
+        <p>Наші вчителі завжди знаходять індивідуальний підхід до кожного учня. Вони завжди допомагають, але так, щоб дитина робила завдання власноруч</p>
       </li>
-
       
       <li
         class="grid__item advantages__item"
@@ -303,10 +274,9 @@
         <svg class="advantages__icon" width="72" height="72">
           <use href="assets/images/sprite.svg#children"></use>
         </svg>
-        <p class="text-bold advantages__text"> Оточення <span >мотивованих</span> та <span >ініціативних</span> дітей</p>
-        <p>Кожна дитина, що прийшла на курс зацікавлена майбутніми успіхами</p>
+        <p class="text-bold advantages__text"> Оточення <span>мотивованих</span> та <span >ініціативних</span> дітей та підлітків</p>
+        <p>Усі наші учні прагнуть досягати успіхів. Ми мотивуємо дітей та підлітків і вони мотивують один одного розвиватися, вчитися, та ставати кращими</p>
       </li>
-
       
       <li
         class="grid__item advantages__item"
@@ -320,14 +290,9 @@
         <p class="text-bold advantages__text"><span>Реалізовані проєкти</span> як результат навчання</p>
         <p>По закінченню навчання діти не тільки отримують сертифікати, а й мають вже готові проєкти в портфоліо</p>
       </li>
-
       
     </ul>
-    <a
-      class="main-btn advantages__btn"
-      href="./about.html"
-      >Більше про наш підхід до навчання</a
-    >
+    <a class="main-btn advantages__btn" href="./about.html">Більше про наш підхід до навчання</a>
   </div>
 </section>
  
@@ -337,52 +302,46 @@
       <div class="achievments__wrapper">
         <picture>
           <source
-          srcset="
-          ./assets/images/main/achievments/vp_lg.webp    1x,
-          ./assets/images/main/achievments/vp_lg@2x.webp 2x
-          "
-          media="(min-width: 1280px)"
-          type="image/webp"
-        />
-
-        <source
-          srcset="./assets/images/main/achievments/vp_lg@2x.jpg 2x"
-          media="(min-width: 1280px)"
-          type="image/jpeg"
-        />
+            srcset="
+              ./assets/images/main/achievments/vp_lg.webp    1x,
+              ./assets/images/main/achievments/vp_lg@2x.webp 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/images/main/achievments/vp_lg@2x.jpg 2x"
+            media="(min-width: 1280px)"
+            type="image/jpeg"
+          />
           <img
             src="./assets/images/main/achievments/vp_lg.jpg"
             class="achievments__img"
             alt="Фото Вячеслава Поліновського CEO GoITeens"
-            
             width="470"
             height="580"
             loading="lazy"
           />
         </picture>
         <div class="achievments__side">
-          <h2 class="achievments__title">
-             Майбутнє - за програмуванням. І&nbsp;наші діти зіграють в цьому головну роль!
- 
-          </h2>
+          <h2 class="achievments__title">Майбутнє - за програмуванням. І&nbsp;наші діти зіграють в цьому головну роль!</h2>
           <div class="achievments__content">
-            <p> Програмування, за версією The World Economic Forum, це одна з ТОП-навичок, що буде потрібна у майбутньому.</p> <p>Тому якщо ви хочете знайти для своєї дитини актуальну та цікаву професію з високою зарплатою, то програмування та веб-розробка - це саме те що потрібно. </p> <p> Онлайн IT-курси для дітей - це не швидкий майстер-клас чи семінар від відомого фахівця. Це цікава та насичена необхідними навичками система навчання, що сподобається підлітку та його батькам. Вона підійде для тих, хто бажає перетворити любов дитини до комп’ютерних ігор в корисний навчальний процес чи підкаже з чого почати вести свій блог. </p> 
-            <p class="achievments__text">Вячеслав Поліновський
+            <p>Програмування, за версією The World Economic Forum, це одна з ТОП-навичок, що буде потрібна у майбутньому.</p> <p>Тому якщо ви хочете знайти для своєї дитини актуальну та цікаву професію з високою зарплатнею, то програмування та веб-розробка - це саме те що потрібно.</p> <p>Онлайн IT-курси для дітей - це не швидкий майстер-клас чи семінар від відомого фахівця. Це цікава та насичена необхідними навичками система навчання, що сподобається підлітку та його батькам. Вона підійде для тих, хто бажає перетворити любов дитини до комп’ютерних ігор в корисний навчальний процес чи підкаже з чого почати вести свій блог</p>
+            <p class="achievments__text">
+              Вячеслав Поліновський
               <span> CEO GoITeens </span>
-
             </p>
-          
           </div>
         </div>
       </div>
     </div>
   </div>
-  
 </section>
- 
-<section class=" main-awards section">
+ <section class="main-awards section">
   <div class="container">
- 
+    <h2 class="main-awards__title title">
+      <span>GOITEENS</span> - найкраще місце для навчання вашої дитини&#95;
+    </h2>
   </div>
   
 <div class="awards">
@@ -401,13 +360,11 @@
                 media="(min-width: 320px)"
                 type="image/webp"
               />
-
               <source
                 srcset="./assets/images/components/awards/award1_lg@2x.png 2x"
                 media="(min-width: 320px)"
                 type="image/png"
               />
-
               <img
                 class="awards__img"
                 src="./assets/images/components/awards/award1_lg.png"
@@ -418,9 +375,7 @@
               />
             </picture>
           </div>
-          <h3 class="item-title">
-           Best IT Education <br/>2015
-          </h3>
+          <h3 class="item-title">Best IT Education <br/>2015</h3>
           <p>За внесок у підготовку сильних Junior-фахівців</p>
         </div>
         
@@ -435,13 +390,11 @@
                 media="(min-width: 320px)"
                 type="image/webp"
               />
-
               <source
                 srcset="./assets/images/components/awards/award2_lg@2x.png 2x"
                 media="(min-width: 320px)"
                 type="image/png"
               />
-
               <img
                 class="awards__img"
                 src="./assets/images/components/awards/award2_lg.png"
@@ -452,9 +405,7 @@
               />
             </picture>
           </div>
-          <h3 class="item-title">
-            Ukrainian IT Awards <br/>2016
-          </h3>
+          <h3 class="item-title"> Ukrainian IT Awards <br/>2016</h3>
           <p>За видатний внесок у IT-навчання українських Junior-розробників</p>
         </div>
         
@@ -469,13 +420,11 @@
                 media="(min-width: 320px)"
                 type="image/webp"
               />
-
               <source
                 srcset="./assets/images/components/awards/award3_lg@2x.png 2x"
                 media="(min-width: 320px)"
                 type="image/png"
               />
-
               <img
                 class="awards__img"
                 src="./assets/images/components/awards/award3_lg.png"
@@ -486,9 +435,7 @@
               />
             </picture>
           </div>
-          <h3 class="item-title">
-            Українська народна премія 2018-2020
-          </h3>
+          <h3 class="item-title"> Українська народна премія 2018-2020</h3>
           <p>За перемогу в номінації IT-освіта. Голосування серед споживачів</p>
         </div>
         
@@ -497,48 +444,44 @@
   </div>
 </div>
 
+</section>
   
-</section>  
 <section class="dignity section">
   <div class="container">
-    <h2 class="dignity__title title">
-      Чому нам <span>довіряють</span>&#95;
-    </h2>
+    <h2 class="dignity__title title"> Чому нам <span>довіряють</span>&#95;</h2>
     <ul class="dignity__list list grid">
       
       <li class="dignity__item grid__item">
         <picture>
-
-
           <source
-          srcset="
-            ./assets/images/main/dignity/dignity-1_lg.webp    1x,
-            ./assets/images/main/dignity/dignity-1_lg@2x.webp 2x
-          "
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-
-        <source
-        srcset="./assets/images/main/dignity/dignity-1_lg.jpg 1x, ./assets/images/main/dignity/dignity-1_lg@2x.jpg 2x"
-        media="(min-width: 768px)"
-        type="image/jpeg"
-      />
+            srcset="
+              ./assets/images/main/dignity/dignity-1_lg.webp    1x,
+              ./assets/images/main/dignity/dignity-1_lg@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
           <source
-          srcset="
-            ./assets/images/main/dignity/dignity-1_sm.webp    1x,
-            ./assets/images/main/dignity/dignity-1_sm@2x.webp 2x
-          "
-          media="(max-width: 767px)"
-          type="image/webp"
-        />
-
-        <source
-          srcset="./assets/images/main/dignity/dignity-1_sm@2x.jpg 2x"
-          media="(max-width: 767px)"
-          type="image/jpeg"
-        />
-      
+            srcset="
+              ./assets/images/main/dignity/dignity-1_lg.jpg    1x,
+              ./assets/images/main/dignity/dignity-1_lg@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./assets/images/main/dignity/dignity-1_sm.webp    1x,
+              ./assets/images/main/dignity/dignity-1_sm@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/images/main/dignity/dignity-1_sm@2x.jpg 2x"
+            media="(max-width: 767px)"
+            type="image/jpeg"
+          />
           <img
             class="dignity__img"
             src="./assets/images/main/dignity/dignity-1_sm.jpg"
@@ -548,48 +491,41 @@
             loading="lazy"
           />
         </picture>
-        <h3 class="text-bold dignity__text">
-           Розвиваємо власну мережу і контролюємо якість
-        </h3>
-        <p>
-      Школи у всіх містах працюють за єдиними стандартами якості та управляються однією командою.
-        </p>
+        <h3 class="text-bold dignity__text"> Розвиваємо власну мережу і контролюємо якість</h3>
+        <p>Школи у всіх містах працюють за єдиними стандартами якості та управляються однією командою</p>
       </li>
-           
       
       <li class="dignity__item grid__item">
         <picture>
-
-
           <source
-          srcset="
-            ./assets/images/main/dignity/dignity-2_lg.webp    1x,
-            ./assets/images/main/dignity/dignity-2_lg@2x.webp 2x
-          "
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-
-        <source
-        srcset="./assets/images/main/dignity/dignity-2_lg.jpg 1x, ./assets/images/main/dignity/dignity-2_lg@2x.jpg 2x"
-        media="(min-width: 768px)"
-        type="image/jpeg"
-      />
+            srcset="
+              ./assets/images/main/dignity/dignity-2_lg.webp    1x,
+              ./assets/images/main/dignity/dignity-2_lg@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
           <source
-          srcset="
-            ./assets/images/main/dignity/dignity-2_sm.webp    1x,
-            ./assets/images/main/dignity/dignity-2_sm@2x.webp 2x
-          "
-          media="(max-width: 767px)"
-          type="image/webp"
-        />
-
-        <source
-          srcset="./assets/images/main/dignity/dignity-2_sm@2x.jpg 2x"
-          media="(max-width: 767px)"
-          type="image/jpeg"
-        />
-      
+            srcset="
+              ./assets/images/main/dignity/dignity-2_lg.jpg    1x,
+              ./assets/images/main/dignity/dignity-2_lg@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./assets/images/main/dignity/dignity-2_sm.webp    1x,
+              ./assets/images/main/dignity/dignity-2_sm@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/images/main/dignity/dignity-2_sm@2x.jpg 2x"
+            media="(max-width: 767px)"
+            type="image/jpeg"
+          />
           <img
             class="dignity__img"
             src="./assets/images/main/dignity/dignity-2_sm.jpg"
@@ -599,48 +535,41 @@
             loading="lazy"
           />
         </picture>
-        <h3 class="text-bold dignity__text">
-           Відкрито спілкуємось з дітьми та батьками
-        </h3>
-        <p>
-      Щомісяця батьки отримують від нас звітність та зворотний зв'язок про успіхи дітей у навчанні.
-        </p>
+        <h3 class="text-bold dignity__text"> Відкрито спілкуємось з дітьми та батьками</h3>
+        <p>Щомісяця батьки отримують від нас звітність та зворотний зв'язок про успіхи дітей у навчанні</p>
       </li>
-           
       
       <li class="dignity__item grid__item">
         <picture>
-
-
           <source
-          srcset="
-            ./assets/images/main/dignity/dignity-3_lg.webp    1x,
-            ./assets/images/main/dignity/dignity-3_lg@2x.webp 2x
-          "
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-
-        <source
-        srcset="./assets/images/main/dignity/dignity-3_lg.jpg 1x, ./assets/images/main/dignity/dignity-3_lg@2x.jpg 2x"
-        media="(min-width: 768px)"
-        type="image/jpeg"
-      />
+            srcset="
+              ./assets/images/main/dignity/dignity-3_lg.webp    1x,
+              ./assets/images/main/dignity/dignity-3_lg@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
           <source
-          srcset="
-            ./assets/images/main/dignity/dignity-3_sm.webp    1x,
-            ./assets/images/main/dignity/dignity-3_sm@2x.webp 2x
-          "
-          media="(max-width: 767px)"
-          type="image/webp"
-        />
-
-        <source
-          srcset="./assets/images/main/dignity/dignity-3_sm@2x.jpg 2x"
-          media="(max-width: 767px)"
-          type="image/jpeg"
-        />
-      
+            srcset="
+              ./assets/images/main/dignity/dignity-3_lg.jpg    1x,
+              ./assets/images/main/dignity/dignity-3_lg@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./assets/images/main/dignity/dignity-3_sm.webp    1x,
+              ./assets/images/main/dignity/dignity-3_sm@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/images/main/dignity/dignity-3_sm@2x.jpg 2x"
+            media="(max-width: 767px)"
+            type="image/jpeg"
+          />
           <img
             class="dignity__img"
             src="./assets/images/main/dignity/dignity-3_sm.jpg"
@@ -650,48 +579,41 @@
             loading="lazy"
           />
         </picture>
-        <h3 class="text-bold dignity__text">
-           Показуємо зрозумілий результат навчання
-        </h3>
-        <p>
-        Протягом навчання учні реалізовують проєкти: від простих концептів до реальних стартапів.
-        </p>
+        <h3 class="text-bold dignity__text"> Показуємо зрозумілий результат навчання</h3>
+        <p>Протягом навчання учні реалізовують проєкти: від простих концептів до реальних стартапів</p>
       </li>
-           
       
       <li class="dignity__item grid__item">
         <picture>
-
-
           <source
-          srcset="
-            ./assets/images/main/dignity/dignity-4_lg.webp    1x,
-            ./assets/images/main/dignity/dignity-4_lg@2x.webp 2x
-          "
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-
-        <source
-        srcset="./assets/images/main/dignity/dignity-4_lg.jpg 1x, ./assets/images/main/dignity/dignity-4_lg@2x.jpg 2x"
-        media="(min-width: 768px)"
-        type="image/jpeg"
-      />
+            srcset="
+              ./assets/images/main/dignity/dignity-4_lg.webp    1x,
+              ./assets/images/main/dignity/dignity-4_lg@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
           <source
-          srcset="
-            ./assets/images/main/dignity/dignity-4_sm.webp    1x,
-            ./assets/images/main/dignity/dignity-4_sm@2x.webp 2x
-          "
-          media="(max-width: 767px)"
-          type="image/webp"
-        />
-
-        <source
-          srcset="./assets/images/main/dignity/dignity-4_sm@2x.jpg 2x"
-          media="(max-width: 767px)"
-          type="image/jpeg"
-        />
-      
+            srcset="
+              ./assets/images/main/dignity/dignity-4_lg.jpg    1x,
+              ./assets/images/main/dignity/dignity-4_lg@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./assets/images/main/dignity/dignity-4_sm.webp    1x,
+              ./assets/images/main/dignity/dignity-4_sm@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/images/main/dignity/dignity-4_sm@2x.jpg 2x"
+            media="(max-width: 767px)"
+            type="image/jpeg"
+          />
           <img
             class="dignity__img"
             src="./assets/images/main/dignity/dignity-4_sm.jpg"
@@ -701,28 +623,20 @@
             loading="lazy"
           />
         </picture>
-        <h3 class="text-bold dignity__text">
-           Відповідаємо за безпеку
-        </h3>
-        <p>
-      Уважно ставимося до безпеки, контролюємо присутність та тримаємо зв'язок з батьками.
-        </p>
+        <h3 class="text-bold dignity__text"> Відповідаємо за безпеку</h3>
+        <p>Уважно ставимося до безпеки, контролюємо присутність та тримаємо зв'язок з батьками</p>
       </li>
-           
       
-
     </ul>
   </div>
 </section>
 
-   
-<section class="students-reviews__main section ">
+  
+<section class="students-reviews__main section">
   <div class="container">
     <h2 class="students-reviews__title title">Відгуки учнів про нас&#95;</h2>
   </div>
-
-   
-
+  
 <div class="students-reviews">
   <div class="students-review-slider-js students-reviews__list">
     
@@ -737,7 +651,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/makar@2x.png 2x"
             media="(min-width: 320px)"
@@ -769,7 +682,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/sergeiIvleev@2x.png 2x"
             media="(min-width: 320px)"
@@ -801,7 +713,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/kirilAzarov@2x.png 2x"
             media="(min-width: 320px)"
@@ -833,7 +744,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/yuriyPidlyskyy@2x.png 2x"
             media="(min-width: 320px)"
@@ -865,7 +775,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/ihorYakibiuk@2x.png 2x"
             media="(min-width: 320px)"
@@ -897,7 +806,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/annaYakibiuk@2x.png 2x"
             media="(min-width: 320px)"
@@ -929,7 +837,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/sviatoslavToropov@2x.png 2x"
             media="(min-width: 320px)"
@@ -944,7 +851,7 @@
             loading="lazy"
           />
         </picture>
-        <p class="students-reviews__item-descript custom-scroll"> Мене звати Святослав, і я хочу вам розповісти про школу GoITeens! Спочатку розповім про декілька фактів.<br><br>1.Чудова група, гарний викладач.<br>2.Відзивчивість на вищому рівні, якщо тобі щось не зрозуміло тобі моментально відповідають.<br>3.В деякі моменти можна пошуткувати і посміятись.<br><br>Я вже майже 2 роки в GoITeens. І я дуже багато знаю з моменту вступу до GoITeens!  Ця компанія одна із самих класних компаній в Україні по IT! ВСІМ РЕКОМЕНДУЮ.» </p>
+        <p class="students-reviews__item-descript custom-scroll"> Мене звати Святослав, і я хочу вам розповісти про школу GoITeens! Спочатку розповім про декілька фактів.<br><br>1.Чудова група, гарний викладач.<br>2.Відзивчивість на вищому рівні, якщо тобі щось не зрозуміло тобі моментально відповідають.<br>3.В деякі моменти можна пошуткувати і посміятись.<br><br>Я вже майже 2 роки в GoITeens. І я дуже багато знаю з моменту вступу до GoITeens! Ця компанія одна із самих класних компаній в Україні по IT! ВСІМ РЕКОМЕНДУЮ.» </p>
         <p class="students-reviews__item-title">Святослав Торопов</p>
         <p class="students-reviews__item-course">13 років</p>
       </div>
@@ -961,7 +868,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/vladyslavShevchuk@2x.png 2x"
             media="(min-width: 320px)"
@@ -993,7 +899,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/svitlanaDenysenko@2x.png 2x"
             media="(min-width: 320px)"
@@ -1025,7 +930,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/katiaBoyko@2x.png 2x"
             media="(min-width: 320px)"
@@ -1057,7 +961,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/oleksiyPukhtaievych@2x.png 2x"
             media="(min-width: 320px)"
@@ -1089,7 +992,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/andriyAvramenko@2x.png 2x"
             media="(min-width: 320px)"
@@ -1121,7 +1023,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/emilKhrystoforov@2x.png 2x"
             media="(min-width: 320px)"
@@ -1136,7 +1037,7 @@
             loading="lazy"
           />
         </picture>
-        <p class="students-reviews__item-descript custom-scroll">«Привіт, я Еміль. Я навчаюся в школі GoiTeens. Тут мені подобається мій вчитель з hard skills - Віктор. Він веселий, добрий та зрозуміло пояснює матеріал.»</p>
+        <p class="students-reviews__item-descript custom-scroll">«Привіт, я Еміль. Я навчаюся в школі GoITeens. Тут мені подобається мій вчитель з hard skills - Віктор. Він веселий, добрий та зрозуміло пояснює матеріал.»</p>
         <p class="students-reviews__item-title">Еміль Христофоров</p>
         <p class="students-reviews__item-course">14 років</p>
       </div>
@@ -1153,7 +1054,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/rostyslavRudenko@2x.png 2x"
             media="(min-width: 320px)"
@@ -1185,7 +1085,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/maksymRevizor@2x.png 2x"
             media="(min-width: 320px)"
@@ -1217,7 +1116,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/maksymPopsuy@2x.png 2x"
             media="(min-width: 320px)"
@@ -1249,7 +1147,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/olehTsir@2x.png 2x"
             media="(min-width: 320px)"
@@ -1281,7 +1178,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/karpenko@2x.png 2x"
             media="(min-width: 320px)"
@@ -1313,7 +1209,6 @@
             media="(min-width: 320px)"
             type="image/webp"
           />
-
           <source
             srcset="./assets/images/components/students-reviews/oleksiyNizitskyy@2x.png 2x"
             media="(min-width: 320px)"
@@ -1341,24 +1236,20 @@
       type="button"
       aria-label="Попередній слайд"
     ></button>
-    <button class="students-reviews__next-btn students-next-but-js" type="button" aria-label="Наступний слайд"></button>
+    <button
+      class="students-reviews__next-btn students-next-but-js"
+      type="button"
+      aria-label="Наступний слайд"
+    ></button>
   </div>
 </div>
 
-
-
 </section>
-
-
  <section class="main-projects section">
-  <div class="container">
-       
-
+  <div class="container"> 
 <div class="projects">
   <h2 class="projects__title title">Останні реалізовані учнями проєкти&#95;</h2>
-
-  <p class="text-label projects__description"> Ні, це не скрін з App Store! <span> Це проєкти, які наші учні розробляють на курсі самостійно</span></p>
-
+  <p class="text-label projects__description">Ні, це не скрін з App Store! <span> Це проєкти, які наші учні розробляють на курсі самостійно</span></p>
   <div class="projects-slider-js projects__list">
     
     <div class="projects__item">
@@ -1396,7 +1287,6 @@
           media="(min-width: 768px)"
           type="image/jpeg"
         />
-
         <source
           srcset="
             ./assets/images/components/projects/project-1_sm.webp    1x,
@@ -1410,7 +1300,6 @@
           media="(max-width: 767px)"
           type="image/jpeg"
         />
-
         <img
           class="projects__item-image"
           src="./assets/images/components/projects/project-1_sm.jpg"
@@ -1423,11 +1312,8 @@
       <div class="projects__item-wrapper">
         <h3 class="text-label projects__item-title">Сайт караоке-бару Smile Art Bar</h3>
         
-
-        <p class="projects__item-description"> «Власниця закладу Наталія Ковальчук виступила у якості реального замовника для груп Front-end #3 і Front-end #5. Наші студенти впродовж 3-х тижнів працювали над проєктом.»</p>
-
+        <p class="projects__item-description"> «Власниця закладу Наталія Ковальчук виступила у якості реального замовника для груп Front-end #3 і Front-end #5. Наші студенти впродовж 3-х тижнів працювали над проєктом»</p>
         
-
         <a
           class="projects__link"
           target="_blank"
@@ -1473,7 +1359,6 @@
           media="(min-width: 768px)"
           type="image/jpeg"
         />
-
         <source
           srcset="
             ./assets/images/components/projects/project-2_sm.webp    1x,
@@ -1487,7 +1372,6 @@
           media="(max-width: 767px)"
           type="image/jpeg"
         />
-
         <img
           class="projects__item-image"
           src="./assets/images/components/projects/project-2_sm.jpg"
@@ -1500,11 +1384,8 @@
       <div class="projects__item-wrapper">
         <h3 class="text-label projects__item-title">Сайт кулінарної майстерні Oleg Cook</h3>
         
-
-        <p class="projects__item-description">  «Студенти з Вінниці створили односторінковий сайт на замолвення одного з батьків. Тепер бізнес Олега, а саме приготування їжі на замовлення, розвиватиметься ще з більшими темпами.»</p>
-
+        <p class="projects__item-description">«Студенти з Вінниці створили односторінковий сайт на замолвення одного з батьків. Тепер бізнес Олега, а саме приготування їжі на замовлення, розвиватиметься ще з більшими темпами»</p>
         
-
         <a
           class="projects__link"
           target="_blank"
@@ -1550,7 +1431,6 @@
           media="(min-width: 768px)"
           type="image/jpeg"
         />
-
         <source
           srcset="
             ./assets/images/components/projects/project-3_sm.webp    1x,
@@ -1564,7 +1444,6 @@
           media="(max-width: 767px)"
           type="image/jpeg"
         />
-
         <img
           class="projects__item-image"
           src="./assets/images/components/projects/project-3_sm.jpg"
@@ -1577,11 +1456,8 @@
       <div class="projects__item-wrapper">
         <h3 class="text-label projects__item-title">Центр сомнотерапії Оксани Волошиної</h3>
         
-
-        <p class="projects__item-description">« Центр Оксани Волошиної допомагає людям віднайти та налаштувати правильний сон. Тому учні вирішили зробили сайт саме для них, адже розуміють їхню важливу роль в суспільстві»</p>
-
+        <p class="projects__item-description">«Центр Оксани Волошиної допомагає людям віднайти та налаштувати правильний сон. Тому учні вирішили зробити проєкт саме для цього центру, адже здоровий сон надає сил та натхнення для підкорення нових вершин»</p>
         
-
         <a
           class="projects__link"
           target="_blank"
@@ -1627,7 +1503,6 @@
           media="(min-width: 768px)"
           type="image/jpeg"
         />
-
         <source
           srcset="
             ./assets/images/components/projects/project-4_sm.webp    1x,
@@ -1641,7 +1516,6 @@
           media="(max-width: 767px)"
           type="image/jpeg"
         />
-
         <img
           class="projects__item-image"
           src="./assets/images/components/projects/project-4_sm.jpg"
@@ -1654,11 +1528,8 @@
       <div class="projects__item-wrapper">
         <h3 class="text-label projects__item-title">Zmeika2000</h3>
         
-
-        <p class="projects__item-description">« Це вдосконалена версія класичної гри &quot;Змійка&quot;. Гра написана на чистому JavaScript і має не тільки оновлений дизайн, а ще й передбачає бонуси для гравця.»</p>
-
+        <p class="projects__item-description">«Це вдосконалена версія класичної гри &quot;Змійка&quot;. Гра написана на чистому JavaScript і має не тільки оновлений дизайн, а ще й передбачає бонуси для гравця»</p>
         
-
         <a
           class="projects__link"
           target="_blank"
@@ -1704,7 +1575,6 @@
           media="(min-width: 768px)"
           type="image/jpeg"
         />
-
         <source
           srcset="
             ./assets/images/components/projects/project-5_sm.webp    1x,
@@ -1718,7 +1588,6 @@
           media="(max-width: 767px)"
           type="image/jpeg"
         />
-
         <img
           class="projects__item-image"
           src="./assets/images/components/projects/project-5_sm.jpg"
@@ -1731,11 +1600,8 @@
       <div class="projects__item-wrapper">
         <h3 class="text-label projects__item-title">Sublime</h3>
         
-
-        <p class="projects__item-description">« Сайт компанії, яка створює ігровий контент і пропонує сервіси у game індустрії. Також сайт можна використовувати для продажу ігрових акаунтів.»</p>
-
+        <p class="projects__item-description">«Сайт компанії, яка створює ігровий контент і пропонує сервіси у game-індустрії. Також сайт можна використовувати для продажу ігрових акаунтів»</p>
         
-
         <a
           class="projects__link"
           target="_blank"
@@ -1781,7 +1647,6 @@
           media="(min-width: 768px)"
           type="image/jpeg"
         />
-
         <source
           srcset="
             ./assets/images/components/projects/project-6_sm.webp    1x,
@@ -1795,7 +1660,6 @@
           media="(max-width: 767px)"
           type="image/jpeg"
         />
-
         <img
           class="projects__item-image"
           src="./assets/images/components/projects/project-6_sm.jpg"
@@ -1808,11 +1672,8 @@
       <div class="projects__item-wrapper">
         <h3 class="text-label projects__item-title">Travel Website</h3>
         
-
-        <p class="projects__item-description">« Сайт-візитка туристичного магазину, на якому розміщені товари для подорожей – валізи, намети, обладнання для фото- і відео-зйомки.»</p>
-
+        <p class="projects__item-description">«Сайт-візитка туристичного магазину, на якому розміщені товари для подорожей – валізи, намети, обладнання для фото- та відео-зйомки»</p>
         
-
         <a
           class="projects__link"
           target="_blank"
@@ -1858,7 +1719,6 @@
           media="(min-width: 768px)"
           type="image/jpeg"
         />
-
         <source
           srcset="
             ./assets/images/components/projects/project-7_sm.webp    1x,
@@ -1872,7 +1732,6 @@
           media="(max-width: 767px)"
           type="image/jpeg"
         />
-
         <img
           class="projects__item-image"
           src="./assets/images/components/projects/project-7_sm.jpg"
@@ -1896,7 +1755,6 @@
           
         </ul>
         
-
         <a
           class="projects__link"
           target="_blank"
@@ -1942,7 +1800,6 @@
           media="(min-width: 768px)"
           type="image/jpeg"
         />
-
         <source
           srcset="
             ./assets/images/components/projects/project-8_sm.webp    1x,
@@ -1956,7 +1813,6 @@
           media="(max-width: 767px)"
           type="image/jpeg"
         />
-
         <img
           class="projects__item-image"
           src="./assets/images/components/projects/project-8_sm.jpg"
@@ -1976,7 +1832,6 @@
           
         </ul>
         
-
         <a
           class="projects__link"
           target="_blank"
@@ -2022,7 +1877,6 @@
           media="(min-width: 768px)"
           type="image/jpeg"
         />
-
         <source
           srcset="
             ./assets/images/components/projects/project-9_sm.webp    1x,
@@ -2036,7 +1890,6 @@
           media="(max-width: 767px)"
           type="image/jpeg"
         />
-
         <img
           class="projects__item-image"
           src="./assets/images/components/projects/project-9_sm.jpg"
@@ -2058,7 +1911,6 @@
           
         </ul>
         
-
         <a
           class="projects__link"
           target="_blank"
@@ -2070,23 +1922,19 @@
     </div>
     
   </div>
-  <a
-    class="main-btn projects__btn"
-    href="./testimonials.html"
-    >Більше про результати наших учнів</a
-  >
+  <a class="main-btn projects__btn" href="./testimonials.html">Більше про результати наших учнів</a>
 </div>
-
-    </div>
+</div>
 </section>
-  
+ 
 <section class="appeal section">
-    <div class="container appeal__wrapper">
-        <h2 class="appeal__title">Допоможіть <br> своїй дитині <br> стати <span>лідером</span> <br> майбутнього</h2>
-        <p class="appeal__text">Кожен місяць правильно обраного зараз для дитини навчання обертається роками конкурентної переваги в майбутньому дорослому житті</p>
-        <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
-    </div>
+  <div class="container appeal__wrapper">
+    <h2 class="appeal__title">Допоможіть <br> своїй дитині <br> стати <span>лідером</span></h2>
+    <p class="appeal__text">Чим краще ви підготуєте свою дитину до самостійного життя, тим успішнішою вона буде. Не тягніть і допоможіть своїй дитині опанувати всі необхідні навички вже зараз</p>
+    <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
+  </div>
 </section>
+
 </main>
 <footer class="footer ">
   <div class="container">
@@ -2094,14 +1942,26 @@
       <div class="wrapper__top">
         <div class="wrapper__logo">
           <a class="footer__link" href="/">
-          <img src="./assets/images/footer/logo.svg" class="footer__logo" width="143" height="37" alt="лого компанії GoITeens" />
+            <img
+              src="./assets/images/footer/logo.svg"
+              class="footer__logo"
+              width="143"
+              height="37"
+              alt="лого компанії GoITeens"
+            />
           </a>
         </div>
         <nav class="footer__nav">
           <ul class="list nav__list">
             <li class="item">
-              <a class="link footer__link" href="./programs.html" aria-label="goiteens programs"
-                target="_blank" rel="noopener noreferrer nofollow">Каталог курсів</a>
+              <a
+                class="link footer__link"
+                href="./programs.html"
+                aria-label="Програми GoITeens"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Каталог курсів</a
+              >
             </li>
             <li class="item">
               <a class="link footer__link" href="tel:+380671587368">+38 067 158 73 68</a>
@@ -2114,48 +1974,65 @@
       <div class="wrapper__bottom">
         
 <ul class="list social__list">
-    
-    <li class="social__item">
-      <a class="social__link" href="https://t.me/devofteens" aria-label="telegram" target="_blank"
-        rel="noopener noreferrer nofollow">
-        <svg class="social__svg" width="32" height="32">
-          <use href="./assets/images/footer/socials.svg#tg"></use>
-        </svg>
-      </a>
-    </li>
-   
-    
-    <li class="social__item">
-      <a class="social__link" href="https://www.instagram.com/go_iteens" aria-label="instagram" target="_blank"
-        rel="noopener noreferrer nofollow">
-        <svg class="social__svg" width="32" height="32">
-          <use href="./assets/images/footer/socials.svg#insta"></use>
-        </svg>
-      </a>
-    </li>
-   
-    
-    <li class="social__item">
-      <a class="social__link" href="https://www.facebook.com/GoITeens/?ref=page_internal%E2%80%8B" aria-label="facebook" target="_blank"
-        rel="noopener noreferrer nofollow">
-        <svg class="social__svg" width="32" height="32">
-          <use href="./assets/images/footer/socials.svg#fb"></use>
-        </svg>
-      </a>
-    </li>
-   
-    
-    <li class="social__item">
-      <a class="social__link" href="https://www.youtube.com/channel/UCePQwxtFDx2ypM-oTh7gqMQ" aria-label="youtube" target="_blank"
-        rel="noopener noreferrer nofollow">
-        <svg class="social__svg" width="32" height="32">
-          <use href="./assets/images/footer/socials.svg#ytube"></use>
-        </svg>
-      </a>
-    </li>
-   
-    
-  </ul>
+  
+  <li class="social__item">
+    <a
+      class="social__link"
+      href="https://t.me/devofteens"
+      aria-label="telegram"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+    >
+      <svg class="social__svg" width="32" height="32">
+        <use href="./assets/images/footer/socials.svg#tg"></use>
+      </svg>
+    </a>
+  </li>
+  
+  <li class="social__item">
+    <a
+      class="social__link"
+      href="https://www.instagram.com/go_iteens"
+      aria-label="instagram"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+    >
+      <svg class="social__svg" width="32" height="32">
+        <use href="./assets/images/footer/socials.svg#insta"></use>
+      </svg>
+    </a>
+  </li>
+  
+  <li class="social__item">
+    <a
+      class="social__link"
+      href="https://www.facebook.com/GoITeens/?ref=page_internal%E2%80%8B"
+      aria-label="facebook"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+    >
+      <svg class="social__svg" width="32" height="32">
+        <use href="./assets/images/footer/socials.svg#fb"></use>
+      </svg>
+    </a>
+  </li>
+  
+  <li class="social__item">
+    <a
+      class="social__link"
+      href="https://www.youtube.com/channel/UCePQwxtFDx2ypM-oTh7gqMQ"
+      aria-label="youtube"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+    >
+      <svg class="social__svg" width="32" height="32">
+        <use href="./assets/images/footer/socials.svg#ytube"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
 
         <div class="payment">
           <div class="payment__cards">
@@ -2163,13 +2040,10 @@
               <use href="./assets/images/footer/socials.svg#visa"></use>
             </svg>
             <svg class="payment__svg" width="34" height="34">
-              <use
-                href="./assets/images/footer/socials.svg#mastercard"
-              ></use>
+              <use href="./assets/images/footer/socials.svg#mastercard"></use>
             </svg>
           </div>
-          <a class="link payment__contract" data-terms="agreements">Публічний
-            договір</a>
+          <a class="link payment__contract" href data-terms="agreements">Публічний договір</a>
         </div>
       </div>
     </div>
@@ -2177,11 +2051,11 @@
 </footer>
  <div class="backdrop is-hidden" data-modal>
   <div class="modal-outer">
-    <button class="btn-close" type="button" data-modal-close aria-label=""></button>
+    <button class="btn-close" type="button" data-modal-close aria-label="Кнопка закриття"></button>
     <img
       class="logo header__img"
       src="./assets/images/header/logo.svg"
-      alt="GoIT логотип"
+      alt="Логотип GoITeens"
       width="77"
       height="24"
     />
@@ -2206,7 +2080,9 @@
         />
       </div>
       <div class="modal-group">
-        <label class="modal-label"> Контактний телефон <span class="modal-label-required"> * </span></label>
+        <label class="modal-label">
+          Контактний телефон <span class="modal-label-required"> * </span></label
+        >
         <input
           class="modal-input"
           type="tel"
@@ -2268,13 +2144,16 @@
 </div>
  <div class="backdrop backdrop_terms is-hidden" data-termsmodal="agreements">
   <div class="terms-modal">
-    <button type="button" class="modal__close-btn" aria-label="кнопка закриття" data-terms-close>
+    <button type="button" class="modal__close-btn" aria-label="Кнопка закриття" data-terms-close>
       <svg width="18" height="18" class="modal__close-icon">
         <use href="./assets/images/sprite.svg#close-icon"></use>
       </svg>
     </button>
     <div class="terms-modal__content custom-scroll">
-      <h2 class="terms-modal__title">Публічний договір<br> про надання послуг</h2>
+      <h2 class="terms-modal__title">
+        Публічний договір<br />
+        про надання послуг
+      </h2>
       <p>
         Цей документ становить собою публічну оферту (надалі – Оферта), тобто пропозицію Виконавця,
         що адресована невизначеному колу осіб, укласти з Виконавцем договір про надання послуг

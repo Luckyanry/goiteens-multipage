@@ -83,15 +83,12 @@
     padding: 32px;
     margin-bottom: 40px;
     background-color: var(--white-bg);
-   
+
     box-shadow: var(--block-shadow);
     border-radius: var(--border-radius);
 
-
-
     @include mq(tablet-only) {
       box-shadow: var(--slider-shadow);
-
     }
     @include mq(tablet) {
       height: 275px;
