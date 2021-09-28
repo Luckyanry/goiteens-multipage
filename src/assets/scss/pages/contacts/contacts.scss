@@ -5,15 +5,15 @@
     @include mq(tablet) {
       background-repeat: no-repeat;
       background-size: auto;
-    background-position: top 44% right;
+      background-position: top 44% right;
       background-image: url('../images/contacts/contacts/bg-students_lg.png');
 
       @include mq(retina) {
         background-size: 358px;
         background-image: url('../images/contacts/contacts/bg-students_lg@2x.png');
+      }
     }
-  }
-    
+
     @include mq(desktop) {
       padding-right: 284px;
     }
@@ -45,14 +45,17 @@
   }
 
   &__content {
-    margin-bottom: 30px;
     flex-direction: column;
+    margin-bottom: 30px;
+
     @include mq(tablet-only) {
       padding-right: 344px;
+      margin-bottom: 60px;
     }
+
     @include mq(desktop) {
       --grid-item: 3;
-      margin-bottom: 98px;
+      margin-bottom: 70px;
       flex-direction: row;
     }
   }
@@ -71,6 +74,20 @@
     }
   }
 
+  &__call-us {
+    margin-bottom: 20px;
+
+    p {
+      @include mq(tablet-only) {
+        width: calc(100% / 2);
+      }
+    }
+
+    span {
+      color: var(--secondary-accent-cl);
+    }
+  }
+
   &__btn-wrapper {
     --grid-item: 2;
     @include mq(desktop) {
@@ -85,8 +102,8 @@
     &__svg {
       fill: var(--grey-bg);
       &:hover,
-      &:focus{
-        fill: var( --secondary-accent-cl);
+      &:focus {
+        fill: var(--secondary-accent-cl);
       }
     }
   }

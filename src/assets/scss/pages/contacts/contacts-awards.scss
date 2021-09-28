@@ -2,7 +2,7 @@
   padding-top: 30px;
   padding-bottom: 0;
   @include mq(tablet) {
-   padding-top: 34px;
+    padding-top: 34px;
   }
   @include mq(desktop) {
     padding-top: 66px;

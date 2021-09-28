@@ -6,7 +6,7 @@
   width: 100%;
   z-index: 9;
 
-  @include mq(tablet){
+  @include mq(tablet) {
     bottom: 64px;
   }
 

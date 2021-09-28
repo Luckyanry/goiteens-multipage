@@ -39,7 +39,7 @@
 
     .modal__close-btn:focus &,
     .modal__close-btn:hover & {
-      fill: var( --secondary-accent-cl);
+      fill: var(--secondary-accent-cl);
     }
   }
 }
@@ -115,7 +115,7 @@
     transition: transform 250ms linear;
 
     .modal-form__input:focus + & {
-      fill: var( --secondary-accent-cl);
+      fill: var(--secondary-accent-cl);
     }
   }
 

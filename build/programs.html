@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    
+
 <meta charset="UTF-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
 <meta name="robots" content="index, follow" />
 <meta name="google" content="notranslate" />
@@ -18,7 +17,6 @@
 <meta name="theme-color" content="#ffffff" />
 
 <!-- OG markup -->
-
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://goiteens.ua/programs/" />
 <meta property="og:image" content="assets/images/og-img.jpg" />
@@ -47,20 +45,6 @@
 <link rel="stylesheet" href="./assets/css/program-page.css" />
 
 <!-- Google Tag Manager -->
-
-<script>
-  (function (w, d, s, l) {
-    w[l] = w[l] || [];
-    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=<?= $params['GTM'] ?>" + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer');
-</script>
-
 <script async>
   (function (w, d, s, l, i) {
     w[l] = w[l] || [];
@@ -97,10 +81,10 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="page"> 
+    <div class="page">
 <header class="header">
   <div class="container">
-    <a href="/" class="header__logo link" aria-label="логотип">
+    <a  class="header__logo link" href="/" aria-label="Логотип">
       <img
         class="header__img"
         src="./assets/images/header/logo.svg"
@@ -110,7 +94,7 @@
       />
       <span class="header__logo-text">
         мережа ІТ-академій <br />
-        для дітей 8-15 років</span
+        для дітей 8-16 років</span
       >
     </a>
     <div class="header__wrapper">
@@ -119,7 +103,7 @@
         type="button"
         aria-expanded="false"
         aria-controls="mobile-menu"
-        aria-label="кнопка меню"
+        aria-label="Кнопка меню"
         data-menu-button
       >
         <span class="hamburger-box">
@@ -140,23 +124,23 @@
     <div class="mobile-menu" id="mobile-menu" data-menu>
       <nav class="navigation">
         <ul class="navigation__list list">
-          
+
           <li class="navigation__list-item">
-            <a href="./programs.html" class="navigation__list-link link">Програми</a>
+            <a class="navigation__list-link link" href="./programs.html">Програми</a>
           </li>
-          
+
           <li class="navigation__list-item">
-            <a href="./about.html" class="navigation__list-link link">Про нас</a>
+            <a class="navigation__list-link link" href="./about.html">Про нас</a>
           </li>
-          
+
           <li class="navigation__list-item">
-            <a href="./testimonials.html" class="navigation__list-link link">Результати учнів</a>
+            <a class="navigation__list-link link" href="./testimonials.html">Результати учнів</a>
           </li>
-          
+
           <li class="navigation__list-item">
-            <a href="./contact-page.html" class="navigation__list-link link">Контакти</a>
+            <a class="navigation__list-link link" href="./contact-page.html">Контакти</a>
           </li>
-          
+
         </ul>
       </nav>
       <p class="location">
@@ -181,7 +165,7 @@
 </header>
 
 <main>
-   
+
 <section class="hero">
   <picture class="hero__image-wrapper">
     <source
@@ -193,37 +177,36 @@
       type="image/webp"
     />
     <source
-    srcset="./assets/images/programs/hero/children_lg.png 1x, 
-    ./assets/images/programs/hero/children_lg@2x.png 2x"
-    media="(min-width: 1280px)"
-    type="image/png"
-  />
-
-  <source
-  srcset="
-  ./assets/images/programs/hero/children_md.webp 1x"
-  media="(max-width: 1279px)"
-  type="image/webp"
-/>
-
-
-    <img class="hero__image" src="./assets/images/programs/hero/children_md.png" alt="Фото дітей за навчанням"
-    width="609" height="558" >
-</picture>
-    <div class="container hero__title-wrapper">
-        <h1 class="hero__title">
-       В IT-школі для дітей GoITeens кожен <span>від 8 до 16 років</span> знайде чим хоче займатись,
-       <span class="hero__title-pseudo">а ми допоможемо досягти мети</span>
-        </h1>
-
+      srcset="
+        ./assets/images/programs/hero/children_lg.png    1x,
+        ./assets/images/programs/hero/children_lg@2x.png 2x
+      "
+      media="(min-width: 1280px)"
+      type="image/png"
+    />
+    <source
+      srcset="./assets/images/programs/hero/children_md.webp 1x"
+      media="(max-width: 1279px)"
+      type="image/webp"
+    />
+    <img
+      class="hero__image"
+      src="./assets/images/programs/hero/children_md.png"
+      alt="Фото дітей за навчанням"
+      width="609"
+      height="558"
+    />
+  </picture>
+  <div class="container hero__title-wrapper">
+    <h1 class="hero__title"><span>GoITeens</span> - готуємо дітей та підлітків до успішного майбутнього та робимо з них професіоналів в IT</h1>
     <button type="button" class="main-btn" data-modal-open>Підібрати план навчання</button>
   </div>
 </section>
- 
+
 <section class="programs">
   <div class="container">
     <ul class="programs__list list grid">
-      
+
       <li class="programs__item grid__item">
         <a
           class="programs__item-link"
@@ -233,38 +216,37 @@
         >
           <div class="programs__item-wrapper program-1 ">
             <h3 class="item__title programs__item-title">SCRATCH</h3>
-            <p class="programs__item-descript">Діти створюють захопливі анімації та міні ігри в міжнародній навчальній платформі від MIT. Чудово підійде для дитини молодшого шкільного віку, щоб розвинути креативність, дизайн-мислення та навичку причинно-наслідкового зв'язку.</p>
-            
-<ul class="list features__list features-1">
-    <li class="features__item">
-      <p class="features__title">Online</p>
-      <svg class="features__icon" width="270" height="3">
-        <use href="./assets/images/sprite.svg#pr-online"></use>
-      </svg>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Вік</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#age-8-9"></use>
-      </svg>
-      <div class="features__age">
-        <span class="features__age-from">8</span>
-        <span class="features__age-to">9</span>
-      </div>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Рівень складності</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#initial"></use>
-      </svg>
-      <span class="features__level">Початковий</span>
-    </li>
-  </ul>
+            <p class="programs__item-descript">Діти створюють захопливі анімації та міні ігри в міжнародній навчальній платформі від MIT. Чудово підійде для дитини молодшого шкільного віку, щоб розвинути креативність, дизайн-мислення та опанувати причинно-наслідкові зв’язки</p>
+            <ul class="list features__list features-1">
+  <li class="features__item">
+    <p class="features__title">Online</p>
+    <svg class="features__icon" width="270" height="3">
+      <use href="./assets/images/sprite.svg#pr-online"></use>
+    </svg>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Вік</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#age-8-9"></use>
+    </svg>
+    <div class="features__age">
+      <span class="features__age-from">8</span>
+      <span class="features__age-to">9</span>
+    </div>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Рівень складності</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#initial"></use>
+    </svg>
+    <span class="features__level">Початковий</span>
+  </li>
+</ul>
 
           </div>
         </a>
       </li>
-      
+
       <li class="programs__item grid__item">
         <a
           class="programs__item-link"
@@ -274,38 +256,37 @@
         >
           <div class="programs__item-wrapper program-2 ">
             <h3 class="item__title programs__item-title">Minecraft</h3>
-            <p class="programs__item-descript">Діти взаємодіють між собою на одній карті через ігрових персонажів (агентів), а також створюють власні 3D-світи на спеціальній платформі Minecraft Education Edition. Це самий ненудний спосіб перевести дитину з захопленості іграми в захопленість програмуванням та навчальним процесом. Адже на цьому курсі студенти отримують навички відеоблогінгу на Youtube та самопрезентації.</p>
-            
-<ul class="list features__list features-2">
-    <li class="features__item">
-      <p class="features__title">Online</p>
-      <svg class="features__icon" width="270" height="3">
-        <use href="./assets/images/sprite.svg#pr-online"></use>
-      </svg>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Вік</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#age-9-10"></use>
-      </svg>
-      <div class="features__age">
-        <span class="features__age-from">9</span>
-        <span class="features__age-to">10</span>
-      </div>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Рівень складності</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#average"></use>
-      </svg>
-      <span class="features__level">Середній</span>
-    </li>
-  </ul>
+            <p class="programs__item-descript">Діти взаємодіють між собою на одній карті через ігрових персонажів (агентів), а також створюють власні 3D-світи на спеціальній платформі Minecraft Education Edition. Це найцікавіший спосіб перевести дитину з захопленості іграми в захопленість програмуванням та навчальним процесом. Крім того, на цьому курсі учні отримують навички відеоблогінгу на Youtube та самопрезентації</p>
+            <ul class="list features__list features-2">
+  <li class="features__item">
+    <p class="features__title">Online</p>
+    <svg class="features__icon" width="270" height="3">
+      <use href="./assets/images/sprite.svg#pr-online"></use>
+    </svg>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Вік</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#age-9-10"></use>
+    </svg>
+    <div class="features__age">
+      <span class="features__age-from">9</span>
+      <span class="features__age-to">10</span>
+    </div>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Рівень складності</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#average"></use>
+    </svg>
+    <span class="features__level">Середній</span>
+  </li>
+</ul>
 
           </div>
         </a>
       </li>
-      
+
       <li class="programs__item grid__item">
         <a
           class="programs__item-link"
@@ -315,38 +296,37 @@
         >
           <div class="programs__item-wrapper program-3 ">
             <h3 class="item__title programs__item-title">ЦИФРОВА ГРАМОТНІСТЬ</h3>
-            <p class="programs__item-descript">Ваша дитина отримає навички користування мережею Інтернет у навчальних цілях. Вчителі пояснюють правила користування програмним забезпеченням в інтернеті, щоб час в ньому був безпечним, а навчання було ще продуктивнішим.</p>
-            
-<ul class="list features__list features-3">
-    <li class="features__item">
-      <p class="features__title">Online</p>
-      <svg class="features__icon" width="270" height="3">
-        <use href="./assets/images/sprite.svg#pr-online"></use>
-      </svg>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Вік</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#age-8-10"></use>
-      </svg>
-      <div class="features__age">
-        <span class="features__age-from">8</span>
-        <span class="features__age-to">10</span>
-      </div>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Рівень складності</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#initial"></use>
-      </svg>
-      <span class="features__level">Початковий</span>
-    </li>
-  </ul>
+            <p class="programs__item-descript">Ваша дитина здобуде навички безпечного користування мережею Інтернет за для навчання. Вчителі пояснюють, як правильно користуватися програмним забезпеченням та шукати надійні джерела інформації. Ці знання необхідні кожному користувачеві мережею, щоб уникнути шкідливого ПО та шахрайства</p>
+            <ul class="list features__list features-3">
+  <li class="features__item">
+    <p class="features__title">Online</p>
+    <svg class="features__icon" width="270" height="3">
+      <use href="./assets/images/sprite.svg#pr-online"></use>
+    </svg>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Вік</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#age-8-10"></use>
+    </svg>
+    <div class="features__age">
+      <span class="features__age-from">8</span>
+      <span class="features__age-to">10</span>
+    </div>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Рівень складності</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#initial"></use>
+    </svg>
+    <span class="features__level">Початковий</span>
+  </li>
+</ul>
 
           </div>
         </a>
       </li>
-      
+
       <li class="programs__item grid__item">
         <a
           class="programs__item-link"
@@ -356,38 +336,37 @@
         >
           <div class="programs__item-wrapper program-4 ">
             <h3 class="item__title programs__item-title">FRONT-END JUNIOR</h3>
-            <p class="programs__item-descript">Це курс, що допомагає дитині опанувати сучасні технології створення сайтів, дизайну, текстів, презентації та відео. Програма розроблена в ігровій формі й дозволяє навчатись весело та корисно.</p>
-            
-<ul class="list features__list features-4">
-    <li class="features__item">
-      <p class="features__title">Online</p>
-      <svg class="features__icon" width="270" height="3">
-        <use href="./assets/images/sprite.svg#pr-online"></use>
-      </svg>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Вік</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#age-10"></use>
-      </svg>
-      <div class="features__age">
-        <span class="features__age-from">10+</span>
-        <span class="features__age-to"></span>
-      </div>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Рівень складності</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#initial"></use>
-      </svg>
-      <span class="features__level">Початковий</span>
-    </li>
-  </ul>
+            <p class="programs__item-descript">Це курс, що допоможе вашій дитині опанувати сучасні технології створення сайтів, дизайну, текстів, презентації та відео. Програма розроблена в ігровій формі й дозволяє навчатись весело та корисно</p>
+            <ul class="list features__list features-4">
+  <li class="features__item">
+    <p class="features__title">Online</p>
+    <svg class="features__icon" width="270" height="3">
+      <use href="./assets/images/sprite.svg#pr-online"></use>
+    </svg>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Вік</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#age-10"></use>
+    </svg>
+    <div class="features__age">
+      <span class="features__age-from">10+</span>
+      <span class="features__age-to"></span>
+    </div>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Рівень складності</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#initial"></use>
+    </svg>
+    <span class="features__level">Початковий</span>
+  </li>
+</ul>
 
           </div>
         </a>
       </li>
-      
+
       <li class="programs__item grid__item">
         <a
           class="programs__item-link"
@@ -397,38 +376,37 @@
         >
           <div class="programs__item-wrapper program-5 ">
             <h3 class="item__title programs__item-title">FRONT-END</h3>
-            <p class="programs__item-descript">Це курс для більш дорослих дітей. Програма передбачає створення статичних (HTML+CSS) та динамічних (JavaScript) Інтернет-сторінок, знайомство та роботу з системами зберігання даних (GitHub). Дуже важливо, що в підсумку дитина створить командний проєкт.</p>
-            
-<ul class="list features__list features-5">
-    <li class="features__item">
-      <p class="features__title">Online</p>
-      <svg class="features__icon" width="270" height="3">
-        <use href="./assets/images/sprite.svg#pr-online"></use>
-      </svg>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Вік</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#age-11"></use>
-      </svg>
-      <div class="features__age">
-        <span class="features__age-from">11+</span>
-        <span class="features__age-to"></span>
-      </div>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Рівень складності</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#average"></use>
-      </svg>
-      <span class="features__level">Середній</span>
-    </li>
-  </ul>
+            <p class="programs__item-descript">Програма передбачає, створення звичайних та інтерактивних інтернет-сторінок, а також поглиблене вивчення JavaScript, React та Node.JS, знайомство та роботу з системами зберігання даних (GitHub). Дуже важливо, що в підсумку дитина створить командний проєкт</p>
+            <ul class="list features__list features-5">
+  <li class="features__item">
+    <p class="features__title">Online</p>
+    <svg class="features__icon" width="270" height="3">
+      <use href="./assets/images/sprite.svg#pr-online"></use>
+    </svg>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Вік</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#age-11"></use>
+    </svg>
+    <div class="features__age">
+      <span class="features__age-from">11+</span>
+      <span class="features__age-to"></span>
+    </div>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Рівень складності</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#average"></use>
+    </svg>
+    <span class="features__level">Середній</span>
+  </li>
+</ul>
 
           </div>
         </a>
       </li>
-      
+
       <li class="programs__item grid__item">
         <a
           class="programs__item-link"
@@ -438,38 +416,37 @@
         >
           <div class="programs__item-wrapper program-6 ">
             <h3 class="item__title programs__item-title">IT-DESIGN</h3>
-            <p class="programs__item-descript">Створення дизайну за допомогою професійних інструментів. Також діти дізнаються, як саме потрібно використовувати дизайн задля створення сайтів, під час розробки ігор.</p>
-            
-<ul class="list features__list features-6">
-    <li class="features__item">
-      <p class="features__title">Online</p>
-      <svg class="features__icon" width="270" height="3">
-        <use href="./assets/images/sprite.svg#pr-online"></use>
-      </svg>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Вік</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#age-11"></use>
-      </svg>
-      <div class="features__age">
-        <span class="features__age-from">11+</span>
-        <span class="features__age-to"></span>
-      </div>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Рівень складності</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#average"></use>
-      </svg>
-      <span class="features__level">Середній</span>
-    </li>
-  </ul>
+            <p class="programs__item-descript">Учні не просто навчаються створювати дизайн сайтів та ігор за допомогою професійних інструментів, а й робити це з оглядом на зручність для майбутніх користувачів</p>
+            <ul class="list features__list features-6">
+  <li class="features__item">
+    <p class="features__title">Online</p>
+    <svg class="features__icon" width="270" height="3">
+      <use href="./assets/images/sprite.svg#pr-online"></use>
+    </svg>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Вік</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#age-11"></use>
+    </svg>
+    <div class="features__age">
+      <span class="features__age-from">11+</span>
+      <span class="features__age-to"></span>
+    </div>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Рівень складності</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#average"></use>
+    </svg>
+    <span class="features__level">Середній</span>
+  </li>
+</ul>
 
           </div>
         </a>
       </li>
-      
+
       <li class="programs__item grid__item">
         <a
           class="programs__item-link"
@@ -479,38 +456,37 @@
         >
           <div class="programs__item-wrapper program-7 ">
             <h3 class="item__title programs__item-title">GAME DEV</h3>
-            <p class="programs__item-descript">Дитина відчує себе справжнім розробником ігор. Це зовсім не дурниця, як гадає більшість батьків. Їх діти вивчать програмування, алгоритми створення комп’ютерних та мобільних ігор за допомогою платформ Unity, Real Engine.</p>
-            
-<ul class="list features__list features-7">
-    <li class="features__item">
-      <p class="features__title">Online</p>
-      <svg class="features__icon" width="270" height="3">
-        <use href="./assets/images/sprite.svg#pr-online"></use>
-      </svg>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Вік</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#age-13"></use>
-      </svg>
-      <div class="features__age">
-        <span class="features__age-from">13+</span>
-        <span class="features__age-to"></span>
-      </div>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Рівень складності</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#difficult"></use>
-      </svg>
-      <span class="features__level">Складний</span>
-    </li>
-  </ul>
+            <p class="programs__item-descript">Підлітки на цьому курсі справді розробляють ігри. Дуже подібні ігри мільйони людей щодня скачують з UpStore, Steam чи GooglePlay. Студенти цього курсу опановують програмування мобільних та комп’ютерних ігор за допомогою платформ Unity та Real Engine</p>
+            <ul class="list features__list features-7">
+  <li class="features__item">
+    <p class="features__title">Online</p>
+    <svg class="features__icon" width="270" height="3">
+      <use href="./assets/images/sprite.svg#pr-online"></use>
+    </svg>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Вік</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#age-13"></use>
+    </svg>
+    <div class="features__age">
+      <span class="features__age-from">13+</span>
+      <span class="features__age-to"></span>
+    </div>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Рівень складності</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#difficult"></use>
+    </svg>
+    <span class="features__level">Складний</span>
+  </li>
+</ul>
 
           </div>
         </a>
       </li>
-      
+
       <li class="programs__item grid__item">
         <a
           class="programs__item-link"
@@ -520,38 +496,37 @@
         >
           <div class="programs__item-wrapper program-8 ">
             <h3 class="item__title programs__item-title">PYTHON</h3>
-            <p class="programs__item-descript">Це програма навчання, що зарекомендувала себе для дітей у всьому світі. Підійде для тих, хто хоче просто пояснити підлітку про складні математичні правила, терміни та алгоритми.</p>
-            
-<ul class="list features__list features-8">
-    <li class="features__item">
-      <p class="features__title">Online</p>
-      <svg class="features__icon" width="270" height="3">
-        <use href="./assets/images/sprite.svg#pr-online"></use>
-      </svg>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Вік</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#age-13"></use>
-      </svg>
-      <div class="features__age">
-        <span class="features__age-from">13+</span>
-        <span class="features__age-to"></span>
-      </div>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Рівень складності</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#average"></use>
-      </svg>
-      <span class="features__level">Середній</span>
-    </li>
-  </ul>
+            <p class="programs__item-descript">Це повноцінне навчання програмуванню цією мовою для підлітків. Наші студенти отримують ті самі знання, що й дорослі програмісти. Після завершення курсу підлітки можуть починати свою кар’єру в IT</p>
+            <ul class="list features__list features-8">
+  <li class="features__item">
+    <p class="features__title">Online</p>
+    <svg class="features__icon" width="270" height="3">
+      <use href="./assets/images/sprite.svg#pr-online"></use>
+    </svg>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Вік</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#age-13"></use>
+    </svg>
+    <div class="features__age">
+      <span class="features__age-from">13+</span>
+      <span class="features__age-to"></span>
+    </div>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Рівень складності</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#average"></use>
+    </svg>
+    <span class="features__level">Середній</span>
+  </li>
+</ul>
 
           </div>
         </a>
       </li>
-      
+
       <li class="programs__item grid__item">
         <a
           class="programs__item-link"
@@ -561,46 +536,45 @@
         >
           <div class="programs__item-wrapper program-9 ">
             <h3 class="item__title programs__item-title">ARDUINO</h3>
-            <p class="programs__item-descript">Діти навчаються програмувати процесори, створювати електричні схеми, підключати датчики, двигуни й сервоприводи. Зараз це один із найперспективніших напрямків розвитку технологій.</p>
-            
-<ul class="list features__list features-9">
-    <li class="features__item">
-      <p class="features__title">Online</p>
-      <svg class="features__icon" width="270" height="3">
-        <use href="./assets/images/sprite.svg#pr-online"></use>
-      </svg>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Вік</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#age-13"></use>
-      </svg>
-      <div class="features__age">
-        <span class="features__age-from">13+</span>
-        <span class="features__age-to"></span>
-      </div>
-    </li>
-    <li class="features__item">
-      <p class="features__title">Рівень складності</p>
-      <svg class="features__icon" width="270" height="10">
-        <use href="./assets/images/sprite.svg#difficult"></use>
-      </svg>
-      <span class="features__level">Складний</span>
-    </li>
-  </ul>
+            <p class="programs__item-descript">Сьогодні це найперспективніший напрямок розвитку сучасних технологій. Ваша дитина навчиться створювати електронні схеми, програмувати процесори, підключати датчики, двигуни та сервоприводи. Підлітки після цього курсу зможуть власноруч реалізувати будь-яку ідею</p>
+            <ul class="list features__list features-9">
+  <li class="features__item">
+    <p class="features__title">Online</p>
+    <svg class="features__icon" width="270" height="3">
+      <use href="./assets/images/sprite.svg#pr-online"></use>
+    </svg>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Вік</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#age-13"></use>
+    </svg>
+    <div class="features__age">
+      <span class="features__age-from">13+</span>
+      <span class="features__age-to"></span>
+    </div>
+  </li>
+  <li class="features__item">
+    <p class="features__title">Рівень складності</p>
+    <svg class="features__icon" width="270" height="10">
+      <use href="./assets/images/sprite.svg#difficult"></use>
+    </svg>
+    <span class="features__level">Складний</span>
+  </li>
+</ul>
 
           </div>
         </a>
       </li>
-      
+
     </ul>
   </div>
 </section>
-  
+
 <section class="hero-footer programs-hero-footer">
     <div class="container hero-footer__wrapper">
         <h2 class="hero-footer__title">
-           Складно обрати?<br><span>Дитина не знає, що хоче?</span><br>Ви не впевнені, що онлайн IT-курси необхідні вашій дитині?
+           Складно обрати?<br> <span>Дитина не знає, що хоче?</span><br> Ви не впевнені, що онлайн IT-курси необхідні вашій дитині?
         </h2>
         <p class="hero-footer__description text-yellow">
             Запишіться на безкоштовну консультацію, і наш менеджер розповість більше про навчальну програму та надасть інформацію щодо пробних занять
@@ -615,14 +589,26 @@
       <div class="wrapper__top">
         <div class="wrapper__logo">
           <a class="footer__link" href="/">
-          <img src="./assets/images/footer/logo.svg" class="footer__logo" width="143" height="37" alt="лого компанії GoITeens" />
+            <img
+              src="./assets/images/footer/logo.svg"
+              class="footer__logo"
+              width="143"
+              height="37"
+              alt="лого компанії GoITeens"
+            />
           </a>
         </div>
         <nav class="footer__nav">
           <ul class="list nav__list">
             <li class="item">
-              <a class="link footer__link" href="./programs.html" aria-label="goiteens programs"
-                target="_blank" rel="noopener noreferrer nofollow">Каталог курсів</a>
+              <a
+                class="link footer__link"
+                href="./programs.html"
+                aria-label="Програми GoITeens"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Каталог курсів</a
+              >
             </li>
             <li class="item">
               <a class="link footer__link" href="tel:+380671587368">+38 067 158 73 68</a>
@@ -633,50 +619,67 @@
         </nav>
       </div>
       <div class="wrapper__bottom">
-        
+
 <ul class="list social__list">
-    
-    <li class="social__item">
-      <a class="social__link" href="https://t.me/devofteens" aria-label="telegram" target="_blank"
-        rel="noopener noreferrer nofollow">
-        <svg class="social__svg" width="32" height="32">
-          <use href="./assets/images/footer/socials.svg#tg"></use>
-        </svg>
-      </a>
-    </li>
-   
-    
-    <li class="social__item">
-      <a class="social__link" href="https://www.instagram.com/go_iteens" aria-label="instagram" target="_blank"
-        rel="noopener noreferrer nofollow">
-        <svg class="social__svg" width="32" height="32">
-          <use href="./assets/images/footer/socials.svg#insta"></use>
-        </svg>
-      </a>
-    </li>
-   
-    
-    <li class="social__item">
-      <a class="social__link" href="https://www.facebook.com/GoITeens/?ref=page_internal%E2%80%8B" aria-label="facebook" target="_blank"
-        rel="noopener noreferrer nofollow">
-        <svg class="social__svg" width="32" height="32">
-          <use href="./assets/images/footer/socials.svg#fb"></use>
-        </svg>
-      </a>
-    </li>
-   
-    
-    <li class="social__item">
-      <a class="social__link" href="https://www.youtube.com/channel/UCePQwxtFDx2ypM-oTh7gqMQ" aria-label="youtube" target="_blank"
-        rel="noopener noreferrer nofollow">
-        <svg class="social__svg" width="32" height="32">
-          <use href="./assets/images/footer/socials.svg#ytube"></use>
-        </svg>
-      </a>
-    </li>
-   
-    
-  </ul>
+
+  <li class="social__item">
+    <a
+      class="social__link"
+      href="https://t.me/devofteens"
+      aria-label="telegram"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+    >
+      <svg class="social__svg" width="32" height="32">
+        <use href="./assets/images/footer/socials.svg#tg"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li class="social__item">
+    <a
+      class="social__link"
+      href="https://www.instagram.com/go_iteens"
+      aria-label="instagram"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+    >
+      <svg class="social__svg" width="32" height="32">
+        <use href="./assets/images/footer/socials.svg#insta"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li class="social__item">
+    <a
+      class="social__link"
+      href="https://www.facebook.com/GoITeens/?ref=page_internal%E2%80%8B"
+      aria-label="facebook"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+    >
+      <svg class="social__svg" width="32" height="32">
+        <use href="./assets/images/footer/socials.svg#fb"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li class="social__item">
+    <a
+      class="social__link"
+      href="https://www.youtube.com/channel/UCePQwxtFDx2ypM-oTh7gqMQ"
+      aria-label="youtube"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+    >
+      <svg class="social__svg" width="32" height="32">
+        <use href="./assets/images/footer/socials.svg#ytube"></use>
+      </svg>
+    </a>
+  </li>
+
+</ul>
+
 
         <div class="payment">
           <div class="payment__cards">
@@ -684,13 +687,10 @@
               <use href="./assets/images/footer/socials.svg#visa"></use>
             </svg>
             <svg class="payment__svg" width="34" height="34">
-              <use
-                href="./assets/images/footer/socials.svg#mastercard"
-              ></use>
+              <use href="./assets/images/footer/socials.svg#mastercard"></use>
             </svg>
           </div>
-          <a class="link payment__contract" data-terms="agreements">Публічний
-            договір</a>
+          <a class="link payment__contract" href data-terms="agreements">Публічний договір</a>
         </div>
       </div>
     </div>
@@ -698,11 +698,11 @@
 </footer>
  <div class="backdrop is-hidden" data-modal>
   <div class="modal-outer">
-    <button class="btn-close" type="button" data-modal-close aria-label=""></button>
+    <button class="btn-close" type="button" data-modal-close aria-label="Кнопка закриття"></button>
     <img
       class="logo header__img"
       src="./assets/images/header/logo.svg"
-      alt="GoIT логотип"
+      alt="Логотип GoITeens"
       width="77"
       height="24"
     />
@@ -727,7 +727,9 @@
         />
       </div>
       <div class="modal-group">
-        <label class="modal-label"> Контактний телефон <span class="modal-label-required"> * </span></label>
+        <label class="modal-label">
+          Контактний телефон <span class="modal-label-required"> * </span></label
+        >
         <input
           class="modal-input"
           type="tel"
@@ -789,13 +791,16 @@
 </div>
  <div class="backdrop backdrop_terms is-hidden" data-termsmodal="agreements">
   <div class="terms-modal">
-    <button type="button" class="modal__close-btn" aria-label="кнопка закриття" data-terms-close>
+    <button type="button" class="modal__close-btn" aria-label="Кнопка закриття" data-terms-close>
       <svg width="18" height="18" class="modal__close-icon">
         <use href="./assets/images/sprite.svg#close-icon"></use>
       </svg>
     </button>
     <div class="terms-modal__content custom-scroll">
-      <h2 class="terms-modal__title">Публічний договір<br> про надання послуг</h2>
+      <h2 class="terms-modal__title">
+        Публічний договір<br />
+        про надання послуг
+      </h2>
       <p>
         Цей документ становить собою публічну оферту (надалі – Оферта), тобто пропозицію Виконавця,
         що адресована невизначеному колу осіб, укласти з Виконавцем договір про надання послуг
