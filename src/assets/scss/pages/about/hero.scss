@@ -13,11 +13,10 @@
   }
   @include mq(desktop) {
     color: var(--secondary-accent-cl);
-    padding-top: 158px;
-    padding-bottom: 158px;
+    padding-top: 110px;
+    padding-bottom: 110px;
   }
 
- 
   &__image {
     position: absolute;
     bottom: 0;
@@ -34,11 +33,9 @@
     }
 
     @include mq(desktop) {
-      height: 636px;
+      height: 810px;
     }
   }
-
-
 
   &__title {
     margin-bottom: 16px;

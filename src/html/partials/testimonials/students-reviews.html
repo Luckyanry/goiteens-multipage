@@ -1,9 +1,7 @@
-{% set reviews = testimonials_students_reviews %} 
+{% set reviews = testimonials_students_reviews %}
 <section class="students-reviews__testimonials section">
   <div class="container">
     <h2 class="students-reviews__title title">{{reviews.title}}</h2>
   </div>
-
   {% include 'components/students-reviews.html' %}
-
 </section>
