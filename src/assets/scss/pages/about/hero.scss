@@ -22,19 +22,17 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 500px;
+    height: 100%;
     z-index: 1;
     object-fit: cover;
     object-position: top right;
     @include mq(tablet) {
-      height: 580px;
+    
       object-fit: contain;
       object-position: center right;
     }
 
-    @include mq(desktop) {
-      height: 810px;
-    }
+   
   }
 
   &__title {
